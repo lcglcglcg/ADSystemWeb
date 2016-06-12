@@ -1,0 +1,115 @@
+<div class="recharge_box" id="cw_gl_recharge" style="display:none;">
+  <div class="recharge_title"><b>充值</b><span><input name="close_bnt" type="image" src="/static/ads_m_1.0/web/images/view_close.gif" onClick="$UE.close('cw_gl_recharge');" style="cursor:pointer;"></span></div>
+  <div class="recharge_main">
+  	<div class="miaoshu">
+    	<div class="ms_lf">
+        	<ul>
+            	<li>登录名：</li>
+             	<li>公司名称：</li>
+            	<li>开户时间：</li>
+            	<li>投资总额：</li>
+           </ul>
+        </div>
+    	<div class="ms_rg">
+        	<ul>
+            	<li>1PANDR4VLGC1</li>
+             	<li>北京探网科技发展科技有限公司</li>
+            	<li>2011-12-12</li>
+            	<li><span class="red">100，000.00</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;当前账面余额(￥)：<span class="red">100，000.00</span></li>
+           </ul>
+        </div>
+    </div>
+    <div class="shuru">
+    	<div>
+            <div class="shuru_lf">
+                <ul>
+                    <li class="h20"><s class="red">*</s> 广告类型：</li>
+                </ul>
+            </div>
+            <div class="shuru_rg">
+                <ol>
+                    <li class="h20">
+                        <label style="float:left; margin-right:10px;">
+                          <input type="radio" name="RadioGroup1" value="非品牌广告" id="RadioGroup1_0" style="float:left; margin:5px 2px 0 0;" checked="checked">
+                          非品牌广告</label>
+                        <label>
+                          <input type="radio" name="RadioGroup1" value="品牌广告" id="RadioGroup1_1" style="float:left; margin:5px 2px 0 0;">
+                          品牌广告</label>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    	<div>
+            <div class="shuru_lf">
+                <ul>
+                    <li class="h20"><s class="red">*</s> 充值金额(￥)：</li>
+                </ul>
+            </div>
+            <div class="shuru_rg">
+                <ol>
+                    <li class="h20"><input name="" type="text" class="input01"></li>
+                </ol>
+            </div>
+        </div>
+        <div>
+            <div class="shuru_lf">
+                <ul>
+                    <li class="h20"><s class="red">*</s> 付款方式：</li>
+                </ul>
+            </div>
+            <div class="shuru_rg">
+                <ol>
+                    <li class="h20">
+                       <div class="conditions_limit">
+                         <div class="selectStyle select_200">
+                            <select name="hui" >
+                              <option value="1">支票</option>
+                              <option value="2">汇款</option>
+                              <option value="3">现金</option>
+                            </select>
+                         </div>
+                       </div>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div>
+            <div class="shuru_lf">
+                <ul>
+                    <li class="h60"><s class="red">*</s> 凭证备注：</li>
+                </ul>
+            </div>
+            <div class="shuru_rg">
+                <ol>
+                    <li class="h60"><textarea name="" cols="" rows=""></textarea></li>
+                </ol>
+            </div>
+        </div>
+        <div>
+            <div class="shuru_lf">
+                <ul>
+                    <li class="h20"><s class="red">*</s> 凭证号：</li>
+                </ul>
+            </div>
+            <div class="shuru_rg">
+                <ol>
+                    <li class="h20"><input name="" type="text" class="input01"></li>
+                </ol>
+            </div>
+        </div>
+        <div>
+            <div class="shuru_lf">
+                <ul>
+                    <li class="h20"><s class="red">*</s> 凭证文件：</li>
+                </ul>
+            </div>
+            <div class="shuru_rg">
+                <ol>
+                    <li class="h20"><input name="" type="text" class="input01"><a href="#">上传</a></li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="c_btn" align="center"><ol><li><a onclick="javascript:$UE.confirm('您要充值的金额为 1000.00 元，确认无误后，点击“确认”继续充值，点击“取消”撤销充值!','充值成功','$UE.close(\'cw_gl_recharge\')');">保存</a><a onClick="$UE.close('cw_gl_recharge');" >取消</a></li></ol></div>
+</div>

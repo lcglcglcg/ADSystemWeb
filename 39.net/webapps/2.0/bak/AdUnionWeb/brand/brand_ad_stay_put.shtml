@@ -1,0 +1,26 @@
+<xmp id="listTitle_2" style="display:none;">
+  <tr class="table_title">
+    <th name="listTool" class="table_wd text_center" value="0" onclick="window.brands.orderBy.call(this);"> <a><span>订单编号</span></a> </th>
+    <th name="listTool" class="table_wd text_center" value="1" onclick="window.brands.orderBy.call(this);"> <a><span>投放科室</span></a> </th>
+    <th name="listTool" class="table_wd thbg_curr" value="2" onclick="window.brands.orderBy.call(this);"> <a><span>投放地域</span></a> </th>
+    <th name="listTool" class="table_wd thbg_curr" value="3" onclick="window.brands.orderBy.call(this);"> <a><span>投放时长</span></a> </th>
+    <th name="listTool" class="table_wd text_center" value="4" onclick="window.brands.orderBy.call(this);"> <a><span>开始日期</span></a> </th>
+    <th name="listTool" class="table_wd text_center" value="5" onclick="window.brands.orderBy.call(this);"> <a><span>结束日期</span></a> </th>
+    <th name="listTool" class="table_wd text_center" value="6" onclick="window.brands.orderBy.call(this);"> <a><span>广告消费</span></a> </th>
+    <th name="listTool" class="table_wd text_center" value="7" onclick="window.brands.orderBy.call(this);"> <a><span>创意状态</span></a> </th>
+    <td name="listTool" class="table_we text_center_bg">操作</td>
+  </tr>
+</xmp>
+<xmp id="listList_2" style="display:none;">
+  <tr name="listTr" id="id{BRAND_ID}">
+    <td name="listTd" class="table_wd text_center"><span class="figure">{AD_ORDER_NO}</span></td>
+    <td name="listTd" class="table_wd text_center"><a value="{DEPT_CODE}" name="dept" class="p_a_style1">{DEPT_NAME}></a></td>
+    <td name="listTd" class="table_wd text_center">{REGION_SERIALIZE_NAME}</td>
+    <td name="listTd" class="table_wd text_center"><span class="figure">{DAYS}天</span></td>
+    <td name="listTd" class="table_wd text_center"><span class="figure">{SHOW_TIME_START}</span></td>
+    <td name="listTd" class="table_wd text_center"><span class="figure">{SHOW_TIME_END}</span></td>
+    <td name="listTd" class="table_wd text_center"><span class="figure">￥{PRICE}</span></td>
+    <td name="listTd" class="table_wd text_center {stateCss}">{CREATIVE_STATUS}</td>
+    <td name="listTd" class="table_wd text_center">{tools}</td>
+  </tr>
+</xmp>

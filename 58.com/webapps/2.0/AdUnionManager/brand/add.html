@@ -1,0 +1,101 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>品牌广告-订单管理-新增广告</title>
+<!--#include virtual="/public/public.shtml"-->
+<link rel="stylesheet" type="text/css" href="/static/ads_m_1.0/web/css/body_list.css">
+<link rel="stylesheet" type="text/css" href="/static/ads_m_1.0/web/css/account_add.css">
+<link rel="stylesheet" type="text/css" href="/static/ads_m_1.0/web/css/input.css">
+<link rel="stylesheet" type="text/css" href="/static/ads_m_1.0/web/css/page.css">
+<link rel="stylesheet" type="text/css" href="/static/ads_m_1.0/web/css/order_view_creative.css"/>
+<link rel="stylesheet" type="text/css" href="/static/ads_m_1.0/web/css/recharge_detailed.css"/>
+<link rel="stylesheet" type="text/css" href="/static/ads_m_1.0/web/css/select_region.css"/>
+<link rel="stylesheet" type="text/css" href="/static/ads_m_1.0/web/css/select_keshi.css"/>
+<link rel="stylesheet" type="text/css" href="/static/ads_m_1.0/web/css/cw_gl_recharge.css"/>
+<link rel="stylesheet" type="text/css" href="/static/ads_m_1.0/web/css/refuse.css"/>
+<script src="/static/web/js/common/common_time.js"></script>
+<script src="/static/web/js/thirdparty/jquery-1.11.2.min.js"></script>
+</head>
+<body>
+<script>
+window.urlName='brand';
+</script>
+<!--#include virtual="/public/header.shtml"-->
+<!--#include virtual="/tool/keshi.html"-->
+<!--#include virtual="/tool/region.html"-->
+<div class="ad_box">
+  <div class="main">
+    <div class="curr_position">当前位置：<span>品牌广告>订单查询>新增广告</span></div>
+    <!-- 查询条件conditions start -->
+    <div class="conditions d_conditions" id="conditionsBrand">
+      <ol>
+        <li class="conditions_li"><span>投放科室：</span></li>
+        <li class="conditions_li brand_select_img"> <a id="putKeshi"><img src="/static/ads_m_1.0/web/images/select_kq_01.jpg"/></a> </li>
+        <li class="conditions_li padl4"><span>投放区域：</span></li>
+        <li class="conditions_li brand_select_img"> <a id="putRegion"><img src="/static/ads_m_1.0/web/images/select_kq_02.jpg"/></a> </li>
+        <li class="conditions_li padl4"><span>投放时间：</span></li>
+        <li class="conditions_li">
+          <input type="text" class="times_new" name="time">
+          <input type="image" class="calendar" src="/static/ads_m_1.0/web/images/calendar.gif" name="calendar" notTool="1" setvalue="day" maxdate="3012-01-01" mindate="day">
+        </li>
+        <li class="conditions_li padl c_select"><a class="brand_ad_a">查询可投放档期</a></li>
+      </ol>
+    </div>
+    <div class="s_content">
+      <div class="detailed_main">
+        <div id="view_keput" style="display:none;">
+          <div class="add_brand_btn no_top_bor"><a id="clickCT">冲突</a><a id="clickKT">可投</a> <a id="titlej1" class="add_brand_btn_curr">可投放</a> <a id="titlej2">已选择</a> </div>
+          <div id="add_keput" style="display:block;">
+            <div class="de_list" id="brandList">
+            </div>
+            <div class="cw_page_border">
+              <div class="b_lf lf">
+                <ol>
+                  <li><a id="selectAdds">批量添加</a></li>
+                  <li><a id="resAdds">重置</a></li>
+                </ol>
+              </div>
+              <div class="b_rg rg"> </div>
+            </div>
+          </div>
+          <div id="add_check" style="display:none;">
+            <div class="de_list" id="brandSelectList">
+            </div>
+            <div class="cw_page_border" id="brandSub">
+              <div class="b_lf lf">
+                <ol>
+                  <li><a id="allDelSelect">批量删除</a></li>
+                  <li>广告消费：
+                    <input name="priceBrand" type="text" class="order_input1" maxlength="100000" minlength="1">
+                    元</li>
+                </ol>
+              </div>
+              <div class="b_rg b_rg_new rg">
+                <ol>
+                  <li style = "display: none;"><a id="cancelBrand">拒绝</a></li>
+                  <li><a id="allAddBrand" type="0">确定</a></li>
+                  <li class="dl_left_mar">投放客户登录名：
+                    <input name="userBrand" type="text" class="order_input2" value="" disabled="disabled">
+                  </li>
+                  <li class="dl_left"><a id="userIni">设置账户</a></li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 查询条件conditions end -->
+    <div class="s_bottom">
+      <div class="b_lf lf"> </div>
+      <!--#include virtual="/public/page.html"--> 
+    </div>
+  </div>
+</div>
+<!--#include virtual="/brand/addList.html"-->
+<!--#include virtual="/brand/selectList.html"-->
+<!--#include virtual="/public/check/check_refuse.shtml"-->
+<script src="/static/web/js/page/manager/brandAdd.js"></script>
+<script src="/static/web/js/page/manager/brand/modify.js"></script>
+<!--#include virtual="/public/footer.html"--> 

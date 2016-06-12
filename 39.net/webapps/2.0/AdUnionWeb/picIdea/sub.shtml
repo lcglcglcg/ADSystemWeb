@@ -1,0 +1,91 @@
+<!-- 图片创意浏览 层 -->
+<div class="check_box" id="uploadIdeasDemoPreview" style="display:none;">
+  <div class="check_title_box">
+    <div class="check_title"> <b>预览创意</b> <span>
+      <input name="close" type="image" src="/static/ads_c_2.0/web/images/view_close.gif" style="cursor:pointer;">
+      </span> </div>
+  </div>
+  <div class="check_main">
+    <div class="check_cont_step3"> <span> <img src="/static/ads_c_2.0/web/images/no_photo.jpg" /></span> </div>
+    <div class="miaoshu miaoshu_noborder">
+      <p class="xia_line"></p>
+      <p class="m_guige"></p>
+      <p class="m_web"></p>
+    </div>
+  </div>
+</div>
+<!-- 图片创意 新建/修改 层 -->
+<div class="scommon_box" id="step_three" style="display:none;">
+   <input name="CAMPAIGN_ID" type="hidden" />
+   <input name="GROUP_ID" type="hidden" />
+   <input name="CREATIVE_ID" type="hidden" />
+   <input name="CREATIVE_IMG_ID" type="hidden" />
+   <input name="CREATIVE_NAME" type="hidden" />
+  <div class="scommon_title">
+    <p name="altIdeaTitle">新建创意</p>
+    <a name="close"></a></div>
+  <div class="scommon_main">
+    <div class="all_title" name="altIdeaDaoHang"><span name="newMap">新建推广计划</span><span name="newMap" class="step_rg_bg" style="color:#000;">新建推广组</span><span class="span_three step_curr">新建创意</span></div>
+    <div class="three_content">
+      <div class="three_lf">
+        <div class="upload_word">
+          <p>上传图片：</p>
+        </div>
+        <div class="upload_cont"> <span id="upIdeasMsg"><span name="upIdeasButt">
+          <input type="image" class="input_img1" src="/static/ads_c_2.0/web/images/btn_shangc.gif" id="upIdeas" ></span>
+          </span>
+          <p name="uploadIdeaPicMsg" >您可使用Ctrl键一次选中多个文件批量上传。</p>
+          <p class="already_upload"><span class="already_word" name="uploadIdeasCount" >已上传0张，还可以上传18张。</span><a class="btn" name="uploadIdeasClear"><span>全部清空</span></a></p>
+          <!--上传后的信息-->
+          <div class="zu_content">
+            <ul name="ideasTmpPicList">
+              
+            </ul>
+          </div>
+        </div>
+        <!--访问URL开始-->
+        <div class="url">
+          <div class="url_lf">访问URL：http://</div>
+          <div class="url_rg">
+            <input type="DOMANDESTINATIONURL" grequired gmsgfun maxlength="1017" minlength="1" gmsgfor="#picDestinationUrlMsg" name="CREATIVE_DESTINATION_URL" />
+            <span>最多1017个字符</span><br />
+            <p class="red" style="display:none;" id="picDestinationUrlMsg">请输入访问链接。</p>
+            <p class="red" style="display:none;" id="picDestinationUrlMsgHand_1">您的输入不能包含以下非法字符：“
+            <”、“>
+            ”</p>
+            <p class="red" style="display:none;" id="picDestinationUrlMsgHand_2">访问URL主域名必须与您的注册网站域名一致(www)</p>
+          </div>
+        </div>
+        <div class="url">
+          <div class="url_lf1">输入显示URL：</div>
+          <div class="url_rg">
+            <input type="DISPLAYURL" grequired gmsgfun maxlength="35" minlength="1"  gmsgfor="#picDisplayUrlMsg" name="CREATIVE_DISPLAY_URL" />
+            <span>最多35个字符</span><br />
+            <p class="red" style="display:none;" id="picDisplayUrlMsg">请输入显示链接。</p></div>
+            <p class="red" style="display:none;" name="ckMsg"  id="picDisplayUrlMsgHand_1">您的输入不能包含以下非法字符：“
+            <”，“>
+            ”，“{”，“}”，“,”，“"”，“'”</p>
+            <p class="red" style="display:none;" name="ckMsg"  id="picDisplayUrlMsgHand_2">显示URL主域名必须与您的注册网站域名一致(www)</p>
+        </div>
+        <!--访问URL结束--> 
+      </div>
+      <div class="three_rg">
+        <div class="show_img">
+          <p>创意预览:</p>
+          <div class="show_img_photo" name="uploadIdeaPicDemo"><span style="display:none;"><div class="white_bg"></div></span><a class="bottom_fangda" title="点击查看大图"></a> </div>
+        </div>
+         <div class="guige">
+                        CPC尺寸：760x90 728X90 580X90 468X60 960X60 460X60 640X60 960X90 250x250 200X200 336X280 300X250 360X300 160x600 120X600 120X240 640X80
+                    </div>
+      </div>
+      <!--公共按钮 新建创意-->
+      <div class="step_commom_btn" align="center" name="subIdeaSaveMsg">
+        <div class="s_c_width"><a class="btn" name="subPicIdeaSave"><span>保存</span></a><a class="btn" name="subPicIdeaSaveAnd"><span>保存并添加创意</span></a><a class="btn" name="close"><span>取消</span></a> </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script language="javascript" src="/static/web/js/thirdparty/swfupload.js"></script> 
+<script language="javascript" src="/static/web/js/thirdparty/swfupload.queue.js"></script> 
+<script language="javascript" src="/static/web/js/common/common_upload.js"></script> 
+<script language="javascript" src="/static/web/js/page/picIdea.js"></script>

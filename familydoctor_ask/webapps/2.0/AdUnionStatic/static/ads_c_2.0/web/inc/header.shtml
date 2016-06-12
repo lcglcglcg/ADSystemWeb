@@ -1,0 +1,36 @@
+<div id="wrap">
+    <div id="main">
+        <div id="header" class="zindex">
+        	<div class="rg_bg">
+            <div class="logo"><img alt="" src="/static/ads_c_2.0/web/images/ads_logo.png" class="ads_logo"></div>
+            <div class="topnav">
+                <ul>
+                    <li><a href="index.shtml" class="on" id="nav1">首页</a></li>
+                    <li><a href="click_promotion.shtml" id="nav2">文字推广</a></li>
+                    <li><a href="show_promotion.shtml" id="nav3" >图片推广</a></li>
+                    <li><a href="brand_ad.shtml" id="nav4" >品牌广告</a></li>
+                    <li><a href="report.shtml" id="nav5" >报表管理</a></li>
+                    <li><a href="financial.shtml" id="nav6" >财务管理</a></li>
+                    <li><a href="account.shtml" id="nav7" >账户信息</a></li>
+                </ul> 
+            </div> 
+            <div class="login">
+            	<div class="company">北京联创兄弟科技发展有限公司</div>
+                <div class="l_name">yangzg| <a href="login.shtml">退出</a>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="subnav" id="subnav1" style="display:none;">
+        	<ol>
+            	<li class="sub_libg"><a href="report.shtml" id="report_word">文字推广</a></li>
+            	<li><a href="report_pic.shtml" id="report_pic">图片推广</a></li>
+            </ol>	
+        </div>
+        <div class="subnav" id="subnav2" style="display:none;">
+        	<ol>
+            	<li><a href="show_promotion.shtml"id="cpm_p">推广管理</a><a href="show_report.shtml" id="cpm_r">报表管理</a></li>
+            </ol>	
+        </div>
+    </div>
+</div>

@@ -1,0 +1,138 @@
+	<div class="scommon_box scommon_box_new" id="p_some_region" style="display:none;">
+        <div class="scommon_title" ><p id="step1_name">投放区域</p><a onclick="$UE.close('p_some_region');"></a></div>
+                <div class="city city_new">
+                        <!--div第三级内容-->
+                        <div class="level3_city level3_city_pad_left level3_city_pad_leftnew">
+                            <ol class="title">
+                                <li><input name="" type="checkbox" value="" class="input_valign" style="margin-left:5px;"/>中国地区</li>
+                            </ol>
+                            <ol class="row1">
+                                <li class="li_w95"><input name="" type="checkbox" value="" class="input_valign"/><span class="gray">华北地区</span></li>
+                                <li class="li_w95">
+                                    <div class="li_div">
+                                        <div class="li_city_border1_0" id="steptitleb1" onMouseOver="over_qie(1,'steptitleb','stepcontb','li_city_border1')"  onmouseout="out_qie(1,'steptitleb','stepcontb','')">
+                                        	<div class="hover_ceng_title" title="北京"><input name="" type="checkbox" value="" class="input_valign"/><span>北京</span><span class="zongshu">11/20</span></div>
+                                        </div>
+                                        <div class="block1" style="display:none;" id="stepcontb1" onMouseOver="over_qie(1,'steptitleb','stepcontb','li_city_border1')"  onmouseout="out_qie(1,'steptitleb','stepcontb','')">
+											<!--hover的层-->
+											<div class="hover_ceng">
+                                            	<ul>
+                                                    <li title="昌平区"><input name="" type="checkbox" value=""/>昌平区</li>
+                                                    <li title="崇文区"><input name="" type="checkbox" value="" />崇文区</li>
+                                                    <li title="东城区"><input name="" type="checkbox" value="" />东城区</li>
+                                                    <li title="西城区"><input name="" type="checkbox" value="" />西城区</li>
+                                                    <li title="丰台区"><input name="" type="checkbox" value="" />丰台区</li>
+                                                    <li title="朝阳区"><input name="" type="checkbox" value="" />朝阳区</li>
+                                                    <li title="大兴区"><input name="" type="checkbox" value="" />大兴区</li>
+                                                    <li title="房山区"><input name="" type="checkbox" value="" />房山区</li>
+                                                </ul>
+                                            </div>
+                                    </div>
+                                    </div>
+                                </li>
+                                <li class="li_w95">
+                                    <div class="li_div">
+                                        <div class="li_city_border1_0" id="steptitleb2" onMouseOver="over_qie(2,'steptitleb','stepcontb','li_city_border1')"  onmouseout="out_qie(2,'steptitleb','stepcontb','')">
+                                        	<div class="hover_ceng_title" title="天津"><input name="" type="checkbox" value="" class="input_valign"/><span>天津</span><span class="zongshu">11/20</span></div>
+                                        </div>
+                                        <div class="block1" style="display:none;" id="stepcontb2" onMouseOver="over_qie(2,'steptitleb','stepcontb','li_city_border1')"  onmouseout="out_qie(2,'steptitleb','stepcontb','')">
+											<!--hover的层-->
+											<div class="hover_ceng">
+                                            	<ul>
+                                                    <li title="昌平区"><input name="" type="checkbox" value=""/>昌平区</li>
+                                                    <li title="崇文区"><input name="" type="checkbox" value="" />崇文区</li>
+                                                    <li title="东城区"><input name="" type="checkbox" value="" />东城区</li>
+                                                    <li title="西城区"><input name="" type="checkbox" value="" />西城区</li>
+                                                    <li title="丰台区"><input name="" type="checkbox" value="" />丰台区</li>
+                                                    <li title="朝阳区"><input name="" type="checkbox" value="" />朝阳区</li>
+                                                    <li title="大兴区"><input name="" type="checkbox" value="" />大兴区</li>
+                                                    <li title="房山区"><input name="" type="checkbox" value="" />房山区</li>
+                                                </ul>
+                                            </div>
+                                    </div>
+                                    </div>
+                                </li>
+                                <li class="li_w95"><input name="" type="checkbox" value="" class="input_valign"/><span>河北</span></li>
+                                <li class="li_w95"><input name="" type="checkbox" value="" class="input_valign"/><span>内蒙古</span></li>
+                                <li class="li_w95"><input name="" type="checkbox" value="" class="input_valign"/><span>山西</span></li>
+                            </ol>
+                            <ol class="row1">
+                                <li class="li_w95"><input name="" type="checkbox" value="" class="input_valign"/><span class="gray">东北地区</span></li>
+                                <li class="li_w95">
+                                    <div class="li_div">
+                                		<div class="li_city_border1_0" id="steptitleb3" onMouseOver="over_qie(3,'steptitleb','stepcontb','li_city_border1')"  onmouseout="out_qie(3,'steptitleb','stepcontb','')">
+                                    		<div class="hover_ceng_title" title="黑龙江"><input name="" type="checkbox" value="" class="input_valign"/><span>黑龙江</span><span class="zongshu">11/20</span></div>
+                                        </div>
+                                        <div class="block1" style="display:none;" id="stepcontb3" onMouseOver="over_qie(3,'steptitleb','stepcontb','li_city_border1')"  onmouseout="out_qie(3,'steptitleb','stepcontb','')">
+											<!-- hover的层 -->
+											<div class="hover_ceng">
+                                            	<ul>
+                                                    <li title="昌平区"><input name="" type="checkbox" value=""/>昌平区</li>
+                                                    <li title="崇文区"><input name="" type="checkbox" value="" />崇文区</li>
+                                                    <li title="东城区"><input name="" type="checkbox" value="" />东城区</li>
+                                                    <li title="西城区"><input name="" type="checkbox" value="" />西城区</li>
+                                                    <li title="丰台区"><input name="" type="checkbox" value="" />丰台区</li>
+                                                    <li title="朝阳区"><input name="" type="checkbox" value="" />朝阳区</li>
+                                                    <li title="大兴区"><input name="" type="checkbox" value="" />大兴区</li>
+                                                    <li title="房山区"><input name="" type="checkbox" value="" />房山区</li>
+                                                </ul>
+                                            </div>
+                                    </div>
+                                    </div>
+                                </li>
+                                <li class="li_w95"><input name="" type="checkbox" value="" class="input_valign"/><span>吉林</span></li>
+                                <li class="li_w95"><input name="" type="checkbox" value="" class="input_valign"/><span>辽宁</span></li>
+                            </ol>
+                            <ol class="row1">
+                                <li class="li_w95"><input name="" type="checkbox" value="" class="input_valign"/><span class="gray">华东地区</span></li>
+                                <li class="li_w95"><input name="" type="checkbox" value="" class="input_valign"/><span>上海</span></li>
+                                <li class="li_w95"><input name="" type="checkbox" value="" class="input_valign"/><span>安徽</span></li>
+                                <li class="li_w95"><input name="" type="checkbox" value="" class="input_valign"/><span>福建</span></li>
+                                <li class="li_w95"><input name="" type="checkbox" value="" class="input_valign"/><span>江苏</span></li>
+                                <li class="li_w95"><input name="" type="checkbox" value="" class="input_valign"/><span>江西</span></li>
+                                <li class="li_w95">&nbsp;</li>
+                                <li class="li_w95"><input name="" type="checkbox" value="" class="input_valign"/><span>浙江</span></li>
+                            </ol>
+                            <ol class="row1">
+                                <li class="li_w95"><input name="" type="checkbox" value="" class="input_valign"/><span class="gray">华中地区</span></li>
+                                <li class="li_w95"><input name="" type="checkbox" value="" class="input_valign"/><span>河南</span></li>
+                                <li class="li_w95"><input name="" type="checkbox" value="" class="input_valign"/><span>湖北</span></li>
+                                <li class="li_w95"><input name="" type="checkbox" value="" class="input_valign"/><span>湖南</span></li>
+                            </ol>
+                            <ol class="row1">
+                                <li class="li_w95"><input name="" type="checkbox" value="" class="input_valign"/><span class="gray">华南地区</span></li>
+                                <li class="li_w95"><input name="" type="checkbox" value="" class="input_valign"/><span>广东</span></li>
+                                <li class="li_w95"><input name="" type="checkbox" value="" class="input_valign"/><span>广西</span></li>
+                                <li class="li_w95"><input name="" type="checkbox" value="" class="input_valign"/><span>海南</span></li>
+                            </ol>
+                            <ol class="row1">
+                                <li class="li_w95"><input name="" type="checkbox" value="" class="input_valign"/><span class="gray">西南地区</span></li>
+                                <li class="li_w95"><input name="" type="checkbox" value="" class="input_valign"/><span>重庆</span></li>
+                                <li class="li_w95"><input name="" type="checkbox" value="" class="input_valign"/><span>贵州</span></li>
+                                <li class="li_w95"><input name="" type="checkbox" value="" class="input_valign"/><span>四川</span></li>
+                                <li class="li_w95"><input name="" type="checkbox" value="" class="input_valign"/><span>西藏</span></li>
+                                <li class="li_w95"><input name="" type="checkbox" value="" class="input_valign"/><span>云南</span></li>
+                            </ol>
+                            <ol class="row1">
+                                <li class="li_w95"><input name="" type="checkbox" value="" class="input_valign"/><span class="gray">西北地区</span></li>
+                                <li class="li_w95"><input name="" type="checkbox" value="" class="input_valign"/><span>甘肃</span></li>
+                                <li class="li_w95"><input name="" type="checkbox" value="" class="input_valign"/><span>宁夏</span></li>
+                                <li class="li_w95"><input name="" type="checkbox" value="" class="input_valign"/><span>青海</span></li>
+                                <li class="li_w95"><input name="" type="checkbox" value="" class="input_valign"/><span>陕西</span></li>
+                                <li class="li_w95"><input name="" type="checkbox" value="" class="input_valign"/><span>新疆</span></li>
+                            </ol>
+                            <ol class="row1">
+                                <li class="li_w95"><input name="" type="checkbox" value="" class="input_valign"/><span class="gray">港澳台</span></li>
+                                <li class="li_w95"><input name="" type="checkbox" value="" class="input_valign"/><span>香港</span></li>
+                                <li class="li_w95"><input name="" type="checkbox" value="" class="input_valign"/><span>澳门</span></li>
+                                <li class="li_w95"><input name="" type="checkbox" value="" class="input_valign"/><span>台湾</span></li>
+                            </ol>
+                            <ol class="title">
+                                <li class="li_w95"><input name="" type="checkbox" value="" class="input_valign" style="margin-left:5px;"/>其他地区</li>
+                            </ol>
+                            <ol class="row1">
+                                <li class="li_pad1 li_w95"><input name="" type="checkbox" value="" class="input_valign"/><span>全部</span></li>
+                            </ol>
+                        </div>
+                 </div>
+    </div>

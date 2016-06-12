@@ -1,0 +1,71 @@
+<div class="r_n_top">
+        <ul >
+          <li class="r_li r_li_a">推广地域：默认地域 <a href="#" id="idA_areadiv">修改</a></li>
+          <li class="r_li r_li_a">高级设置：<a href="#" id="idA_adv_setting">未设置</a></li>
+          <li class="r_li"><span class="r_li_span1">匹配方式：</span> <span class="r_li_span2">
+            <select>
+              <option value="广泛">广泛</option>
+              <option value="短语">短语</option>
+              <option value="精确">精确</option>
+            </select>
+            </span> </li>
+          <li class="r_li r_li_a" style="padding-left:10px; margin-right:0px;" id="idNotui">量身推荐 <img src="/static/baiduads2.1/web/images/p/help.jpg" class="img_vm" id="idA_tuijian"/> ：<a href="#" id="idA_recommended">未设置</a></li>
+          
+        </ul>
+</div>
+
+<div class="r_n_key">
+          <div class="r_n_top">
+            <ul>
+              <li class="r_li">请输入单个关键词：
+                <input type="text" name="textfield"  value="请输入关键词" class="input_border in_wi"/>
+                &nbsp;&nbsp;</li>
+              <li class="r_li"><a href="#" class="btn_2">
+                <input type="submit" name="Submit" value="获取推荐" />
+                </a></li>
+              <li class="r_li" style="padding-top:4px;" id="idNopro">&nbsp;&nbsp;
+                <input type="checkbox"  class="img_vm"/>
+                禁用量身推荐</li>
+            </ul>
+          </div>
+          <ul class="r_n_b">
+                  <li class="r_li m_top">包括：</li>
+                  <li class="r_li">
+                    <input type="checkbox" name="checkbox1" value="checkbox">
+                    总医院</li>
+                  <li class="r_li">
+                    <input type="checkbox" name="checkbox2" value="checkbox">
+                    咨询</li>
+                  <li class="r_li">
+                    <input type="checkbox" name="checkbox3" value="checkbox">
+                    检测</li>
+                  <li class="r_li">
+                    <input type="checkbox" name="checkbox4" value="checkbox">
+                    在线</li>
+                  <li class="r_li">
+                    <input type="checkbox" name="checkbox5" value="checkbox">
+                    其他</li>
+                  <li>
+                    <input type="checkbox" name="checkbox5" value="checkbox">
+                    <input type="text" size="14" name="textfield"  value="输入自定义词" class="input_border"/>
+                  </li>
+          </ul>
+          <div class="search_num">搜索量：<a href="#">&lt;5</a><a href="#">5-99</a><a href="#">100-499</a><a href="#">500-999</a><a href="#">1000-4999</a><a href="#">5000-9999</a> <a href="#">10000-20000</a>  <a href="#">&gt;20000</a></div>
+          <div>
+              <div class="add_all">
+                  <span><a onclick="$HaomeitBaidu.display('add_all_hidden','block');"><img src="/static/baiduads2.1/web/images/p/add_all.jpg" class="img_vm"/></a> (共300个关键词)</span>
+              </div>
+              <div  style="position:relative; width:536px;">
+                  <!--弹出框开始-->
+                  <div class="add_all_hidden" style="display:none;" id="add_all_hidden">
+                          <div class="prompt_info_top">
+                            <p class="margin_5">请您确认：</p>
+                            <p class="prompt_close" onclick="$HaomeitBaidu.display('add_all_hidden','none');">&nbsp;</p>
+                          </div>
+                          <div class="prompt_info_center">由于数量限制，本次仅可添加98个关键词，请您确认是否继续。<br /><span class="test_color">小提示：由于单次最多保存100词，建议您先将推荐结果分组，把内容相关，结构相似的关键词添入同一个单元。</span><br /><br /><a class="btn btn_1" onclick="$HaomeitBaidu.display('add_all_hidden','none');"><span>确定</span></a><a class="btn btn_1" onclick="$HaomeitBaidu.display('add_all_hidden','none');"><span>取消</span></a><br /></div>
+                          <div class="prompt_info_bott"></div>
+                  </div>
+                  <!--弹出框结束-->
+              </div>
+         </div>
+</div>

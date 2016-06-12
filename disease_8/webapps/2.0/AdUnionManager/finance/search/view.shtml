@@ -1,0 +1,11 @@
+﻿<div id="recharge_view" style="display:none;">
+<div class="D_box">
+    <div class="d_title"><b><strong>凭证原件</strong></b><span><input name="close" type="image" src="/static/ads_m_1.0/web/images/step_close.gif"></span></div>
+	<div class="main_pad">
+    	<div class="main_title">以下是您的交易信息</div>
+        <div class="main_rcontent">
+        	<img />
+        </div>
+</div>
+</div>
+</div>

@@ -1,0 +1,56 @@
+<div id="order_view_creative" class="set_view_create_cont" style="display:none;">
+    <div class="detailed_title"><b id="ovc_tt1">审核创意</b><b id="ovc_tt2" style="display:none;">查看创意</b><span><input type="image" style="cursor:pointer;" onclick="$UE.close('order_view_creative');" src="/static/ads_m_1.0/web/images/view_close.gif" name="close_bnt"></span></div>
+    <div class="orview_creative_p">
+    	<div class="pad_new">
+            <div class="set_cont_top">
+                <a href="#" target="_blank"><img src="/static/ads_m_1.0/web/images/58-com3_01.jpg" width="170" height="140" class="set_cont_top_img1" /></a>
+                <dl id="view_create">
+                    <dt><a href="#" target="_blank">创意标题创意标题创意标题创意标题创意标题创意</a></dt>
+                    <dd class="set_cont_top_ms">创意描述创意描述创意描述创意描述创意描述创意描述创意描述创意描述创意描述创意描述创意描述创意描述创意描述创意描述创意描述创意描述创意描述创意描述创意描述创意描述创意描述创意描...<a href="#" target="_blank">更多</a></dd>
+                    <dd>电话：<span>010-66018999</span></dd>
+                    <dd>官网：<a href="#" target="_blank">http://www.sg120.com</a></dd>
+                </dl>
+                <dl id="cancel_view_create" style="display:none;">
+                    <dt><a href="#" target="_blank">修改前创意修改前创意修改前创意修改前创意修改前创意</a></dt>
+                    <dd class="set_cont_top_ms">修改前创意修改前创意修改前创意修改前创意修改前创意修改前创意修改前创意修改前创意修改前创意修改前创意修改前创意修改前创意修改前创意修改前创意修改前创意修改前创意修改前创意修改前创意修...<a href="#" target="_blank">更多</a></dd>
+                    <dd>电话：<span>010-66018999</span></dd>
+                    <dd>官网：<a href="#" target="_blank">http://www.sg120.com</a></dd>
+                </dl>
+                <a class="online_zx" href="#" target="_blank"><img src="/static/ads_m_1.0/web/images/58-ad03.gif" width="89" height="23"/></a>
+                <a class="appointment_gh" href="#" target="_blank"><img src="/static/ads_m_1.0/web/images/58-ad04.gif" width="89" height="23"/></a>
+            </div>
+            <div class="set_cont_bottom">
+                <a href="#" target="_blank"><img src="/static/ads_m_1.0/web/images/58-com3_02.jpg" width="120" height="90" /></a>
+                <a href="#" target="_blank"><img src="/static/ads_m_1.0/web/images/58-com3_02.jpg" width="120" height="90"/></a>
+                <a href="#" target="_blank"><img src="/static/ads_m_1.0/web/images/58-com3_02.jpg" width="120" height="90"/></a>
+                <a href="#" target="_blank"><img src="/static/ads_m_1.0/web/images/58-com3_02.jpg" width="120" height="90"/></a>
+                <a href="#" target="_blank"><img src="/static/ads_m_1.0/web/images/58-com3_02.jpg" width="120" height="90" class="set_cont_bottom_img1"/></a>
+            </div>
+        </div>
+        <!-- 按钮 -->
+        <div id="set_view_create1" align="center" class="check_btn">
+            <ol>
+                <li class="wm_dsp_li">
+                    <a href="javascript:$UE.alert('审核通过成功！','$UE.close(\'order_view_creative\')');">通过</a>
+                    <a href="javascript:$UE.close('order_view_creative');$UE.open('view_refuse2');">拒绝</a>
+                </li>
+            </ol>
+        </div>
+        <div id="set_view_create2" align="center" style="display: block;" class="check_btn">
+            <ol>
+                <li class="wm_dsp_li"><a href="javascript:$UE.close('order_view_creative');$UE.open('view_refuse2');">拒绝</a><a href="javascript:$UE.close('order_view_creative');">关闭</a></li>
+            </ol>
+        </div>
+        <div id="set_view_create3" align="center" style="display: block;" class="check_btn">
+            <ol>
+                <li class="wm_dsp_li"><a href="javascript:$UE.alert('审核通过成功！','$UE.close(\'order_view_creative\')');">通过</a><a href="javascript:$UE.close('order_view_creative');">关闭</a></li>
+            </ol>
+        </div>
+        <div id="set_view_create4" align="center" style="display: block;" class="check_btn">
+            <ol>
+                <li class="wm_dsp_li"><a href="javascript:$UE.open('view_address')">查看地址</a><a href="javascript:$UE.alert('验证成功','$UE.close(\'order_view_creative\')');">重新验证</a></li>
+            </ol>
+        </div>
+    
+    </div>
+</div>

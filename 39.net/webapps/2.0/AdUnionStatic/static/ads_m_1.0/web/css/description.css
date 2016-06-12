@@ -1,0 +1,25 @@
+@charset "utf-8";
+/* CSS Document */
+/* s_description 描述 start */
+.s_description{ width:978px;border:1px solid #eff0f0; overflow:hidden; margin:5px 5px 0px 5px !important;}
+.s_description ul { overflow:hidden; width:960px;}
+.s_description ul li{ height:22px; line-height:22px; padding-left:10px;}
+.bg_row1{ background:url(/static/ads_m_1.0/web/images/pub_bg.gif) repeat-x 0 -450px; }
+.bg_row2{ background:url(/static/ads_m_1.0/web/images/pub_bg.gif) repeat-x 0 -350px; }
+.bg_row3{ background:url(/static/ads_m_1.0/web/images/pub_bg.gif) repeat-x 0 -250px; }
+.bg_row4{ background:url(/static/ads_m_1.0/web/images/pub_bg.gif) repeat-x 0 -100px; }
+.bg_row5{ background:url(/static/ads_m_1.0/web/images/pub_bg.gif) repeat-x 0 -500px; }
+s{ text-decoration:none;}
+.s_description ul li.w300{ width:300px; float:left;}
+.s_description ul li.w400{ width:400px; float:left;}
+/* s_description 描述 end */
+/* 返回 start */
+.s_description ul li b{display:block; width:62px; height:19px;background:url(/static/ads_m_1.0/web/images/icon.gif) no-repeat 0 -150px;}
+.s_description ul li b a:link,.s_description ul li b a:visited{ color:#000; display:block; width:62px; height:20px; text-align:center; line-height:20px;}
+.s_description ul li b a:hover{color:#ab0000;text-decoration:none; display:block; width:62px; height:20px;}
+/* 返回 end */
+/* linav 创意管理的下拉界面 start */
+.s_content ul.linav{ background:#f2f3f3;}
+.s_content ul.linav b{ font-weight:normal;}
+.brown_bg{ background:#e3e4e4;}
+/* linav 创意管理的下拉界面 end */

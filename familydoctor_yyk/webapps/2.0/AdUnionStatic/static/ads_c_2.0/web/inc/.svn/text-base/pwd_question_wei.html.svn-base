@@ -1,0 +1,93 @@
+<div class="update_box" id="pwd_question_wei" style="display:none;">
+  <div class="update_title"><b id="q_wei_name">设置密保问题</b><span><input name="close_bnt" type="image" src="/static/ads_c_2.0/web/images/step_close.gif" onClick="$UE.close('pwd_question_wei');" style="cursor:pointer;"></span></div>
+  <div class="update_main">
+  	<div class="update_cont">
+    	<p id="update_account_pwd_step2" style="display:none;"><span>1.密保问题验证</span> > <span class="light_blue">2.修改密码</span></p>
+    	<p class="gray">您可以通过密保问题找回密码，为了更好地保证您的账户安全，您必须同时设置三个密保问题</p>
+ <!-- 第一行--> 
+        <div class="row_01">
+            <div class="update_cont_lf">密保问题：</div>
+            <div class="update_cont_rg">
+                 <select name="pwd_p1" class="u_input_01">
+                  <option value="1">请选择密保问题</option>
+                  <option value="2">您父亲的全名?</option>
+                  <option value="3">您母亲的全名?</option>
+                  <option value="4">您配偶的全名?</option>
+                  <option value="5">您父亲的生日?</option>
+                  <option value="6">您母亲的生日?</option>
+                  <option value="7">您初中最好朋友的生日?</option>
+                  <option value="8">您初中最好朋友的全名?</option>
+                  <option value="9">您就读的小学的全名?</option>
+                  <option value="10">您就读的初中的全名?</option>
+                  <option value="11">您身份证的最后八位?</option>
+                </select>
+            </div>
+        </div>
+ <!-- 第二行--> 
+        <div class="row_01">
+            <div class="update_cont_lf">密保答案：</div>
+            <div class="update_cont_rg">
+            	<input name="" type="text" class="u_input_01"/><span class="gray">不能超过10个汉字</span>
+            </div>
+        </div>
+ <!-- 第三行--> 
+        <div class="row_01">
+            <div class="update_cont_lf">密保问题：</div>
+            <div class="update_cont_rg">
+                 <select name="pwd_p2" class="u_input_01">
+                  <option value="1">请选择密保问题</option>
+                  <option value="2">您父亲的全名?</option>
+                  <option value="3">您母亲的全名?</option>
+                  <option value="4">您配偶的全名?</option>
+                  <option value="5">您父亲的生日?</option>
+                  <option value="6">您母亲的生日?</option>
+                  <option value="7">您初中最好朋友的生日?</option>
+                  <option value="8">您初中最好朋友的全名?</option>
+                  <option value="9">您就读的小学的全名?</option>
+                  <option value="10">您就读的初中的全名?</option>
+                  <option value="11">您身份证的最后八位?</option>
+                </select>
+            </div>
+        </div>
+ <!-- 第四行--> 
+        <div class="row_01">
+            <div class="update_cont_lf">密保答案：</div>
+            <div class="update_cont_rg">
+            	<input name="" type="text" class="u_input_01"/><span class="gray">不能超过10个汉字</span>
+            </div>
+        </div>
+ <!-- 第五行--> 
+        <div class="row_01">
+            <div class="update_cont_lf">密保问题：</div>
+            <div class="update_cont_rg">
+                 <select name="pwd_p3" class="u_input_01">
+                  <option value="1">请选择密保问题</option>
+                  <option value="2">您父亲的全名?</option>
+                  <option value="3">您母亲的全名?</option>
+                  <option value="4">您配偶的全名?</option>
+                  <option value="5">您父亲的生日?</option>
+                  <option value="6">您母亲的生日?</option>
+                  <option value="7">您初中最好朋友的生日?</option>
+                  <option value="8">您初中最好朋友的全名?</option>
+                  <option value="9">您就读的小学的全名?</option>
+                  <option value="10">您就读的初中的全名?</option>
+                  <option value="11">您身份证的最后八位?</option>
+                </select>
+            </div>
+        </div>
+ <!-- 第六行--> 
+        <div class="row_01">
+            <div class="update_cont_lf">密保答案：</div>
+            <div class="update_cont_rg">
+            	<input name="" type="text" class="u_input_01"/><span class="gray">不能超过10个汉字</span>
+            </div>
+        </div>
+        <p class="up_red1">您选择的密保问题出现重复，请修改</p>
+  	</div>
+    <div class="a_btn" align="center">
+    	<p class="one_btn">
+            <a onclick="javascript:$UE.close('pwd_question_wei');$UE.alert('保存成功！');"><span>确定</span></a>
+        </p>
+    </div>
+  </div>
+</div>

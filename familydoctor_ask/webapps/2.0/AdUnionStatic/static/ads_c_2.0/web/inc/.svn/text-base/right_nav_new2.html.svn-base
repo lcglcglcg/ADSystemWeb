@@ -1,0 +1,10 @@
+<div class="unit">
+	<ul>
+    	<li><a onclick="clickqie(1,'titlec','contc','u_curr',4)" id="titlec1" class="u_curr">投放中</a></li>
+    	<li><a onclick="clickqie(2,'titlec','contc','u_curr',4)" id="titlec2">已结束</a></li>
+    	<li><a onclick="clickqie(3,'titlec','contc','u_curr',4)" id="titlec3">待投放</a></li>
+    	<li><a onclick="clickqie(4,'titlec','contc','u_curr',4)" id="titlec4">申请中</a></li>
+	</ul>
+   <a href="apply_ad.shtml" target="_blank" class="btn_yellow" style="position:absolute; right:10px;">申请广告</a>
+</div>
+

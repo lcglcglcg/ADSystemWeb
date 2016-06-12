@@ -1,0 +1,28 @@
+@charset "utf-8";
+/* add by WangZhe for page css */
+.talk_list_contentB{ height:35px;width:60%; float:right;}
+
+.talk_list_content ul li{ clear:both;overflow:hidden;line-height:25px; height:25px; padding-top:0px;}
+.talk_list_cTimeC ul li div{ border-left:1px #cecdce solid; text-align:center;line-height:25px; height:25px; width:100%;}
+
+.talk_list_cBL{width:8%; float:left; padding-left:5px; color:#F00; font-weight:bold; padding-top:6px;}
+.talk_list_cBR{max-width:90%; float:right; padding-right:10px;padding-top:8px; height:25px; overflow:hidden;}
+
+.talk_list_cBR ul{ display:block;}
+.talk_list_cBR ul li.page_lf{ float:left; height:24px; line-height:24px;}
+
+.talk_list_cBR ul li.li_pad10{padding-right:10px;}
+.talk_list_cBR ul li.li_mar10{margin-right:10px;}
+.talk_list_cBR ul li.li_mar5{margin-right:5px;}
+.talk_list_cBR ul li.li_lmar5{margin-left:5px; }
+.talk_list_cBR ul li .input_w100{ width:30px; height:16px; color:#000; margin:-1px 5px 0 3px;}
+.talk_list_cBR ul li a{ margin:0 2px; color:#00F;height:24px; line-height:24px;}
+.talk_list_cBR ul li a:hover{ color:#F00;}
+.talk_list_cBR ul li.li_go{margin:0;}
+
+.talk_list_cBR ul li.li_go a.mar_none{ display:block; background:url(/static/ads_m_1.0/web/images/btn_bg.gif) left 0; padding-left:5px;height:24px; line-height:24px; _width:12px;}
+.talk_list_cBR ul li.li_go a.mar_none:hover{ background:url(/static/ads_m_1.0/web/images/btn_bg.gif) left -48px; color:#00F; text-decoration:none;}
+.talk_list_cBR ul li.li_go a.mar_none span{display:block;  background:url(/static/ads_m_1.0/web/images/btn_bg.gif) right 0; padding-right:5px; height:24px; line-height:24px; _width:12px;}
+.talk_list_cBR ul li.li_go a.mar_none:hover span{ background:url(/static/ads_m_1.0/web/images/btn_bg.gif) right -48px; color:#00F; text-decoration:none;}
+
+.talk_list_cBR ul li .select_p1{ width:90px;}

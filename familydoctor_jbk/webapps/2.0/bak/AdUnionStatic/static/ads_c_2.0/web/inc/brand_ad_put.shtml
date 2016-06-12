@@ -1,0 +1,199 @@
+<div style="position:relative;display:block;" id="contc1">
+     <div class="program_div">
+ 	    <div class="table_up_select">
+        <div class="rrr">
+          <div class="s_left">
+            <ul class="s_ul">
+              <li class="s_li_new2">投放科室：</li>
+              <li class="s_li_new2">
+                    <a onclick="$UE.open('brand_select_keshi');"><img src="/static/ads_c_2.0/web/images/select_kq_01.jpg"/></a>
+              </li>
+              <li class="s_li">投放区域：</li>
+              <li class="s_li_new2">
+                    <a onclick="$UE.open('brand_select_region');"><img src="/static/ads_c_2.0/web/images/select_kq_02.jpg"/></a>
+              </li>
+              <li class="s_li">创意状态：</li>
+              <li class="s_li_new2">
+                    <select name="tf1" class="s_input_01">
+                      <option value="全部状态">全部状态</option>
+                      <option value="未设置">未设置</option>
+                      <option value="待审核">待审核</option>
+                      <option value="审核通过">审核通过</option>
+                      <option value="审核拒绝">审核拒绝</option>
+                    </select>
+              </li>
+              <li class="s_li">投放时间：</li>
+              <li class="s_li_new2">
+                <input name="time" type="text" class="pc_01" value="2015/01/01-2015/01/31" /><input name="calendar" type="image" src="/static/ads_c_2.0/web/images/dataImg.jpg" class="pc_img">
+              </li>
+              <li class="s_li"> <a href="#" class="btn"><span>查询</span></a> </li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+      
+ <!--表格内容 开始-->
+      	<div class="table_list">
+<!--            <div class="s_button">
+            <div class="rrr">
+              <ul class="s_ul s_ul_pad">
+                <li class="s_li"> <a class="btn" href="javascript:$UE.confirm('您确定要删除选中的推广计划吗？','删除成功！');"><span>删除</span></a> </li>
+                <li class="s_li"> <a class="btn" href="javascript:$UE.confirm('您确定要暂停选中的推广计划吗？','暂停成功！');"><span>暂停</span></a> </li>
+                <li class="s_li"> <a class="btn" id="download_btn" href="javascript:$UE.confirm('您确定要启用选中的推广计划吗？','启用成功！');"><span>启用</span></a> </li>
+             </ul>
+    
+            </div>
+          </div>
+-->           <div class="loading" style="display:none;"><img src="/static/ads_c_2.0/web/images/index_loading1.gif"/><div class="loading_text">数据正在加载，请稍后...</div></div>
+          
+        	<table width="100%">
+              <tr class="table_title">
+                <th class="table_wd text_center">
+                    <a href="#"><span>订单编号</span></a>
+                </th>
+                <th class="table_wd text_center">
+                	<a href="#"><span>投放科室</span></a>
+                </th>
+                <th class="table_wd thbg_curr">
+                	<a href="#"><span class="top_curr">投放地域</span></a>
+                </th>
+                <th class="table_wd thbg_curr">
+                	<a href="#"><span class="bottom_curr">投放时长</span></a>
+                </th>
+                <th class="table_wd text_center">
+                	<a href="#"><span>开始日期</span></a>
+                </th>
+                <th class="table_wd text_center">
+                	<a href="#"><span>结束日期</span></a>
+                </th>
+                <th class="table_wd text_center">
+                	<a href="#"><span>广告消费</span></a>
+                </th>
+                <th class="table_wd text_center">
+                	<a href="#"><span>创意状态</span></a>
+                </th>
+                <td class="table_we text_center_bg">操作</td>
+              </tr>
+              <tr style="display:none;">
+                <td colspan="12"><div class="no_data">没有符合条件的数据</div></td>
+              </tr>
+              <tr id="key_cha1" class="" onmousemove="idBg(1,'key_cha');"onmouseout="idNoBg(1,'key_cha');">
+                <td class="table_wd text_center"><span class="figure">fd84378438</span></td>
+                <td class="table_wd text_center"><a class="p_a_style1" onclick="$UE.open('brand_keshi');">男科></a></td>
+                <td class="table_wd text_center">全部区域</td>
+                <td class="table_wd text_center"><span class="figure">30天</span></td>
+                <td class="table_wd text_center"><span class="figure">2014-12-1</span></td>
+                <td class="table_wd text_center"><span class="figure">2015-12-30</span></td>
+                <td class="table_wd text_center"><span class="figure">￥5000.00</span></td>
+                <td class="table_wd text_center green">审核通过</td>
+                <td class="table_wd text_center"><a class="p_a_style1" onclick="$UE.open('set_creative');">创意设置</a><a onclick="$UE.open('new_fd');$UE.display('dai_new_fd','none');$UE.display('normal_new_fd','block');" class="new_img"><span><img src="/static/ads_c_2.0/web/images/new_img1.jpg" width="16" height="16"/></span></a></td>
+              </tr>
+              <tr id="key_cha2" onmousemove="idBg(2,'key_cha');"onmouseout="idNoBg(2,'key_cha');">
+                <td class="table_wd text_center"><span class="figure">fd84378438</span></td>
+                <td class="table_wd text_center"><a class="p_a_style1" onclick="$UE.open('brand_keshi');">男科></a></td>
+                <td class="table_wd text_center"><a onClick="$UE.open('p_some_region');" class="p_a_style1">部分地域></a></td>
+                <td class="table_wd text_center"><span class="figure">30天</span></td>
+                <td class="table_wd text_center"><span class="figure">2014-12-1</span></td>
+                <td class="table_wd text_center"><span class="figure">2015-12-30</span></td>
+                <td class="table_wd text_center"><span class="figure">￥5000.00</span></td>
+                <td class="table_wd text_center green">审核通过</td>
+                <td class="table_wd text_center"><a class="p_a_style1" onclick="$UE.open('set_creative');">创意设置</a><a onclick="$UE.open('new_fd');$UE.display('dai_new_fd','none');$UE.display('normal_new_fd','block');" class="new_img"><span><img src="/static/ads_c_2.0/web/images/new_img1.jpg" width="16" height="16"/></span></a></td>
+              </tr>
+              <tr id="key_cha3" class="key_ch">
+                <td class="table_wd text_center"><span class="figure">fd84378438</span></td>
+                <td class="table_wd text_center"><a class="p_a_style1" onclick="$UE.open('brand_keshi');">男科></a></td>
+                <td class="table_wd text_center">全部区域</td>
+                <td class="table_wd text_center"><span class="figure">30天</span></td>
+                <td class="table_wd text_center"><span class="figure">2014-12-1</span></td>
+                <td class="table_wd text_center"><span class="figure">2015-12-30</span></td>
+                <td class="table_wd text_center"><span class="figure">￥5000.00</span></td>
+                <td class="table_wd text_center green">审核通过</td>
+                <td class="table_wd text_center"><a class="p_a_style1" onclick="$UE.open('set_creative');">创意设置</a><a onclick="$UE.open('new_fd');$UE.display('dai_new_fd','none');$UE.display('normal_new_fd','block');" class="new_img"><span><img src="/static/ads_c_2.0/web/images/new_img1.jpg" width="16" height="16"/></span></a></td>
+              </tr>
+              <tr id="key_cha4" onmousemove="idBg(4,'key_cha');"onmouseout="idNoBg(4,'key_cha');">
+                <td class="table_wd text_center"><span class="figure">fd84378438</span></td>
+                <td class="table_wd text_center"><a class="p_a_style1" onclick="$UE.open('brand_keshi');">男科></a></td>
+                <td class="table_wd text_center"><a onClick="$UE.open('p_some_region');" class="p_a_style1">部分地域></a></td>
+                <td class="table_wd text_center"><span class="figure">30天</span></td>
+                <td class="table_wd text_center"><span class="figure">2014-12-1</span></td>
+                <td class="table_wd text_center"><span class="figure">2015-12-30</span></td>
+                <td class="table_wd text_center"><span class="figure">￥5000.00</span></td>
+                <td class="table_wd text_center green">审核通过</td>
+                <td class="table_wd text_center"><a class="p_a_style1" onclick="$UE.open('set_creative');">创意设置</a><a onclick="$UE.open('new_fd');$UE.display('dai_new_fd','none');$UE.display('normal_new_fd','block');" class="new_img"><span><img src="/static/ads_c_2.0/web/images/new_img1.jpg" width="16" height="16"/></span></a></td>
+              </tr>
+              <tr id="key_cha5" onmousemove="idBg(5,'key_cha');"onmouseout="idNoBg(5,'key_cha');">
+                <td class="table_wd text_center"><span class="figure">fd84378438</span></td>
+                <td class="table_wd text_center"><a class="p_a_style1" onclick="$UE.open('brand_keshi');">男科></a></td>
+                <td class="table_wd text_center">全部区域</td>
+                <td class="table_wd text_center"><span class="figure">30天</span></td>
+                <td class="table_wd text_center"><span class="figure">2014-12-1</span></td>
+                <td class="table_wd text_center"><span class="figure">2015-12-30</span></td>
+                <td class="table_wd text_center"><span class="figure">￥5000.00</span></td>
+                <td class="table_wd text_center orange"><img src="/static/ads_c_2.0/web/images/dai_img1.png" width="12" height="10"/> 待审核</td>
+                <td class="table_wd text_center"><a class="p_a_style1" href="#">创意设置</a><a onclick="$UE.open('new_fd');$UE.display('dai_new_fd','block');$UE.display('normal_new_fd','none');" class="new_img"><span><img src="/static/ads_c_2.0/web/images/new_img1.jpg" width="16" height="16"/></span></a></td>
+              </tr>
+              <tr id="key_cha6" onmousemove="idBg(6,'key_cha');"onmouseout="idNoBg(6,'key_cha');">
+                <td class="table_wd text_center"><span class="figure">fd84378438</span></td>
+                <td class="table_wd text_center"><a class="p_a_style1" onclick="$UE.open('brand_keshi');">男科></a></td>
+                <td class="table_wd text_center"><a onClick="$UE.open('p_some_region');" class="p_a_style1">部分地域></a></td>
+                <td class="table_wd text_center"><span class="figure">30天</span></td>
+                <td class="table_wd text_center"><span class="figure">2014-12-1</span></td>
+                <td class="table_wd text_center"><span class="figure">2015-12-30</span></td>
+                <td class="table_wd text_center"><span class="figure">￥5000.00</span></td>
+                <td class="table_wd text_center orange">待审核</td>
+                <td class="table_wd text_center"><a class="p_a_style1" onclick="$UE.open('set_creative');">创意设置</a><a onclick="$UE.open('new_fd');$UE.display('dai_new_fd','none');$UE.display('normal_new_fd','block');" class="new_img"><span><img src="/static/ads_c_2.0/web/images/new_img1.jpg" width="16" height="16"/></span></a></td>
+              </tr>
+              <tr>
+                <td class="table_wd text_center"><span class="figure">fd84378438</span></td>
+                <td class="table_wd text_center"><a class="p_a_style1" onclick="$UE.open('brand_keshi');">男科></a></td>
+                <td class="table_wd text_center">全部区域</td>
+                <td class="table_wd text_center"><span class="figure">30天</span></td>
+                <td class="table_wd text_center"><span class="figure">2014-12-1</span></td>
+                <td class="table_wd text_center"><span class="figure">2015-12-30</span></td>
+                <td class="table_wd text_center"><span class="figure">￥5000.00</span></td>
+                <td class="table_wd text_center orange">待审核</td>
+                <td class="table_wd text_center"><a class="p_a_style1" onclick="$UE.open('set_creative');">创意设置</a><a onclick="$UE.open('new_fd');$UE.display('dai_new_fd','none');$UE.display('normal_new_fd','block');" class="new_img"><span><img src="/static/ads_c_2.0/web/images/new_img1.jpg" width="16" height="16"/></span></a></td>
+              </tr>
+              <tr>
+                <td class="table_wd text_center"><span class="figure">fd84378438</span></td>
+                <td class="table_wd text_center"><a class="p_a_style1" onclick="$UE.open('brand_keshi');">男科></a></td>
+                <td class="table_wd text_center"><a onClick="$UE.open('p_some_region');" class="p_a_style1">部分地域></a></td>
+                <td class="table_wd text_center"><span class="figure">30天</span></td>
+                <td class="table_wd text_center"><span class="figure">2014-12-1</span></td>
+                <td class="table_wd text_center"><span class="figure">2015-12-30</span></td>
+                <td class="table_wd text_center"><span class="figure">￥5000.00</span></td>
+                <td class="table_wd text_center red"><img src="/static/ads_c_2.0/web/images/dai_img1.png" width="12" height="10"/> 审核拒绝</td>
+                <td class="table_wd text_center"><a class="p_a_style1" href="#">创意设置</a><a onclick="$UE.open('new_fd');$UE.display('dai_new_fd','block');$UE.display('normal_new_fd','none');" class="new_img"><span><img src="/static/ads_c_2.0/web/images/new_img1.jpg" width="16" height="16"/></span></a></td>
+              </tr>
+              <tr>
+                <td class="table_wd text_center"><span class="figure">fd84378438</span></td>
+                <td class="table_wd text_center"><a class="p_a_style1" onclick="$UE.open('brand_keshi');">男科></a></td>
+                <td class="table_wd text_center">全部区域</td>
+                <td class="table_wd text_center"><span class="figure">30天</span></td>
+                <td class="table_wd text_center"><span class="figure">2014-12-1</span></td>
+                <td class="table_wd text_center"><span class="figure">2015-12-30</span></td>
+                <td class="table_wd text_center"><span class="figure">￥5000.00</span></td>
+                <td class="table_wd text_center red">审核拒绝</td>
+                <td class="table_wd text_center"><a class="p_a_style1" onclick="$UE.open('set_creative');">创意设置</a><a onclick="$UE.open('new_fd');$UE.display('dai_new_fd','none');$UE.display('normal_new_fd','block');" class="new_img"><span><img src="/static/ads_c_2.0/web/images/new_img1.jpg" width="16" height="16"/></span></a></td>
+              </tr>
+              <tr>
+                <td class="table_wd text_center"><span class="figure">fd84378438</span></td>
+                <td class="table_wd text_center"><a class="p_a_style1" onclick="$UE.open('brand_keshi');">男科></a></td>
+                <td class="table_wd text_center"><a onClick="$UE.open('p_some_region');" class="p_a_style1">部分地域></a></td>
+                <td class="table_wd text_center"><span class="figure">30天</span></td>
+                <td class="table_wd text_center"><span class="figure">2014-12-1</span></td>
+                <td class="table_wd text_center"><span class="figure">2015-12-30</span></td>
+                <td class="table_wd text_center"><span class="figure">￥5000.00</span></td>
+                <td class="table_wd text_center">未设置</td>
+                <td class="table_wd text_center"><a class="p_a_style1" onclick="$UE.open('set_creative');">创意设置</a></td>
+              </tr>
+          </table>
+ <!--表格内容 开始-->
+ 
+        </div>
+      </div>
+   <!--分页开始-->
+	<!--#include virtual="/static/ads_c_2.0/web/inc/brand_page.shtml"-->
+    <!--分页结束-->
+</div>

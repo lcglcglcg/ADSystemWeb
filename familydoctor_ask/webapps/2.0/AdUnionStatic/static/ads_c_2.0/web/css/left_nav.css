@@ -1,0 +1,52 @@
+@charset "utf-8";
+*{margin:0px;padding:0px;}
+body{font:"宋体";font-size:12px;color:#000000;background-color:#FFF;}
+img{ border:none;}
+/*我的账户展开图*/
+.le_nav_border{float:left;border-right:#dfdfdf solid 1px; overflow-x:hidden; overflow-y:auto;display:inline; height:100%; }
+.search{ border-bottom: 1px solid #EDEDED;padding: 18px 0 10px 10px;width: 200px; height:20px;}
+.search .ser_input{border: 1px solid #DFDFDF;height: 20px;padding-right: 26px;width: 160px;padding-left: 5px;}
+.search a.ser_btn{ display:block; background: url("/static/ads_c_2.0/web/images/esui_reset.png?v=1368772885") no-repeat scroll -14px 1px transparent;cursor: pointer;height: 20px;position:relative;right: 0;top: -20px;left:170px;width: 26px;}
+
+.l_nav_new_hidden{ width:25px;float:left; cursor:pointer;margin-left:15px;}
+
+.l_nav_new{width:198px;float:left;overflow:hidden;display:inline;margin-left:15px;}
+.l_nav{width:198px;height:500px;float:left;overflow:hidden; overflow-y:scroll;}
+.ul{ list-style-type:none; width:100%; float:left;}
+.ul a{ text-decoration:none; color:#4f4f4f; display:block; width:100%; height:19px; padding-top:1px;}
+.ul a:hover,.ul a.left_nav_curr{ background:#e4eafa; height:19px; padding-top:1px;}
+.STYLE1 {color:#010101;font-size: 16px;font-weight: bold;padding-left:2px;height:41px; line-height:41px;}
+.ul_li{list-style-type:none;width:100%;line-height:20px;}
+.p_a{font-size:13px;color:#4b4b4b;margin-top:15px; text-decoration:none; padding-left:2px;}
+
+/*new css*/
+.HaveBg{background:#e4eafa; font-weight:bold; font-size:13px; overflow:hidden;}
+.HaveBg_img{background:#e4eafa; width:100%; float:left; padding-top:2px; height:18px; font-weight:bold;}
+.ul_li span{ display:block; float:left;padding-left:14%;_padding-left:25px; *+padding-left:25px;}
+.ul_li_new a{ padding-left:10%; width:90%;}
+.ul_li_new span{ padding-left:0px;width:136px!important;}
+.ul_li_all{padding:5px 0px 0px 6px; cursor:pointer}
+.ul .ul_li_img a{ display:block; width:180px;line-height:22px; padding-left:10px; height:22px;overflow:hidden; cursor:pointer;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+.ul .ul_li_img a img{ margin-top:3px; float:left;}
+.ul .ul_li_img a span{ float:left;}
+.ul_li a span.nav_name,.ul .ul_li_img a span.nav_name{display:block; height:22px; line-height:22px; cursor:pointer;width:82%;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+.ul_li_img{ margin-top:1px;}
+.ul a .title_onclick{width:20px;float:left;}
+.ul .ul_li_img a:hover{ background:#e4eafa; }
+.ul .ul_li_img img{float:left; display:block; padding-right:3px;}
+.ul_li_new img{ display:block; float:left; margin-top:3px; padding-right:3px;}
+.STYLE1 span{ display:block;}
+.STYLE1_name{ padding-left:18px; background:url('/static/ads_c_2.0/web/images/p/li3_new.jpg') no-repeat 0 center; height:41px; width:130px; float:left;}
+.STYLE1_name a{font-size: 16px; float:left; color:#000;display:block; height:36px; cursor:pointer;width:95%;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+.STYLE1_img{ padding:7px 5px 0px 0px; float:right; cursor:pointer}
+.STYLE1_img img{ margin-left:5px; margin-top:5px;}
+.STYLE1_result{ width:145px; font-size:12px; float:left; font-weight:normal; }
+.STYLE1_result s{ text-decoration:none;}
+.STYLE1_result a{ color:#00F; margin-left:40px;}
+
+.ul li{margin-top:1px; height:20px; overflow:hidden;}
+.ul li span b{ color:#F00; font-weight:normal}
+.no_cursor{ cursor:text}
+.ul_li a{ cursor:text }
+.ul_li a span.{ display:block; height:22px; cursor:pointer;width:97%;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+.ul_li_img{ margin-top:1px;}

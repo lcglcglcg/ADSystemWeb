@@ -1,0 +1,26 @@
+<div class="gz_alter_box" id="ggao_tan" style="display:none;">
+  <div class="gz_alter_title"><b>公告信息</b><span><input name="close_bnt" type="image" src="/static/ads_m_1.0/web/images/view_close.gif" onClick="$UE.close('ggao_tan');" style="cursor:pointer;"></span></div>
+  <div class="gz_alter_main">
+  	<div class="gz_alter_cont">
+    	<div class="gz_congt_new">
+        	<ul>
+            	<li class="gz_new_lilf"><s class="red">*</s> 发布日期：</li>
+                <li class="gz_new_lirg">2012-12-12</li>
+            </ul>
+        </div>
+    	<div class="gz_congt_new">
+        	<ul>
+            	<li class="gz_new_lilf"><s class="red">*</s> 公告标题：</li>
+                <li class="gz_new_lirg">升级公告(2012年12月12日)</li>
+            </ul>
+        </div>
+    	<div class="gz_congt_new">
+        	<ul>
+            	<li class="gz_new_lilf"><s class="red">*</s> 公告内容：</li>
+                <li class="gz_new_lirg">定于(2012年12月12日)，对现有系统进行升级操作，升级过程中服务会停止服务2个小时(21:00-23:00),届时请大家配合！</li>
+            </ul>
+        </div>
+  	</div>
+<div class="gz_btn" align="center"><ul class="gz_new_ul"><li><a onClick="$UE.close('ggao_tan');" >关闭</a></li></ul></div>
+  </div>
+</div>

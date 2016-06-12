@@ -1,0 +1,87 @@
+
+<div class="scommon_box" id="set_creative" style="display:none;">
+    <div class="scommon_title" ><p id="step1_name">创意设置</p><a onclick="$UE.close('set_creative');"></a></div>
+    <div class="scommon_main">
+        <div class="step1_cont">
+            <ul class="set_c_style">
+                <li><span class="step1_lf1"><i class="red">* </i>创意标题：</span><span class="step1_rg"><input name="" type="text" class="input_05" value="最多可输入50个字符"/></span></li>
+                <li><span class="step1_lf1"><i class="red">* </i>创意描述：</span><span class="step1_rg"><textarea name="" cols="" rows="" class="input_06">最多可输入230个字符</textarea></span></li>
+                <li><span class="step1_lf1"><i class="red">* </i>访问URL：</span><span class="step1_rg"><input name="" type="text" class="input_07" value="http://"/></span></li>
+                <li class="new_li_w600">
+                    <div class="new_li_lf"><span class="step1_lf1"><i class="red">* </i>电话：</span><span class="step1_rg1"><input name="" type="text" class="input_07" value=""/></span></div>
+                    <div class="new_li_rg"><span class="step1_lf1"><i class="red">* </i>官方网站：</span><span class="step1_rg1"><input name="" type="text" class="input_07" value="http://"/></span></div></li>
+                <li><span class="step1_lf1">在线咨询：</span><span class="step1_rg"><input name="" type="text" class="input_05" value="不设置默认取账户中设置的咨询链接"/></span></li>
+                <li><span class="step1_lf1">预约挂号：</span><span class="step1_rg"><input name="" type="text" class="input_05" value="不设置默认取账户中设置的预约挂号链接"/></span></li>
+                <li><span class="step1_lf1"><i class="red">* </i>焦点图片：</span><span class="step1_rg"><input name="" type="text" class="input_05" value=""/><input type="image" src="/static/ads_c_2.0/web/images/btn_shangc_small.gif" name="" alt=""></span></li>
+                <li><span class="step1_lf1">图片链接：</span><span class="step1_rg"><input name="" type="text" class="input_05" value=""/></span></li>
+                <li class="new_li_w600">
+                    <div class="new_li_lf"><span class="step1_lf1"><i class="red">* </i>图片1：</span><span class="step1_rg1"><input name="" type="text" class="input_07" value=""/><input type="image" src="/static/ads_c_2.0/web/images/btn_shangc_small.gif" name="" alt=""></span></div>
+                    <div class="new_li_rg"><span class="step1_lf1"><i class="red">* </i>图片2：</span><span class="step1_rg1"><input name="" type="text" class="input_07" value=""/><input type="image" src="/static/ads_c_2.0/web/images/btn_shangc_small.gif" name="" alt=""></span></div>
+                </li>
+                <li class="new_li_w600">
+                    <div class="new_li_lf"><span class="step1_lf1">图片链接1：</span><span class="step1_rg1"><input name="" type="text" class="input_07" value=""/></span></div>
+                    <div class="new_li_rg"><span class="step1_lf1">图片链接2：</span><span class="step1_rg1"><input name="" type="text" class="input_07" value=""/><s style=" padding:0 18px;">&nbsp;</s></span></div>
+                </li>
+                <li class="new_li_w600">
+                    <div class="new_li_lf"><span class="step1_lf1"><i class="red">* </i>图片3：</span><span class="step1_rg1"><input name="" type="text" class="input_07" value=""/><input type="image" src="/static/ads_c_2.0/web/images/btn_shangc_small.gif" name="" alt=""></span></div>
+                    <div class="new_li_rg"><span class="step1_lf1"><i class="red">* </i>图片4：</span><span class="step1_rg1"><input name="" type="text" class="input_07" value=""/><input type="image" src="/static/ads_c_2.0/web/images/btn_shangc_small.gif" name="" alt=""></span></div>
+                </li>
+                <li class="new_li_w600">
+                    <div class="new_li_lf"><span class="step1_lf1">图片链接3：</span><span class="step1_rg1"><input name="" type="text" class="input_07" value=""/></span></div>
+                    <div class="new_li_rg"><span class="step1_lf1">图片链接4：</span><span class="step1_rg1"><input name="" type="text" class="input_07" value=""/><s style=" padding:0 18px;">&nbsp;</s></span></div>
+                </li>
+                <li class="new_li_w600">
+                    <div class="new_li_lf"><span class="step1_lf1"><i class="red">* </i>图片5：</span><span class="step1_rg1"><input name="" type="text" class="input_07" value=""/><input type="image" src="/static/ads_c_2.0/web/images/btn_shangc_small.gif" name="" alt=""></span>
+                </div>
+                <li class="new_li_w600">
+                    <div class="new_li_lf"><span class="step1_lf1">图片链接5：</span><span class="step1_rg1"><input name="" type="text" class="input_07" value=""/></span></div>
+                </li>
+                <li class="new_li_w600" style="position:absolute; right:295px; bottom:0;">
+                    <div class="new_li_rg"><span class="step1_rg1"><a href="javascript:$UE.alert('保存成功！','$UE.close(\'set_creative\')');" class="btn" ><span>保存</span></a><i style="display:block; float:left; width:10px;">&nbsp;</i><a href="javascript:$UE.close('set_creative');" class="btn"><span>取消</span></a></span></div>
+                </li>
+           </ul>
+            <div class="set_view_create">
+            	<div class="size_require">
+                	<a id="brand_btn1" onClick="$UE.display('brand_btn2,cancel_view_create_s','block');$UE.display('brand_btn1,view_create_s','none');" class="brand_btn" style="display:block;"><span>预览修改前创意</span></a>
+                	<a id="brand_btn2" onClick="$UE.display('brand_btn1,view_create_s','block');$UE.display('brand_btn2,cancel_view_create_s','none');"  class="brand_btn" style="display:none;"><span>取消预览</span></a>
+                    <dl>
+                    	<dt>尺寸要求：</dt>
+                        <dd>广告位置：715*285</dd>
+                        <dd>大图：170*140</dd>
+                        <dd>小图：120*90</dd>
+                        <dd>标题：最多可输入50个字符</dd>
+                        <dd>创意描述：最多可输入230个字符</dd>
+                    </dl>
+                </div>
+                <div class="set_view_create_contrg">
+                    <div class="set_view_create_cont">
+                        <div class="set_cont_top">
+                            <a href="#" target="_blank"><img src="/static/ads_c_2.0/web/images/58-com3_01.jpg" width="170" height="140" class="set_cont_top_img1" /></a>
+                            <dl id="view_create_s">
+                                <dt><a href="#" target="_blank">创意标题创意标题创意标题创意</a></dt>
+                                <dd class="set_cont_top_ms">创意描述创意描述创意描述创意描述创意描述创意描述创意描述创意描述创意描述创意描述创意描述创意描述创意描述创意描述创意描述创意描述创意描述创意描述创意描述创意描述创意描述创意描...<a href="#" target="_blank">更多</a></dd>
+                                <dd>电话：<span>010-66018999</span></dd>
+                                <dd>官网：<a href="#" target="_blank">http://www.sg120.com</a></dd>
+                            </dl>
+                            <dl id="cancel_view_create_s" style="display:none;">
+                                <dt><a href="#" target="_blank">修改前创意修改前创意修改前创意</a></dt>
+                                <dd class="set_cont_top_ms">修改前创意修改前创意修改前创意修改前创意修改前创意修改前创意修改前创意修改前创意修改前创意修改前创意修改前创意修改前创意修改前创意修改前创意修改前创意修改前创意修改前创意修改前创意修...<a href="#" target="_blank">更多</a></dd>
+                                <dd>电话：<span>010-66018999</span></dd>
+                                <dd>官网：<a href="#" target="_blank">http://www.sg120.com</a></dd>
+                            </dl>
+                            <a class="online_zx" href="#" target="_blank"><img src="/static/ads_c_2.0/web/images/58-ad03.gif" width="89" height="23"/></a>
+                            <a class="appointment_gh" href="#" target="_blank"><img src="/static/ads_c_2.0/web/images/58-ad04.gif" width="89" height="23"/></a>
+                        </div>
+                        <div class="set_cont_bottom">
+                            <a href="#" target="_blank"><img src="/static/ads_c_2.0/web/images/58-com3_02.jpg" width="120" height="90" /></a>
+                            <a href="#" target="_blank"><img src="/static/ads_c_2.0/web/images/58-com3_02.jpg" width="120" height="90"/></a>
+                            <a href="#" target="_blank"><img src="/static/ads_c_2.0/web/images/58-com3_02.jpg" width="120" height="90"/></a>
+                            <a href="#" target="_blank"><img src="/static/ads_c_2.0/web/images/58-com3_02.jpg" width="120" height="90"/></a>
+                            <a href="#" target="_blank"><img src="/static/ads_c_2.0/web/images/58-com3_02.jpg" width="120" height="90" class="set_cont_bottom_img1"/></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

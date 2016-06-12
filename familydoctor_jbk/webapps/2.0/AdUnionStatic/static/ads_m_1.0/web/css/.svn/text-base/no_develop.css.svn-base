@@ -1,0 +1,12 @@
+/* CSS Document */
+/* 审核创意的弹框样式 */
+/* title 标题 */
+.develop_title_box{ width:100%;}
+.develop_title{height:31px; line-height:31px; background:url(/static/ads_m_1.0/web/images/pub_bg.gif) repeat-x 0 -200px; padding-left:15px;}
+.develop_title b{ float:left;}
+.develop_title span{ float:right; padding:7px 10px 0 0;}
+
+/* 查看地址 */
+.no_develop_box{ width:600px; height:120px;background:#FFF; border:1px solid #23b7fa;}
+.develop_main{ padding:10px; text-align:center; line-height:60px; font-size:30px; font-family:"Times New Roman", Times, serif; color:#F00;}
+

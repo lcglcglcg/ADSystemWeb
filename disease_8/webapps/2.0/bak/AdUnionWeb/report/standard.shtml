@@ -1,0 +1,70 @@
+<div class="standard" id="contk1"> 
+  <!-- 时间范围 start -->
+  <div class="row">
+    <div class="standard_lf">时间范围：</div>
+    <div class="standard_rg">
+      <input name="findtime" type="text" class="pc_01" />
+      <input setvalue="day" setlastvalue="0" name="calendar" type="image" src="/static/ads_c_2.0/web/images/dataImg.jpg" class="pc_img">
+    </div>
+  </div>
+  <!-- 时间范围 end --> 
+  
+  <!-- 报告类型 start -->
+  <div class="row">
+    <div class="standard_lf">报告类型：</div>
+    <div class="standard_rg" > <a class="rg_hover" name="reportType">账户报告</a>| <a name="reportType">推广计划报告</a>| <a name="reportType">推广组报告</a>| <a name="reportType">创意报告</a> </div>
+  </div>
+  <!-- 报告类型 end --> 
+  
+  <!-- 投放地域 start -->
+  <div class="row" style="display:none;">
+    <div class="standard_lf">投放地域：</div>
+    <div class="standard_rg"> <a class="rg_hover" name="di_quanbu">全部</a>|<a name="di_quanbu">自定义</a> 
+    
+  <div class="level3_city level3_city_baobiao">
+      <!--#include virtual="/region/region.html"--> </div>
+    </div>
+  </div>
+  <!-- 投放地域 end --> 
+  <!-- 精准定向 start -->
+  <div class="row" style="display:none;" >
+    <div class="standard_lf">精准定向：</div>
+    <div class="standard_rg"> <a name="meitidingxiang" class="rg_hover">媒体定向</a>|<a name="meitidingxiang">行为定向</a>
+      <div name="meitidingxiang_ds" style="display:none;"> <a class="rg_hover" name="meitidingxiang_type">全网</a>|<a  name="meitidingxiang_type">自定义</a> 
+      
+  	<div class="level3_city level3_web_baobiao">
+        <!--#include virtual="/media/media.html"--> </div>
+      </div>
+      <div>
+        <div class="jing_defiend" name="meitidingxiang_ds" style="display:none;">
+          <label>
+            <input name="meitidingxiang_input" type="checkbox" value="1" />
+            定向回头客</label>
+          <br />
+          <label>
+            <input name="meitidingxiang_input" type="checkbox" value="2" />
+            定向搜索行为</label>
+          <br />
+          <label>
+            <input name="meitidingxiang_input" type="checkbox" value="3" />
+            定向浏览行为</label>
+          <br />
+        </div><div class="glance_report"></div>
+      </div>
+    </div>
+  </div>
+  <!-- 精准定向 end --> 
+  <!-- 时间单位 start -->
+  <div class="row">
+    <div class="standard_lf">时间单位：</div>
+    <div class="standard_rg"><a class="rg_hover" name="reportDate">默认</a>|<a name="reportDate">分日</a>|<a name="reportDate">分周</a>|<a name="reportDate">分月</a></div>
+  </div>
+  <!-- 时间单位 end --> 
+  <!-- 标准报告---报告类型对应的按钮 -->
+  <div class="re_btn" id="standard_btn1"> <a style="display:none;" class="btn"><span>查看报告</span></a> <a class="btn"><span>定制报告</span></a> </div>
+  <!-- 报告类型对应的按钮对应的查看报告 --> 
+  <div class="s_download">
+      <p class="s_tishi">报告并非实时数据，系统可能无法为您提供3小时内的数据。</p>
+    </div>
+</div>
+<script language="javascript" src="/static/web/js/page/standard.js"></script>

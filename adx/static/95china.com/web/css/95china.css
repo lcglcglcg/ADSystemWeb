@@ -1,0 +1,67 @@
+@charset "utf-8";
+/* CSS Document */
+body{font-family: "宋体"; margin:0; padding:0;}
+/* 250x250有文字链接的 */
+.china_box{ width:250px; height:250px; background:#fff; position:relative;}
+
+.china_box a{display: inline-block;font-family: "宋体";overflow: hidden;text-align: center;text-decoration: none; float:left; cursor:pointer;color: #fff;}
+.china_box a.block1{background: #4792ff;border:2px solid #4792ff;height: 21px;line-height: 21px;width: 120px;}
+.china_box a.block1:hover{ border:2px solid #4792ff;background:#fff; color:#000;}
+
+.china_box a.block2{background: #71cdc9;border:2px solid #71cdc9;height: 56px;line-height:56px;width: 120px;}
+.china_box a.block2:hover{ border:2px solid #71cdc9;background:#fff; color:#000;}
+
+.china_box a.block3{background: #ad68d7;border:2px solid #ad68d7;height: 47px;line-height: 47px;width:245px;}
+.china_box a.block3:hover{ border:2px solid #ad68d7;background:#fff; color:#000;}
+
+.china_box a.block4{background: #71cdc9;border:2px solid #71cdc9;height: 47px;line-height:47px;width: 120px;}
+.china_box a.block4:hover{ border:2px solid #71cdc9;background:#fff; color:#000;}
+
+.china_box a.font13{font-size: 13px; }
+.china_box a.font15{font-size: 15px; }
+.china_box a.font23{font-size: 23px;}
+.china_box a.font24{font-size: 24px;}
+.china_box a.font16{font-size: 16.8px;}
+
+.china_box a.po1_t0f0{ position:absolute; top:0; left:0;}
+.china_box a.po1_t0fn{ position:absolute; top:0; left:125px;}
+.china_box a.po1_tnf0{ position:absolute; top:26px; left:0; }
+.china_box a.po1_tn1f0{ position:absolute; top:104px; left:125px;}
+.china_box a.po1_tn1fn1{ position:absolute; top:78px; left:125px;}
+.china_box a.po2_t0f0{ position:absolute; top:0; left:0;}
+.china_box a.po2_tnf0{ position:absolute; top:60px; left:0;}
+.china_box a.po2_tnfn{ position:absolute; top:60px; left:106px;}
+.china_box a.po1_tn2f0{ position:absolute; top:78px; left:0;}
+.china_box a.po1_tn3f0{ position:absolute; top:130px; left:0;}
+.china_box a.po1_tn4fn2{position:absolute; top:182px; left:0;}
+.china_box a.po1_tn5fn3{position:absolute; top:182px; left:125px;}
+
+.china_box a.close_link{ position:absolute; right:1px; top:0px; z-index:999;}
+.china_box a.close_link img{ border:none;}
+/* 120x240直接一张图片 */
+.china_img{width:120px; height:240px; overflow:hidden; position:relative;}
+.china_img a.close_link{ position:absolute; right:0px; top:0px; z-index:999;}
+.china_img a.close_link img{ border:none;}
+.china_img a.img_link{ text-decoration:none; cursor:pointer;}
+
+/* 250x250直接一张图片 */
+.china_img1{width:120px; height:240px; overflow:hidden; position:relative;}
+.china_img1 a.close_link{ position:absolute; right:0px; top:0px; z-index:999;}
+.china_img1 a.close_link img{ border:none;}
+.china_img1 a.img_link{ text-decoration:none; cursor:pointer;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

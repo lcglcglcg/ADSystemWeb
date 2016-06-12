@@ -1,0 +1,50 @@
+/* CSS Document */
+/* 三步创建公共样式-头部 */
+.scommon_box{ width:920px; height:auto;}
+.scommon_box_new{ width:623px; height:auto;}
+.scommon_box_new1{ width:605px; height:auto;}
+.scommon_box_new_nk{ width:500px; height:auto;}
+.scommon_box_keshi{ width:800px; height:auto; background:#fff;}
+.scommon_box_keshi .keshi_box{ padding:10px 0;}
+.scommon_box_keshi .keshi_tt{ width:120px; text-align:right; float:left;}
+
+.apply_ad_lf{ float:left; height:auto; overflow:hidden;}
+.apply_ad_rg{ float:right;}
+.margin_b{ margin-bottom:15px;}
+
+.scommon_box_widen{ width:1000px; height:auto;}
+.scommon_box .scommon_title{ height:35px; background:#5398f6 url(/static/ads_c_2.0/web/images/step_rg_bg.png) no-repeat right center; padding:0 10px;}
+.scommon_box .scommon_title p{ height:35px; line-height:35px; font-weight:bold; color:#FFF; font-size:14px; float:left;}
+.scommon_box .scommon_title a{ display:block; width:13px; height:13px;float:right; background:url(/static/ads_c_2.0/web/images/step_close.gif) no-repeat; margin-top:10px;}
+.scommon_box .scommon_main{ background:#FFF; width:900px; padding:10px; padding-bottom:20px; position:relative;}
+.scommon_box .scommon_main_new{ width:auto; background:#FFF; padding:10px;position:relative;}
+.scommon_box .scommon_main_new1{ width:auto; background:#FFF; padding:0px;position:relative;}
+.scommon_box .scommon_main_h1{ overflow:hidden; background:#FFFFFF;padding: 10px 10px 0px;position: relative;width: 900px;}
+.scommon_box .scommon_main_h1widen{ background:#FFFFFF;padding: 10px 0px 10px 10px;position: relative;width: 990px;}
+
+.scommon_main .all_title{ height:28px; line-height:28px; background:#e0edfd; font-weight:bold;}
+/* 第一步头部样式 */
+.scommon_main .all_title span{ display:block; float:left; width:100px; padding-left:10px; height:28px; background:url(/static/ads_c_2.0/web/images/setp_bg1.gif) no-repeat right center;}
+.scommon_main .all_title span.step_rg_bg{background:url(/static/ads_c_2.0/web/images/setp_bg3.gif) no-repeat right center; color:#000;}
+.scommon_main .all_title span.step_curr{background: #c9e2ff url(/static/ads_c_2.0/web/images/setp_bg2.gif) no-repeat right center; color:#0066cc;}
+.scommon_main .all_title span.span_three{width:85px; padding-left:15px;}
+.step2_input1{ width:200px; margin-left:10px;}
+
+/*操作按钮*/
+.p_margi{padding-left:250px;}
+.p_margi a{ margin-right:10px;}
+
+.btn {background: url("/static/ads_c_2.0/web/images/btn_bg.gif") repeat scroll left 0 transparent;color: #000000;float: left;height: 24px;text-decoration: none;}
+a.btn:hover { background: url("/static/ads_c_2.0/web/images/btn_bg.gif") repeat scroll left -48px transparent; cursor:pointer; text-decoration:none;}
+a.btn span { background: url("/static/ads_c_2.0/web/images/btn_bg.gif") repeat scroll right 0 transparent;cursor: pointer; display: inline; float: left; height: 21px;line-height: 25px; overflow: hidden; padding: 0 7px 3px 0;}
+a.btn:hover span {background: url("/static/ads_c_2.0/web/images/btn_bg.gif") repeat scroll right -48px transparent; color: #000000; cursor: pointer;height: 21px;line-height: 25px;overflow: hidden;padding: 0 7px 3px 0; cursor:pointer}
+
+/*公共按钮，点击进入下一步*/
+.step_commom_btn{ clear:both; width:100%; padding-top:10px; height:30px;}
+.btn_h{ padding-top:20px;}
+.step_commom_btn a{ margin-right:5px;}
+.step_commom_btn .s_c_width{ width:200px; height:30px;}
+.step_commom_btn .s_c_width1{ width:100px; height:30px;}
+.step_commom_btn .s_c_width2{ width:160px; height:30px;}
+.step_commom_btn .s_c_width4{ width:45px; height:30px;}
+

@@ -1,0 +1,7 @@
+<div class="re_download" style="display:none;" id="contk3">
+  <p class="red">系统只为您保存最近3个月生成的50份报告。</p>
+  <div class="re_table_list">
+    
+  </div>
+</div>
+<script language="javascript" src="/static/web/js/page/reportList.js"></script>

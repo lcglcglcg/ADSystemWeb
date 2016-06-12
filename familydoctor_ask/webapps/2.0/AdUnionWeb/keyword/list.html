@@ -1,0 +1,48 @@
+<xmp id="listKeyWdHtmlTitle_1" style="display:none;">
+<tr class="table_title">
+    <td class="table_we text_center_bg"><input type="checkbox" name="listKeyWdCheckAll"  onclick="window.keyWd.selectAll.call(this);" /></td>
+    <th class="table_wm" name="listKeyWdTool" value="0" onclick="window.KeyWd.orderBy.call(this,'GROUP_KEYWORD');"> <a><span>关键词</span></a> </th>
+    <th class="table_wm" name="listKeyWdTool" value="1" onclick="window.KeyWd.orderBy.call(this,'campaignName');"> <a><span>推广计划</span></a> </th>
+    <th class="table_wm" name="listKeyWdTool" value="2" onclick="window.KeyWd.orderBy.call(this,'adgroupName');"> <a><span>推广组</span></a> </th>
+    <th class="table_wt" name="listKeyWdTool" value="3" onclick="window.KeyWd.orderBy.call(this,'GROUP_CPC_PRICE');"> <a><span>CPC出价</span></a> </th>
+    <th class="table_wt" name="listKeyWdTool" value="3" onclick="window.KeyWd.orderBy.call(this,'GROUP_CPM_PRICE');"> <a><span>CPM出价</span></a> </th>
+    <th class="table_we">操作</th>
+  </tr>
+</xmp>
+<xmp id="listKeyWdHtmlTitle_2" style="display:none;">
+<tr class="table_title">
+    <td class="table_we text_center_bg"><input type="checkbox" name="listKeyWdCheckAll"  onclick="window.keyWd.selectAll.call(this);" /></td>
+    <th class="table_wm" name="listKeyWdTool" value="0" onclick="window.KeyWd.orderBy.call(this,'title');"> <a><span>关键词</span></a> </th>
+    <th class="table_wm" name="listKeyWdTool" value="1" onclick="window.KeyWd.orderBy.call(this,'campaignName');"> <a><span>推广计划</span></a> </th>
+    <th class="table_wm" name="listKeyWdTool" value="2" onclick="window.KeyWd.orderBy.call(this,'adgroupName');"> <a><span>推广组</span></a> </th>
+    <th class="table_wm" name="listKeyWdTool" value="3" onclick="window.KeyWd.orderBy.call(this,'title');"> <a><span>CPC出价</span></a> </th>
+    <th class="table_we">操作</th>
+  </tr>
+</xmp>
+<xmp id="listKeyWdHtmlList_1" style="display:none;">
+<tr name="listKeyWdTr" id="GROUP_KEYWORD_ID{GROUP_KEYWORD_ID}">
+    <td name="listKeyWdTd" class="table_we text_center"><input type="checkbox" name="listKeyWdCheckId" value="{GROUP_KEYWORD_ID}" onclick="window.keyWd.selectId.call(this);" /></td>
+    <td name="listKeyWdTd" class="table_wm"><span class="figure text_left text_left">{GROUP_KEYWORD}</span></td>
+    <td name="listKeyWdTd" class="table_wm text_left"><a name="treePlanClick" value="{GROUP_KEYWORD_ID}" class="link">{CAMPAIGN_NAME}</a></td>
+    <td name="listKeyWdTd" class="table_wm text_left"><a name="treeUnitClick" value="{GROUP_KEYWORD_ID}" class="link">{GROUP_NAME}</a></td>
+    <td name="listKeyWdTd" class="table_wt"><span class="figure">￥{GROUP_CPC_PRICE}</span></td>
+    <td name="listKeyWdTd" class="table_wt"><span class="figure">￥{GROUP_CPM_PRICE}</span></td>
+    <td name="listKeyWdTd" class="table_we caozuo k_c"><a value="{GROUP_KEYWORD_ID}" name="del"></a></td><!--您确定要删除选中的关键词吗？','删除成功！-->
+</tr>
+</xmp>
+<xmp id="listKeyWdHtmlList_2" style="display:none;">
+<tr name="listKeyWdTr" id="GROUP_KEYWORD_ID{GROUP_KEYWORD_ID}">
+    <td name="listKeyWdTd" class="table_we text_center"><input type="checkbox" name="listKeyWdCheckId" value="{GROUP_KEYWORD_ID}" onclick="window.keyWd.selectId.call(this);" /></td>
+    <td name="listKeyWdTd" class="table_wm"><span class="figure text_left text_left">{GROUP_KEYWORD}</span></td>
+    <td name="listKeyWdTd" class="table_wm text_left"><a name="treePlanClick" value="{GROUP_KEYWORD_ID}" class="link">{CAMPAIGN_NAME}</a></td>
+    <td name="listKeyWdTd" class="table_wm text_left"><a name="treeUnitClick" value="{GROUP_KEYWORD_ID}" class="link">{GROUP_NAME}</a></td>
+    <td name="listKeyWdTd" class="table_wm"><span class="figure">￥{GROUP_CPC_PRICE}</span></td>
+    <td name="listKeyWdTd" class="table_we caozuo k_c"><a value="{GROUP_KEYWORD_ID}" name="del"></a></td><!--您确定要删除选中的关键词吗？','删除成功！-->
+</tr>
+</xmp>
+<xmp id="listKeyWdHtmlEnd" style="display:none;">
+<tr class="tongji">
+    <td class="table_we">&nbsp;</td>
+    <td class="table_wb text_left" colspan="6">合计-{COUNT}个关键词</td>
+  </tr>
+</xmp>

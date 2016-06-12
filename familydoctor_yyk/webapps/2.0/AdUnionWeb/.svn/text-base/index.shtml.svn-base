@@ -1,0 +1,219 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>健康网盟-首页</title>
+<link rel="stylesheet" type="text/css" href="/static/ads_c_2.0/web/css/index.css"/>
+<link rel="stylesheet" type="text/css" href="/static/ads_c_2.0/web/css/notice.css"/>
+<link rel="stylesheet" type="text/css" href="/static/ads_c_2.0/web/css/prettify.css" />
+</head>
+<body>
+<!--#include virtual="/public/public.shtml"--> 
+<script language="javascript" src="/static/web/js/common/common_time.js"></script> 
+<script language="javascript" src="/static/web/js/thirdparty/FusionCharts.js"></script> 
+<!--#include virtual="/public/header.shtml"-->
+<div class="content"> 
+  <!-- 左边内容main_lf start -->
+  <div class="main_lf"> 
+    <!-- 账户信息 -->
+    <div class="i_account"> <span class="ia_tt">账户信息</span>
+      <p class="ia_cont"><span class="p_lf">账户名称：</span><span class="p_rg"><b name="USER_LOGIN_NAME"></b></span></p>
+      <p class="ia_cont"><span class="p_lf">账户资金总额：</span><span class="p_rg"><b name="INVEST"></b>元</span></p>
+      <p class="ia_cont"><span class="p_lf">账户消费金额：</span><span class="p_rg"><b name="CONSUMPTION"></b>元</span></p>
+      <p class="ia_cont"><span class="p_lf">账户余额：</span><span class="p_rg"><b name="BALANCE"></b>元</span></p>
+    </div>
+    <!-- 最新通知 -->
+    <div class="i_notice" name="noticeFrom">
+      <input type="hidden" id="searchSub" />
+      <span class="in_tt">最新公告</span>
+      <ul id="getListByNew">
+      </ul>
+    </div>
+  </div>
+  <!-- 左边内容main_lf end -->
+  <div class="c_right">
+    <div class="c_content"> 
+      <!--首页内容切换按钮 start -->
+      <div class="unit_index">
+        <ul>
+          <li><a name="selectTool" class="u_curr">全部</a></li>
+          <li><a name="selectTool" >文字推广</a></li>
+          <li><a name="selectTool" >图片推广</a></li>
+        </ul>
+        <span><a href="http://15talk.haomeit.com/download.shtml" target="_blank">医务通在线咨询系统，永久免费使用，去下载看看！</a></span>
+      </div>
+      <!-- 首页内容切换按钮 end --> 
+      
+      <!--全部 start -->
+      <div class="main_rg" id="contc_all" style="display:block;">
+        <div class="power"> <span class="p_select1">
+          <select class="index_01" onchange="window.statTrend.getAll(this);">
+          	<option value="1">今天</option>
+            <option value="2">昨天</option>
+            <option value="3">最近7天</option>
+          </select>
+          </span> </div>
+        <table>
+          <tr class="tr_bg">
+            <th class="table_wa">推广</th>
+            <th class="table_wb">消费</th>
+            <th class="table_wb">展现</th>
+            <th class="table_wb">点击</th>
+          </tr>
+          <tr>
+            <td class="table_wa"><div class="overage"> 推广余额：<br />
+                <br />
+                <em name="BALANCE"></em> </div></td>
+            <td class="table_wb"><div class="index_pic">
+                <div id="COST" align="center">数据加载中...</div>
+              </div></td>
+            <td class="table_wb"><div class="index_pic">
+                <div id="IMPRESSION" align="center">数据加载中...</div>
+              </div></td>
+            <td class="table_wb"><div class="index_pic">
+                <div id="CLICK" align="center">数据加载中...</div>
+              </div></td>
+          </tr>
+          <tr class="tr_hover">
+            <td class="table_wa"><div class="tuig"> <span>&nbsp;</span>文字推广：<br />
+                <em id="TEXT_BUDGET"></em></div></td>
+            <td class="table_wb">￥<span id="TEXTCOST"></span></td>
+            <td class="table_wb"><span id="TEXTIMPRESSION"></span></td>
+            <td class="table_wb"><span id="TEXTCLICK"></span></td>
+          </tr>
+          <tr class="tr_hover">
+            <td class="table_wa"><div class="tuig"> <span class="span_bg">&nbsp;</span>图片推广：<br />
+                <em id="IMG_BUDGET"></em></div></td>
+            <td class="table_wb">￥<span id="IMGCOST"></span></td>
+            <td class="table_wb"><span id="IMGIMPRESSION"></span></td>
+            <td class="table_wb"><span id="IMGCLICK"></span></td>
+          </tr>
+        </table>
+      </div>
+      <!--全部 end --> 
+      
+      <!--点击和展现推广 start -->
+      <div class="main_rg main_rg_border" id="contc1" style="display:none;"> 
+        <!--下拉菜单 start -->
+        <div class="power" id="click_select"> <span class="p_select">
+          <div class="conditions_limit">
+            <div class="selectStyle select_80">
+              <select onchange="window.selectFn(this);">
+                <option value="CLICK">点击</option>
+                <option value="IMPRESSION">展现</option>
+                <option value="COST">总消费</option>
+              </select>
+            </div>
+          </div>
+          </span>
+          <div class="calendar_rg">
+            <input name="TheLatestTrend" type="text" />
+          </div>
+        </div>
+        <!--下拉菜单 end --> 
+        <!-- 趋势图 start-->
+        <div id="div_1">
+          <div class="show" id="div_1_1" > <span class="sub_power">
+            <input type="radio" name="RadioGroup1" value="CLICK" id="RadioGroup2_0" />
+            <label for="RadioGroup2_0">点击次数</label>
+            <input type="radio" name="RadioGroup1" value="CTR" id="RadioGroup2_1" />
+            <label for="RadioGroup2_1">点击率</label>
+            <input type="radio" name="RadioGroup1" value="CPC" id="RadioGroup2_2" />
+            <label for="RadioGroup2_2">平均点击价格</label>
+            </span> </div>
+          <div class="show" id="div_1_2" style="display:none;"> <span class="sub_power">
+            <input type="radio" name="RadioGroup1" value="IMPRESSION" id="RadioGroup1_0" />
+            <label for="RadioGroup1_0">展现次数</label>
+            <input type="radio" name="RadioGroup1" value="CPM" id="RadioGroup1_1" />
+            <label for="RadioGroup1_1">千次展现成本</label>
+            </span> </div>
+        </div>
+        <!-- 第一个趋势图 start-->
+        <div class="cont_chart">
+          <div id="chartdiv4" align="center" class="loading_height" >
+            <div class="loading"><img src="/static/ads_c_2.0/web/images/index_loading1.gif"/>
+              <div class="loading_text">数据正在加载，请稍后...</div>
+            </div>
+          </div>
+        </div>
+        <!-- 第一个趋势图 end--> 
+        <!-- 趋势图 end --> 
+      </div>
+      <!--点和展现击推广 end --> 
+      
+    </div>
+  </div>
+</div>
+<div class="guide_wm" style="display:none;">
+	<div class="guide_wm_step1" id="guide_wm_step1"><img src="/static/ads_c_2.0/web/images/guide-wm-step1.png"></div>
+	<div class="guide_wm_step2" id="guide_wm_step2" style="display:none;"><img src="/static/ads_c_2.0/web/images/guide-wm-step2.png"></div>
+    <a class="guide_wm_close">
+        <img src="/static/ads_c_2.0/web/images/exit-wm.png">
+    </a>
+    <a id="guide_wm_next1" class="guide_wm_next">
+        <img src="/static/ads_c_2.0/web/images/next-wm1.png">
+    </a>
+    <a id="guide_wm_next2" class="guide_wm_next2" href="/promotion/pic/index.shtml?unit=true"style="display:none;">
+        <img src="/static/ads_c_2.0/web/images/next-wm1.png">
+    </a>
+</div>
+<script>
+var jscookie=$G.jscookie()
+,	cindex=jscookie.get('wmindex')||0
+;
+if(cindex<3)$G('div:guide_wm').show();
+
+var guide_wm_step1=$G('#guide_wm_step1')
+,	guide_wm_step2=$G('#guide_wm_step2')
+,	w=$G.windowSize()
+;
+
+var guide_wm_next1=$G('#guide_wm_next1')
+,	guide_wm_next2=$G('#guide_wm_next2')
+;
+guide_wm_step1.Each(function(){
+	var img=$G('img',this)
+	,	helpDom=$G.Obj(img[0])
+	,	l=w.sw>810?function(){
+			return (w.sw-810)/2;
+		}():0
+	,	t=w.sh>310?function(){
+			return (w.sh-310)/2;
+		}():0
+	;
+	img[0].style.position='absolute';
+	img[0].style.left=(l-563)+'px';
+	img[0].style.top=(t-245)+'px';
+	guide_wm_next1.Each(function(){
+		var dom=$G(this)
+		,	GDom=$G.Obj(dom[0])
+		;
+		dom[0].style.position='absolute';
+		dom[0].style.left=(l+630)+'px';
+		dom[0].style.top=(t+220)+'px';
+	});
+	guide_wm_next2.Each(function(){
+		this.style.position='absolute';
+		this.style.left='665px';
+		this.style.top='442px';
+	});
+});
+
+guide_wm_next1.click(function(){
+	guide_wm_next1.none();
+	guide_wm_step1.none();
+	guide_wm_next2.show();
+	guide_wm_step2.show();
+});
+$G('a:guide_wm_close').click(function(){
+	$G('div:guide_wm').none();
+	cindex++;
+	jscookie.set('wmindex',6);
+});
+</script>
+<!--#include virtual="/news/notice.html"--> 
+<script language="javascript" src="/static/web/js/page/noticeMore.js"></script> 
+<script language="javascript" src="/static/web/js/page/index.js"></script> 
+<!--#include virtual="/public/footer.html"-->
+</body>
+</html>

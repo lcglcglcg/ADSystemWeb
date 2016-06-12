@@ -1,0 +1,53 @@
+/* CSS Document */
+/* title 标题 */
+.daily_alert_box{width:500px;background:#FFF; border:1px solid #23b7fa;}
+.daily_alert_box .daily_alert_title{height:31px; line-height:31px; background:url(/static/ads_m_1.0/web/images/pub_bg.gif) repeat-x 0 -200px; padding-left:15px;}
+.daily_alert_box .daily_alert_title b{ float:left;}
+.daily_alert_box .daily_alert_title span{ float:right; padding:7px 10px 0 0;}
+
+.content_list{border-top:1px solid #ABE4FE;overflow:hidden;}
+.content_list .d_title{ padding:20px 20px; color:#06b4ea;font-weight:bold;}
+.content_list ul{ clear:both; height:28px; border-bottom:1px solid #ABE4FE;}
+.content_list ul.t_line{ height:28px; background:#e8f4fa; }
+.content_list ul li{ display:block; float:left; height:28px; line-height:28px; overflow:hidden;}
+.content_list ul li.f_bold{ font-weight:bold; padding-left:-10px;}
+.content_list ul li.f_center{ text-align:center;}
+.content_list ul li.wlf{ width:260px; padding-left:10px; overflow:hidden;}
+.content_list ul li.wrg{ width:200px; padding-left:10px; overflow:hidden;}
+
+.content_list ul li.wlf1{ width:200px; padding-left:10px; overflow:hidden;}
+.content_list ul li.wrg1{ width:260px; padding-left:10px; overflow:hidden;}
+
+.content_list ul li.w1{ width:120px; padding-left:10px; overflow:hidden;}
+.content_list ul li.w1_1{ width:105px; padding-left:10px; overflow:hidden;}
+.content_list ul li.w2{ width:180px; padding-left:10px; overflow:hidden;}
+.content_list ul li.w3{ width:150px; padding-left:10px; overflow:hidden;}
+.content_list ul li.w4{ width:83px; padding-left:8px; overflow:hidden;text-align:left;}
+.content_list ul li.w4_1{ width:120px; padding-left:8px; overflow:hidden;text-align:left;}
+.content_list ul li.w5{ width:308px;overflow:hidden;text-align:left;}
+/* c_btn 一个按钮居中 */
+.c_btn{ clear:both; width:500px; height:22px ; }
+.c_btn ul{ width:500px; height:22px;}
+.c_btn ul li{ width:60px; height:22px;}
+.c_btn ul li a{ display:block; width:50px; height:22px; line-height:22px; float:left; text-align:center; font-weight:bold; background:url(/static/ads_m_1.0/web/images/icon.gif) no-repeat 0 -300px; margin-right: 10px;}
+.c_btn ul li a:link,.c_btn ul li a:visited{ color:#000; font-weight:bold;text-decoration:none;}
+.c_btn ul li a:hover{ background:url(/static/ads_m_1.0/web/images/icon.gif) no-repeat 0 -250px; font-weight:bold;color:#FFF; text-decoration:none;}
+
+/* 修改创意 */
+.content_list ol li table{ border-collapse:collapse;}
+.content_list ol li table tr{ border-bottom:1px solid #ABE4FE; height:28px; line-height:28px;}
+.content_list ol li table tr .d_td1{ width:80px;height:28px;overflow:hidden; padding-left:8px;text-align:left;}
+.content_list ol li table tr .d_td1_1{ width:120px;height:28px;overflow:hidden; padding-left:8px;text-align:left;}
+.content_list ol li table tr .d_td2,.content_list ol li table tr .d_td3,.content_list ol li table tr .d_td4,.daily_word{width:302px;overflow:hidden;word-break: break-all;word-wrap: break-word;text-align:left;}
+.content_list ol li table tr .d_td5{width:372px;height:28px;overflow:hidden;word-break: break-all;word-wrap: break-word;text-align:left;}
+.content_list ol li table tr .d_td2{ height:28px;}
+.content_list ol li table tr .d_td3{max-height:112px;}
+.content_list ol li table tr .d_td4{ height:28px;}
+.daily_word{max-height:112px;}
+
+.daily_img{background:url(/static/ads_m_1.0/web/images/default_img.jpg) 0 5px no-repeat ; padding:2px 0; height:115px; width:180px;*position:absolute; /*针对IE6/7的Hack*/	top:50%; /*针对IE6/7的Hack*/}
+.daily_img span{ background:#FFF;width:180px; height:115px;position:relative; display:table-cell; vertical-align:middle; text-align:center;}
+.daily_img span img{*position:relative; /*针对IE6/7的Hack*/	top:-50%;left:-50%; /*针对IE6/7的Hack*/
+max-width:180px; max-height:115px;
+zoom: expression( function(elm) { if (elm.width > 180 || elm.height > 115 ){ if (elm.width>elm.height) { elm.width=180; } else{ elm.height=115; } } elm.style.zoom = '1'; } (this) )}
+

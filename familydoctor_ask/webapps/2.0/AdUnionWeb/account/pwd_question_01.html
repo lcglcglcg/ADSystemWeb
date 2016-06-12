@@ -1,0 +1,43 @@
+<div class="update_box" id="pwd_question_01" style="display:none;">
+  <div class="update_title"><b>修改密保问题</b><span><input name="close_bnt" type="image" src="/static/ads_c_2.0/web/images/step_close.gif" onClick="$UE.close('pwd_question_01');" style="cursor:pointer;"></span></div>
+  <div class="update_main">
+  	<div class="update_cont">
+    	<p class="gray">修改您的密保问题，需要先验证您当前的密保问题</p>
+ <!-- 第一行--> 
+        <div class="row_01">
+            <div class="update_cont_lf">密保问题：</div>
+            <div class="update_cont_rg">
+              <div class="conditions_limit lf">
+                 <div class="selectStyle select_150">
+                     <select name="pwd_p_01">
+                      <option value="1">请选择密保问题</option>
+                      <option value="2">您父亲的全名?</option>
+                      <option value="3">您母亲的全名?</option>
+                      <option value="4">您配偶的全名?</option>
+                      <option value="5">您父亲的生日?</option>
+                      <option value="6">您母亲的生日?</option>
+                      <option value="7">您初中最好朋友的生日?</option>
+                      <option value="8">您初中最好朋友的全名?</option>
+                      <option value="9">您就读的小学的全名?</option>
+                      <option value="10">您就读的初中的全名?</option>
+                      <option value="11">您身份证的最后八位?</option>
+                    </select>
+                 </div>
+                </div>
+            </div>
+        </div>
+ <!-- 第二行--> 
+        <div class="row_01">
+            <div class="update_cont_lf">密保答案：</div>
+            <div class="update_cont_rg">
+            	<input name="" type="text" class="u_input_01"/>
+            </div>
+        </div>
+  	</div>
+    <div class="a_btn" align="center">
+    	<p class="one_btn">
+            <a onclick="javascript:$UE.close('pwd_question_01');$UE.open('pwd_question_wei');$UE.setValue('q_wei_name','修改密保问题');"><span>确定</span></a>
+        </p>
+    </div>
+  </div>
+</div>

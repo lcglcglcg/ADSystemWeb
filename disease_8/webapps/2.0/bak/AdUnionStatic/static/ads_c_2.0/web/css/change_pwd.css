@@ -1,0 +1,16 @@
+/* CSS Document */
+ul,ol,li,dl,dt,dd{ display:block; padding:0; margin:0; list-style:none;}
+.pwd_box{ width:240px; height:150px;font-size:12px; font-family:宋体; background:#FFF; border:1px solid #23b7fa;}
+.pwd_title{height:30px; background:url(/static/ads_c_2.0/web/images/pub_bg.gif) repeat-x 0 -200px; line-height:30px; padding-left:10px;}
+.pwd_title b{ float:left; font-weight:bold;}
+.pwd_title span{ float:right; padding:7px 10px 0 0;}
+/* pwd_main 内容 */
+.pwd_main{ height:80px; padding:0 20px; line-height:80px;}
+/* pwd_dtn 按钮 */
+.pwd_dtn{ width:240px; height:20px; padding:10px 0;}
+.pwd_dtn ol { width:240px; height:20px;}
+.pwd_dtn ol li{ width:110px; height:20px}
+.pwd_dtn ol li a{display:block;color:#000; float:left; width:50px; height:20px; font-weight:bold;  line-height:22px; text-align:center; background:url(/static/ads_c_2.0/web/images/icon.gif) no-repeat 0 -300px; margin-right:5px;}
+.pwd_dtn ol li a:link,.pwd_dtn ol li a:visited{ color:#000; font-weight:bold; text-decoration:none;}
+.pwd_dtn ol li a:hover{ background:url(/static/ads_c_2.0/web/images/icon.gif) no-repeat 0 -250px;color:#FFF; font-weight:bold; text-decoration:none;}
+

@@ -1,0 +1,35 @@
+<div class="account_box" id="account_safe_set" style="display:none;">
+  <div class="account_title"><b>安全设置</b><span><input name="close" type="image" src="/static/ads_m_1.0/web/images/view_close.gif" style="cursor:pointer;"></span></div>
+  <div class="account_main">
+  	<div class="account_cont">
+      <div class="cont_lf">
+      	<ul>
+         	<li class="h20"><s class="red">*</s> 登录密码：</li>
+        	<!--<li class="h20">密保问题1：</li>
+        	<li class="h20">问题1答案：</li>
+        	<li class="h20">密保问题2：</li>
+        	<li class="h20">问题2答案：</li>
+         	<li class="h20">密保问题3：</li>
+        	<li class="h20">问题3答案：</li>
+        	<li class="h20">密保邮件：</li>
+        	<li class="h20">密保手机：</li>-->
+      </ul>
+      </div>
+      <div class="cont_rg">
+      	<ol>
+        	<li class="h20"><input type="password" name="LOGIN_PASSWORD" class="input01"></li>
+        	<!--<li class="h20" name="li" id="PROTECT_QUESTION1"></li>
+        	<li class="h20"><input type="text" class="input01" name="PROTECT_ANSWER1"></li>
+        	<li class="h20" name="li" id="PROTECT_QUESTION2"></li>
+        	<li class="h20"><input type="text" class="input01" name="PROTECT_ANSWER2"></li>
+        	<li class="h20" name="li" id="PROTECT_QUESTION3"></li>
+        	<li class="h20"><input type="text" class="input01" name="PROTECT_ANSWER3"></li>
+        	<li class="h20"><input type="text" class="input01" name="PROTECT_EMAIL"></li>
+        	<li class="h20"><input type="text" class="input01" name="PROTECT_MOBILE"></li>-->
+        </ol>
+      </div>
+  	</div>
+    <input type="hidden" name="ACCOUNT_ID" />
+<div class="c_btn" align="center"><ol><li><a>保存</a><a name="close">取消</a></li></ol></div>
+  </div>
+</div>

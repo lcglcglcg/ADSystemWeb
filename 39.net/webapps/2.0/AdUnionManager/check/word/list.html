@@ -1,0 +1,33 @@
+<xmp id="listCheckWordTitle" style="display:none;">
+  <tr>
+    <th class="table_wa"><input type="checkbox" name="listCheckWordCheckboxAll" onclick="window.checkWord.selectAll.call(this);" /></td>
+    <th class="table_wb_tt">文字创意</td>
+    <th class="table_we">登录名</td>
+    <th class="table_wf">修改时间</td>
+    <th class="table_wc">状态</td>
+    <th class="table_wc">操作</td>
+  </tr>
+</xmp>
+<xmp id="listCheckWordList" style="display:none;">
+  <tr id="Word_{CREATIVE_ID}" name="listWordTr">
+    <td name="listWordTd" class="table_wa"><input type="checkbox" name="listCheckWordCheckbox" value="{CREATIVE_ID}"  onclick="window.checkWord.selectId.call(this);" /></td>
+    <td name="listWordTd" class="table_wb">
+        <div class="c_cy">
+            <b class="add_blue">{CREATIVE_NAME}</b>
+            <span class="c_cy1">{CREATIVE_DESCRIPTION}</span>
+            <span class="c_cy2"><i>{CREATIVE_DISPLAY_URL}</i></span>
+            <span class="c_cy2"><a name="viewWord" value="{CREATIVE_ID}">预览创意</a></span>
+            <a class="key_btn1"></a>
+        </div>
+    </td>
+    <td name="listWordTd" class="table_we"><a style="color:#00F;" name="loginName" value="{ACCOUNT_ID}">{ACCOUNT_NAME}</a></td>
+    <td name="listWordTd" class="table_wf">{LATE_LOGIN_TIME}</td>
+    <td name="listWordTd" class="table_wc {creativeStateCss}">{CREATIVE_STATE}</td>
+    <td name="listWordTd" class="table_wc"><a value="{CREATIVE_ID}" name="tools">{toolTest}</a></td>
+  </tr>
+</xmp>
+<xmp id="listCheckWordErr" style="display:none;">
+  <tr>
+    <td colspan="12"><div class="warn">没有符合条件的数据</div></td>
+  </tr>
+</xmp>

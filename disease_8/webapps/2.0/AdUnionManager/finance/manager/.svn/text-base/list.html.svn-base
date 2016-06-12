@@ -1,0 +1,43 @@
+<div id="liMenu" style="display:none;">
+  <ul class="b_line">
+    <li class="w130 f_bold">登录名</li>
+    <li class="w240 f_bold">公司名称</li>
+    <li class="w120 f_bold">开户时间</li>
+    <li class="w130 f_bold">投资总额(￥)</li>
+    <li class="w120 f_bold">账面余额(￥)</li>
+    <li class="w100 f_bold">状态</li>
+    <li class="w150 f_bold">操作</li>
+  </ul>
+</div>
+<div id="liData" style="display:none;">
+  <ul id="ul_hover10">
+    <li class="w130 f_center" ><a name="demo" value="{ACCOUNT_ID}">{LOGIN_NAME}</a></li>
+    <li class="w240"><a href="{COMPANY_SITE}" target="_blank" title="{COMPANY_NAME}">{COMPANY_NAME}</a></li>
+    <li class="w120">{CREATE_TIME}</li>
+    <li class="w130" title="{INVEST}">{INVEST}</li>
+    <li class="w120" title="{BALANCE}">{BALANCE}</li>
+    <li class="w100 f_center {stateCss}">{ROW_STATE}</li>
+    <li class="w150 f_center"><a name="recharge" value="{ACCOUNT_ID}">充值</a><a name="rechargeInfo" value="{ACCOUNT_ID}">充值明细</a></li>
+  </ul>
+</div>
+<div id="liFoot" style="display:none;">
+<div class="div_totle">
+    <ul class="total">
+        <li class="w30"></li>
+        <li>投资总额合计(全部)：</li>
+        <li class="total_red">{INVEST}</li>
+        <li class="w30">元</li>
+        <li>消费总额合计(全部)：</li>
+        <li class="total_red">{CONSUMPTION}</li>
+        <li class="w30">元</li>
+        <li>账面余额合计(全部)：</li>
+        <li class="total_red">{BALANCE}</li>
+        <li class="w30">元</li>
+    </ul>
+</div>
+</div>
+<div id="liErr" style="display:none;">
+  <ul>
+    <li>没有符合条件的数据</li>
+  </ul>
+</div>

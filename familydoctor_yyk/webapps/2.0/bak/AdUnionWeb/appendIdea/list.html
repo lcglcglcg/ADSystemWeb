@@ -1,0 +1,17 @@
+<xmp id="listAppendIdeasHtmlTitle" style="display:none;">
+  <tr class="table_title">
+    <td class="table_wa text_center_bg"><input type="checkbox" name="listAppendIdeaCheckAll"  onclick="window.appendIdea.selectAll.call(this);"  /></td>
+    <th class="table_wb" name="listAppendIdeaTool" value="0" onclick="window.appendIdea.orderBy.call(this,'content');" > <a><span>附加创意</span></a> </th>
+    <th class="table_wd" name="listAppendIdeaTool" value="1" onclick="window.appendIdea.orderBy.call(this,'creativeState');" > <a><span>状态</span></a> </th>
+    
+  </tr>
+</xmp>
+<xmp id="listAppendIdeasHtmlList" style="display:none;">
+  <tr name="listAppendIdeaTr" id="appendIdeasId{APPEND_ID}" >
+    <td name="listAppendIdeaTd"  class="table_wa text_center"><input type="checkbox" name="listAppendIdeaCheckId" value="{APPEND_ID}" onclick="window.appendIdea.selectId.call(this);"  /></td>
+    <td name="listAppendIdeaTd"  class="table_wb text_left add_color"><div class="key_div">{APPEND_CONTENT}<a value="{APPEND_ID}" name="edit" class="key_btn1"></a></div></td>
+    <td name="listAppendIdeaTd"  class="table_wd text_left"><div class="zhuangt" id="creativeState{APPEND_ID}"><span class="{stateCss}">{APPEND_STATUS}</span> <span class="{stateCss}" value="{APPEND_ID}" name="pause"></span></div>
+      </div></td>
+   
+  </tr>
+</xmp>

@@ -1,0 +1,267 @@
+﻿<div id="delivery" style="display:none;">
+<div class="D_box">
+    <div class="d_title"><b><strong>投放设置</strong></b><span><input name="close_bnt" type="image" src="/static/ad_c_2.0/web/images/view_close.gif" onClick="$UE.close('delivery');"></span></div>
+	<div class="main_pad">
+    <div class="main_tt">
+        <ol>
+            <li class="w90"></li>
+            <li class="li_hover" id="linkag1" onClick="clickTxt(1,'linkag','contag','li_hover',5)">投放地域</li>
+            <!--<li id="linkag2" onClick="clickTxt(2,'linkag','contag','li_hover',5)">投放时段</li>
+            <li id="linkag3" onClick="clickTxt(3,'linkag','contag','li_hover',5)">每日预算</li>-->
+            <li id="linkag4" onClick="clickTxt(4,'linkag','contag','li_hover',5)">IP排除</li>
+            <!--<li id="linkag5" onClick="clickTxt(5,'linkag','contag','li_hover',5)">否定关键词</li>-->
+            <li class="w90"></li>
+        </ol>
+    </div>
+    <div class="d_bian" id="contag1" >  
+        <div class="d_main">
+            <ul class="h30">
+                <li>
+                <form name="form2" method="post" action="">
+                <label>
+                  <input type="radio" name="RadioGroup2" value="单选" id="RadioGroup2_0">
+                  全部地区</label>
+                <label>
+                  <input name="RadioGroup2" type="radio" id="RadioGroup2_1" value="单选" checked>
+                  部分地区</label>
+                </form>
+                </li>
+            </ul>
+            <ul class="h30 ul_bg">
+                <li class="w112"><input name="" type="checkbox" value="" class="input_lf"><span class="orange">中国地区</span></li>
+                <li class="w100 line_lf">&nbsp;</li>
+                <li class="w70">CPC价格</li>
+                <li class="w70">CPM价格</li>
+                <li class="w100 line_lf">&nbsp;</li>
+                <li class="w70">CPC价格</li>
+                <li class="w70">CPM价格</li>
+                <li class="w100 line_lf">&nbsp;</li>
+                <li class="w70">CPC价格</li>
+                <li class="w70">CPM价格</li>
+            </ul>
+            <div class="row2">
+                <ol>
+                    <li class="w87"><input name="" type="checkbox" value="">华北地区</li>
+                    <li class="w100 line_lf"><span style="float:left;"><input name="" type="checkbox" value="">北京</span><a onClick="$UE.open('d_up_down');">&nbsp;</a></li>
+                    <li class="w70">30.00</li>
+                    <li class="w70">30.00</li>
+                    <li class="w100"><input name="" type="checkbox" value="">天津</li>
+                    <li class="w70">30.00</li>
+                    <li class="w70">30.00</li>
+                    <li class="w100"><input name="" type="checkbox" value="">河北<span class="wine">[配送]</span></li>
+                    <li class="w70">30.00</li>
+                    <li class="w70">30.00</li>
+                </ol>
+                <ol>
+                    <li class="w87"></li>
+                    <li class="w100 line_lf"><span style="float:left;"><input name="" type="checkbox" value="">山西</span><a onClick="$UE.open('d_up_down');">&nbsp;</a></li>
+                    <li class="w70">30.00</li>
+                    <li class="w70">30.00</li>
+                    <li class="w100"><span style="float:left;"><input name="" type="checkbox" value="">内蒙古</span><a onClick="$UE.open('d_up_down');">&nbsp;</a></li>
+                    <li class="w70">30.00</li>
+                    <li class="w70">30.00</li>
+                    <li class="w100"></li>
+                </ol>
+            </div>
+            <div class="row1">
+                <ol>
+                    <li class="w87"><input name="" type="checkbox" value="">东北地区</li>
+                    <li class="w100 line_lf"><span style="float:left;"><input name="" type="checkbox" value="">辽宁</span><a onClick="$UE.open('d_up_down');">&nbsp;</a></li>
+                    <li class="w70">30.00</li>
+                    <li class="w70">30.00</li>
+                    <li class="w100"><span style="float:left;"><input name="" type="checkbox" value="">吉林</span><a onClick="$UE.open('d_up_down');">&nbsp;</a></li>
+                    <li class="w70">30.00</li>
+                    <li class="w70">30.00</li>
+                    <li class="w100"><span style="float:left;"><input name="" type="checkbox" value="">黑龙江</span><a onClick="$UE.open('d_up_down');">&nbsp;</a></li>
+                    <li class="w70">30.00</li>
+                    <li class="w70">30.00</li>
+                </ol>
+            </div>
+            <div class="row3">
+                <ol>
+                    <li class="w87"><input name="" type="checkbox" value="">华东地区</li>
+                    <li class="w100 line_lf"><span style="float:left;"><input name="" type="checkbox" value="">上海</span><a onClick="$UE.open('d_up_down');">&nbsp;</a></li>
+                    <li class="w70">30.00</li>
+                    <li class="w70">30.00</li>
+                    <li class="w100"><span style="float:left;"><input name="" type="checkbox" value="">江苏</span><a onClick="$UE.open('d_up_down');">&nbsp;</a></li>
+                    <li class="w70">30.00</li>
+                    <li class="w70">30.00</li>
+                    <li class="w100"><span style="float:left;"><input name="" type="checkbox" value="">浙江</span><a onClick="$UE.open('d_up_down');">&nbsp;</a></li>
+                    <li class="w70">30.00</li>
+                    <li class="w70">30.00</li>
+                </ol>
+                <ol>
+                    <li class="w87"></li>
+                    <li class="w100 line_lf"><input name="" type="checkbox" value="">安徽</li>
+                    <li class="w70">30.00</li>
+                    <li class="w70">30.00</li>
+                    <li class="w100"><input name="" type="checkbox" value="">福建</li>
+                    <li class="w70">30.00</li>
+                    <li class="w70">30.00</li>
+                    <li class="w100"><input name="" type="checkbox" value="">江西</li>
+                    <li class="w70">30.00</li>
+                    <li class="w70">30.00</li>
+                </ol>
+                <ol>
+                    <li class="w87">&nbsp;</li>
+                    <li class="w100 line_lf"><input name="" type="checkbox" value="">山东</li>
+                    <li class="w70">30.00</li>
+                    <li class="w70">30.00</li>
+                    <li class="w100"></li>
+                </ol>
+            </div>
+            <div class="row1">
+                <ol>
+                    <li class="w87"><input name="" type="checkbox" value="">华中地区</li>
+                    <li class="w100 line_lf"><input name="" type="checkbox" value="">河南</li>
+                    <li class="w70">30.00</li>
+                    <li class="w70">30.00</li>
+                    <li class="w100"><input name="" type="checkbox" value="">湖北</li>
+                    <li class="w70">30.00</li>
+                    <li class="w70">30.00</li>
+                    <li class="w100"><input name="" type="checkbox" value="">湖南</li>
+                    <li class="w70">30.00</li>
+                    <li class="w70">30.00</li>
+                </ol>
+            </div>
+            <div class="row1">
+                <ol>
+                    <li class="w87"><input name="" type="checkbox" value="">华南地区</li>
+                    <li class="w100 line_lf"><input name="" type="checkbox" value="">广东</li>
+                    <li class="w70">30.00</li>
+                    <li class="w70">30.00</li>
+                    <li class="w100"><input name="" type="checkbox" value="">海南</li>
+                    <li class="w70">30.00</li>
+                    <li class="w70">30.00</li>
+                    <li class="w100"><input name="" type="checkbox" value="">广西</li>
+                    <li class="w70">30.00</li>
+                    <li class="w70">30.00</li>
+                </ol>
+            </div>
+            <div class="row2">
+                <ol>
+                    <li class="w87"><input name="" type="checkbox" value="">西南地区</li>
+                    <li class="w100 line_lf"><input name="" type="checkbox" value="">重庆</li>
+                    <li class="w70">30.00</li>
+                    <li class="w70">30.00</li>
+                    <li class="w100"><input name="" type="checkbox" value="">四川</li>
+                    <li class="w70">30.00</li>
+                    <li class="w70">30.00</li>
+                    <li class="w100"><input name="" type="checkbox" value="">贵州</li>
+                    <li class="w70">30.00</li>
+                    <li class="w70">30.00</li>
+                </ol>
+                <ol>
+                    <li class="w87">&nbsp;</li>
+                    <li class="w100 line_lf"><input name="" type="checkbox" value="">云南</li>
+                    <li class="w70">30.00</li>
+                    <li class="w70">30.00</li>
+                    <li class="w100"><input name="" type="checkbox" value="">西藏</li>
+                    <li class="w70">30.00</li>
+                    <li class="w70">30.00</li>
+                    <li class="w100"></li>
+                </ol>
+            </div>
+            <div class="row2">
+                <ol>
+                    <li class="w87"><input name="" type="checkbox" value="">西北地区</li>
+                    <li class="w100 line_lf"><input name="" type="checkbox" value="">陕西</li>
+                    <li class="w70">30.00</li>
+                    <li class="w70">30.00</li>
+                    <li class="w100"><input name="" type="checkbox" value="">甘肃</li>
+                    <li class="w70">30.00</li>
+                    <li class="w70">30.00</li>
+                    <li class="w100"><input name="" type="checkbox" value="">青海</li>
+                    <li class="w70">30.00</li>
+                    <li class="w70">30.00</li>
+                </ol>
+                <ol>
+                    <li class="w87">&nbsp;</li>
+                    <li class="w100 line_lf"><input name="" type="checkbox" value="">宁夏</li>
+                    <li class="w70">30.00</li>
+                    <li class="w70">30.00</li>
+                    <li class="w100"><input name="" type="checkbox" value="">新疆</li>
+                    <li class="w70">30.00</li>
+                    <li class="w70">30.00</li>
+                    <li class="w100"></li>
+                </ol>
+            </div>
+            <div class="row1">
+                <ol>
+                    <li class="w87"><input name="" type="checkbox" value="">其他地区</li>
+                    <li class="w100 line_lf"><input name="" type="checkbox" value="">香港</li>
+                    <li class="w70">30.00</li>
+                    <li class="w70">30.00</li>
+                    <li class="w100"><input name="" type="checkbox" value="">澳门</li>
+                    <li class="w70">30.00</li>
+                    <li class="w70">30.00</li>
+                    <li class="w100"><input name="" type="checkbox" value="">台湾</li>
+                    <li class="w70">30.00</li>
+                    <li class="w70">30.00</li>
+                </ol>
+            </div>
+            <ul class="h30 ul_bg">
+                <li class="w112"><input name="" type="checkbox" value="" class="input_lf"><span class="orange">国外</span></li>
+                <li class="w100 line_lf"></li>
+                <li class="w70">30.00</li>
+                <li class="w70">30.00</li>
+            </ul>
+        </div>
+        <div class="delivery_btn" align="center"><ol><li><a onClick="javascript:$UE.alert('保存成功！','$UE.close(\'delivery\');');">保存</a><a onClick="$UE.close('delivery');">取消</a></li></ol></div>
+    </div>
+    <div class="d_bian" id="contag2" style="display:none;">
+        <div class="d_main">
+        <ul class="h30">
+        <li>
+        投放时段
+        </li>
+        </ul>
+        </div>
+        <div class="delivery_btn" align="center"><ol><li><a onClick="javascript:$UE.alert('保存成功！','$UE.close(\'delivery\');');">保存</a><a onClick="$UE.close('delivery');">取消</a></li></ol></div>
+    </div> 
+    <div class="d_bian" id="contag3" style="display:none;">
+        <div class="d_main">
+            <ul class="h30">
+            <li>
+            每日预算
+            </li>
+            </ul>
+        </div>
+        <div class="delivery_btn" align="center"><ol><li><a onClick="javascript:$UE.alert('保存成功！','$UE.close(\'delivery\');');">保存</a><a onClick="$UE.close('delivery');">取消</a></li></ol></div>
+    </div>
+    <div class="d_bian" id="contag4" style="display:none;">
+        <div class="d_main">
+            <div class="ip">
+                <div class="word_red">您最多可以输入50个IP地址，每个IP地址一行。</div>
+                <div class="pro_textarea">
+                     <div class="pro_cont">
+                     <div class="pro_textarea_l1" style="height:380px;">1<br />2<br />3<br />4<br />5<br />6<br />7<br />8<br />9<br />10<br />11<br />12<br />13<br />14<br />15<br />16<br />17<br />18<br />19<br />20<br /></div>
+                     <textarea name="textfield" class="textarea_pro11" style="height:380px; width:300px;" id="test3" onscroll="test4();">男科
+                妇科
+                不孕不育
+                男科
+                整形整形整形整形整形整形整形整形整
+                </textarea>
+                  </div>
+                </div>
+                <div class="explanation">您可将IP地址的最后一段设为*，以屏蔽一段地址内容的广告展现，例如：<br/>203.38.64.3<br/>203.38.64.*　　<br/><br/><span class="red">您输入的IP不合法，请检查后保存</span>
+                	
+                
+                </div>
+            </div>
+        </div>
+        <div class="delivery_btn" align="center"><ol><li><a onClick="javascript:$UE.alert('保存成功！','$UE.close(\'delivery\')');">保存</a><a onClick="$UE.close('delivery');">取消</a></li></ol></div>
+    </div>
+    <div class="d_bian" id="contag5" style="display:none;">
+        <div class="d_main">
+            <ul class="h30">
+            <li>
+            否定关键词
+            </li>
+            </ul>
+        </div>
+        <div class="delivery_btn" align="center"><ol><li><a onClick="javascript:$UE.alert('保存成功！','$UE.close(\'delivery\');');">保存</a><a onClick="$UE.close('delivery');">取消</a></li></ol></div>
+    </div>
+</div>
+</div>
+</div>

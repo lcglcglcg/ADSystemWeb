@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>客户管理-客户公告管理</title>
+<!--#include virtual="/public/public.shtml"-->
+<link rel="stylesheet" type="text/css" href="/static/ads_m_1.0/web/css/body_list.css">
+<link rel="stylesheet" type="text/css" href="/static/ads_m_1.0/web/css/page.css">
+<link rel="stylesheet" type="text/css" href="/static/ads_m_1.0/web/css/input.css">
+<link rel="stylesheet" type="text/css" href="/static/ads_m_1.0/web/css/gz_alter.css">
+<script language="javascript" src="/static/web/js/common/common_time.js"></script>
+</head>
+<body>
+<script>
+window.urlName='user';
+</script>
+<!--#include virtual="/public/header.shtml"-->
+<div class="ad_box">
+  <div class="main">
+  	<div class="curr_position">当前位置：<span>客户管理>客户公告管理</span></div>
+<!-- 查询条件conditions start -->
+    <div class="conditions">
+		<ol>
+             <li class="conditions_li">
+                    <select name="FIND_TYPE">
+                        <option value="1">公告标题</option>
+                    </select>
+            </li>
+            <li class="conditions_li padl2"><input name="FIND_NAME" type="text" class="input06"></li>
+		</ol>
+		<ol>
+             <li class="conditions_li">
+                    <select name="TIME_TYPE">
+                        <option value="1">预计发布日期</option>
+                        <option value="2">创建时间</option>
+                   </select>
+            </li>
+            <li class="conditions_li padl2"><input name="findtime" type="text" class="times"><input notValue="true" name="calendar" maxdate="3012-01-01" type="image" src="/static/ads_m_1.0/web/images/calendar.gif" class="calendar"></li>
+            <li class="conditions_li padl4"><span class="w40">状态：</span></li>
+            <li class="conditions_li">
+                    <select name="STATUS">
+                        <option value="100">全部</option>
+                        <option value="1">待发布</option>
+                        <option value="2">发布成功</option>
+                        <option value="3">发布失败</option>
+                        <option value="4">发布过期</option>
+                    </select>
+            </li>
+             <li class="conditions_li padl4"><span>排序方式：</span></li>
+             <li class="conditions_li">
+                     <select name="SORT_COLUMN">
+                      <option value="1">公告标题</option>
+                      <option value="2">预计发布日期</option>
+                      <option value="3" selected="selected">创建日期</option>
+                      <option value="4">状态</option>
+                    </select>
+            </li>
+             <li class="conditions_li padl2">
+                    <select name="SORT_TYPE">
+                  <option value="1">升序</option>
+                  <option value="2" selected="selected">降序</option>
+                </select>
+            </li>
+            <li class="conditions_li padl4 c_select"><a style="background: url('/static/ads_m_1.0/web/images/icon.gif') no-repeat scroll 0 -150px;color: #000000;display: block;font-weight: bold;height: 19px;line-height: 20px;text-align: center;text-decoration: none;width: 62px;" id="subList">查询</a></li>
+		</ol>
+    </div>
+<!-- 查询条件conditions end -->
+<!-- 查询条件s_content start -->
+    <div class="s_content" id="listData"></div>
+<!-- 查询条件s_content end -->
+     <div class="s_bottom">
+      	<div class="b_lf lf">
+        	<ol>
+        	  <li><a>新增</a></li>
+        	  <li><a>删除</a></li>
+              </ol>
+        </div>
+		<!--#include virtual="/public/page.html"-->
+      </div>
+  </div>
+</div>
+<!--#include virtual="/user/announcement_alter.html"-->
+<!--#include virtual="/user/announcement_list.html"-->
+<!--#include virtual="/user/ggao_tan.shtml"-->
+<!--#include virtual="/public/footer.html"-->
+<script language="javascript" src="/static/web/js/page/manager/announcement.js"></script>

@@ -1,0 +1,32 @@
+<div class="refuse_backg" id="add_refuse" style="display:none;">
+  <div class="title">审核拒绝的原因</div>
+    <div class="cont">
+        <div class="cont_t">
+            <ul>
+                <li class="t_lf">拒绝原因：</li>
+                <li class="t_rg">图片信息非法，包含了和本行业无关的信息。</li>
+            </ul>
+        </div>
+        
+        <div class="cont_b">
+             <ul>
+                 <li class="b_lf">审核人：</li>
+                 <li class="b_rg">杨振国/系统自动审核</li>
+             </ul>
+        </div>
+        
+        <div class="cont_b">
+             <ul>
+                 <li class="b_lf">审核时间：</li>
+                 <li class="b_rg">2013-06-06 12:12:12</li>
+             </ul>
+        </div>
+        
+        <div class="r_btn" align="center">
+             <ul>
+                <li><a onClick="$UE.close('add_refuse');$UE.open('add_preview');$UE.setValue('add_ctt','查看创意');$UE.display('add_btn1','none');$UE.display('add_btn2','none');$UE.display('add_btn3','none');;$UE.display('add_btn4','block');;">查看创意</a><a id="idBtn_close" onClick="$UE.close('add_refuse');">关闭</a></li> 
+             </ul>
+        </div>
+    </div>
+  
+</div>

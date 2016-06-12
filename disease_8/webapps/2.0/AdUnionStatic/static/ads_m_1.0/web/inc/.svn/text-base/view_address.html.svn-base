@@ -1,0 +1,13 @@
+<div class="view_address_box" id="view_address" style="display:none;">
+ <div class="check_title_box">
+      <div class="check_title">
+        <b>创意URL访问地址</b>
+        <span><input name="close_bnt" type="image" src="/static/ads_m_1.0/web/images/view_close.gif" onClick="$UE.close('view_address');" style="cursor:pointer;"></span>
+      </div>
+  </div>
+  <div class="address_main">
+	<a href="#">
+    http://www.hxjsb.com/shenjieshi/bingyin/1093695.html#hxdjs&baidu-ad={creative}&baidu-kw={keywordid}&baidu-net={mediatype}&baidu-site={placement}
+     </a>
+  </div>
+</div>

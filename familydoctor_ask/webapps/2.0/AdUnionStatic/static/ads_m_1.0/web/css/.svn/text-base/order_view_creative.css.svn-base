@@ -1,0 +1,45 @@
+/* CSS Document */
+.set_view_create_cont .detailed_title{height:31px; line-height:31px; background:url(/static/ads_m_1.0/web/images/pub_bg.gif) repeat-x 0 -200px; padding-left:15px;}
+.set_view_create_cont .detailed_title b{ float:left;}
+.set_view_create_cont .detailed_title span{ float:right; padding:7px 10px 0 0;}
+
+.set_view_create_cont{ width:700px; background:#fff; border:1px solid #23b7fa; height:auto; overflow:hidden;font-family:宋体;}
+.set_vc_new{ width:auto; border:none;}
+.pad_new{ padding:0 5px 0 7px;}
+.set_view_create_cont .set_cont_top{height:164px; position:relative;font-size:12px; line-height:22px; color:#4c4c4c;}
+
+.set_view_create_cont .set_cont_top_new{height:110px; }
+
+.orview_creative_p{ height:auto; overflow:hidden; padding-top:10px;}
+.orview_creative_p_new{padding:5px 0;}
+
+.set_cont_top a img.set_cont_top_img1{float:left; padding:1px;border:1px solid #dbdde1; margin-top:2px;}
+.set_cont_top dl{float:right; width:500px; margin:0;}
+.set_cont_top dl.brand_dl_new{float:right; width:325px; margin:0; padding-top:5px;}
+.set_cont_top dl dt{text-align:center; font-size:16px; height:22px; line-height:22px; overflow:hidden;}
+.set_cont_top dl dt a,.set_cont_top dl dt a:link{color:#1155cc;}
+.set_cont_top dl dt a:hover{ text-decoration:underline;}
+.set_cont_top dl dd{margin:0; height:22px; overflow:hidden; word-wrap:break-word;}
+.set_cont_top dl dd a,.set_cont_top dl dd a:link{color:#006600; }
+.set_cont_top dl dd.set_cont_top_ms{margin:0; height:68px; overflow:hidden; word-wrap:break-word;}
+
+.set_cont_top dl dd.set_cont_top_ms_new{margin:0; height:22px; overflow:hidden; word-wrap:break-word;}
+
+.set_cont_top dl dd.set_cont_top_ms a,.set_cont_top dl dd.set_cont_top_ms a:link{color:#1155cc;}
+.set_cont_top dl dd.set_cont_top_ms a:hover{ text-decoration:underline;}
+.set_cont_top dl dd span{color:#006600;}
+.set_cont_top a.online_zx{text-decoration:none; position:absolute; top:115px; right:110px;}
+.set_cont_top a.appointment_gh{text-decoration:none; position:absolute; top:115px; right:15px;}
+.set_cont_bottom{height:92px; margin-bottom:5px;}
+
+.brand_first{height:70px;}
+
+.set_cont_bottom a img{float:left; padding:1px;border:1px solid #dbdde1;margin-right:16px;}
+.brand_first a img{margin-right:2px;}
+.set_cont_bottom a img.set_cont_bottom_img1{float:left; padding:1px;border:1px solid #dbdde1;margin-right:0px;}
+.set_view_create_cont .dai_new_fd{display:none;height:30px; width:697px; background:#fff; border:1px solid #dbdde1; position:absolute; top:-30px; left:0; padding:7px 0 0 10px;}
+.set_view_create_cont .dai_new_fd ul{height:auto; overflow:hidden;}
+.set_view_create_cont .dai_new_fd ul li{display:inline-block; float:left;padding-right:10px;}
+.set_view_create_cont .dai_new_fd ul li.dai_close{float:right; margin-right:8px; padding:0;}
+.set_view_create_cont a.new_fd_close{ position:absolute; right:10px; top:10px;z-index:999;}
+

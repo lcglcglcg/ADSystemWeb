@@ -1,0 +1,40 @@
+<div id="ListLiMenu" style="display:none;">
+  <ul class="b_line">
+        <li class="w100 f_bold no_line">订单编号</li>
+        <li class="w100 f_bold">登录名</li>
+        <li class="w78 f_bold">投放科室</li>
+        <li class="w78 f_bold">投放区域</li>
+        <li class="w78 f_bold">投放时长</li>
+        <li class="w78 f_bold">开始日期</li>
+        <li class="w78 f_bold">结束日期</li>
+        <li class="w90 f_bold">广告消费</li>
+        <li class="w78 f_bold">创建时间</li>
+        <li class="w65 f_bold">状态</li>
+        <li class="w78 f_bold">操作</li>
+   </ul>
+</div>
+<div id="listLi" style="display:none;">
+  <ul>
+    <li class="w100 f_center no_line">{AD_ORDER_NO}</li>
+    <li class="w100 f_center">{ACCOUNT_NAME}</li>
+    <li class="w78 f_center"><a value="{DEPT_SERIALIZE}" name="dept">{DEPT_NAME}></a></li>
+    <li class="w78 f_center">{REGION_SERIALIZE_NAME}></li>
+    <li class="w78 f_center">{DAYS}天</li>
+    <li class="w78 f_center">{SHOW_TIME_START}</li>
+    <li class="w78 f_center">{SHOW_TIME_END}</li>
+    <li class="w90 f_center">￥{PRICE}</li>
+    <li class="w78 f_center">{CREATE_TIME}</li>
+    <li class="w65 f_center {stateCss}">{STATUS}</li>
+    <li class="w78 f_center"><a name="tool" target="_blank" reason="{REFUSE_REASON}" decider="{AUDITOR_NAME}" updateTime="{AUDITOR_UPDATE_TIME}" status="{STATUS}" value="{BRAND_ID}">{tool}</a></li>
+  </ul>
+</div>
+<div id="listLiFoot" style="display:none;">
+  <ul class="t_line">
+    <li></li>
+  </ul>
+</div>
+<div id="listLiErr" style="display:none;">
+  <div style="text-align:center; padding-top:20px;">
+    没有符合条件的数据
+  </div>
+</div>

@@ -1,0 +1,33 @@
+<div class="notice_box" id="c_paste" style="display:none;">
+  <div class="notice_title"><b>提示信息</b><span><input name="close_bnt" type="image" src="/static/ads_c_2.0/web/images/step_close.gif" onClick="$UE.close('c_paste');" style="cursor:pointer;"></span></div>
+  <div class="notice_main">
+  	<div class="notice_cont">
+    	<div class="notice_cont_tt">√ 复制成功！请选择粘贴目标：</div>
+    	<div class="gz_congt_new">
+        	<ul>
+            	<li class="gz_new_lilf"><s class="red">*</s> 推广计划：</li>
+                <li class="gz_new_lirg c_select_pad1">
+                    <select class="c_select_01">
+                      <option value="1">点击</option>
+                      <option value="2" selected="selected">展现</option>
+                      <option value="3">总消费</option>
+                    </select>
+                </li>
+            </ul>
+        </div>
+    	<div class="gz_congt_new c_select_pad2">
+        	<ul>
+            	<li class="gz_new_lilf"><s class="red">*</s> 推广组：</li>
+                <li class="gz_new_lirg c_select_pad1">
+                    <select class="c_select_01">
+                      <option value="1">点击</option>
+                      <option value="2" selected="selected">展现</option>
+                      <option value="3">总消费</option>
+                    </select>
+                </li>
+            </ul>
+        </div>
+  	</div>
+<div class="c_btn" align="center"><ul class="c_paste_ulbtn"><li><a onclick="javascript:$UE.confirm('粘贴成功！','','$UE.close(\'c_paste\')');">粘贴</a></li><li><a href="javascript:$UE.close('c_paste');">取消</a></li></ul></div>
+  </div>
+</div>

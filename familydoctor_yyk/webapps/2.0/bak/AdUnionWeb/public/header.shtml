@@ -1,0 +1,32 @@
+<div id="wrap">
+    <div id="main">
+        <div id="header" class="zindex">
+        	<div class="rg_bg">
+            <div class="logo"><img src="/static/ads_c_2.0/web/images/ads_logo.png"></div>
+            <div class="topnav">
+                <ul>
+                    <li><a href="/index.shtml" id="nav1">首页</a></li>
+                    <li><a href="/promotion/test/index.shtml" id="nav2" >文字推广</a></li>
+                    <li><a href="/promotion/pic/index.shtml" id="nav3" >图片推广</a></li>
+                    <li><a href="/brand/index.shtml" id="nav4" >品牌广告</a></li>
+                    <li><a href="/report/test/index.shtml" id="nav5" >报表管理</a></li>
+                    <li><a href="/financial/index.shtml" id="nav6" >财务管理</a></li>
+                    <li><a href="/account/index.shtml" id="nav7" >账户信息</a></li>
+                </ul> 
+            </div> 
+            <div class="login">
+            	<div class="company" name="COMPANY_NAME"></div>
+                <div class="l_name"><span name="USER_LOGIN_NAME"></span> | <a id="loginExit">退出</a>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="subnav" id="subnavreport" style="display:none;">
+        	<ol>
+            	<li><a href="/report/test/index.shtml" name="report">文字推广</a></li>
+            	<li><a href="/report/pic/index.shtml" name="report">图片推广</a></li>
+            </ol>	
+        </div>
+    </div>
+</div>
+<script language="javascript" src="/static/web/js/page/header.js"></script>

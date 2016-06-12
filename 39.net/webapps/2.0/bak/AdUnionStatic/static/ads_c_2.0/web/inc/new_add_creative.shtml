@@ -1,0 +1,114 @@
+	<div class="scommon_box scommon_box_widen" id="new_add_creative" style="display:none;">
+    	<div class="scommon_title"><p id="newadd_tt">新建附加创意</p><a onClick="$UE.close('new_add_creative');"></a></div>
+    	<div class="scommon_main_h1 scommon_main_h1widen">
+            <div class="add_frame">
+            	<span class="gray">请至少撰写三条子链，总长度小于56个字符。</span><br />
+                  <ul>
+                    <li class="style_mar"><b>子链一</b><s name="appendMsg" id="appendTitle_1_msg" style="display:none;">最多16个字符</s><s name="appendMsg" id="appendUrl_1_msg" style="display:none;">最多1024个字符</s><s name="appendMsg" id="appendUrl_1_msg_2" style="display:none;">URL主域名必须与您的注册网站域名一致(www)</s></li>
+                    <li><span class="addf_lf">名称：</span><span class="addf_rg">
+                      <input type="text" class="input_04" autofocus name="appendTitle" id="appendTitle_1" />
+                      </span></li>
+                    <li><span class="addf_lf">URL：</span><span class="addf_rg">
+                      <input type="text" class="input_04" name="appendUrl" id="appendUrl_1" />
+                      </span></li>
+                    <li class="style_mar"><b>子链二</b><s name="appendMsg" id="appendTitle_2_msg" style="display:none;">最多16个字符</s><s name="appendMsg" id="appendUrl_2_msg" style="display:none;">最多1024个字符</s><s name="appendMsg" id="appendUrl_2_msg_2" style="display:none;">URL主域名必须与您的注册网站域名一致(www)</s></li>
+                    <li><span class="addf_lf">名称：</span><span class="addf_rg">
+                      <input type="text" class="input_04" name="appendTitle" id="appendTitle_2" />
+                      </span></li>
+                    <li><span class="addf_lf">URL：</span><span class="addf_rg">
+                      <input type="text" class="input_04" name="appendUrl" id="appendUrl_2" />
+                      </span></li>
+                    <li class="style_mar"><b>子链三</b><s name="appendMsg" id="appendTitle_3_msg" style="display:none;">最多16个字符</s><s name="appendMsg" id="appendUrl_3_msg" style="display:none;">最多1024个字符</s><s name="appendMsg" id="appendUrl_3_msg_2" style="display:none;">URL主域名必须与您的注册网站域名一致(www)</s></li>
+                    <li><span class="addf_lf">名称：</span><span class="addf_rg">
+                      <input type="text" class="input_04" name="appendTitle" id="appendTitle_3" />
+                      </span></li>
+                    <li><span class="addf_lf">URL：</span><span class="addf_rg">
+                      <input type="text" class="input_04" name="appendUrl" id="appendUrl_3" />
+                      </span></li>
+                    <li class="style_mar"><b>子链四</b><s name="appendMsg" id="appendTitle_4_msg" style="display:none;">最多16个字符</s><s name="appendMsg" id="appendUrl_4_msg" style="display:none;">最多1024个字符</s><s name="appendMsg" id="appendUrl_4_msg_2" style="display:none;">URL主域名必须与您的注册网站域名一致(www)</s></li>
+                    <li><span class="addf_lf">名称：</span><span class="addf_rg">
+                      <input type="text" class="input_04" name="appendTitle" id="appendTitle_4"  />
+                      </span></li>
+                    <li><span class="addf_lf">URL：</span><span class="addf_rg">
+                      <input type="text" class="input_04" name="appendUrl" id="appendUrl_4"   />
+                      </span></li>
+                    <li class="style_mar"><b>子链五</b><s name="appendMsg" id="appendTitle_5_msg" style="display:none;">最多16个字符</s><s name="appendMsg" id="appendUrl_5_msg" style="display:none;">最多1024个字符</s><s name="appendMsg" id="appendUrl_5_msg_2" style="display:none;">URL主域名必须与您的注册网站域名一致(www)</s></li>
+                    <li><span class="addf_lf">名称：</span><span class="addf_rg">
+                      <input type="text" class="input_04" name="appendTitle" id="appendTitle_5"  />
+                      </span></li>
+                    <li><span class="addf_lf">URL：</span><span class="addf_rg">
+                      <input type="text" class="input_04" name="appendUrl" id="appendUrl_5"   />
+                      </span></li>
+                  </ul>
+        <!--公共按钮 新建附加创意-->
+            <div class="step_commom_btn btn_h">
+                <div class="s_c_width s_c_width2">
+                    <a class="btn" onclick="javascript:$UE.alert('保存成功！','$UE.close(\'new_add_creative\')');"><span>保存</span></a>
+                    <a class="btn" onClick="javascript:$UE.close('new_add_creative');"><span>取消</span></a>
+                    <a class="btn" onClick="javascript:$UE.close('new_add_creative');"><span>全部清空</span></a>
+               </div>
+            </div>
+            </div>
+       			 <!-- 右边内容 -->
+                <div class="cy_show">
+                    <div class="cylf_show">
+                        <em>左侧推广位预览：</em>
+                        <div class="default_bg">
+                            <div class="title_h">
+                                <span class="line1_tt">
+                                    <i name="testTitle" class="line1_cont">
+                                        <a class="font_nolink1" target="_blank">这里显示您的推广标题</a>
+                                    </i>
+                                    <i class="line1tt_img" style="display:{guahaoTokenDisplay};"></i>
+                                </span>
+                                
+                                <span class="zixun" style="display:{webimDisplay};" >
+                                    <a class="font_nolink2" target="_blank">咨询</a>
+                                </span>
+                                
+                                <span class="guahao" name="guahaoToken" onclickName="guahao" style="display:{guahaoTokenDisplay};">
+                                    <a class="font_nolink2" target="_blank">挂号</a>
+                                </span>
+                             
+                                <div class="pingl" name="guahaoToken" style="display:{guahaoTokenDisplay};">
+                                    <div class="start1">
+                                        <div class="start2" style="width:{starScore}%;"></div>
+                                    </div>
+                                    <a class="ping_nolink3" target="_blank">查看评论 </a>
+                                </div>
+                             </div>   
+                            
+                            <div class="content_style">
+                                <span class="content_word">
+                                    <a class="word_nolink" target="_blank">附加创意让您的推广拥有更丰富的表达形式和内容，吸引更多关注，帮您获得更好的推广效果</a>
+                                </span>
+                                <span class="yi_name" keygh="hospType2" name="guahaoToken" style=" display:{guahaoTokenDisplay};">医院类型,医院性质</span>
+                            </div>
+                          
+                          <div class="zi_link">
+                            <span class="zi_link_lf" name="appendList" style="display:block;">
+                                <i><a>子链预览1</a></i> | 
+                                <i><a>子链预览2</a></i> | 
+                                <i><a>子链预览3</a></i> | 
+                                <i><a>子链预览4</a></i> | 
+                                <i><a>子链预览5</a></i> 
+                                <i class="zi_link_address" name="testDisplayUrl"><a target="_blank">wangmeng.haomeit.com</a></i>
+                            </span>
+                            <span class="zi_link_rg" name="guahaoToken" style="display:{guahaoTokenDisplay};">
+                                <a target="_blank">医院地址</a>
+                            </span>
+                          </div>
+                        </div>
+                    </div>    
+                  
+                  
+				<div class="error">子链二：URL主域名必须与您的注册网站域名一致(demodomain.com)；</div>
+                </div>
+           			 <!-- 底部内容 -->
+                 <div class="new_footer">
+                 	医院认证、挂号入口、医院类型、医院性质、医院地址信息需要在系统中进行<a href="http://www.guahao.com/" target="_blank">挂号网</a>授权才能显示。<br />
+                    咨询入口只有在账户信息绑定了有效的咨询链接地址时才会显示。
+                 </div>
+
+        </div>
+    </div>

@@ -1,0 +1,24 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>首页</title>
+<!--#include virtual="/public/public.shtml"-->
+<link rel="stylesheet" type="text/css" href="/static/ads_m_1.0/web/css/index.css">
+</head>
+<body>
+<script>
+window.urlName='index';
+</script>
+<!--#include virtual="/public/header.shtml"-->
+<div class="ad_box">
+  <div class="main">
+  	<div class="curr_position">当前位置：<span>首页</span></div>
+    <div class="index_content">
+    
+    </div>
+  </div>
+</div>
+<!--#include virtual="/public/footer.html"-->
+</body>
+</html>

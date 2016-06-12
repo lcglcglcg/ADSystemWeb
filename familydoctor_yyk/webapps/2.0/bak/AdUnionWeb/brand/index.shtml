@@ -1,0 +1,132 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!--#include virtual="/public/public.shtml"-->
+<link href="/static/ads_c_2.0/web/css/keywords.css" rel="stylesheet" media="screen" type="text/css" />
+<link href="/static/ads_c_2.0/web/css/left_nav.css" rel="stylesheet" media="screen" type="text/css" />
+<link href="/static/ads_c_2.0/web/css/right_nav.css" rel="stylesheet" media="screen" type="text/css" />
+<link href="/static/ads_c_2.0/web/css/abstract.css" rel="stylesheet" media="screen" type="text/css" />
+<link href="/static/ads_c_2.0/web/css/preview.css" rel="stylesheet" media="screen" type="text/css" />
+<link href="/static/ads_c_2.0/web/css/table_list.css" rel="stylesheet" media="screen" type="text/css" />
+<link href="/static/ads_c_2.0/web/css/click_add.css" rel="stylesheet" media="screen" type="text/css" />
+<link href="/static/ads_c_2.0/web/css/page.css" rel="stylesheet" media="screen" type="text/css" />
+<link rel="stylesheet" type="text/css" href="/static/ads_c_2.0/web/css/step3_losing.css">
+<link rel="stylesheet" type="text/css" href="/static/ads_c_2.0/web/css/notice.css"/>
+<!--#include virtual="/public/public_step.shtml"-->
+<script language="javascript" src="/static/web/js/common/common_time.js"></script>
+<style>
+.subnav_curr1 {
+	color: #0000FF;
+}
+</style>
+<title>推广计划</title>
+</head>
+<body>
+<!--#include virtual="/public/header.shtml"--> 
+<!--#include virtual="/tool/keshi.html"-->
+<!--#include virtual="/tool/region.html"-->
+<!--#include virtual="/brand/add.shtml"-->
+<div class="content">
+  <div class="c_right_new_brand">
+    <div class="abstract_pinpai"></div>
+    <div class="c_content"> 
+      <!--#include virtual="/brand/right_nav_new2.html"-->
+      <div class="program_div">
+        <div class="table_up_select">
+          <div class="rrr">
+            <div class="s_left" name="brandList">
+              <ul class="s_ul" name="brandSelect">
+                <li class="s_li_new2">投放科室：</li>
+                <li class="s_li_new2"> <a name="putKeshi"><img src="/static/ads_c_2.0/web/images/select_kq_01.jpg"/></a> </li>
+                <li class="s_li">投放区域：</li>
+                <li class="s_li_new2"> <a name="putRegion"><img src="/static/ads_c_2.0/web/images/select_kq_02.jpg"/></a> </li>
+                <li class="s_li">创意状态：</li>
+                <li class="s_li_new2">
+                  <select name="CREATIVE_STATUS" class="s_input_01">
+                    <option value="100">全部状态</option>
+                    <option value="4">未设置</option>
+                    <option value="1">待审核</option>
+                    <option value="2">审核通过</option>
+                    <option value="3">审核拒绝</option>
+                  </select>
+                </li>
+                <li class="s_li">投放时间：</li>
+                <li class="s_li_new2">
+                  <input name="time" type="text" class="pc_01" />
+                  <input setvalue="day"  maxdate="3012-01-01" name="calendar" type="image" src="/static/ads_c_2.0/web/images/dataImg.jpg" class="pc_img">
+                </li>
+                <li class="s_li"> <a name="brandSub" class="btn"><span>查询</span></a> </li>
+              </ul>
+              <ul class="s_ul" name="brandSelect" style="display:none;">
+                <li class="s_li_new2">投放科室：</li>
+                <li class="s_li_new2"> <a name="putKeshi"><img src="/static/ads_c_2.0/web/images/select_kq_01.jpg"/></a> </li>
+                <li class="s_li">投放区域：</li>
+                <li class="s_li_new2"> <a name="putRegion"><img src="/static/ads_c_2.0/web/images/select_kq_02.jpg"/></a> </li>
+                <li class="s_li">投放时间：</li>
+                <li class="s_li_new2">
+                  <input name="time" type="text" class="pc_01" value="2015/01/01-2015/01/31" />
+                  <input setvalue="day"  maxdate="3012-01-01" name="calendar" type="image" src="/static/ads_c_2.0/web/images/dataImg.jpg" class="pc_img">
+                </li>
+                <li class="s_li"> <a name="brandSub" class="btn"><span>查询</span></a> </li>
+              </ul>
+              <ul class="s_ul" name="brandSelect" style="display:none;">
+                <li class="s_li_new2">投放科室：</li>
+                <li class="s_li_new2"> <a name="putKeshi"><img src="/static/ads_c_2.0/web/images/select_kq_01.jpg"/></a> </li>
+                <li class="s_li">投放区域：</li>
+                <li class="s_li_new2"> <a name="putRegion"><img src="/static/ads_c_2.0/web/images/select_kq_02.jpg"/></a> </li>
+                <li class="s_li">创意状态：</li>
+                <li class="s_li_new2">
+                  <select name="CREATIVE_STATUS" class="s_input_01">
+                    <option value="100">全部状态</option>
+                    <option value="4">未设置</option>
+                    <option value="1">待审核</option>
+                    <option value="2">审核通过</option>
+                    <option value="3">审核拒绝</option>
+                  </select>
+                </li>
+                <li class="s_li">投放时间：</li>
+                <li class="s_li_new2">
+                  <input name="time" type="text" class="pc_01" value="2015/01/01-2015/01/31" />
+                  <input setvalue="day"  maxdate="3012-01-01" name="calendar" type="image" src="/static/ads_c_2.0/web/images/dataImg.jpg" class="pc_img">
+                </li>
+                <li class="s_li"> <a name="brandSub" class="btn"><span>查询</span></a> </li>
+              </ul>
+              <ul class="s_ul" name="brandSelect" style="display:none;">
+                <li class="s_li_new2">投放科室：</li>
+                <li class="s_li_new2"> <a name="putKeshi"><img src="/static/ads_c_2.0/web/images/select_kq_01.jpg"/></a> </li>
+                <li class="s_li">投放区域：</li>
+                <li class="s_li_new2"> <a name="putRegion"><img src="/static/ads_c_2.0/web/images/select_kq_02.jpg"/></a> </li>
+                <li class="s_li">投放时间：</li>
+                <li class="s_li_new2">
+                  <input name="time" type="text" class="pc_01" value="2015/01/01-2015/01/31" />
+                  <input setvalue="day"  maxdate="3012-01-01" name="calendar" type="image" src="/static/ads_c_2.0/web/images/dataImg.jpg" class="pc_img">
+                </li>
+                <li class="s_li"> <a name="brandSub" class="btn"><span>查询</span></a> </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div style="position:relative;">
+          <div class="table_list" id="brandList"> 
+          </div>
+        </div>
+        <!--分页开始-->
+        <div class="c_foot">
+        <div class="talk_list_cBL" style="display:none;" id="tools"><a class="btn"><span>删除</span></a></div>
+          <!--#include virtual="/public/page.html"--> 
+          <!--分页结束--> 
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--#include virtual="/brand/set_creative.shtml"-->
+<!--#include virtual="/brand/brand_ad_put.shtml"--> 
+<!--#include virtual="/brand/brand_ad_apply.shtml"--> 
+<!--#include virtual="/brand/brand_ad_ended.shtml"--> 
+<!--#include virtual="/brand/brand_ad_stay_put.shtml"--> 
+<script language="javascript" src="/static/web/js/page/brand/index.js"></script> 
+<!--#include virtual="/public/footer.html"-->
+</body>
+</html>

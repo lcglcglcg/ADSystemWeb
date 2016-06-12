@@ -1,0 +1,42 @@
+<link rel="stylesheet" type="text/css" href="/static/ads_m_1.0/web/css/public.css">
+<link rel="stylesheet" type="text/css" href="/static/ads_m_1.0/web/css/tools.css">
+<div class="msg_box" id="idAlert" style="display:none;">
+  <div class="msg_title"><b id="idAlertTitle"></b><span><input id="idAlertClose" name="close_bnt" type="image" src="/static/ads_c_2.0/web/images/step_close.gif"></span></div>
+  <div class="msg_cont">
+  	<div class="msg_content" id="idAlertMsg"></div>
+    <div class="msg_btn" align="center">
+        <ol>
+             <li><a id="idAlertOK">确定</a></li>
+        </ol>
+    </div>
+  </div>
+</div>
+<!---------------------------加载中动画---------------------------------->
+<div class="loading" style="display:none;" id="loading" ><img src="/static/ads_c_2.0/web/images/index_loading1.gif"/><div class="loading_text">数据正在加载，请稍后...</div></div>
+<!---------------------------弹出框---------------------------------->
+<div class="msg_box" id="returnBox" style="display:none;">
+  <div class="msg_title"><b name="returnBoxTitle"></b></div>
+  <div class="msg_cont">
+  	<div class="msg_content" name="returnBoxMsg"></div>
+    <div class="msg_btn" align="center">
+        <ol>
+             <li><a name="returnOK">确定</a></li>
+        </ol>
+    </div>
+  </div>
+</div>
+<!---------------------------YES/NO 提示框---------------------------------->
+<div class="msg_box" id="msgConfirm" style="display:none;">
+  <div class="msg_title"><b id="msgConfirmTitle"></b><span><input name="close" type="image" src="/static/ads_c_2.0/web/images/step_close.gif"></span></div>
+  <div class="msg_cont">
+  	<div class="content_fu" id="msgConfirmMsg"></div>
+    <div class="msg_btn" align="center">
+        <ul>
+             <li><a name="confirmOK"></a><a name="confirmClose"></a></li>
+        </ul>
+    </div>
+  </div>
+</div>
+<script language="javascript" src="/static/web/js/library/Glacier.js"></script>
+<script language="javascript" src="/static/web/js/common/common_code.js"></script>
+<script language="javascript" src="/static/web/js/common/common_public.js"></script>

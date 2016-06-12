@@ -1,0 +1,52 @@
+<div id="recharge_view" style="display:none;">
+<div class="D_box">
+    <div class="d_title"><b><strong>凭证原件</strong></b><span><input name="close_bnt" type="image" src="/static/ads_m_1.0/web/images/step_close.gif" onClick="$UE.close('recharge_view');"></span></div>
+	<div class="main_pad">
+    	<div class="main_title">以下是您的交易信息</div>
+        <div class="main_rcontent">
+        	<ul>
+            	<li class="rw160">付款账户：</li>
+            	<li class="rw190">6227 0024 2124 0054 974</li>
+            	<li class="rw160">收款人账号：</li>
+            	<li class="rw190">6227 0000 1428 0230 586</li>
+            </ul>
+        	<ul>
+            	<li class="rw160">付款账户名称：</li>
+            	<li class="rw190">曾云玉</li>
+            	<li class="rw160">收款人姓名：</li>
+            	<li class="rw190">张洋</li>
+            </ul>
+        	<ul>
+            	<li class="rw160">币种：</li>
+            	<li class="rw190">人民币</li>
+            	<li class="rw160">收款人所在分行：</li>
+            	<li class="rw190">北京市分行</li>
+            </ul>
+        	<ul>
+            	<li class="rw160">凭证号：</li>
+            	<li class="rw190">003994651019</li>
+            	<li class="rw160">交易时间：</li>
+            	<li class="rw190">2012年08月28日10:15:37</li>
+            </ul>
+        	<ul>
+            	<li class="rw160">付款金额：</li>
+            	<li class="rw190 dark_red font14">12,500.00</li>
+            	<li class="rw160">手续费用：</li>
+            	<li class="rw190 dark_red font14">25.00</li>
+            </ul>
+        	<ul>
+            	<li class="rw160">显示付款账户余额：</li>
+            	<li class="rw190"><input name="" type="checkbox" value="" /></li>
+            	<li class="rw160"></li>
+            	<li class="rw190"></li>
+            </ul>
+        	<ul>
+            	<li class="r_total">本日已向 张洋 转账汇款 <span class="dark_red">1</span> 笔,累计 <span class="dark_red">12,500.00 </span>元人民币</li>
+            </ul>
+        	<ul>
+            	<li class="r_total">本日已向 张洋 转账汇款 <span class="dark_red">1</span> 笔,累计 <span class="dark_red">12,500.00 </span>元人民币</li>
+            </ul>
+        </div>
+</div>
+</div>
+</div>

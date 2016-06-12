@@ -1,0 +1,27 @@
+<div class="check_box" id="match" style="display:none;width:360px;">
+ <div class="check_title_box">
+      <div class="check_title">
+        <b>匹配模式</b>
+        <span><input name="close_bnt" type="image" src="/static/ads_c_2.0/web/images/view_close.gif" onClick="$UE.close('match');" style="cursor:pointer;"></span>
+      </div>
+  </div>
+  <div class="check_main">
+	<div class="match_cont">
+    	<div class="match_check">
+        	<span>匹配模式：</span>
+              <label>
+                <input type="radio" name="RadioGroup1" value="单选" id="RadioGroup1_0" />
+                精准匹配</label>
+              <label>
+                <input type="radio" name="RadioGroup1" value="单选" id="RadioGroup1_1" />
+                短语匹配</label>
+    	</div>
+        <div class="step_commom_btn" align="center">
+            <div class="s_c_width1">
+                <a class="btn" onclick="$UE.close('match');"><span>确定</span></a>
+                <a class="btn" onclick="$UE.close('match');"><span>取消</span></a>
+           </div>
+        </div>
+    </div>
+  </div>
+</div>

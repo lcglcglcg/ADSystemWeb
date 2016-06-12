@@ -1,0 +1,50 @@
+ <div style="display:none;" id="guolv">
+               <div class="glx_result" ><b>过滤项:</b><span>展现次数=20;点击次数=10;点击率≥5;</span><a onclick="$UE.display('guolv','none')">清空</a></div>
+               <div class="guolx" id="queryViewDiv">
+                    <div class="guolx_top"><b>过滤项</b></div>
+                    <div class="guolx_middle">
+                        <ul>
+                            <li class="glx_a">
+                                <span class="glx_lf">展现次数</span>
+                                <span class="glx_lf1">
+                                    <select name="guolvx_01">
+                                        <option value="≥">≥</option>
+                                        <option value="=">=</option>
+                                        <option value="≤">≤</option>
+                                    </select>
+                                </span>
+                                <span class="glx_lf1">
+                                 	<input name="" type="text" class="glx_input01"/>
+                                </span>
+                            </li>
+                            <li class="glx_a">
+                                <span class="glx_lf">点击次数</span>
+                                <span class="glx_lf1">
+                                    <select name="guolvx_02">
+                                      <option value="≥">≥</option>
+                                      <option value="=">=</option>
+                                      <option value="≤">≤</option>
+                                    </select>
+                                </span>
+                                <span class="glx_lf1">
+                                 	<input name="" type="text" class="glx_input01"/>
+                                </span>
+                            </li>
+                            <li class="glx_a">
+                                <span class="glx_lf">点击率</span>
+                                <span class="glx_lf1">
+                                    <select name="guolvx_03">
+                                        <option value="≥">≥</option>
+                                        <option value="=">=</option>
+                                        <option value="≤">≤</option>
+                                    </select>
+                                </span>
+                                <span class="glx_lf1">
+                                 	<input name="" type="text" class="glx_input01"/>%
+                                </span>
+                            </li>
+                       </ul>
+                    </div>
+                    <div class="guolx_bottom"><a onclick="$UE.display('queryViewDiv','none');" class="btn"><span>筛选</span></a></div>
+                </div>
+ </div>

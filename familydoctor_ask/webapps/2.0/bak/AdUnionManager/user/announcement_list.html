@@ -1,0 +1,30 @@
+<div id="liMenu" style="display:none;">
+	<ul class="b_line">
+        <li class="w50"><input type="checkbox" name="announcementCheckboxAll" onclick="window.announcement.selectAll.call(this);"></li>
+        <li class="w398 f_bold">公告标题</li>
+        <li class="w140 f_bold">预计发布日期</li>
+        <li class="w180 f_bold">创建时间</li>
+        <li class="w100 f_bold">状态</li>
+        <li class="w88 f_bold">操作</li>
+    </ul>
+</div>
+<div id="liData" style="display:none;">
+  <ul id="ul_hover1">
+    <li class="w50"><input type="checkbox" name="announcementCheckbox" value="{ANNOUNCEMENT_ID}"  onclick="window.announcement.selectId.call(this);"></li>
+    <li class="w398"><a name="title" value="{ANNOUNCEMENT_ID}" title="{ANNOUNCEMENT_TITLE}">{ANNOUNCEMENT_TITLE}</a></li>
+    <li class="w140 f_center" title="实际发布日期 {SEND_TIME}">{sendData}</li>
+    <li class="w180 f_center" title="创建人：{CREATE_NAME}；最后一次修改时间：{UPDATE_NAME}；最后一次修改人：{UPDATE_TIME}">{CREATE_TIME}</li>
+    <li class="w100 f_center {stateCss}">{SEND_STATE}</li>
+    <li class="w88 f_center">{tools}</li>
+</ul>
+</div>
+<div id="liFoot" style="display:none;">
+    <ul>
+    	<li></li>
+    </ul>
+</div>
+<div id="liErr" style="display:none;">
+  <ul>
+    <li>没有符合条件的数据</li>
+  </ul>
+</div>

@@ -1,0 +1,121 @@
+<div class="recharge_box" id="cw_gl_recharge2" style="display:none;">
+  <div class="recharge_title"><b id="cw_cz_brand">充值</b><span><input name="close_bnt" type="image" src="/static/ads_m_1.0/web/images/view_close.gif" onClick="$UE.close('cw_gl_recharge2');" style="cursor:pointer;"></span></div>
+  <div class="recharge_main">
+  	<div class="chaxun">
+		<ol>
+             <li class="recharge_li_left">
+                 <select name="xc">
+                  <option value="1">登录名</option>
+                  <option value="2">公司名称</option>
+                  <option value="3">公司网址</option>
+               </select>
+            </li>
+            <li class="recharge_li_left padc1"><form action="" method="get"><input name="time" type="text" class="input01"></form></li>
+            <li class="recharge_li_left"><a href="#">查询</a></li>
+            <li class="recharge_li_left radio_re">
+              <form id="form1" name="form1" method="post" action="">
+                  <label>
+                    <input name="RadioGroup1" type="radio" id="RadioGroup1_0" value="单选" checked="checked"/>
+                    [1PANDR4VLGC1]北京探网科技发展有限公司</label>
+                  <label>
+                    <input type="radio" name="RadioGroup1" value="单选" id="RadioGroup1_1"/>
+                    [1PANDR4VLGC1]北京探网科技发展有限公司</label>
+                  <label>
+                    <input type="radio" name="RadioGroup1" value="单选" id="RadioGroup1_1"/>
+                    [1PANDR4VLGC1]北京探网科技发展有限公司</label>
+                  <label>
+                    <input type="radio" name="RadioGroup1" value="单选" id="RadioGroup1_1"/>
+                    [1PANDR4VLGC1]北京探网科技发展有限公司</label>
+              </form>
+            </li>
+		</ol>
+    </div>
+  	<div id="cw_ms_brand" class="miaoshu">
+    	<div class="ms_lf">
+        	<ul>
+            	<li>登录名：</li>
+             	<li>公司名称：</li>
+            	<li>开户时间：</li>
+            	<li>投资总额：</li>
+           </ul>
+        </div>
+    	<div class="ms_rg">
+        	<ul>
+            	<li>1PANDR4VLGC1</li>
+             	<li>北京探网科技发展科技有限公司</li>
+            	<li>2011-12-12</li>
+            	<li><span class="red">100，000.00</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;当前账面余额(￥)：<span class="red">100，000.00</span></li>
+           </ul>
+        </div>
+    </div>
+    <div id="cw_sr_brand" class="shuru">
+    	<div>
+            <div class="shuru_lf">
+                <ul>
+                    <li class="h20"><s class="red">*</s> 充值金额(￥)：</li>
+                </ul>
+            </div>
+            <div class="shuru_rg">
+                <ol>
+                    <li class="h20"><input name="" type="text" class="input01"></li>
+                </ol>
+            </div>
+        </div>
+        <div>
+            <div class="shuru_lf">
+                <ul>
+                    <li class="h20"><s class="red">*</s> 付款方式：</li>
+                </ul>
+            </div>
+            <div class="shuru_rg">
+                <ol>
+                    <li class="h20">
+                            <select name="xianjin_hui" >
+                              <option value="1">支票</option>
+                              <option value="2">汇款</option>
+                              <option value="3">现金</option>
+                            </select>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div id="xianjin" style="disp lay:none;">
+            <div class="shuru_lf">
+                <ul>
+                    <li class="h60"><s class="red">*</s> 凭证备注：</li>
+                </ul>
+            </div>
+            <div class="shuru_rg">
+                <ol>
+                    <li class="h60"><textarea name="" cols="" rows=""></textarea></li>
+                </ol>
+            </div>
+        </div>
+        <div>
+            <div class="shuru_lf">
+                <ul>
+                    <li class="h20"><s class="red">*</s> 凭证号：</li>
+                </ul>
+            </div>
+            <div class="shuru_rg">
+                <ol>
+                    <li class="h20"><input name="" type="text" class="input01"></li>
+                </ol>
+            </div>
+        </div>
+        <div>
+            <div class="shuru_lf">
+                <ul>
+                    <li class="h20"><s class="red">*</s> 凭证文件：</li>
+                </ul>
+            </div>
+            <div class="shuru_rg">
+                <ol>
+                    <li class="h20"><input name="" type="text" class="input01"><a href="#">上传</a></li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="c_btn c_btn_brand_new" align="center"><ol><li><a href="javascript:$UE.close('cw_gl_recharge2');">确定</a><a onClick="$UE.close('cw_gl_recharge2');" >取消</a></li></ol></div>
+</div>

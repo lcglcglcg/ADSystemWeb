@@ -1,0 +1,56 @@
+	<div class="scommon_box scommon_box_keshi" id="add_keyword" style="display:none;">
+    	<div class="scommon_title"><p>添加关键词</p><a onClick="$UE.close('add_keyword');"></a></div>
+<!--精准定向-->
+            <div class="k_glance">
+           <!--定向搜索行为 左侧展示-->
+                <div class="glance_left glance_left_k">
+                    <div class="glr_hsz"><span class="y_select">输入/导入关键词</span><a href="#">全部删除</a></div>
+                    <div class="tuijian_nav">
+          <!--定向搜索行为 推荐结果-->
+                        <div class="result">
+                            <span class="re_arrow"><a href="#" class="re_all">添加全部</a></span>
+                            <span class="re_arrow"><input type="image" class="input_img" src="/static/ads_c_2.0/web/images/btn_daoru.gif" name="" alt=""></span>
+                        </div>
+          <!--定向搜索行为 推荐结果的展示-->
+                        <div class="result_show_keyword">
+                            <div class="res_textarea">
+                            	<textarea name="" cols="" rows="">
+                                	
+                                </textarea>
+                            </div>
+                        <div class="lf_zhushi">
+                        	<ul>
+                            	<li>每个关键词最多为20个汉字或40个英文</li>
+<!--                            	<li><span>匹配方式：</span><span class="class_ts" onmouseout="arrow_no_hover1();" onmouseover="arrow_hover1();"></span></li>
+                            	<li>[关键词]=精确匹配</li>
+                            	<li>[关键词]=广泛匹配（默认）</li>
+-->                            </ul>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+           <!--定向搜索行为 右侧展示-->
+           	    <div class="glance_right glance_right_k">
+                	<div class="glr_hsz"><span class="y_select">已选关键词(32)</span><a href="#">全部删除</a></div>
+                    <div class="res_rg_shu">
+                      <!--共两级别 第一级别-->
+                    	<div class="rg_num">
+                        	<div>
+                       		<!--第一级别-->
+                           		<div class="rg_level" onmouseover="$UE.display('delete_id','block')" onmouseout="$UE.display('delete_id','none')">
+                                    <span class="rg_level_tt1">关键词</span>
+                                    <a href="#" class="delete" id="delete_id" style="display:none;"></a>
+                            	</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        <!--按钮 -->
+        <div class="step_commom_btn" align="center">
+            <div class="s_c_width1">
+                <a class="btn" onclick="javascript:$UE.confirm('保存成功！系统已成功去除*个重复关键词','','$UE.close(\'add_keyword\')');"><span>保存</span></a>
+				<a onclick="javascript:$UE.close('add_keyword');" class="btn"><span>取消</span></a>
+           </div>
+        </div>
+            </div>
+</div>

@@ -1,0 +1,42 @@
+<div id="userListLiMenu" style="display:none;">
+  <ul class="b_line">
+    <li class="w50">
+      <input type="checkbox" name="userCheckboxAll" onclick="window.account.selectAll.call(this);">
+    </li>
+    <li class="w100 f_bold">登录名</li>
+    <li class="wx150 f_bold">公司名称</li>
+    <li class="w75 f_bold">销售</li>
+    <li class="w75 f_bold">所属客服</li>
+    <li class="w85 f_bold">所在区域</li>
+    <li class="w110 f_bold">消费金额(￥)</li>
+    <li class="w80 f_bold">开户日期</li>
+    <li class="w65 f_bold">状态</li>
+    <li class="w180 f_bold">操作</li>
+  </ul>
+</div>
+<div id="userListLi" style="display:none;">
+  <ul>
+    <li class="w50">
+      <input type="checkbox" name="userCheckbox" value="{ACCOUNT_ID}"  onclick="window.account.selectId.call(this);">
+    </li>
+    <li class="w100 f_center" ><a name="demo" value="{ACCOUNT_ID}">{LOGIN_NAME}</a></li>
+    <li class="wx150"><a href="{COMPANY_SITE}" target="_blank" title="{COMPANY_NAME}" >{COMPANY_NAME}</a></li>
+    <li class="w75 f_center">{SALES}</li>
+    <li class="w75 f_center">{CUSTOMER_SERVICE}</li>
+    <li class="w85 f_center">{REGION_NAME_CN}</li>
+    <li class="w110 f_center">{CONSUMPTION}</li>
+    <li class="w80 f_center">{CREATE_TIME}</li>
+    <li class="w65 f_center {stateCss}">{STATUS}</li>
+    <li class="w180 f_center">{tools}</li>
+  </ul>
+</div>
+<div id="userListLiFoot" style="display:none;">
+  <ul>
+    <li></li>
+  </ul>
+</div>
+<div id="userListLiErr" style="display:none;">
+  <ul>
+    <li>没有符合条件的数据</li>
+  </ul>
+</div>

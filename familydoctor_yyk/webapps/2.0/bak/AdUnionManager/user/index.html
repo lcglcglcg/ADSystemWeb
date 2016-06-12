@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>客户管理-账号管理</title>
+<!--#include virtual="/public/public.shtml"-->
+<link rel="stylesheet" type="text/css" href="/static/ads_m_1.0/web/css/body_list.css">
+<link rel="stylesheet" type="text/css" href="/static/ads_m_1.0/web/css/account_add.css">
+<link rel="stylesheet" type="text/css" href="/static/ads_m_1.0/web/css/input.css">
+<link rel="stylesheet" type="text/css" href="/static/ads_m_1.0/web/css/page.css">
+<script language="javascript" src="/static/web/js/common/common_time.js"></script>
+</head>
+<body>
+<script>
+window.urlName='user';
+</script>
+<!--#include virtual="/user/account_view.html"-->
+<!--#include virtual="/public/header.shtml"-->
+<div class="ad_box">
+  <div class="main">
+  	<div class="curr_position">当前位置：<span>客户管理>账号管理</span></div>
+<!-- 查询条件conditions start -->
+    <div class="conditions">
+		<ol>
+             <li class="conditions_li">
+                 <select name="FIND_NAME_TYPE">
+                  <option value="1">登录名</option>
+                  <option value="2">公司名称</option>
+                  <option value="7">销售</option>
+                  <option value="8">所属客服</option>
+                  <option value="3">公司网址</option>
+                  <option value="4">所在区域</option>
+                  <option value="5">消费金额大于等于</option>
+                  <option value="6">消费金额小于等于</option>
+                </select>
+            </li>
+            <li class="conditions_li padl4"><input name="FIND_NAME" type="text" class="input06"></li>
+		</ol>
+		<ol>
+            <li class="conditions_li"><span>开户时间：</span></li>
+            <li class="conditions_li"><input name="findtime" type="text" class="times"><input notValue="true" name="calendar" type="image" src="/static/ads_m_1.0/web/images/calendar.gif" class="calendar"></li>
+            <li class="conditions_li padl4"><span class="w40">状态：</span></li>
+            <li class="conditions_li">
+                <select name="STATUS">
+                  <option value="100">全部</option>
+                  <option value="1">已开通</option>
+                  <option value="2">已冻结</option>
+                </select>
+            </li>
+             <li class="conditions_li padl4"><span>排序方式：</span></li>	
+             <li class="conditions_li">
+                 <select name="SORT_COLUMN">
+                  <option value="1">登录名</option>
+                  <option value="2">公司名称</option>
+                  <option value="3">所在区域</option>
+                  <option value="4">消费金额(￥)</option>
+                  <option value="5" selected="selected">开户时间</option>
+                  <option value="6">状态</option>
+                </select>
+            </li>
+             <li class="conditions_li padl4">
+                 <select name="SORT_TYPE">
+                  <option value="1">升序</option>
+                  <option value="2" selected="selected">降序</option>
+                </select>
+            </li>
+            <li class="conditions_li padl4 c_select"><a style="background: url('/static/ads_m_1.0/web/images/icon.gif') no-repeat scroll 0 -150px;color: #000000;display: block;font-weight: bold;height: 19px;line-height: 20px;text-align: center;text-decoration: none;width: 62px;" id="subList">查询</a></li>
+		</ol>
+    </div>
+<!-- 查询条件conditions end -->
+<!-- 查询条件s_content start -->
+    <div class="s_content" id="userList"></div>
+<!-- 查询条件s_content end -->
+     <div class="s_bottom">
+      	<div class="b_lf lf" id="accountIndex" style="display:none;">
+        	<ol>
+        	  <li><a>新增</a></li>
+        	  <li><a>冻结</a></li>
+        	  <li><a>解冻</a></li>
+        	  <li><a>删除</a></li>
+              </ol>
+        </div>
+		<!--#include virtual="/public/page.html"-->
+      </div>
+  </div>
+</div>
+<!--#include virtual="/user/list.html"-->
+<!--#include virtual="/user/edit.html"-->
+<!--#include virtual="/user/account_safe_set.html"-->
+<!--#include virtual="/public/footer.html"-->
+<script language="javascript" src="/static/web/js/thirdparty/swfupload.js"></script> 
+<script language="javascript" src="/static/web/js/thirdparty/swfupload.queue.js"></script> 
+<script language="javascript" src="/static/web/js/common/common_upload.js"></script>
+<script language="javascript" src="/static/web/js/page/manager/account.js"></script>

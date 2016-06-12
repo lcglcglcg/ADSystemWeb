@@ -1,0 +1,51 @@
+<div class="gz_alter_box" id="role_alter" style="display:none;">
+  <div class="gz_alter_title"><b>新增角色</b><span><input name="close_bnt" type="image" src="/static/ads_m_1.0/web/images/view_close.gif" onClick="$UE.close('role_alter');" style="cursor:pointer;"></span></div>
+  <div class="gz_alter_main">
+  	<div class="gz_alter_cont">
+      <div class="cont_lf">
+      	<ul>
+        	<li class="h20"><s class="red">*</s> 角色名称：</li>
+        	<li class="h45"><s class="red">*</s> 角色描述：</li>
+        	<li class="h30"><s class="red">*</s> 权限分配：</li>
+       </ul>
+      </div>
+      <div class="cont_rg">
+      	<ol>
+        	<li class="h20"><input name="time" type="text" class="input02_role" value="">不超过20个字符</li>
+        	<li class="h20"><div class="max_word">负责系统用户、开户发布公告、广告审核、充值相关信息</div>不超过50个字符</li>
+        	<li class="h20">
+            	<ol>
+                	<li>
+                    	<div class="ra_level1"><input name="" type="checkbox" value=""  class="role_add">系统管理</div>
+                        <span class="ra_level2"><input name="" type="checkbox" value=""  class="role_add">用户管理</span>
+                        <span class="ra_level2"><input name="" type="checkbox" value=""  class="role_add">系统日志</span>
+                    </li>
+                	<li>
+                    	<div class="ra_level1"><input name="" type="checkbox" value=""  class="role_add">客户管理</div>
+                        <span class="ra_level2"><input name="" type="checkbox" value=""  class="role_add">账号管理（<input name="" type="checkbox" value=""  class="role_add">只读）</span>
+                        <span class="ra_level2"><input name="" type="checkbox" value=""  class="role_add">客户公告管理</span>
+                        <span class="ra_level2"><input name="" type="checkbox" value=""  class="role_add">系统日志</span>
+                    </li>
+                	<li>
+                    	<div class="ra_level1"><input name="" type="checkbox" value=""  class="role_add">广告审核</div>
+                        <span class="ra_level2"><input name="" type="checkbox" value=""  class="role_add">图片创意审核</span>
+                        <span class="ra_level2"><input name="" type="checkbox" value=""  class="role_add">文字创意审核</span>
+                        <span class="ra_level2"><input name="" type="checkbox" value=""  class="role_add">附加创意审核</span>
+                    </li>
+                	<li>
+                    	<div class="ra_level1"><input name="" type="checkbox" value=""  class="role_add">财务管理</div>
+                        <span class="ra_level2"><input name="" type="checkbox" value=""  class="role_add">充值管理</span>
+                        <span class="ra_level2"><input name="" type="checkbox" value=""  class="role_add">充值查询</span>
+                    </li>
+                	<li>
+                    	<div class="ra_level1"><input name="" type="checkbox" value=""  class="role_add">字典管理</div>
+                        <span class="ra_level2"><input name="" type="checkbox" value=""  class="role_add">媒体管理</span>
+                    </li>
+                </ol>            
+            </li>
+       </ol>
+      </div>
+  	</div>
+<div class="gz_btn" align="center"><ol><li><a onclick="javascript:$UE.close('role_alter');$UE.alert('保存成功！','$UE.open(\'role_view\')');">保存</a><a onClick="$UE.close('role_alter');">取消</a></li></ol></div>
+  </div>
+</div>

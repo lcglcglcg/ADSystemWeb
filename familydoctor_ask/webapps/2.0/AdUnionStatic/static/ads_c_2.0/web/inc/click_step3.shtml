@@ -1,0 +1,153 @@
+	<div class="scommon_box  scommon_box_widen" id="click_step3" style="display:none;">
+    	<div class="scommon_title"><p id="c_step3_name">新建创意</p><a onClick="$UE.close('click_step3');"></a></div>
+    	<div class="fujia_main scommon_main_h1widen">
+        	<div class="all_title" id="c_step_addtitle3"><span>新建推广计划</span><span class="step_rg_bg">新建推广组</span><span class="span_three step_curr">新建创意</span></div>
+        <!-- 新建创意 内容 start-->
+       		 <!-- 默认创意预览内容 -->
+                <div class="c_default">
+       			 <!-- 左边内容 -->
+                    <div class="cd_lf">
+                        <ul>
+                        	<li><em>创意标题：</em><s>最多50个字符</s></li>
+                            <li>
+                                <input name="" type="text" class="input_w1" value=""/>
+                            </li>
+                        	<li class="li_red" style="display:none;">输入信息错误</li>
+                            <li><em>创意描述：</em><s>最多160个字符</s></li>
+                            <li class="li_height">
+                                <textarea name="" cols="" rows="" style="resize:none" class="text_size"></textarea>
+                            </li>
+                        	<li class="li_red" style="display:none;">输入信息错误</li>
+                            <li><em>访问URL：</em><s>最多1017个字符</s></li>
+                            <li>
+                                http://<input name="" type="text" class="input_w2" value=""/>
+                            </li>
+                        	<li class="li_red" style="display:none;">输入信息错误</li>
+                            <li><em>显示链接：</em><s>最多35个字符</s></li>
+                            <li>
+                                <input name="" type="text" class="input_w1" value=""/>
+                            </li>
+                        	<li class="li_red" style="display:none;">输入信息错误</li>
+                            <li><em>绑定附加创意：</em><i><input name="" type="checkbox" value="" checked="checked"/>仅显示有效附加创意</i></li>
+                            <li>
+                                <select name="" class="select_size">
+                                  <option value="1"></option>
+                                  <option value="2" title="子链预览1 子链预览2 子链预览3 子链预览4">子链预览1 子链预览2 子链预览3 子链预览4</option>
+                                  <option value="3" title="子链预览1 子链预览2 子链预览3 子链预览4">子链预览1 子链预览2 子链预览3 子链预览4</option>
+                                </select>
+                            </li>
+                        <li>
+                            <a onclick="javascript:$UE.open('new_add_creative');" class="tianjia">添加附加创意</a>
+                        </li>
+                        <li>
+                            <a id="add_linkid" onclick="javascript:$UE.display('add_link','block');$UE.display('add_linkid','none');$UE.display('j_linkid','block');" class="tianjia">添加移动链接(选填)</a>
+                            <a id="j_linkid" onclick="javascript:$UE.display('add_link','none');$UE.display('j_linkid','none');$UE.display('add_linkid','block');" class="tianjia_j" style="display:none;">添加移动链接(选填)</a>
+                        </li>
+                        <li class="add_link" id="add_link" style="display:none;">
+                        	<ul>
+                                <li><em>访问URL：</em><s>最多1017个字符</s></li>
+                                <li>
+                                    http://<input name="" type="text" class="input_w2" value=""/>
+                                </li>
+                                <li class="li_red" style="display:none;">输入信息错误</li>
+                                <li><em>显示链接：</em><s>最多35个字符</s></li>
+                                <li>
+                                    <input name="" type="text" class="input_w1" value=""/>
+                                </li>
+                        		<li class="li_red" style="display:none;">输入信息错误</li>
+                            </ul>
+                        </li>
+                        </ul>
+        <!--公共按钮 新建创意-->
+                <div class="step_commom_btn" id="new_btn3">
+                	<div class="s_c_width">
+                    	<a class="btn" onClick="javascript:$UE.alert('保存成功！','$UE.close(\'click_step3\')');"><span>保存</span></a>
+                        <a class="btn" href="#"><span>保存并添加创意</span></a>
+                        <a class="btn" onClick="javascript:$UE.confirm('您确定要中止新建创意操作吗？','','$UE.close(\'click_step3\')');"><span>取消</span></a>
+                    </div>
+                </div>
+        <!--公共按钮 新建创意-->
+                <div class="step_commom_btn" id="new_u_btn3" style="display:none;">
+                	<div class="s_c_width s_c_width1">
+                    	<a class="btn" onClick="javascript:$UE.alert('保存成功！','$UE.close(\'click_step3\')');"><span>保存</span></a>
+                        <a class="btn" onClick="javascript:$UE.close('click_step3');"><span>取消</span></a>
+                    </div>
+                </div>
+                    </div>
+       			 <!-- 右边内容 -->
+                <div class="cy_show">
+                    <div class="cylf_show"> <em>左侧推广位预览：</em>
+                      <div class="default_bg">
+                        <div class="title_h">
+                            <span class="line1_tt">
+                                <i class="line1_cont">
+                                <a class="font_nolink1" target="_blank" name="testTitle">这里显示您的推广标题</a>
+                                </i> 
+                                <i class="line1tt_img" name="webim" style="display:{guahaoTokenDisplay};"></i>
+                            </span> 
+                            <span class="zixun" style="display:{webimDisplay};" >
+                                <a class="font_nolink2" target="_blank">咨询</a>
+                            </span>
+                            <span class="guahao" name="guahaoToken" onclickName="guahao" style="display:{guahaoTokenDisplay};">
+                                <a class="font_nolink2" target="_blank">挂号</a>
+                            </span>
+                            <div class="pingl" name="guahaoToken" style="display:{guahaoTokenDisplay};">
+                                <div class="start1">
+                                    <div class="start2" style="width:{starScore}%; "></div>
+                                </div>
+                                <a class="ping_nolink3" target="_blank">查看评论 </a>
+                            </div>
+                        </div>   
+                          
+                        <div class="content_style">
+                            <span class="content_word"> 
+                                <a class="word_nolink" name="testDescription1">这里显示您的创意描述</a>
+                            </span> 
+                            <span class="yi_name" keygh="hospType2" name="guahaoToken" style=" display:{guahaoTokenDisplay};">医院类型,医院性质</span>
+                        </div>
+                          
+                          
+                        <div class="zi_link"> 
+                            <span class="zi_link_lf" name="appendList" style="display:block;">
+                                <i><a>子链预览1</a></i> | 
+                                <i><a>子链预览2</a></i> | 
+                                <i><a>子链预览3</a></i> | 
+                                <i><a>子链预览4</a></i> | 
+                                <i><a>子链预览5</a></i> 
+                                <i class="zi_link_address" style=" display:none;"><a name="testDisplayUrl" target="_blank">wangmeng.haomeit.com</a></i>
+                            </span>
+                          <span class="zi_link_rg" name="guahaoToken" style="display:{guahaoTokenDisplay};"><a style="<strong></strong>" target="_blank">医院地址</a>
+                          </span>
+                           </div>
+                      </div>
+                    </div>
+                    
+                    <div class="duan_box">
+                        <em>右侧推广位预览：</em>
+                        <div class="duan_title">
+                            <span class="dtitle">
+                            <a name="testTitle" class="duan_nolink1">这里显示您的推广标题</a>
+                            </span>
+                            <div class="duan_cont">
+                            <a class="duan_nolink2" name="testDescription1">这里显示您的创意描述</a>
+                            </div>
+                            <div class="duan_line3"> 
+                                <a class="duan_nolink3" name="testDisplayUrl">wangmeng.haomeit.com</a>
+                                 <span class="url_bg">
+                                     <img src="/static/ads_c_2.0/web/images/cy_ico_01.png" width="16" height="16" style=" float:left; margin-top:3px;"/>
+                                 </span>
+                                 </div>
+                            </div>
+                    </div>
+                </div>
+           			 <!-- 底部内容 -->
+                 <div class="cyrg_footer">
+                 	医院认证、挂号入口、医院类型、医院性质、医院地址信息需要在系统中进行<a href="http://www.guahao.com/" target="_blank">挂号网</a>授权才能显示。<br />
+                    咨询入口只有在账户信息绑定了有效的咨询链接地址时才会显示。
+                 </div>
+                </div>
+                
+        <!-- 新建创意 内容 end-->
+
+        </div>
+    </div>

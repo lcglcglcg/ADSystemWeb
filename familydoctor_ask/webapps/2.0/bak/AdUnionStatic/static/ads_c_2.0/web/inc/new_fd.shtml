@@ -1,0 +1,36 @@
+<div id="new_fd" class="set_view_create_cont" style=" display:none; position:relative;">
+    <div class="scommon_title" ><p id="step1_name">查看设置</p><a onclick="$UE.close('new_fd');"></a></div>
+    <div class="svc_cont">
+        <div class="set_cont_top">
+            <a href="#" target="_blank"><img src="/static/ads_c_2.0/web/images/58-com3_01.jpg" width="170" height="140" class="set_cont_top_img1" /></a>
+            <dl id="view_create">
+                <dt><a href="#" target="_blank">创意标题创意标题创标题创意</a></dt>
+                <dd class="set_cont_top_ms">创意描述创意描述创意描述创意描述创意描述创意描述创意描述创意描述创意描述创意描述创意描述创意描述创意描述创意描述创意描述创意描述创意描述创意描述创意描述创意描述创意描述创意描...<a href="#" target="_blank">更多</a></dd>
+                <dd>电话：<span>010-66018999</span></dd>
+                <dd>官网：<a href="#" target="_blank">http://www.sg120.com</a></dd>
+            </dl>
+            <dl id="cancel_view_create" style="display:none;">
+                <dt><a href="#" target="_blank">修改前创意修改前创意改前创意</a></dt>
+                <dd class="set_cont_top_ms">修改前创意修改前创意修改前创意修改前创意修改前创意修改前创意修改前创意修改前创意修改前创意修改前创意修改前创意修改前创意修改前创意修改前创意修改前创意修改前创意修改前创意修改前创意修...<a href="#" target="_blank">更多</a></dd>
+                <dd>电话：<span>010-66018999</span></dd>
+                <dd>官网：<a href="#" target="_blank">http://www.sg120.com</a></dd>
+            </dl>
+            <a class="online_zx" href="#" target="_blank"><img src="/static/ads_c_2.0/web/images/58-ad03.gif" width="89" height="23"/></a>
+            <a class="appointment_gh" href="#" target="_blank"><img src="/static/ads_c_2.0/web/images/58-ad04.gif" width="89" height="23"/></a>
+        </div>
+        <div class="set_cont_bottom">
+            <a href="#" target="_blank"><img src="/static/ads_c_2.0/web/images/58-com3_02.jpg" width="120" height="90" /></a>
+            <a href="#" target="_blank"><img src="/static/ads_c_2.0/web/images/58-com3_02.jpg" width="120" height="90"/></a>
+            <a href="#" target="_blank"><img src="/static/ads_c_2.0/web/images/58-com3_02.jpg" width="120" height="90"/></a>
+            <a href="#" target="_blank"><img src="/static/ads_c_2.0/web/images/58-com3_02.jpg" width="120" height="90"/></a>
+            <a href="#" target="_blank"><img src="/static/ads_c_2.0/web/images/58-com3_02.jpg" width="120" height="90" class="set_cont_bottom_img1"/></a>
+        </div>
+        <div id="dai_new_fd" class="dai_new_fd">
+            <ul>
+                <li><a id="dai_update_q" class="btn" onclick="$UE.display('dai_update_y,cancel_view_create','block');$UE.display('dai_update_q,view_create','none');"><span>预览修改前创意</span></a></li>
+                <li><a id="dai_update_y" class="btn" onclick="$UE.display('dai_update_q,view_create','block');$UE.display('dai_update_y,cancel_view_create','none');" style="display:none;"><span>预览修改后创意</span></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+

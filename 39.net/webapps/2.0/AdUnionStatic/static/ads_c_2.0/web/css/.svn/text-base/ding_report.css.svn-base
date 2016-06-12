@@ -1,0 +1,45 @@
+/* CSS Document */
+/* color 颜色 */
+.red{ color:#F00;}
+.green{ color:#07BF0B;}
+.blue{ color:#1a00da;}
+.lfp{ float:left; margin-left:30px;}
+/* title 标题 */
+.account_box{width:450px;background:#FFF; border:1px solid #5398f6;}
+.account_box .account_title{ width:435px;height:31px; line-height:31px; background:#5398f6 url(/static/ads_c_2.0/web/images/step_rg_bg.png) no-repeat right center; padding-left:15px; color:#FFF;}
+.account_box .account_title b{ float:left;}
+.account_box .account_title span{ float:right; padding:7px 10px 0 0;}
+/* account_cont  */
+.account_box .account_main{padding:10px; border:none; background:none;}
+.account_cont .cont_lf{ float:left; width:100px; text-align:right;}
+.account_cont .cont_rg{ float:right; width:320px;}
+
+.account_cont .cont_lf_view{ float:left; width:130px; text-align:right;}
+.account_cont .cont_rg_view{ float:right; width:290px;}
+.account_cont .cont_rg ol li.h20_word{ line-height:16px; height:45px; width:270px; color:#999;}
+.account_cont .cont_rg ol li.h20 ul li{ display:inline; float:left; height:24px; line-height:24px;}
+.account_cont .cont_rg ol li.h20 a{ display:block; width:48px; float:left; height:20px; background:url(/static/ads_c_2.0/web/images/icon.gif) repeat-x 0 -200px; color:#000; font-weight:bold; text-align:center; line-height:20px; text-decoration:none; margin-left:10px;}
+.account_cont .cont_rg ol li.h20 a:hover{ color:#FFF; font-weight:bold; text-align:center; line-height:20px; text-decoration:none;background:url(/static/ads_c_2.0/web/images/icon.gif) repeat-x 0 -250px;}
+.account_cont .cont_rg ol li.h20 input{ width:260px;}
+#check{ width:20px;}
+.h20{ height:22px; line-height:22px; margin-bottom:8px;}
+.h22{ height:28px; line-height:28px;_height:34px; _line-height:34px; margin-bottom:6px;}
+.h30{ height:55px;margin-bottom:8px;}
+.h65{ height:65px;margin-bottom:8px;}
+.m_bottom{ margin-bottom:8px;}
+/* c_btn 两个按钮居中 */
+.c_btn{ clear:both; width:420px; height:22px ; padding-bottom:10px;}
+.c_btn ol{ width:400px;}
+.c_btn ol li{ width:130px; height:22px;}
+/* c_btn 一个按钮居中 */
+.c_btn{ clear:both; width:450px; height:22px ; padding-bottom:10px;}
+.c_btn ul{ width:450px; height:22px;}
+.c_btn ul li{ width:60px; height:22px;}
+.c_btn ul li a{ display:block; width:50px; height:22px; line-height:22px; float:left; text-align:center; font-weight:bold; background:url(/static/ads_c_2.0/web/images/icon.gif) no-repeat 0 -300px; margin-right: 10px;}
+.c_btn ul li a:link,.c_btn ul li a:visited{ color:#000; font-weight:bold;text-decoration:none;}
+.c_btn ul li a:hover{ background:url(/static/ads_c_2.0/web/images/icon.gif) no-repeat 0 -250px; font-weight:bold;color:#FFF; text-decoration:none;}
+
+
+
+
+

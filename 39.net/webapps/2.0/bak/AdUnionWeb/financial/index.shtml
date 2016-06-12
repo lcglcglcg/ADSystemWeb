@@ -1,0 +1,114 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>健康网盟-财务管理</title>
+<link rel="stylesheet" type="text/css" href="/static/ads_c_2.0/web/css/financial.css"/>
+<link rel="stylesheet" type="text/css" href="/static/ads_c_2.0/web/css/prettify.css" />
+<link rel="stylesheet" type="text/css" href="/static/ads_c_2.0/web/css/page.css" />
+</head>
+
+<body>
+<!--#include virtual="/public/public.shtml"-->
+<script language="javascript" src="/static/web/js/common/common_time.js"></script>
+<script language="javascript" src="/static/web/js/thirdparty/FusionCharts.js"></script>
+<script language="javascript" src="/static/web/js/page/financial.js"></script> 
+<!--#include virtual="/public/header.shtml"-->
+<div class="main">
+	<div class="cw_power">
+    	<a id="titleh1" class="cw_curr" style="display:none;">财务信息</a><a id="titleh2" >充值记录</a>
+    </div>
+    <div class="cw_main">
+<!-- 财务信息 start -->
+        <div class="financial_cont" id="conth1">
+        <!-- 信息展示 start -->
+            <div class="conditions">
+                <ol class="conth1_ol">
+                    <li>账面余额：</li> 
+                    <li class="cw_w100" name="BALANCE"></li>
+                    <li class="padl">消费总额：</li>
+                    <li class="cw_w100" name="CONSUMPTION"></li>
+                    <li class="padl">总投资额：</li>
+                    <li class="cw_w100" name="INVEST"></li>
+                </ol>
+            </div>
+        <!-- 信息展示 end -->
+        <!-- 列表内容content_list start -->
+            <div class="content_list">
+                <div class="list_lf">
+                <div id="chartdiv" align="center" class="loading_height"></div>
+                </div>
+                
+                <div class="list_rg">
+                <div id="chartdiv1" align="center" class="loading_height"></div>
+                </div>
+        <!-- 列表内容content_list end -->
+            </div>
+
+        </div>
+<!-- 财务信息 start -->
+ 	
+<!-- 充值记录 start -->
+        <div class="recharge_cont" style="display:;" id="conth2">
+    <!-- 查询条件conditions start -->
+        <div class="conditions" id="financialSearchDiv">
+            <ol>
+                <li class="jibie_01 tions_lf">
+                    <select name="FIND_NAME_TYPE" class="select_w1">
+                      <option value="1">流水号</option>
+                      <option value="2">凭证</option>
+                    </select>
+                </li>
+                <li class="tions_lf"><input name="FIND_NAME" type="text" class="input_liushui" /></li>
+                <li class="padl1 tions_lf"><span>付款方式：</span></li>
+                <li class="tions_lf">
+                    <select name="MONEY_TYPE">
+                      <option value="100">全部</option>
+                      <option value="1">支票</option>
+                      <option value="2">汇款</option>
+                      <option value="3">现金</option>
+                    </select>
+                </li>
+            </ol>
+            <ol>
+                <li class="tions_lf"><span>加款时间：</span><input name="findTime" type="text" class="pc_01" /><input name="calendar" type="image" src="/static/ads_c_2.0/web/images/dataImg.jpg" class="pc_img" setvalue="ThisMonth" ></li>
+                <li class="padl1 tions_lf"><span>排序方式：</span></li>
+                <li class="tions_lf">
+                    <select name="SORT_COLUMN">
+                      <option value="1">流水号</option>
+                      <option value="2">充值金额</option>
+                      <option value="3">付款方式</option>
+                      <option value="4">投资总额</option>
+                      <option value="5">账面余额</option>
+                      <option value="6" selected="selected" >加款时间</option>
+                    </select>
+                </li>
+                <li class="padl tions_lf">
+                    <select name="SORT_TYPE" class="select_w3">
+                      <option value="1">升序</option>
+                      <option value="2" selected="selected">降序</option>
+                    </select>
+               </li>
+                <li class="padl c_select tions_lf"><a href="#" id="financialSearchSub">查询</a></li>
+            </ol>
+        </div>
+    <!-- 查询条件conditions end -->
+    
+    <!-- 列表内容content_list start -->
+        <div class="content_list">
+        	<div class="content_list_lf">
+            
+            </div>
+            <div class="cw_page_border">
+<!--#include virtual="/public/page.html"-->
+            </div>       
+        </div>
+    <!-- 列表内容content_list end -->
+        </div>
+<!-- 充值记录 end -->
+	</div>
+</div>
+<!--#include virtual="/public/footer.html"-->
+
+</body>
+</html>

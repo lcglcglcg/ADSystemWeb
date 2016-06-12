@@ -1,0 +1,31 @@
+/* CSS Document */
+
+/* 公共样式--开始 */
+.lfp{ float:left; margin-left:5px;}
+.update_box{width:525px;background:#FFF; border:1px solid #5398f6;}
+.update_box .update_title{ width:510px;height:31px; line-height:31px; background:#5398f6 url(/static/ads_c_2.0/web/images/step_rg_bg.png) no-repeat right center; padding-left:15px; color:#FFF;}
+.update_box .update_title b{ float:left;}
+.update_box .update_title span{ float:right; padding:7px 10px 0 0;}
+.update_box .update_main{padding: 5px 10px; border:none; background:none;}
+.update_cont .update_cont_lf{ float:left; width:120px; text-align:right;}
+.update_cont .update_cont_rg{ float:right; width:380px;}
+.update_cont .u_input_01{ width:168px; margin-right:5px;}
+.update_cont .u_input_02{ width:240px; margin-right:5px;}
+/* 公共样式--结束 *
+/
+/* 修改账户密码  */
+.update_cont .row_01{ clear:both; margin:5px 0 10px 0; overflow:hidden;}
+.up_red1{ width:390px; padding:0 50px 10px 60px; color:#F00; line-height:18px;}
+
+/* 设置密保手机  */
+.up_gray1{ width:340px; padding:0 30px 10px 0px; color:#999; line-height:18px;}
+/* 选择修改密码方式  */
+.update_pwd_ul{ width:450px; padding:10px; height:55px;}
+.update_pwd_ul li{ float:left; width:75px; margin-right:20px; height:55px; line-height:55px; padding-left:55px; font-weight:bold;}
+.update_pwd_ul li.pwd_question{ background:url(/static/ads_c_2.0/web/images/question.gif) no-repeat 0 3px; }
+.update_pwd_ul li.pwd_phone{ background:url(/static/ads_c_2.0/web/images/iphone.gif) no-repeat 0 3px;}
+.update_pwd_ul li.pwd_email{ background:url(/static/ads_c_2.0/web/images/mailbox.gif) no-repeat 0 3px;}
+
+/* 密保问题修改密码--第一步  */
+.light_blue{ color:#00ccff; font-weight:bold;}
+

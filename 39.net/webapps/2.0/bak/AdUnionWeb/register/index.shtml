@@ -1,0 +1,153 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>注册页面</title>
+<link rel="stylesheet" type="text/css" href="/static/ads_c_2.0/web/css/register.css"/>
+</head>
+
+<body>
+<!--#include virtual="/public/public.shtml"-->
+<script language="javascript" src="/static/web/js/common/common_industry.js"></script>
+<script language="javascript" src="/static/web/js/common/common_region.js"></script>
+<script language="javascript" src="/static/web/js/page/register.js"></script>
+<!--头部 start-->
+<div class="header">
+  <div class="w_1000">
+    <h1><a href="/"><img src="/static/ads_c_2.0/web/images/register_logo.jpg" width="294" height="90" /></a></h1>
+    <div class="top_nav"><a>帮助中心</a> | <a href="login.shtml">首页</a></div>
+  </div>
+</div>
+<!--头部 end-->
+<div class="main">
+  <div class="w_1000" id="subform">
+    <div class="welcome"><span>欢迎注册成为健康网盟推广用户！</span>请务必填写真实信息，以便为您提供服务。</div>
+    <div class="account"> <em>账户信息</em>
+      <ul>
+        <li>
+          <label class="re_name" for="loginname">用户名：</label>
+          <p class="input1">
+            <input autofocus grequired maxlength="16" minlength="4" gmsgfornull=".loginname_null" gmsgfordefault=".loginname_default" gmsgforlength=".loginname_length" gmsgfortrue=".loginname_true" gmsgforfalse=".loginname_false" id="loginname" name="loginName" type="LOGIN" />
+            <s class="red">*</s><s name="loginname_true" class="all_right" style="display:none;">√</s><span name="loginname_default" class="gray" style="display:block;">4-16个字符（中文、字母、数字、下划线组成），一个中文为两个字符</span><span name="loginname_length" class="red" style="display:none;">最小4个字符(等同2个汉字)长度，最大16个字符(等同8个汉字)长度</span><span name="loginname_ckname" class="red" style="display:none;">用户名已被占用</span><span name="loginname_null" class="red" style="display:none;">用户名不能为空</span><span name="loginname_false" class="red" style="display:none;">请勿使用除字母(大小写等价)、数字、下划线、中文外的其他字符</span></p>
+        </li>
+        <li>
+          <label class="re_name" for="loginPassword">密码：</label>
+          <p class="input1">
+            <input grequired maxlength="16" minlength="6" gmsgfortrue=".loginPassword_true" gmsgfornull=".loginPassword_null" gmsgfordefault=".loginPassword_default" gmsgforlength=".loginPassword_length" gmsgforfalse=".loginPassword_false" id="loginPassword" name="loginPassword" type="password" />
+            <s class="red">*</s><s name="loginPassword_true" class="all_right" style="display:none;">√</s><span name="loginPassword_default" class="gray" style="display:block;">6-16个字符（字母、数字、下划线、英文句号组成）</span><span name="loginPassword_null" class="red" style="display:none;">密码不能为空</span><span name="loginPassword_length" class="red" style="display:none;">最小6个字符长度，最大16个字符长度</span><span name="loginPassword_false" class="red" style="display:none;">请勿使用除字母、数字、下划线、英文句号外的其他字符</span></p>
+        </li>
+        <li>
+          <label class="re_name" for="loginPasswordConfirmation">确认密码：</label>
+          <p class="input1">
+            <input gmsgfortrue=".loginPasswordConfirmation_true" id="loginPasswordConfirmation" gmsgfordefault=".loginPasswordConfirmation_default"  unitval=".loginPassword" gmsgforunit=".Confirmpassword_false" name="loginPasswordConfirmation" type="password" />
+            <s class="red">*</s><s name="loginPasswordConfirmation_true" class="all_right" style="display:none;">√</s><span name="loginPasswordConfirmation_default" class="gray" id="prompt_re3" style="display:block;">请再次输入密码</span><span name="Confirmpassword_false" class="red" style="display:none;">两次输入密码不一致</span></p>
+        </li>
+      </ul>
+    </div>
+    <div class="clr_h10"></div>
+    <div class="account"> <em>联系信息</em>
+      <ul>
+        <li>
+          <label class="re_name" for="companyName">公司名称：</label>
+          <p class="input2">
+            <input grequired maxlength="100" minlength="6" gmsgfortrue=".companyName_true" gmsgfornull=".companyName_null" gmsgfordefault=".companyName_default" gmsgforfalse=".companyName_false" gmsgforlength=".companyName_length" id="companyName" name="companyName" type="COMPANYNAME"/>
+            <s class="red">*</s><s name="companyName_true" class="all_right" style="display:none;">√</s><span name="companyName_default" class="gray" id="prompt_re4" style="display:block;">必须填写公司全称，发票抬头将与公司名称一致，提交后不可修改</span><span name="companyName_null" class="red" style="display:none;">公司名称不能为空</span><span name="companyName_false" class="red" style="display:none;">请勿使用除中文、字母、数字、减号、#、英文句号、英文逗号、空格外的其他字符</span><span name="companyName_length" class="red" style="display:none;">最小6个字符(等同3个汉字)长度，最大100个字符(等同50个汉字)长度</span></p>
+        </li>
+        <li>
+          <label class="re_name" for="companySite">公司网址：</label>
+          <p class="input2">
+            <input grequired maxlength="30" minlength="4" gmsgfortrue=".companySite_true" gmsgfordefault=".companySite_default" gmsgfornull=".companySite_null" gmsgforlength=".companySite_length" gmsgforfalse=".companySite_false" id="companySite" name="companySite" type="URL" />
+            <s class="red">*</s><s name="companySite_true" class="all_right" style="display:none;">√</s><span name="companySite_default" class="gray" id="prompt_re5" style="display:block;">必须以"http://"开头并要于推广网站主域名一致，提后不可修改</span><span name="companySite_null" class="red" style="display:none;">公司网址不能为空</span><span name="companySite_false" class="red" style="display:none;">请正确输入公司网址</span><span name="companySite_length" class="red" style="display:none;">最小4个字符(等同2个汉字)长度，最大30个字符(等同15个汉字)长度</span></p>
+        </li>
+        <li>
+          <label class="re_name">所属行业：</label>
+          <p> <i class="mar_none" style="float:left;">
+            <select id="industry" name="industry" class="p_select_01" style="width:191px;">
+            </select>
+            </i> <span class="gray" id="prompt_re5" style="display:block; line-height:22px; margin-left:4px;">请认真选择，提交后不可修改</span><span class="red" style="display:none;">请输入您的信息。</span> </p>
+        </li>
+        <li id="szqydisplay">
+          <label class="re_name">所在区域：</label>
+          <p> <i class="mar_none">
+            <select id="provinceId" name="provinceId" style="width:40px;">
+            </select>
+            </i> <span class="mar_left">
+            <select id="cityId" name="cityId" class="p_select_02" style="width:110px;">
+            </select>
+            </span> <s class="red" style=" float:left; height: 22px;line-height: 23px;">*</s> <s class="all_right" style="display:none;">√</s> </p>
+        </li>
+        <li>
+          <label class="re_name" for="address">通讯地址：</label>
+          <p class="input2">
+            <input grequired maxlength="100" minlength="20" gmsgfortrue=".address_true" gmsgfornull=".address_null" gmsgfordefault=".address_default" gmsgforlength=".address_length" gmsgforfalse=".address_false" id="address" name="address" type="COMPANYNAME" />
+            <s class="red">*</s><s name="address_true" class="all_right" style="display:none;">√</s><span name="address_default" class="gray" id="prompt_re11" style="display:block;">20-100个字符（中文、字母、数字、减号、#组成），一个中文为两个字符</span><span name="address_null" class="red" style="display:none;">通讯地址不能为空</span><span name="address_false" class="red" style="display:none;">请勿使用除字母、数字、减号、#、中文外的其他字符</span><span name="address_length" class="red" style="display:none;">最小20个字符(等同10个汉字)长度，最大100个字符(等同50个汉字)长度</span></p>
+        </li>
+        <li>
+          <label class="re_name" for="postcode">邮编：</label>
+          <p class="input1">
+            <input grequired gmsgfortrue=".postcode_true" gmsgfornull=".postcode_null" gmsgfordefault=".postcode_default" gmsgforfalse=".postcode_false" id="postcode" name="postcode" type="ZIPCODE" />
+            <s class="red">*</s><s name="postcode_true" class="all_right" style="display:none;">√</s><span name="postcode_default" class="gray" id="prompt_re12" style="display:block;">请输入国内6位数字邮编</span><span name="postcode_null" class="red" style="display:none;">邮编不能为空</span><span name="postcode_false" class="red" style="display:none;">请正确输入6位数字的邮编</span></p>
+        </li>
+        <li>
+          <label class="re_name" for="contact">联系人：</label>
+          <p class="input1">
+            <input grequired maxlength="16" minlength="4" gmsgfortrue=".contact_true" gmsgfornull=".contact_null" gmsgfordefault=".contact_default" gmsgforlength=".contact_length" gmsgforfalse=".contact_false" id="contact" name="contact" type="contact" />
+            <s class="red">*</s><s name="contact_true" class="all_right" style="display:none;">√</s><span name="contact_default" class="gray" id="prompt_re6" style="display:block;">请输入推广负责人真实姓名</span><span name="contact_null" class="red" style="display:none;">联系人不能为空</span><span name="contact_false" class="red" style="display:none;">请勿使用除字母、中文外的其他字符</span><span name="contact_length" class="red" style="display:none;">最小4个字符(等同2个汉字)长度，最大16个字符(等同8个汉字)长度</span></p>
+        </li>
+        <li>
+          <label class="re_name" for="telephone">固定电话：</label>
+          <p class="input1">
+            <input grequired gmsgfortrue=".telephone_true" gmsgfornull=".telephone_null" gmsgfordefault=".telephone_default" gmsgforfalse=".telephone_false" id="telephone" name="telephone" type="TEL" />
+            <s class="red">*</s><s name="telephone_true" class="all_right" style="display:none;">√</s><span name="telephone_default" class="gray" id="prompt_re7" style="display:block;">请按以下格式输入：010-12345678，010-12345678-99</span><span name="telephone_null" class="red" style="display:none;">固定电话，不能为空</span><span name="telephone_false" class="red" style="display:none;">请正确输入固定电话，例如：010-12345678，010-12345678转99</span></p>
+        </li>
+        <li>
+          <label class="re_name" for="fax">传真：</label>
+          <p class="input1">
+            <input gmsgfortrue=".fax_true" gmsgfordefault=".fax_default" gmsgforfalse=".fax_false" id="fax" name="fax" type="TEL" />
+            <s name="fax_true" class="all_right" style="display:none;">√</s><span name="fax_default" class="gray" id="prompt_re13" style="display:block;">请按以下格式输入：010-12345678，010-12345678-99</span><span name="fax_false" class="red" style="display:none;">请正确输入传真，例如：010-12345678，010-12345678转99</span></p>
+        </li>
+        <li>
+          <label class="re_name" for="mobile">移动电话：</label>
+          <p class="input1">
+            <input gmsgfortrue=".mobile_true" gmsgfordefault=".mobile_default" gmsgforfalse=".mobile_false" id="mobile" name="mobile" type="MOBILE" />
+            <s name="mobile_true" class="all_right" style="display:none;">√</s><span name="mobile_default" class="gray" id="prompt_re8" style="display:block;">请输入11位手机号码</span><span name="mobile_false" class="red" style="display:none;">请正确输入11位手机号，例如：13800138000</span></p>
+        </li>
+        <li>
+          <label class="re_name" for="email">电子邮箱：</label>
+          <p class="input1">
+            <input grequired maxlength="100" minlength="6" gmsgfortrue=".email_true" gmsgfordefault=".email_default" gmsgfornull=".email_null" gmsgforfalse=".email_false" gmsgforlength=".email_length" id="email" name="email" type="EMAIL" />
+            <s class="red">*</s><s name="email_true" class="all_right" style="display:none;">√</s><span name="email_default" class="gray" id="prompt_re9" style="display:block;">请填写最常用邮箱，系统将把重要通知发送到该邮箱</span><span name="email_null" class="red" style="display:none;">电子邮箱不能为空</span><span name="email_false" class="red" style="display:none;">请输入正确的邮箱地址</span><span name="email_length" class="red" style="display:none;">最小6个字符长度，最大100个字符长度</span></p>
+        </li>
+        <li>
+          <label class="re_name" for="vercode">验证码：</label>
+          <p class="input3">
+            <input grequired maxlength="4" gmsgfortrue=".vercode_true" gmsgfornull=".vercode_null" id="vercode" name="vercode" type="text" />
+            <s class="red">*</s><s name="vercode_true" class="all_right" style="display:none;">√</s><span class="re_code"><img  name="resVercode" src="/static/ads_c_2.0/web/images/code_default.gif" width="77" height="26" ></span><span><a name="resVercode">看不清，换一张</a></span><br />
+            <span name="vercode_null" class="right_code" style="display:none;">请输入验证码！</span></p>
+        </li>
+        <li>
+          <label class="re_name"></label>
+          <p>
+            <input id="readLook" type="checkbox" />
+            <label for="readLook"><span class="gray">我已阅读并接受</span></label>
+            <span class="clause"><a href="pact.shtml" target="_blank">《服务条款》</a></span></p>
+        </li>
+        <li>
+          <label class="re_name"></label>
+          <p><span class="no_click" id="nosubmit" >立即注册</span><a class="re_btn" id="submit" style="display:none;">立即注册</a></p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!--注册 start--> 
+
+<!--注册 end--> 
+<!--尾部 start-->
+<div class="footer">
+  <div class="footer_w"><a>关于我们</a> | <a>产品及服务</a> | <a>业务咨询</a> <span>京ICP备10019628号©haomeit.com</span></div>
+</div>
+<!--尾部 end--> 
+<!--#include virtual="/public/tools.html"-->
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>登陆界面</title>
+<link rel="stylesheet" type="text/css" href="/static/ads_m_1.0/web/css/login.css">
+<!--#include virtual="/public/public.shtml"-->
+<script language="javascript" src="/static/web/js/thirdparty/md5-min.js"></script>
+<script language="javascript" src="/static/web/js/page/manager/login.js"></script>
+</head>
+<body>
+<div class="l_box">
+	<ul>
+    	<li><span>登录名：</span><input name="ACCOUNT" type="LOGIN" autofocus grequired gmsgfun maxlength="16" minlength="4"  ></li>
+    	<li><span>密　码：</span><input name="PASSWORD" type="password" grequired gmsgfun maxlength="16" minlength="6" ></li>
+    	<li><span>验证码：</span><input name="VAR_CODE" type="text" class="v_code" grequired maxlength="4"  minlength="4" title="看不清，请点击验证码进行刷新" class="v_code"><b><img name="resVercode" width="77" height="30" ></b></li>
+        <li class="l_btn"><a id="submit"></a></li>
+    </ul>
+</div>
+</body>
+</html>

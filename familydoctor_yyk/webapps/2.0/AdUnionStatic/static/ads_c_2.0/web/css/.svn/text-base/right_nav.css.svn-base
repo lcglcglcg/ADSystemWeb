@@ -1,0 +1,10 @@
+@charset "utf-8";
+/**
+ * 控制表格切换的导航的公用样式
+ */
+.unit{height:30px;width:100%; overflow:hidden; background:url(/static/ads_c_2.0/web/images/unit_bg.gif) repeat-x  ;padding-left:20px; position:relative; left:-11px;}
+.unit ul li{ display:inline;}
+
+/*操作按钮*/
+.unit ul li a { display:block ; float:left;color: #000000;height: 27px; line-height:27px;text-decoration: none; margin-right:10px; border:1px solid #ced9e8;-moz-border-radius: 2px;-khtml-border-radius: 2px;-webkit-border-radius: 2px;border-radius: 2px;padding: 0 7px; background:#eff4fd;}
+.unit ul li .u_curr,.unit ul li a:hover { background:#fff; border-bottom:none; height:28px;}

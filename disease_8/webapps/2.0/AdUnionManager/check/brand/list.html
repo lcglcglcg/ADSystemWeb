@@ -1,0 +1,49 @@
+<xmp id="listCheckBrandTitle" style="display:none;">
+  <tr>
+    <th class="table_wa"><input type="checkbox" name="listCheckBrandCheckboxAll" onclick="window.checkBrand.selectAll.call(this);" />
+      </td>
+    <th class="table_wb_tt">品牌创意
+      </td>
+    <th class="table_we_new_new">登录名
+      </td>
+    <th class="table_wf_new_new">修改时间
+      </td>
+    <th class="table_wc_new">状态
+      </td>
+    <th class="table_wc">操作
+      </td>
+  </tr>
+</xmp>
+<xmp id="listCheckBrandList" style="display:none;">
+  <tr id="brand_{BRAND_ID}" name="listBrandTr">
+    <td name="listBrandTd" class="table_wa"><input type="checkbox" name="listCheckBrandCheckbox" value="{BRAND_ID}"  onclick="window.checkBrand.selectId.call(this);" /></td>
+    <td name="listBrandTd" class="table_wb table_wb_new"><div class="set_view_create_cont set_vc_new">
+        <div class="orview_creative_p orview_creative_p_new">
+          <div class="set_cont_top set_cont_top_new"> <a href="{SEQUENCE_0_URL}" target="_blank"><img src="{SEQUENCE_0_SRC}" class="set_cont_top_img1 img_new1" /></a>
+            <dl id="view_create" class="brand_dl_new">
+              <dt><a href="{DESTINATION_URL}" target="_blank">{TITLE}</a></dt>
+              <dd class="set_cont_top_ms_new">{DESCRIPTION}<a href="{DESTINATION_URL}" target="_blank">更多</a></dd>
+              <dd>电话：<span>{TELEPHONE}</span></dd>
+              <dd>官网：<a href="{WEB_SITE}" target="_blank">{WEB_SITE}</a></dd>
+            </dl>
+          </div>
+          <div class="set_cont_bottom brand_first">
+              <a href="{SEQUENCE_1_URL}" target="_blank">
+                <img src="{SEQUENCE_1_SRC}"/></a>
+              <a href="{SEQUENCE_2_URL}" target="_blank">
+                <img src="{SEQUENCE_2_SRC}"/></a>
+              <a href="{SEQUENCE_3_URL}" target="_blank">
+                <img src="{SEQUENCE_3_SRC}"/></a>
+              <a href="{SEQUENCE_4_URL}" target="_blank">
+                <img src="{SEQUENCE_4_SRC}"/></a>
+              <a href="{SEQUENCE_5_URL}" target="_blank">
+                <img src="{SEQUENCE_5_SRC}" class="set_cont_bottom_img1"/></a>
+          </div>
+        </div>
+      </div></td>
+    <td name="listBrandTd" class="table_we_new_new"><a style="color:#00F;" name="loginName" value="{ACCOUNT_ID}">{ACCOUNT_NAME}</a></td>
+    <td name="listBrandTd" class="table_wf_new_new">{CREATE_TIME}</td>
+    <td name="listBrandTd" class="table_wc_new {creativeStateCss}">{CREATIVE_STATE}</td>
+    <td name="listBrandTd" class="table_wc"><a value="{BRAND_ID}" name="errTools">{errToolsTest}</a><br /><br /><a value="{BRAND_ID}" name="tools">{toolTest}</a></td>
+  </tr>
+</xmp>

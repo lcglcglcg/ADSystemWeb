@@ -1,0 +1,308 @@
+<div style="position:relative;display:block;" id="contb1">
+     <div class="program_div">
+ 	    <div class="table_up_select">
+        <div class="rrr">
+          <div class="s_left">
+            <ul class="s_ul">
+              <li class="s_li">
+                    <select name="tf1" class="s_input_01">
+                      <option value="全部状态">全部状态</option>
+                      <option value="有效">有效</option>
+                      <option value="处于暂停时段">处于暂停时段</option>
+                      <option value="每日预算不足">每日预算不足</option>
+                      <option value="未开始">未开始</option>
+                      <option value="暂停">暂停</option>
+                      <option value="已下线">已下线</option>
+                    </select>
+              </li>
+              <li class="s_li">
+                <input name="textfield" type="text" value="请输入计划名称"size="16" class="input_border col"/>
+              </li>
+              <li class="s_li guheight"> <span>
+                <input type="checkbox" name="checkbox3" value="checkbox">
+                </span><span>精确查询</span></li>
+              <li class="s_li"> <a href="#" class="btn"><span>查询</span></a> </li>
+              <li class="s_li" style="display:none;"><a class="btn" onclick="$UE.display('guolv','block')"><span>过滤项</span></a></li>
+              <li class="s_li all_time">
+                  <select name="tf2" style="width:80px">
+                      <option value="今天" selected="selected">今天</option>
+                      <option value="昨天">昨天</option>
+                      <option value="最近7天">最近7天</option>
+                  </select>
+              </li>
+            </ul>
+
+          </div>
+<!--#include virtual="/static/ads_c_2.0/web/inc/guolvxiang.shtml"-->
+        </div>
+      </div>
+      
+ <!--表格内容 开始-->
+      	<div class="table_list">
+            <div class="s_button">
+            <div class="rrr">
+              <ul class="s_ul s_ul_pad">
+                <li class="s_li"> <a class="btn" href="javascript:$UE.confirm('您确定要删除选中的推广计划吗？','删除成功！');"><span>删除</span></a> </li>
+                <li class="s_li"> <a class="btn" href="javascript:$UE.confirm('您确定要暂停选中的推广计划吗？','暂停成功！');"><span>暂停</span></a> </li>
+                <li class="s_li"> <a class="btn" id="download_btn" href="javascript:$UE.confirm('您确定要启用选中的推广计划吗？','启用成功！');"><span>启用</span></a> </li>
+             </ul>
+    
+            </div>
+          </div>
+           <div class="loading" style="display:none;"><img src="/static/ads_c_2.0/web/images/index_loading1.gif"/><div class="loading_text">数据正在加载，请稍后...</div></div>
+          
+        	<table width="100%">
+              <tr class="table_title">
+                <td class="table_wa text_center_bg"><input name="" type="checkbox" value="" /></td>
+                <th class="table_wb">
+                    <a href="#"><span>推广计划</span></a>
+                </th>
+                <th class="table_wc">
+                	<a href="#"><span>状态</span></a>
+                </th>
+                <th class="table_wd thbg_curr">
+                	<a href="#"><span class="top_curr">每日预算</span></a>
+                </th>
+                <th class="table_wd">
+                	<a href="#"><span>展现次数</span></a>
+                </th>
+                <th class="table_wd thbg_curr">
+                	<a href="#"><span class="bottom_curr">点击次数</span></a>
+                </th>
+                <th class="table_wd">
+                	<a href="#"><span>点击率</span></a>
+                </th>
+                <th class="table_wd">
+                	<a href="#"><span>平均点击价格</span></a>
+                </th>
+                <th class="table_wd">
+                	<a href="#"><span>总消费</span></a>
+                </th>
+                <th class="table_wd">
+                	<a href="#"><span>千次展现成本</span></a>
+                </th>
+                <td class="table_we text_center_bg">操作</td>
+              </tr>
+              <tr style="display:none;">
+                <td colspan="12"><div class="no_data">没有符合条件的数据</div></td>
+              </tr>
+              <tr id="key_cha1" class="" onmousemove="idBg(1,'key_cha');"onmouseout="idNoBg(1,'key_cha');">
+                <td class="table_wa text_center"><input name="" type="checkbox" value="" /></td>
+                <td class="table_wb text_left"><div class="key_div"><a href="#" class="link">推广计划推广计划推广计划推广计1</a><a onClick="$UE.open('change_box');" class="key_btn1"></a></div></td>
+                <td class="table_wc text_left">
+                    <div class="div_a">
+                    <div class="zhuangt">
+                    <span class="green">有效</span>
+                    <span class="start_img" onclick="javascript:$UE.confirm('你确定暂停推广计划【推广计划名称】吗？','暂停成功！');"></span>
+                    </div>
+                    </div>
+                </td>
+                <td class="table_wd"><div class="key_div"><a onClick="$UE.open('yusuan_box');" class="key_btn2"></a><span class="figure">￥1000.00</span></div></td>
+                <td class="table_wd"><span class="figure">68</span></td>
+                <td class="table_wd"><span class="figure">68</span></td>
+                <td class="table_wd"><span class="figure">0.88%</span></td>
+                <td class="table_wd"><span class="figure">￥9.96</span></td>
+                <td class="table_wd"><span class="figure">￥2000</span></td>
+                <td class="table_wd"><span class="figure">￥6000</span></td>
+                <td class="table_we caozuo"><a onclick="$UE.open('step_first');$UE.setValue('step1_name','修改计划');$UE.display('step_addtitle1','none');$UE.display('new_bnt1','none');$UE.display('update_bnt1','block');"></a></td>
+              </tr>
+              <tr id="key_cha2" onmousemove="idBg(2,'key_cha');"onmouseout="idNoBg(2,'key_cha');">
+                <td class="table_wa text_center"><input name="" type="checkbox" value="" /></td>
+                <td class="table_wb text_left"><div class="key_div"><a href="#" class="link">推广计划推广计划推广计划推广计</a><a onClick="$UE.open('change_box');" class="key_btn1"></a></div></td>
+                <td class="table_wc text_left">
+                    <div class="div_a">
+                    <div class="zhuangt">
+                    <span class="orange">处于暂停时段</span>
+                    <span class="start_img"> </span>
+                    </div>
+                    </div>
+                </td>
+                <td class="table_wd"><div class="key_div"><a onClick="$UE.open('yusuan_box');" class="key_btn2"></a><span class="figure">￥1000.00</span></div></td>
+                <td class="table_wd"><span class="figure">68</span></td>
+                <td class="table_wd"><span class="figure">68</span></td>
+                <td class="table_wd"><span class="figure">0.88%</span></td>
+                <td class="table_wd"><span class="figure">￥9.96</span></td>
+                <td class="table_wd"><span class="figure">￥2000</span></td>
+                <td class="table_wd"><span class="figure">￥6000</span></td>
+                <td class="table_we caozuo"><a href="#"></a></td>
+              </tr>
+              <tr id="key_cha3" class="key_ch">
+                <td class="table_wa text_center"><input name="" type="checkbox" value="" /></td>
+                <td class="table_wb text_left"><div class="key_div"><a href="#" class="link">推广计划推广计划推广计划推广计</a><a onClick="$UE.open('change_box');" class="key_btn1_curr"></a></div></td>
+                <td class="table_wc text_left">
+                    <div class="div_a">
+                    <div class="zhuangt">
+                    <span class="orange">每日预算不足</span>
+                    <span class="start_img"> </span>
+                    </div>
+                    </div>
+                </td>
+                <td class="table_wd"><div class="key_div"><a href="#" class="key_btn2_curr"></a><span class="figure">￥1000.00</span></div></td>
+                <td class="table_wd"><span class="figure">68</span></td>
+                <td class="table_wd"><span class="figure">68</span></td>
+                <td class="table_wd"><span class="figure">0.88%</span></td>
+                <td class="table_wd"><span class="figure">￥9.96</span></td>
+                <td class="table_wd"><span class="figure">￥2000</span></td>
+                <td class="table_wd"><span class="figure">￥6000</span></td>
+                <td class="table_we caozuo"><a href="#"></a></td>
+              </tr>
+              <tr id="key_cha4" onmousemove="idBg(4,'key_cha');"onmouseout="idNoBg(4,'key_cha');">
+                <td class="table_wa text_center"><input name="" type="checkbox" value="" /></td>
+                <td class="table_wb text_left"><div class="key_div"><a href="#" class="link">推广计划推广计划推广计划推广计</a><a onClick="$UE.open('change_box');" class="key_btn1"></a></div></td>
+                <td class="table_wc text_left">
+                    <div class="div_a">
+                    <div class="zhuangt">
+                    <span class="orange">未开始</span>
+                    <span class="start_img"> </span>
+                    </div>
+                    </div>
+                </td>
+                <td class="table_wd"><div class="key_div"><a href="#" class="key_btn2"></a><span class="figure">￥1000.00</span></div></td>
+                <td class="table_wd"><span class="figure">68</span></td>
+                <td class="table_wd"><span class="figure">68</span></td>
+                <td class="table_wd"><span class="figure">0.88%</span></td>
+                <td class="table_wd"><span class="figure">￥9.96</span></td>
+                <td class="table_wd"><span class="figure">￥2000</span></td>
+                <td class="table_wd"><span class="figure">￥6000</span></td>
+                <td class="table_we caozuo"><a href="#"></a></td>
+              </tr>
+              <tr id="key_cha5" onmousemove="idBg(5,'key_cha');"onmouseout="idNoBg(5,'key_cha');">
+                <td class="table_wa text_center"><input name="" type="checkbox" value="" /></td>
+                <td class="table_wb text_left"><div class="key_div"><a href="#" class="link">推广计划推广计划推广计划推广计</a><a onClick="$UE.open('change_box');" class="key_btn1"></a></div></td>
+                <td class="table_wc text_left">
+                    <div class="div_a">
+                    <div class="zhuangt">
+                    <span class="orange">暂停</span>
+                    <span class="stop_img" onclick="javascript:$UE.confirm('您确定启用推广计划【推广计划名称】吗？','启用成功！');"> </span>
+                    </div>
+                    </div>
+                </td>
+                <td class="table_wd"><div class="key_div"><a href="#" class="key_btn2"></a><span class="figure">￥1000.00</span></div></td>
+                <td class="table_wd"><span class="figure">68</span></td>
+                <td class="table_wd"><span class="figure">68</span></td>
+                <td class="table_wd"><span class="figure">0.88%</span></td>
+                <td class="table_wd"><span class="figure">￥9.96</span></td>
+                <td class="table_wd"><span class="figure">￥2000</span></td>
+                <td class="table_wd"><span class="figure">￥6000</span></td>
+                <td class="table_we caozuo"><a href="#"></a></td>
+              </tr>
+              <tr id="key_cha6" onmousemove="idBg(6,'key_cha');"onmouseout="idNoBg(6,'key_cha');">
+                <td class="table_wa text_center"><input name="" type="checkbox" value="" /></td>
+                <td class="table_wb text_left"><div class="key_div"><a href="#" class="link">推广计划推广计划推广计划推广计</a><a onClick="$UE.open('change_box');" class="key_btn1"></a></div></td>
+                <td class="table_wc text_left">
+                    <div class="div_a">
+                    <div class="zhuangt">
+                    <span class="red">已下线</span>
+                    <span class="start_img"> </span>
+                    </div>
+                    </div>
+                </td>
+                <td class="table_wd"><div class="key_div"><a href="#" class="key_btn2"></a><span class="figure">￥1000.00</span></div></td>
+                <td class="table_wd"><span class="figure">68</span></td>
+                <td class="table_wd"><span class="figure">68</span></td>
+                <td class="table_wd"><span class="figure">0.88%</span></td>
+                <td class="table_wd"><span class="figure">￥9.96</span></td>
+                <td class="table_wd"><span class="figure">￥2000</span></td>
+                <td class="table_wd"><span class="figure">￥6000</span></td>
+                <td class="table_we caozuo"><a href="#"></a></td>
+              </tr>
+              <tr>
+                <td class="table_wa text_center"><input name="" type="checkbox" value="" /></td>
+                <td class="table_wb text_left"><div class="key_div"><a href="#" class="link">推广计划推广计划推广计划推广计</a><a onClick="$UE.open('change_box');" class="key_btn1"></a></div></td>
+                <td class="table_wc text_left">
+                    <div class="div_a">
+                    <div class="zhuangt">
+                    <span class="red">已下线</span>
+                    <span class="start_img"> </span>
+                    </div>
+                    </div>
+                </td>
+                <td class="table_wd"><div class="key_div"><a href="#" class="key_btn2"></a><span class="figure">￥1000.00</span></div></td>
+                <td class="table_wd"><span class="figure">68</span></td>
+                <td class="table_wd"><span class="figure">68</span></td>
+                <td class="table_wd"><span class="figure">0.88%</span></td>
+                <td class="table_wd"><span class="figure">￥9.96</span></td>
+                <td class="table_wd"><span class="figure">￥2000</span></td>
+                <td class="table_wd"><span class="figure">￥6000</span></td>
+                <td class="table_we caozuo"><a href="#"></a></td>
+              </tr>
+              <tr>
+                <td class="table_wa text_center"><input name="" type="checkbox" value="" /></td>
+                <td class="table_wb text_left"><div class="key_div"><a href="#" class="link">推广计划推广计划推广计划推广计</a><a onClick="$UE.open('change_box');" class="key_btn1"></a></div></td>
+                <td class="table_wc text_left">
+                    <div class="div_a">
+                    <div class="zhuangt">
+                    <span class="red">已下线</span>
+                    <span class="start_img"> </span>
+                    </div>
+                    </div>
+                </td>
+                <td class="table_wd"><div class="key_div"><a href="#" class="key_btn2"></a><span class="figure">￥1000.00</span></div></td>
+                <td class="table_wd"><span class="figure">68</span></td>
+                <td class="table_wd"><span class="figure">68</span></td>
+                <td class="table_wd"><span class="figure">0.88%</span></td>
+                <td class="table_wd"><span class="figure">￥9.96</span></td>
+                <td class="table_wd"><span class="figure">￥2000</span></td>
+                <td class="table_wd"><span class="figure">￥6000</span></td>
+                <td class="table_we caozuo"><a href="#"></a></td>
+              </tr>
+              <tr>
+                <td class="table_wa text_center"><input name="" type="checkbox" value="" /></td>
+                <td class="table_wb text_left"><div class="key_div"><a href="#" class="link">推广计划推广计划推广计划推广计</a><a href="#" class="key_btn1"></a></div></td>
+                <td class="table_wc text_left">
+                    <div class="div_a">
+                    <div class="zhuangt">
+                    <span class="red">已下线</span>
+                    <span class="start_img"> </span>
+                    </div>
+                    </div>
+                </td>
+                <td class="table_wd"><div class="key_div"><a href="#" class="key_btn2"></a><span class="figure">￥1000.00</span></div></td>
+                <td class="table_wd"><span class="figure">68</span></td>
+                <td class="table_wd"><span class="figure">68</span></td>
+                <td class="table_wd"><span class="figure">0.88%</span></td>
+                <td class="table_wd"><span class="figure">￥9.96</span></td>
+                <td class="table_wd"><span class="figure">￥2000</span></td>
+                <td class="table_wd"><span class="figure">￥6000</span></td>
+                <td class="table_we caozuo"><a href="#"></a></td>
+              </tr>
+              <tr>
+                <td class="table_wa text_center"><input name="" type="checkbox" value="" /></td>
+                <td class="table_wb text_left"><div class="key_div"><a href="#" class="link">推广计划推广计划推广计划推广计</a><a href="#" class="key_btn1"></a></div></td>
+                <td class="table_wc text_left">
+                    <div class="div_a">
+                    <div class="zhuangt">
+                    <span class="red">已下线</span>
+                    <span class="start_img"> </span>
+                    </div>
+                    </div>
+                </td>
+                <td class="table_wd"><div class="key_div"><a href="#" class="key_btn2"></a><span class="figure">￥1000.00</span></div></td>
+                <td class="table_wd"><span class="figure">68</span></td>
+                <td class="table_wd"><span class="figure">68</span></td>
+                <td class="table_wd"><span class="figure">0.88%</span></td>
+                <td class="table_wd"><span class="figure">￥9.96</span></td>
+                <td class="table_wd"><span class="figure">￥2000</span></td>
+                <td class="table_wd"><span class="figure">￥6000</span></td>
+                <td class="table_we caozuo"><a href="#"></a></td>
+              </tr>
+              <tr class="tongji">
+                <td class="table_wa">&nbsp;</td>
+                <td class="table_wb text_left" colspan="3"><span class="total_lf" >合计-10个推广计划(7个有效)</span><span class="figure_rg">有效计划：￥854.00</span></td>
+                <td class="table_wd"><span class="figure">68</span></td>
+                <td class="table_wd"><span class="figure">68</span></td>
+                <td class="table_wd"><span class="figure">0.88%</span></td>
+                <td class="table_wd"><span class="figure">￥9.96</span></td>
+                <td class="table_wd"><span class="figure">￥2000</span></td>
+                <td class="table_wd"><span class="figure">￥6000</span></td>
+                <td class="table_we caozuo">&nbsp;</td>
+              </tr>
+          </table>
+ <!--表格内容 开始-->
+ 
+        </div>
+      </div>
+   <!--分页开始-->
+	<!--#include virtual="/static/ads_c_2.0/web/inc/tg_page.shtml"-->
+    <!--分页结束-->
+</div>

@@ -1,0 +1,428 @@
+	<div class="scommon_box" id="step_caozuo" style="display:none;">
+    	<div class="scommon_title"><p>修改计划</p><a onclick="$UE.close('step_caozuo');"></a></div>
+    	<div class="scommon_main">
+            <div class="step1_cont">
+            	<ul>
+                	<li><span class="step1_lf">推广计划名称：</span><span class="step1_rg"><input name="" type="text" class="input_01"/><span class="gray">最多30个字符</span></span></li>
+                	<li><span class="step1_lf">每日预算：￥</span><span class="step1_rg"><input name="" type="text" class="input_02"/></span></li>
+                </ul>
+            </div>
+        <!--投放地域 开始-->
+        	<div class="level2">
+                <div class="city">
+                        <span>投放地域：</span>
+                        <label class="label_mar_rg">
+                            <input type="radio" name="Radiocaozuo1" value="a1" id="RadioGroup1_0" class="input_valign" onclick="radio_common(this)"/>全部地域
+                        </label>
+                        <label>
+                            <input type="radio" name="Radiocaozuo1" value="a2" id="RadioGroup1_1" class="input_valign" onclick="radio_common(this)"/>选择地域
+                        </label>
+                        <!--div第三级内容 -->
+                        <div class="level3_city" id="Radiocaozuo1a2" style="display:none;">
+                            <ol class="title">
+                                <li><input name="" type="checkbox" value="" class="input_valign"/>中国地区</li>
+                            </ol>
+                            <ol class="row1">
+                                <li class="li_w95"><input name="" type="checkbox" value="" class="input_valign"/><span class="gray">东北地区</span></li>
+                                <li class="li_w95">
+                                    <div class="li_div">
+                                        <div class="" id="steptitled1" onMouseOver="over_qie(1,'steptitled','stepcontd','li_city_border1')"  onmouseout="out_qie(1,'steptitled','stepcontd','')"><input name="" type="checkbox" value="" class="input_valign"/><span>北京</span></div>
+                                        <div class="block1" style="display:none;" id="stepcontd1" onMouseOver="over_qie(1,'steptitled','stepcontd','li_city_border1')"  onmouseout="out_qie(1,'steptitled','stepcontd','')">
+                                            <div class="block_lf">
+                                                <ul>
+                                                    <li><input name="" type="checkbox" value=""/>昌平区</li>
+                                                    <li><input name="" type="checkbox" value="" />崇文区</li>
+                                                    <li><input name="" type="checkbox" value="" />东城区</li>
+                                                    <li><input name="" type="checkbox" value="" />东城区</li>
+                                                    <li><input name="" type="checkbox" value="" />东城区</li>
+                                                    <li><input name="" type="checkbox" value="" />东城区</li>
+                                                </ul>
+                                            </div>
+                                            <div class="block_rg">
+                                                <ul>
+                                                    <li><input name="" type="checkbox" value="" />朝阳区</li>
+                                                    <li><input name="" type="checkbox" value="" />大兴区</li>
+                                                     <li><input name="" type="checkbox" value="" />房山区</li>
+                                                    <li><input name="" type="checkbox" value="" />房山区</li>
+                                                    <li><input name="" type="checkbox" value="" />房山区</li>
+                                                   <li><input name="" type="checkbox" value="" />房山区</li>
+                                                </ul>
+                                            </div>
+                                    </div>
+                                    </div>
+                                </li>
+                                <li class="li_w95"><input name="" type="checkbox" value="" class="input_valign"/><span>天津</span></li>
+                                <li class="li_w95"><input name="" type="checkbox" value="" class="input_valign"/><span>河北</span></li>
+                                <li class="li_w95"><input name="" type="checkbox" value="" class="input_valign"/><span>内蒙古</span></li>
+                                <li class="li_w95"><input name="" type="checkbox" value="" class="input_valign"/><span>山西</span></li>
+                            </ol>
+                            <ol class="row1">
+                                <li class="li_w95"><input name="" type="checkbox" value="" class="input_valign"/><span class="gray">东北地区</span></li>
+                                <li class="li_w95"><input name="" type="checkbox" value="" class="input_valign"/><span>黑龙江</span></li>
+                                <li class="li_w95"><input name="" type="checkbox" value="" class="input_valign"/><span>吉林</span></li>
+                                <li class="li_w95"><input name="" type="checkbox" value="" class="input_valign"/><span>辽宁</span></li>
+                            </ol>
+                            <ol class="row2">
+                                <li class="li_w95"><input name="" type="checkbox" value="" class="input_valign"/><span class="gray">华东地区</span></li>
+                                <li class="li_w95"><input name="" type="checkbox" value="" class="input_valign"/><span>上海</span></li>
+                                <li class="li_w95"><input name="" type="checkbox" value="" class="input_valign"/><span>安徽</span></li>
+                                <li class="li_w95"><input name="" type="checkbox" value="" class="input_valign"/><span>福建</span></li>
+                                <li class="li_w95"><input name="" type="checkbox" value="" class="input_valign"/><span>江苏</span></li>
+                                <li class="li_w95"><input name="" type="checkbox" value="" class="input_valign"/><span>江西</span></li>
+                                <li class="li_pad1 li_w95"><input name="" type="checkbox" value="" class="input_valign"/><span>山东</span></li>
+                                <li class="li_w95"><input name="" type="checkbox" value="" class="input_valign"/><span>浙江</span></li>
+                            </ol>
+                            <ol class="row1">
+                                <li class="li_w95"><input name="" type="checkbox" value="" class="input_valign"/><span class="gray">华中地区</span></li>
+                                <li class="li_w95"><input name="" type="checkbox" value="" class="input_valign"/><span>河南</span></li>
+                                <li class="li_w95"><input name="" type="checkbox" value="" class="input_valign"/><span>湖北</span></li>
+                                <li class="li_w95"><input name="" type="checkbox" value="" class="input_valign"/><span>湖南</span></li>
+                            </ol>
+                            <ol class="row1">
+                                <li class="li_w95"><input name="" type="checkbox" value="" class="input_valign"/><span class="gray">华南地区</span></li>
+                                <li class="li_w95"><input name="" type="checkbox" value="" class="input_valign"/><span>广东</span></li>
+                                <li class="li_w95"><input name="" type="checkbox" value="" class="input_valign"/><span>广西</span></li>
+                                <li class="li_w95"><input name="" type="checkbox" value="" class="input_valign"/><span>海南</span></li>
+                            </ol>
+                            <ol class="row1">
+                                <li class="li_w95"><input name="" type="checkbox" value="" class="input_valign"/><span class="gray">西南地区</span></li>
+                                <li class="li_w95"><input name="" type="checkbox" value="" class="input_valign"/><span>重庆</span></li>
+                                <li class="li_w95"><input name="" type="checkbox" value="" class="input_valign"/><span>贵州</span></li>
+                                <li class="li_w95"><input name="" type="checkbox" value="" class="input_valign"/><span>四川</span></li>
+                                <li class="li_w95"><input name="" type="checkbox" value="" class="input_valign"/><span>西藏</span></li>
+                                <li class="li_w95"><input name="" type="checkbox" value="" class="input_valign"/><span>云南</span></li>
+                            </ol>
+                            <ol class="row1">
+                                <li class="li_w95"><input name="" type="checkbox" value="" class="input_valign"/><span class="gray">西北地区</span></li>
+                                <li class="li_w95"><input name="" type="checkbox" value="" class="input_valign"/><span>甘肃</span></li>
+                                <li class="li_w95"><input name="" type="checkbox" value="" class="input_valign"/><span>宁夏</span></li>
+                                <li class="li_w95"><input name="" type="checkbox" value="" class="input_valign"/><span>青海</span></li>
+                                <li class="li_w95"><input name="" type="checkbox" value="" class="input_valign"/><span>陕西</span></li>
+                                <li class="li_w95"><input name="" type="checkbox" value="" class="input_valign"/><span>新疆</span></li>
+                            </ol>
+                            <ol class="row1">
+                                <li class="li_w95"><input name="" type="checkbox" value="" class="input_valign"/><span class="gray">港澳台</span></li>
+                                <li class="li_w95"><input name="" type="checkbox" value="" class="input_valign"/><span>香港</span></li>
+                                <li class="li_w95"><input name="" type="checkbox" value="" class="input_valign"/><span>澳门</span></li>
+                                <li class="li_w95"><input name="" type="checkbox" value="" class="input_valign"/><span>台湾</span></li>
+                            </ol>
+                            <ol class="title1">
+                                <li class="li_w95"><input name="" type="checkbox" value="" class="input_valign"/>其他地区</li>
+                            </ol>
+                            <ol class="row1">
+                                <li class="li_pad1 li_w95"><input name="" type="checkbox" value="" class="input_valign"/><span>全部</span></li>
+                            </ol>
+                        </div>
+                    </div>
+            </div>
+        <!--投放地域 结束-->
+        <!--div投放日程 开始-->
+            <div class="level1">
+            <a id="idZuoDate1" class="jia" onclick="$UE.display('idZuoDate1','none');$UE.display('idZuoDate2','block');$UE.display('idcaizuo','block');">投放日程(高级)</a>
+            <a id="idZuoDate2" class="jian" onclick="$UE.display('idZuoDate1','block');$UE.display('idZuoDate2','none');$UE.display('idcaizuo','none');" style="display:none;">投放日程(高级)</a>
+            </div>
+        <!--投放日程时间表 -->
+            <div class="level2" id="idcaizuo" style="display:none;">
+                <div class="schedule">
+                    <!--div第三级内容 -->
+                    <div class="level3_schedule">
+                        <ul>
+                            <li><span class="tf_time">投放时段：
+                                <label>
+                                  <input type="radio" name="jihua_xiugai" value="j1" class="input_valign" onclick="$UE.display('jihua_xiugaij2','none');"/>
+                                  全日程</label>
+                                <label>
+                                  <input type="radio" name="jihua_xiugai" value="j2" class="input_valign" onclick="$UE.display('jihua_xiugaij2','block');"/>
+                                  指定时间段</label></span>
+                                  <div style="display:none" id="jihua_xiugaij2" class="tf_time_cont">
+                                    <div class="download_boxP">
+                                    <div class="download_boxPT"><span class="download_boxTitle">修改推广时段</span>
+                                    </div>
+                                    <div class="download_boxKC">
+                                    <div class="time_img">
+                                    <div class="time_img_p">
+                                    <p class="time_img_pL"><a class="a">全部时间</a>|<a class="a">工作日</a>|<a class="a">周末</a></p>
+                                    <p class="time_img_pR"><span class="time_img_pTou">&nbsp;</span><span>投放时间段</span><span class="time_img_pZan">&nbsp;</span><span>暂停时间段</span></p>
+                                    </div>
+                                    <div class="time_img_t">
+                                    <p><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span class="timeBg1">&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span></p>
+                                    <p><span>&nbsp;</span><span class="timeBg1">&nbsp;</span><span class="timeBg1">&nbsp;</span><span class="timeBg1">&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span></p>
+                                    <p><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span></p>
+                                    <p><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span></p>
+                                    </div>
+                                    <div class="time_img_i">
+                                    <ul>
+                                    <li class="time_input">
+                                    <input name="checkbox2" type="checkbox" value="checkbox"/>
+                                    </li>
+                                    <li class="time_day">周一</li>
+                                    <li><span>0</span>
+                                    <span>1</span>
+                                    <span>2</span>
+                                    <span class="timeBg2">3</span>
+                                    <span>4</span>
+                                    <span>5</span>
+                                    </li>
+                                    <li>
+                                    <span>6</span>
+                                    <span class="timeBg2">7</span>
+                                    <span class="timeBg2">8</span>
+                                    <span class="timeBg2">9</span>
+                                    <span>10</span>
+                                    <span>11</span>
+                                    </li>
+                                    <li>
+                                    <span>12</span>
+                                    <span>13</span>
+                                    <span>14</span>
+                                    <span>15</span>
+                                    <span>16</span>
+                                    <span>17</span>
+                                    </li>
+                                    <li>
+                                    <span>18</span>
+                                    <span>19</span>
+                                    <span>20</span>
+                                    <span>21</span>
+                                    <span>22</span>
+                                    <span>23</span>
+                                    </li>
+                                    </ul>
+                                    <ul>
+                                    <li class="time_input">
+                                    <input name="checkbox2" type="checkbox" value="checkbox"/>
+                                    </li>
+                                    <li class="time_day">周二</li>
+                                    <li><span>0</span>
+                                    <span>1</span>
+                                    <span>2</span>
+                                    <span class="timeBg2">3</span>
+                                    <span>4</span>
+                                    <span>5</span>
+                                    </li>
+                                    <li>
+                                    <span>6</span>
+                                    <span class="timeBg2">7</span>
+                                    <span class="timeBg2">8</span>
+                                    <span class="timeBg2">9</span>
+                                    <span>10</span>
+                                    <span>11</span>
+                                    </li>
+                                    <li>
+                                    <span>12</span>
+                                    <span>13</span>
+                                    <span>14</span>
+                                    <span>15</span>
+                                    <span>16</span>
+                                    <span>17</span>
+                                    </li>
+                                    <li>
+                                    <span>18</span>
+                                    <span>19</span>
+                                    <span>20</span>
+                                    <span>21</span>
+                                    <span>22</span>
+                                    <span>23</span>
+                                    </li>
+                                    </ul>
+                                    <ul>
+                                    <li class="time_input">
+                                    <input name="checkbox2" type="checkbox" value="checkbox"/>
+                                    </li>
+                                    <li class="time_day">周三</li>
+                                    <li><span>0</span>
+                                    <span>1</span>
+                                    <span>2</span>
+                                    <span class="timeBg2">3</span>
+                                    <span>4</span>
+                                    <span>5</span>
+                                    </li>
+                                    <li>
+                                    <span>6</span>
+                                    <span class="timeBg2">7</span>
+                                    <span class="timeBg2">8</span>
+                                    <span class="timeBg2">9</span>
+                                    <span>10</span>
+                                    <span>11</span>
+                                    </li>
+                                    <li>
+                                    <span>12</span>
+                                    <span>13</span>
+                                    <span>14</span>
+                                    <span>15</span>
+                                    <span>16</span>
+                                    <span>17</span>
+                                    </li>
+                                    <li>
+                                    <span>18</span>
+                                    <span>19</span>
+                                    <span>20</span>
+                                    <span>21</span>
+                                    <span>22</span>
+                                    <span>23</span>
+                                    </li>
+                                    </ul>
+                                    <ul>
+                                    <li class="time_input">
+                                    <input name="checkbox2" type="checkbox" value="checkbox"/>
+                                    </li>
+                                    <li class="time_day">周四</li>
+                                    <li><span>0</span>
+                                    <span>1</span>
+                                    <span>2</span>
+                                    <span class="timeBg2">3</span>
+                                    <span>4</span>
+                                    <span>5</span>
+                                    </li>
+                                    <li>
+                                    <span>6</span>
+                                    <span class="timeBg2">7</span>
+                                    <span class="timeBg2">8</span>
+                                    <span class="timeBg2">9</span>
+                                    <span>10</span>
+                                    <span>11</span>
+                                    </li>
+                                    <li>
+                                    <span>12</span>
+                                    <span>13</span>
+                                    <span>14</span>
+                                    <span>15</span>
+                                    <span>16</span>
+                                    <span>17</span>
+                                    </li>
+                                    <li>
+                                    <span>18</span>
+                                    <span>19</span>
+                                    <span>20</span>
+                                    <span>21</span>
+                                    <span>22</span>
+                                    <span>23</span>
+                                    </li>
+                                    </ul>
+                                    <ul>
+                                    <li class="time_input">
+                                    <input name="checkbox2" type="checkbox" value="checkbox"/>
+                                    </li>
+                                    <li class="time_day">周五</li>
+                                    <li><span>0</span>
+                                    <span>1</span>
+                                    <span>2</span>
+                                    <span class="timeBg2">3</span>
+                                    <span>4</span>
+                                    <span>5</span>
+                                    </li>
+                                    <li>
+                                    <span>6</span>
+                                    <span class="timeBg2">7</span>
+                                    <span class="timeBg2">8</span>
+                                    <span class="timeBg2">9</span>
+                                    <span>10</span>
+                                    <span>11</span>
+                                    </li>
+                                    <li>
+                                    <span>12</span>
+                                    <span>13</span>
+                                    <span>14</span>
+                                    <span>15</span>
+                                    <span>16</span>
+                                    <span>17</span>
+                                    </li>
+                                    <li>
+                                    <span>18</span>
+                                    <span>19</span>
+                                    <span>20</span>
+                                    <span>21</span>
+                                    <span>22</span>
+                                    <span>23</span>
+                                    </li>
+                                    </ul>
+                                    <ul>
+                                    <li class="time_input">
+                                    <input name="checkbox2" type="checkbox" value="checkbox"/>
+                                    </li>
+                                    <li class="time_day">周六</li>
+                                    <li><span>0</span>
+                                    <span>1</span>
+                                    <span>2</span>
+                                    <span class="timeBg2">3</span>
+                                    <span>4</span>
+                                    <span>5</span>
+                                    </li>
+                                    <li>
+                                    <span>6</span>
+                                    <span class="timeBg2">7</span>
+                                    <span class="timeBg2">8</span>
+                                    <span class="timeBg2">9</span>
+                                    <span>10</span>
+                                    <span>11</span>
+                                    </li>
+                                    <li>
+                                    <span>12</span>
+                                    <span>13</span>
+                                    <span>14</span>
+                                    <span>15</span>
+                                    <span>16</span>
+                                    <span>17</span>
+                                    </li>
+                                    <li>
+                                    <span>18</span>
+                                    <span>19</span>
+                                    <span>20</span>
+                                    <span>21</span>
+                                    <span>22</span>
+                                    <span>23</span>
+                                    </li>
+                                    </ul>
+                                    <ul>
+                                    <li class="time_input">
+                                    <input name="checkbox2" type="checkbox" value="checkbox"/>
+                                    </li>
+                                    <li class="time_day">周日</li>
+                                    <li><span>0</span>
+                                    <span>1</span>
+                                    <span>2</span>
+                                    <span class="timeBg2">3</span>
+                                    <span>4</span>
+                                    <span>5</span>
+                                    </li>
+                                    <li>
+                                    <span>6</span>
+                                    <span class="timeBg2">7</span>
+                                    <span class="timeBg2">8</span>
+                                    <span class="timeBg2">9</span>
+                                    <span>10</span>
+                                    <span>11</span>
+                                    </li>
+                                    <li>
+                                    <span>12</span>
+                                    <span>13</span>
+                                    <span>14</span>
+                                    <span>15</span>
+                                    <span>16</span>
+                                    <span>17</span>
+                                    </li>
+                                    <li>
+                                    <span>18</span>
+                                    <span>19</span>
+                                    <span>20</span>
+                                    <span>21</span>
+                                    <span>22</span>
+                                    <span>23</span>
+                                    </li>
+                                    </ul>
+                                    </div>
+                                    </div>
+                                    <p class="p_margi"><a href="javascript:location=location.href;" class="btn"><span>保存并继续</span></a><a href="javascript:location=location.href;" class="btn"><span>取消</span></a></p>
+                                    </div>
+                                    </div>
+                                  </div>
+                            </li>
+                       </ul>
+                    </div>
+                </div>
+            </div>
+            
+         <!--div投放日程 结束-->
+       </div>
+    </div>
+

@@ -1,0 +1,90 @@
+<div class="scommon_box" id="step_first" style="display:none;">
+  <input name="CAMPAIGN_ID" type="hidden" />
+  <div class="scommon_title" >
+    <p name="altPlanTitle" >新建计划</p>
+    <a name="close_bnt"></a></div>
+  <div class="scommon_main">
+    <div class="all_title" name="altPlanDaoHang"><span class="step_curr">新建推广计划</span><span>新建推广组</span><span class="span_three">新建创意</span></div>
+    <div class="step1_cont">
+      <ul>
+        <li id="ckPlanName"><span class="step1_lf">推广计划名称：</span><span class="step1_rg">
+          <input ckname="plan" grequired gmsgfun maxlength="30" minlength="1" name="CAMPAIGN_NAME" type="PLANNAME" class="input_01" />
+          <p class="red" name="planNameCk" style="display:none;">该名称已存在，请重新输入！</p></li>
+        <li class="nopad"><span class="step1_lf">每日预算：￥</span><span class="step1_rg">
+          <input grequired type="CAMPAIGNBUDGET|NUMBER" gmsgfun maxlength="100000" minlength="50"  name="CAMPAIGN_BUDGET" class="input_02" value="0" />
+          </span></li>
+      </ul>
+    </div>
+    <div class="level2"> 
+      <!--投放地域 -->
+      <div class="city"> <span class="tf_web">投放地域：</span>
+        <label class="label_mar_rg">
+          <input type="radio" name="REGION_TYPE" value="1" checked="checked" class="input_valign" gplaceholder="请至少选择一个投放地域"  />
+          全部地域 </label>
+        <label>
+          <input type="radio" name="REGION_TYPE" value="2" class="input_valign" />
+          选择地域 </label>
+        <div class="level3_city level3_city_pad_left" id="RadioGroup1a2" style="display:none;"> 
+          <!--#include virtual="/region/region.html"--> </div>
+      </div>
+    </div>
+    <div class="level2"> 
+      <!--投放地域 -->
+      <div class="city"> <span class="tf_web">定位类型：</span>
+          <label>
+          <input type="radio" name="TYPE" value="3" checked="checked" class="input_valign" />
+          其它 </label>
+        <label class="label_mar_rg">
+          <input type="radio" name="TYPE" value="1" class="input_valign" gplaceholder="请至少选择一个投放地域"  />
+          医生 </label>
+        <label>
+          <input type="radio" name="TYPE" value="2" class="input_valign" />
+          医院 </label>
+        <div class="level3_city level3_city_pad_left" id="RadioGroup1a2" style="display:none;"> 
+          <!--#include virtual="/region/region.html"--> </div>
+      </div>
+    </div>
+    <!--投放日程按钮 -->
+    <div class="level1"><a id="idSetDate1" class="jia">投放日程(高级)</a></div>
+    <!--投放日程下的三块 ----开始-->
+    <div class="level2" id="tfang_time" style="display:none;">
+      <div class="schedule">
+        <div class="level3_schedule">
+          <ul>
+            <li>开始日期：
+              <input name="BEGIN_TIME" type="text"  class="time" />
+              <input name="calendar" istimeone="true" maxdate="3012-01-01" mindate="day" formindate="#endTime20180823" type="image" src="/static/ads_c_2.0/web/images/dataImg.jpg" class="calendar"/>
+            </li>
+            <li class="li_w800"><span class="finish_time">结束日期：
+              <label>
+                <input type="radio" checked="checked" name="TIME_TYPE" value="1" class="input_valign" />
+                不限</label>
+              <label>
+                <input type="radio" name="TIME_TYPE" value="2" class="input_valign" />
+                指定结束日期</label>
+              </span> <span class="w_radioa" style="display:none" id="tFangEndTimeDiv">
+              <input name="END_TIME" type="text"  class="time"/>
+              <input name="calendar" id="endTime20180823" istimeone="true" maxdate="3012-01-01" mindate="day" type="image" src="/static/ads_c_2.0/web/images/dataImg.jpg"  class="calendar"/>
+              </span> </li>
+            <li><span class="tf_time">投放时段：
+              <label>
+                <input type="radio" checked="checked" name="SCHEDULE_TYPE" value="1" class="input_valign" />
+                全时段</label>
+              <label>
+                <input type="radio" name="SCHEDULE_TYPE" value="2" class="input_valign" />
+                指定时间段</label>
+              </span> 
+              <!--#include virtual="/plan/time.html"--> 
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!--投放日程下的三块 ----介绍--> 
+    <!--公共按钮---新建计划- -->
+    <div class="step_commom_btn" align="center" name="subAddPlanMsg">
+      <div class="s_c_width"><a class="btn" name="subAddPlan"><span>保存并继续</span></a><a class="btn" name="close_bnt"><span>取消</span></a> </div>
+    </div>
+  </div>
+</div>
+<script language="javascript" src="/static/web/js/page/plan.js"></script>

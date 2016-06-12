@@ -1,0 +1,17 @@
+
+<div class="l_r_box" id="large_refuse" style="display:none;">
+  <div class="l_r_title">
+  	<b>确认提示信息</b>
+    <span><input name="close_bnt" type="image" src="/static/ads_m_1.0/web/images/view_close.gif" onclick="javascript:$UE.close('large_refuse')"></span>
+  </div>
+  <div class="l_r_cont">
+  	<div class="content_fu">您确定要将选中创意批量审核拒绝吗？</div>
+    <div class="l_r_btn">
+    <ul>
+    	 <li><a href="javascript:$UE.close('large_refuse');$UE.open('view_refuse2');">确定</a><a onclick="javascript:$UE.close('large_refuse')">取消</a></li>
+	</ul>
+    </div>
+  </div>
+</div>
+
+

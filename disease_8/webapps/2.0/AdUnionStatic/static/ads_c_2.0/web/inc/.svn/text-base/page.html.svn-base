@@ -1,0 +1,17 @@
+   <div class="talk_list_contentB">
+      <div class="talk_list_cBR">
+		<ul>
+            <li class="li_mar10 page_lf">显示<span class="red">1-10</span>条 共100条 1/5页</li>
+            <li class="page_lf"><a href="#">首页</a> <a href="#">上一页</a> <a href="#">下一页</a> <a href="#">末页</a></li>
+            <li class="li_lmar5 page_lf">
+                <select name="page_selectStyle_05">
+                    <option value="20" selected>每页20条</option>
+                    <option value="50">每页50条</option>
+                    <option value="100">每页100条</option>
+                </select>
+            </li>
+            <li class="page_lf li_lmar5">跳转至第<input name="" type="text" class="input_w100"/>页</li>
+            <li class="li_go page_lf"><a href="#" class="mar_none"><span>GO</span></a></li>
+        </ul>      
+    </div>
+    </div>

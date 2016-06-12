@@ -1,0 +1,38 @@
+<div>
+  <div class="glx_result" name="queryViewEach" style="display:none;" ><b>过滤项:</b><span></span><a>清空</a></div>
+  <div class="guolx" name="queryViewDiv" style="display:none;">
+    <div class="guolx_top"><b>过滤项</b></div>
+    <div class="guolx_middle">
+      <ul>
+        <li class="glx_a"> <span class="glx_lf">展现次数</span> <span class="glx_lf1">
+          <select name="glImpression" giveup>
+            <option value="query.impressionStart">≥</option>
+            <option value="query.impressionEqualTo">=</option>
+            <option value="query.impressionEnd">≤</option>
+          </select>
+          </span> <span class="glx_lf1">
+          <input name="glImpressionValue" type="text" class="glx_input01" echoName="展现次数" giveup />
+          </span> </li>
+        <li class="glx_a"> <span class="glx_lf">点击次数</span> <span class="glx_lf1">
+          <select name="glClicks" giveup>
+            <option value="query.clickStart">≥</option>
+            <option value="query.clickEqualTo">=</option>
+            <option value="query.clickEnd">≤</option>
+          </select>
+          </span> <span class="glx_lf1">
+          <input name="glClicksValue" type="text" class="glx_input01" echoName="点击次数" giveup />
+          </span> </li>
+        <li class="glx_a"> <span class="glx_lf">点击率</span> <span class="glx_lf1">
+        <select name="glClicksRatio" giveup>
+            <option value="query.clicksRatioStart">≥</option>
+            <option value="query.clicksRatioEqualTo">=</option>
+            <option value="query.clicksRatioEnd">≤</option>
+          </select>
+          </span> <span class="glx_lf1">
+          <input name="glClicksRatioValue" type="text" class="glx_input01" echoName="点击率" giveup />
+          </span> </li>
+      </ul>
+    </div>
+    <div class="guolx_bottom"><a class="btn" name="subListGl"><span>筛选</span></a></div>
+  </div>
+</div>

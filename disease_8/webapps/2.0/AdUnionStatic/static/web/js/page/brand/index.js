@@ -1,0 +1,554 @@
+var brandListData={};
+setTimeout(function(){
+	window.brands=function(){
+		var findDom=$G('div:findDom')
+		,	DataList=$G('#brandList')
+		,	listData={}
+		,	bakRegionData = ""
+		,	getState=function(k){
+				var state={
+					'1':['投放中','green','查看创意']
+				,	'2':['已结束','gray','查看创意']
+				//,	'3':['待投放','red','查看创意']
+				,	'3':['待审核','orange','查看创意']
+				,	'4':['申请中','orange','订单审核']
+				,	'5':['已过期','gray','--']
+				,	'6':['申请拒绝','red','查看原因']
+				};
+				return state[k];
+			}
+		,	getCState=function(k){
+				var state={
+					'1':['待审核','orange','创意设置']
+				,	'2':['审核通过','green','创意设置']
+				,	'3':['审核拒绝','red','创意设置']
+				,	'4':['未设置','','创意设置']
+				};
+				return state[k];
+			}
+		,	brandSelect=$G('.brandSelect')
+		,	titlec=$G('.titlec')
+		,	brandType=0
+		,	tools=$G('#tools')
+		;
+		titlec.click(function(){
+			var gObj=$G(this)
+			,	v=gObj.getAtt('value')
+			;
+			brandType=v;
+			titlec.setAtt('class',' ');
+			gObj.setAtt('class','u_curr');
+			brandSelect.none();
+			brandSelect[v].style.display='';
+			if(v==3)tools.show();
+			else tools.none();
+			list&&list.sub();
+		});
+		var addBrand=$G('#addBrand')
+		,	addClear=function(){}
+		,	addBrandIframe=$G('#addBrandIframe')
+		;
+		addBrandIframe[0].onload=function(){
+			var ifr = this;
+			var win = ifr.window || ifr.contentWindow;
+			addClear=win.addBrandClear;
+		};
+		window.addBrandFn=function(){
+				var adiv=$G('#apply_ad')
+				,	show=function(){
+						adiv.WinAlt({
+							position:'absolute',
+							lock_back:'#BBBBBB',
+							lock_opa:30,
+							isCenter:true
+						});
+					}
+				;
+				$G('.close',adiv[0]).click(function(){
+					adiv.display().none();
+				});
+				return {
+					show:function(){
+						if($G.isNaN(addBrandIframe[0].src)){
+							addBrandIframe[0].src='/brand/addif.html';
+						}else{
+							addClear();
+						}
+						show();
+					}
+				,	none:function(){
+						adiv.display().none()
+					}
+				,	clear:function(){
+						addClear();
+					}
+				}
+			}()
+		;
+		addBrand.click(function(){
+			window.addBrandFn.show();
+		});
+		/***********************查询功能开始************************************/
+		/***********************投放科室************************************/
+		var putKeshi=$G('.putKeshi')
+		,	select_keshi=$G('#select_keshi')
+		,	putKeshiFn=function(){
+				var adiv=select_keshi
+				,	show=function(){
+						adiv.WinAlt({
+							position:'absolute',
+							lock_back:'#BBBBBB',
+							fixedDom:putKeshi[brandType],
+							lock_opa:30
+						});
+					}
+				;
+				$G('.close',adiv[0]).click(function(){
+					adiv.display().none();
+				});
+				return {
+					show:function(){
+						show();
+					},
+					hide: function() {
+						adiv.display().none();
+					}
+				}
+			}()
+		;
+		putKeshi.click(function(){
+			putKeshiFn.show();
+			putRegionFn.hide();
+		});
+		window.keshi.setAll();
+		/***********************投放区域************************************/
+		var putRegion=$G('.putRegion')
+		,	putRegionFn=function(){
+				var adiv=$G('#RegionList')
+				,	show=function(){
+						adiv.WinAlt({
+							position:'absolute',
+							lock_back:'#BBBBBB',
+							fixedDom:putRegion[brandType],
+							lock_opa:30
+						}).Move({moveobj:$G('ol:region_title')});
+					}
+				;
+				
+				$G('.close',adiv[0]).click(function(){
+					adiv.display().none();
+				});
+				return {
+					show:function(){
+						$("#RegionList input[type = 'checkbox']").removeAttr("disabled");
+						show();
+					},
+					hide:function() {
+						adiv.display().none();
+					}
+				}
+			}()
+		;
+		putRegion.click(function(){
+			window.region.setRegion(bakRegionData);
+			putRegionFn.show();
+			putKeshiFn.hide();
+		});
+		/***********************查询功能结束************************************/
+		
+		/***********************查看投放科室************************************/
+		var view_keshi=$G('#view_keshi')
+		,	viewKeshi=function(){
+				var adiv=view_keshi
+				,	show=function(){
+						adiv.WinAlt({
+							position:'absolute',
+							lock_back:'#BBBBBB',
+							fixedDom:putKeshi[brandType],
+							lock_opa:30
+						});
+					}
+				;
+				$G('.close',adiv[0]).click(function(){
+					adiv.display().none();
+				});
+				return {
+					show:function(){
+						show();
+					},
+					hide: function() {
+						adiv.display().none();
+					}
+				}
+			}()
+		;
+		
+		window.brandCreative=window.alertDiv({
+			findObj:'#set_creative'
+		,	closeObj:'.close'
+		,	position:'absolute'
+		,	move:$G('div:scommon_title')
+		})
+		;
+		
+		/***********************获取品牌列表************************************/
+		var page=window.page()
+		,	pageIni=page.getPage()
+		,	pageArray=page.getPage()
+		,	list=window.subAjax('.brandList',{
+				path:'GET_BRAND'
+			,	sub:'.brandSub'
+			,	findDom:findDom[0]
+			,	obj:DataList[0]
+			,	ckdata:function(){
+					var data={};
+					data['DEPT_SERIALIZE']=window.keshi.getid();
+					bakRegionData = data['REGION_SERIALIZE']=window.region.getRegion(true);
+					data['SHOW_TIME_START']='';
+					data['SHOW_TIME_END']='';
+					var t=window.getTimes('time',brandSelect[brandType]);
+					if(t.length>0){
+						data['SHOW_TIME_START']=t[0];
+						data['SHOW_TIME_END']=t[1];
+						data['SHOW_TIME_TYPE']=2;
+					} else {
+						data['SHOW_TIME_TYPE']=1;
+					}
+					
+					if($G.isNaN(data['DEPT_SERIALIZE'])){
+						data['DEPT_TYPE']=1;
+					}else{
+						data['DEPT_TYPE']=2;
+					}
+					
+					if($G.isNaN(data['REGION_SERIALIZE'])){
+						data['REGION_TYPE']=1;
+					}else{
+						data['REGION_TYPE']=2;
+					}
+					
+					if(brandType==0){
+						var CREATIVE_STATE=$G('.CREATIVE_STATE',brandSelect[brandType])
+						;
+						data['STATUS']=1;
+						data['CREATIVE_STATE']=CREATIVE_STATE[0].value;
+						
+					}else if(brandType==1){
+						data['STATUS']=2;
+					}else if(brandType==2){
+						data['STATUS']=3;
+						var CREATIVE_STATE=$G('.CREATIVE_STATE',brandSelect[brandType])
+						;
+						data['CREATIVE_STATE']=CREATIVE_STATE[0].value;
+					}else if(brandType==3){
+						data['STATUS']=4;
+					}
+					return window.wm.setDataList(data,'','',findDom[0],pageArray);
+				}
+			,	callback:function(JSON){
+					var str=''
+					,	listTitle=$G('#listTitle_'+brandType)
+					,	listList=$G('#listList_'+brandType)
+					,	regData=window.region.code
+					,	ksData=window.keshi.code
+					;
+					JSON.INFO=JSON.INFO||{
+											PAGE_INDEX:1
+										,	CAMPAIGN_COUNT:0
+										};
+					JSON.LIST=JSON.LIST||{};
+					
+					if(!window.wm.msg(JSON.CODE,false))
+						return;
+					
+					try{
+						var	n=JSON.LIST.length
+						;
+						if(n<1){
+							var html='<table width="100%"><tr><td colspan="12"><div class="warn">没有符合条件的数据</div></td></tr></table>';
+							DataList[0].innerHTML=html;
+							return false;
+						}
+						for(var i=0;i<n;i++){
+							var	v=JSON.LIST[i]
+							,	hStr=listList[0].innerHTML
+							;
+							listData[v.BRAND_ID]=v;
+							$G.Each(function(i,val,json){
+								var value=this+'';
+								if(val=='BRAND_STATUS'){
+									var stateArray=getState(value);
+									
+									if (value != 6) {
+										hStr=window.wm.setVal(hStr,'isHide', "none");
+									}
+									
+									value=stateArray[0];
+									hStr=window.wm.setVal(hStr,'stateCss',stateArray[1]);
+									
+								}else if (val == 'INSPECTION_STATUS') {
+									
+									if (value != 2) {
+										hStr=window.wm.setVal(hStr,'isHideC2', "none");
+									}
+									
+								}else if(val=='CREATIVE_STATE'){
+									var stateArray=getCState(value);
+									
+									if (value != 1) {
+										hStr=window.wm.setVal(hStr,'isHideC2', "none");
+									}
+									
+									if (value != 3) {
+										hStr=window.wm.setVal(hStr,'isHideC', "none");
+									}
+									
+									value=stateArray[0];
+									hStr=window.wm.setVal(hStr,'creativeStateCss',stateArray[1]);
+									
+								}else if(val=='DEPT_CODE'){
+									var v=value.split(',');
+									hStr=window.wm.setVal(hStr,'DEPT_NAME',ksData[v[0]]);
+								}else if(val=='REGION_SERIALIZE'){
+									var regHtml='';
+									if(json.REGION_TYPE==0){
+										regHtml='全部区域';
+									}else{
+										var v=value.split(',')
+										,	regHtml='<a class="p_a_style1" value="'+json.REGION_SERIALIZE+'" name="region">'+regData[v[0]]+'</a>'
+										;
+									}
+									hStr=window.wm.setVal(hStr,'REGION_SERIALIZE_NAME',regHtml);
+								}
+								
+								hStr=window.wm.setVal(hStr,val,value);
+							},v);
+							
+							var inis='<a class="p_a_style1" name="creativeIni" value="'+v.BRAND_ID+'">创意设置</a>'
+							,	view='<a class="new_img" name="creativeView"><span><img src="/static/ads_c_2.0/web/images/new_img1.jpg" width="16" height="16"/></span></a>'
+							,	tools=inis
+							;
+							
+							if(brandType!=3){
+								if(v.CREATIVE_STATE!=4)tools+=view;
+								if(brandType==1)tools=view;
+								hStr=window.wm.setVal(hStr,'tools',tools);
+							}
+							
+							str+=hStr;
+						}
+						
+						page.setup(JSON.INFO.CAMPAIGN_COUNT,n,pageArray);
+						var html='<table width="100%">'+(listTitle[0].innerHTML).toString()+str+'</table>';
+						DataList[0].innerHTML=html;
+						
+					}catch(e){alert('brand:'+e);}
+					
+					
+					
+					$G('.dept',DataList[0]).click(function(){
+						var v=$G(this).getAtt('value');
+						viewKeshi.show();
+						window.viewkeshi.show(v);
+					});
+					$G('.region',DataList[0]).click(function(){
+						var v=$G(this).getAtt('value');
+						putRegionFn.show();
+						
+						$("#RegionList input[type = 'checkbox']").attr("disabled", "true");
+						
+						window.region.setRegion(v);
+					});
+					$G('.creativeIni',DataList[0]).click(function(){
+						
+						// 先清空其中的缓存
+						$("#set_creative input,textarea").val("");
+						$("#set_creative #demo").html($("#demoBak").html());
+						for (var i = 0; i < 6; i++) {
+							$("#set_creative #upIdeas_" + i + "_msg").html("");
+						}
+						
+						var v=$G(this).getAtt('value')
+						,	addCreative=$G('#addCreative')
+						,	j=listData[v]
+						;
+						$G('.BRAND_ID',addCreative[0])[0].value=v;
+						$G('.CREATIVE_STATE',addCreative[0])[0].value=j.CREATIVE_STATE;
+						window.ajax({
+							path:'GET_BRAND_CREATIVE'
+						,	data:{
+								BRAND_ID:BRAND_ID[0].value
+							,	MOD_STATUS:1
+							}
+						,	calback:function(JSON){
+								if(!JSON.BRAND_ID)return;
+								demoFn(JSON);
+								delete JSON['CODE'];
+								brandListData[JSON.BRAND_ID]=JSON;
+								$G.log(JSON['CREATIVE_STATE']);
+								$G('.CREATIVE_STATE',addCreative[0])[0].value=JSON['CREATIVE_STATE']||j.CREATIVE_STATE;
+								$G('input textarea',addCreative[0]).Each(function(){
+									this.value=JSON[this.name];
+								});
+								for(var i=0,n=6;i<n;i++){
+									$G('#upIdeas_'+JSON.BRAND_CREATIVE[i]['SEQUENCE']+'_src',addCreative[0])[0].value=window.wm.path.pic.url+JSON.BRAND_CREATIVE[i]['IMG_PATH'];
+									$G('.IMG'+JSON.BRAND_CREATIVE[i]['SEQUENCE']+'_URL',addCreative[0])[0].value='http://'+(JSON.BRAND_CREATIVE[i]['IMG_URL'].replace(/(http:\/\/)/ig,""));
+									$G('.IMG'+JSON.BRAND_CREATIVE[i]['SEQUENCE']+'_ID',addCreative[0])[0].value='0';
+									
+									if (JSON.BRAND_CREATIVE[i]['IMG_PATH'].length > 0) {
+										$G('#upIdeas_'+JSON.BRAND_CREATIVE[i]['SEQUENCE']+'_msg',addCreative[0]).html('<span class="step1_rg1 step1_rg2 green"><img src="/static/ads_c_2.0/web/images/true.png" width="16" height="16" class="img_false"/>图片已上传！</span>');
+									}
+								}
+							}
+						});
+						window.brandCreative.show();
+					});
+				}
+			});
+			
+			
+		var selectAll=function(){
+				var c=this.checked;
+				$G('.listCheckId',DataList[0]).Each(function(){
+					this.checked=c;
+				});
+			}
+		,	selectId=function(id){
+				var c=this.checked
+				,	list=$G('.listCheckId',DataList[0])
+				,	n=list.length
+				,	cn=list.checked(true).length
+				;
+				if(n==cn)$G('.listCheckAll',DataList[0])[0].checked=true;
+				else $G('.listCheckAll',DataList[0])[0].checked=false;
+			}
+		;
+		(function(){
+			var findSelId=function(){
+				var selObjList=$G('.listCheckId',$G('#DataList')[0])
+				,	cv=selObjList.checked(true)
+				,	cn=cv.length
+				;
+				return {
+					objlist:selObjList
+				,	vlist:cv
+				,	n:cn
+				};
+			};
+			$G('#tools').click(function(){
+				var s=findSelId();
+				if(s.n<1){
+					window.altBox.show({
+						title:'提示信息'
+					,	msg:'请在列表中选中推广计划后再进行删除操作'
+					});
+				}else{
+					window.gconfirm({
+						msg:'您确定要删除选中的推广计划吗？'
+					,	fn:function(isTrue){
+							s = s.vlist.toString();
+							
+							if(isTrue){
+								window.ajax({
+									path: "DEL_BRAND",
+									data: {
+										BRAND_ID: s
+									},
+									calback: function(JSON) {
+										if(!window.wm.msg(JSON.CODE,false))	return;
+										var str = s.split(","), temp;
+										for (temp in str) {
+											$("#brandList #id" + str[temp]).remove();
+										}
+										$("#brandList input[name = 'listCheckAll']").prop("checked", false);
+									}
+								});
+							}
+						}
+					});
+				}
+			});
+			$G('#planToolsSotpAll').click(function(){
+				var s=findSelId();
+				if(s.n<1){
+					window.altBox.show({
+						title:'提示信息'
+					,	msg:'请在列表中选中推广计划后再进行暂停操作'
+					});
+				}else{
+					window.gconfirm({
+						msg:'您确定要暂停选中的推广计划吗？'
+					,	fn:function(isTrue){
+							if(isTrue){
+								pause(s.vlist.join(','),1,2);
+							}
+						}
+					});
+				}
+			});
+			$G('#planToolsStartAll').click(function(){
+				var s=findSelId();
+				if(s.n<1){
+					window.altBox.show({
+						title:'提示信息'
+					,	msg:'请在列表中选中推广计划后再进行启动操作'
+					});
+				}else{
+					window.gconfirm({
+						msg:'您确定要启用选中的推广计划吗？'
+					,	fn:function(isTrue){
+							if(isTrue){
+								pause(s.vlist.join(','),1,1);
+							}
+						}
+					});
+				}
+			});
+		})();
+		var orderBy=function(type){
+			var setObj=$G(this)
+			,	setId=setObj.getAtt('value')
+			,	cObj=$G('span',this)
+			,	cssName=cObj.getAtt('class')
+			;
+			pageArray['SORT_TYPE']=2;
+			pageArray['SORT_COLUMN']=(Number(setId)+1);
+			if(cssName=='bottom_curr'||!cssName){
+				pageArray['SORT_TYPE']=1;
+			}
+			pageArray['orderSetId']=setId;
+			pageArray['orderSetCssName']=cssName;
+			list.sub();
+		};
+		var findWhere=function(){
+			pageArray['click']=function(pageObj){
+				pageArray=pageObj;
+				list.sub();
+			};
+			pageArray['SORT_TYPE']=2;
+			pageArray['SORT_COLUMN']=10;	// 最新需求，需要按订单倒序
+			return {
+				clear:function(){
+					
+				}
+			};
+		}();
+		var timer = setInterval(function() {
+			if (region.isLoad()) {
+				list.sub();
+				clearInterval(timer);
+			}
+		},10);
+		return {
+			list:function(obj){
+				obj=obj||{};
+				findWhere.clear();
+				pageArray['PAGE_INDEX']=obj.p||pageIni.PAGE_INDEX;
+				list.sub();
+			}
+		,	orderBy:orderBy
+		,	selectAll:selectAll
+		,	selectId:selectId
+		};
+	}();
+},1500);

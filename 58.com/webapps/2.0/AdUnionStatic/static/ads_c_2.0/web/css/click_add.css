@@ -1,0 +1,111 @@
+/* CSS Document */
+/* 第一步头部样式 */
+.fujia_main .all_title span{ display:block; float:left; width:100px; padding-left:10px; height:28px; background:url(/static/ads_c_2.0/web/images/setp_bg1.gif) no-repeat right center;}
+.fujia_main .all_title span.step_rg_bg{background:url(/static/ads_c_2.0/web/images/setp_bg3.gif) no-repeat right center; color:#000;}
+.fujia_main .all_title span.step_curr{background: #c9e2ff url(/static/ads_c_2.0/web/images/setp_bg2.gif) no-repeat right center; color:#0066cc;}
+.fujia_main .all_title span.span_three{width:85px; padding-left:15px;}
+.fujia_main ul li span.step1_rg input{ margin-right:5px;}
+.fujia_main .all_title{ height:28px; line-height:28px; background:#e0edfd; font-weight:bold;}
+
+/* 点击推广 新建创意 默认创意预览*/
+.fujia_main{background: #FFFFFF;padding: 10px 10px 0px; position: relative;width: 900px;}
+.cd_lf{ float:left; padding:10px 3px 15px; background:#ecebeb; margin-right:5px;}
+.c_default{ clear:both; margin-top:10px; }
+.cd_lf ul li{ display:block;height:26px;float: left; margin-right: 30px;width: 274px;}
+.cd_lf ul li.li_red{ height:auto; color:#F00;}
+.cd_lf ul li.add_link{ height:auto; padding-left:15px;}
+.cd_lf ul li.li_height{ height:95px;}
+.cd_lf em{ display:block; float:left; font-style:normal; width:100px; text-align:left; font-weight:bold;}
+.cd_lf ul li s{ color:#999; float: right;}
+.cd_lf ul li i{ font-style:normal; float: right;}
+.cd_lf .input_w1{ width:246px;}
+.cd_lf .input_w2{ width:217px;}
+.cd_lf .text_size{ width:270px; height:80px; font-size:12px; }
+.cd_lf .select_size{ width:250px; font-size:12px; }
+.cd_lf ul li a{color: #0033CC; background: url("/static/ads_c_2.0/web/images/jia.gif") no-repeat scroll left 2px; padding-left:12px;}
+.cd_lf ul li a.tianjia{color: #2558BC; background: url("/static/ads_c_2.0/web/images/jia.gif") no-repeat scroll left center; padding-left:12px; text-decoration:none;}
+.cd_lf ul li a.tianjia_j {color: #2558BC; background: url("/static/ads_c_2.0/web/images/jian.gif") no-repeat scroll left center; padding-left:12px; text-decoration:none;}
+
+/* 创意预览 左侧展示*/
+.addp_main1{ background: none repeat scroll 0 0 #FFFFFF;overflow: hidden;padding: 0 0 20px 8px}
+.cy_show{ float:left; width:703px; padding-top:10px;}
+.cy_show_widen{ float:left; width:703px; padding-top:10px;}
+.cylf_show{ width:703px;}
+.cyrg_show{ margin-top:20px;}
+.cylf_show em,.cyrg_show em{ font-style:normal; color:#666666;}
+.cylf_show .default_bg,.cyrg_show .default_bg{ margin-top:5px;border:1px solid #cccccc; overflow:hidden;}
+.cylf_show .default_bg{width:683px; padding:7px 6px;}
+.cylf_show .default_bg_widen{width:683px; padding:7px 6px;}
+.cyrg_show .default_bg{ width:300px; margin-top:5px;padding:7px 10px;word-wrap: break-word;word-break: break-all;}
+.cylf_show .default_bg s{ display:block; float:left; color:#261CDC; overflow:hidden;word-wrap: break-word;word-break: break-all; max-width:320px; height:22px; text-decoration:underline;background: url("/static/ads_c_2.0/web/images/cy_ico_01.jpg") no-repeat scroll right 3px; font-size:14px; padding-right:20px;}
+.cylf_show .default_bg span.zixun,.cylf_show .default_bg span.guahao{display:block; float:left;color:#666666; text-decoration:underline; padding-left:14px; margin-left:10px;line-height:19px;}
+.cylf_show .default_bg span.zixun{ background: url("/static/ads_c_2.0/web/images/cy_ico_03.png") no-repeat scroll left 4px; }
+.cylf_show .default_bg span.guahao{ background: url("/static/ads_c_2.0/web/images/cy_ico_04.png") no-repeat scroll left 6px;}
+.cylf_show .default_bg div.pingl{display:block; float:right;color:#261CDC; text-decoration:underline; padding-left:14px;}
+.cylf_show .default_bg div.pingl .start1{width:62px; height:10px; background:url(/static/ads_c_2.0/web/images/start_ico.png) no-repeat 0 -11px;_background:url(/static/ads_c_2.0/web/images/start_ico.gif) no-repeat 0 -11px; _overflow:hidden;  float:left; margin:4px 5px 0 0;}
+.cylf_show .default_bg div.pingl .start2{ height:10px; background:url(/static/ads_c_2.0/web/images/start_ico.png) no-repeat 0 0;_background:url(/static/ads_c_2.0/web/images/start_ico.gif) no-repeat 0 0;_overflow:hidden;}
+.cylf_show .default_bg div.pingl .ping_nolink3{color:#0033CC;font-size:13px;line-height: 17px; text-decoration:underline;cursor:default; }
+
+.cy_ms{ margin:3px 0;}
+.cy_ms .ms_cont{ display:block; width:400px;max-height:44px;  float:left; color:#333333;overflow:hidden;word-wrap: break-word;word-break: break-all;}
+.cy_ms .ms_style{ display:block; float:right;}
+.zilian{ clear:both;}
+.zilian i{ font-style:normal;color:#261CDC; text-decoration:underline;}
+.zilian .hos_address{ float:right;background: url("/static/ads_c_2.0/web/images/cy_ico_05.jpg") no-repeat scroll left 4px; padding-left:15px;}
+
+.cylf_show .default_bg b{ color:#261CDC; text-decoration:underline;}
+.cylf_show .default_bg span.pingl img{ margin-right:2px;}
+
+.cylf_show .default_bg .d_bg1{ display:block; margin:10px 0;}
+.d_bg2 span{max-width:220px; height:22px;overflow:hidden;word-wrap: break-word;word-break: break-all;float:left;}
+.cyrg_show .default_bg .cyrg_cont{display:block; float:left; width:300px;max-height:44px; color:#333;overflow:hidden;word-wrap: break-word;word-break: break-all;}
+.cyrg_show .default_bg s{display:block; float:left; width:300px; height:22px;color:#333;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+.cyrg_show .default_bg s.rg_cytitle{ background:none;}
+.cyrg_footer{ width:590px; clear:both; border-top:1px solid #cccccc; height:24px; padding-top:7px; color:#666666;}
+.cyrg_footer a,.cyrg_footer a:link,.cyrg_footer a:visited{ color:#0033cc;}
+.new_footer{ width:590px; clear:both; border-top:1px solid #cccccc; height:24px; padding-top:7px; position:relative; bottom:60px; left:310px; color:#666666;}
+.new_footer a,.new_footer a:link,.new_footer a:visited{ color:#0033cc;}
+/* 点击推广 附加创意 添加附加创意*/
+.cy_show .title_h{ height:22px;overflow:hidden;}
+.cy_show .line1_tt{display:block; float:left; color:#261CDC; text-decoration:underline; padding-right:5px;font-size:16px;width: expression(this.offsetWidth > 430 ? '430px': true);max-width:433px;overflow:hidden;word-wrap: break-word;word-break: break-all;}
+.cy_show .line1_cont{float:left; font-style:normal;width: expression(this.offsetWidth > 410 ? '410px': true); max-width:410px;line-height:20px;}
+.cy_show .line1_cont .font_nolink1{color:#0033CC;text-decoration:underline;cursor:default;}
+.cy_show .line1tt_img{float:left;width:16px; height:18px;background: url(/static/ads_c_2.0/web/images/cy_ico_01.png) no-repeat right 1px; margin-left:2px;}
+.cy_show .font_nolink2{ color: #666666;font-size:12px; text-decoration:underline;cursor:default;}
+
+.cy_show .content_style{clear:both; margin:3px 0; overflow:hidden;}
+.cy_show .content_style .content_word{ display:block;width:538px;font-size: 13px; line-height:19px; float:left; color:#333333;overflow:hidden;word-wrap: break-word;word-break: break-all;}
+.cy_show .content_style .content_word .word_nolink{color:#333333; text-decoration:none;cursor:default;}
+.cy_show .content_style .yi_name{width: 122px; text-align:right; height:22px; float:right; color:#000; font-size:12px;line-height: 18px;overflow:hidden;word-wrap: break-word;word-break: break-all;}
+.cy_show .zi_link{clear:both; overflow:hidden;}
+.cy_show .zi_link_lf{float: left;width:480px;}
+.cy_show .zi_link_lf i{font-style:normal;}
+.cy_show .zi_link_lf i a{color:#261CDC; text-decoration:underline;cursor:default;}
+.cy_show .zi_link_lf i.zi_link_address{ clear:both;float:left;font-size:13px;line-height:18px;width:480px; margin-right:10px;overflow: hidden; word-break: break-all; word-wrap: break-word;}
+.cy_show .zi_link_lf i.zi_link_address a{text-decoration:none;color: #006600;cursor:default;}
+.cy_show .zi_link_rg{float:right;background: url(/static/ads_c_2.0/web/images/cy_ico_05.png) no-repeat scroll left 4px; padding-left:15px;}
+.cy_show .zi_link_rg a{color:#000;line-height: 20px; font-size:12px;text-decoration:underline;cursor:default;}
+
+.duan_box{font-size:12px; line-height:22px; clear:both;}
+.duan_box em{font-style:normal;color: #666666;}
+.duan_box .duan_title{margin-top: 5px; padding: 7px 10px;width: 238px;word-break: break-all; word-wrap: break-word;border: 1px solid #CCCCCC; overflow:hidden;color: #333333;}
+.duan_box .duan_title .dtitle{display: block;height: 22px;overflow: hidden;}
+.duan_box .duan_title .duan_nolink1{color:#0033cc;font-size:16px;line-height: 1.5em; text-decoration:underline;cursor:default;}
+.duan_box .duan_cont{display: block; max-height:40px;overflow: hidden; word-break: break-all; word-wrap: break-word;}
+.duan_box .duan_cont .duan_nolink2{color:#333333;text-decoration:none;font-size: 13px;line-height: 1.5em;cursor:default;}
+.duan_line3{ width:100%;}
+.duan_line3 .duan_nolink3{display:block; float:left;margin-right:5px;  max-width:90%; height:20px;overflow: hidden; word-break: break-all; word-wrap: break-word; color: #006600;text-decoration:none;cursor:default;}
+.duan_line3 .url_bg{ display: inline-block; float:left; width:17px;overflow: hidden; word-break: break-all; word-wrap: break-word;}
+
+
+.add_frame{ width:270px; padding:10px 6px 25px; float:left; background:#f6f6f6; margin-right:5px;}
+.add_frame ul li{ display:block; height:26px;}
+.add_frame ul li b{float:left;}
+.add_frame ul li s{ color:#999; float:right; padding-right:10px;}
+.add_frame ul li span.addf_lf{ display:block; float:left; width:40px; text-align:right;}
+.add_frame ul li span.addf_rg{ display:block; float:left;}
+
+.new_addbg{ padding-left:30px;background: url("/static/ads_c_2.0/web/images/add_fujia.jpg") no-repeat scroll left 20px; }
+.style_mar{ margin-top:5px;}
+.fujia_main .step_commom_btn a{ margin-right:5px;}
+.error{ color:#F00; padding:20px 5px 0;}

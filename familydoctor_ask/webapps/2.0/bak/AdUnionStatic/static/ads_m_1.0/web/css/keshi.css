@@ -1,0 +1,41 @@
+@charset "utf-8";
+/* CSS Document */
+.result{ height:30px;border-bottom: 1px solid #ddd;background:#f3f5f8; padding:0 5px; overflow:hidden;}
+.result b{ line-height:30px; float:left;}
+.result .re_arrow{ float:right; padding-top:4px; margin-right: 5px;}
+.result .re_arrow a{ float:left; margin-right:10px; color:#000;}
+.result .re_arrow a.re_all{ display:block; line-height:20px;width:80px; padding-left:15px; background: #f9fafa url(/static/ads_m_1.0/web/images/right_arrow.gif) no-repeat 70px center;border: 1px solid #cfdce4;}
+.result .re_arrow a.re_delete{ display:block; line-height:20px;width:80px; text-align:center;background: #f9fafa;border: 1px solid #cfdce4;}
+.result .re_arrow a.re_all_w80{ display:block; line-height:20px;width:80px; padding-left:15px; background: #f9fafa url(/static/ads_m_1.0/web/images/right_arrow.gif) no-repeat 80px center;border: 1px solid #cfdce4;}
+.result .re_arrow a.re_all_w80:hover{ text-decoration:none;border: 1px solid #adc6d5; }
+.result .re_arrow a.re_delete:hover,.result .re_arrow a.re_all:hover{ text-decoration:none;border: 1px solid #adc6d5; }
+
+/* 科室与病种 */
+.depart{ width:400px; height:300px;border:1px solid #cfdce4; background:#fff;}
+.depart_tt{ background:#f5f7fb; border-bottom:1px solid #cfdce4; height:28px; line-height:28px;}
+.depart_tt span.d_span1{ float:left; padding:4px 5px 0 10px;}
+.depart_select{ width:270px;}
+.depart_result{ border-top:1px solid #FFF;}
+.depart_level{ height:270px; overflow:hidden; overflow-y:scroll;}
+.depart_level ul li a{ display:block; height:28px; line-height:28px; margin:0; position:relative;}
+.depart_level ul li a:hover{ background:#cfdce4;}
+.depart_level ul li a span.word1{ display:block; width:275px; height:27px;float:left; overflow:hidden; color:#000;}
+.depart_level ul li a em{ float:right; margin-right:5px; font-style:normal; color:#1c5180;}
+.depart_level ul li a.d_level1{ padding:0 15px;}
+.depart_level ul li a.d_level2{ padding:0 10px 0 40px;}
+.depart_level ul li a.d_level3{ padding:0 10px 0 75px;}
+.depart_level ul li a.d_level4{ padding:0 10px 0 110px;}
+.depart_level ul li a.d_level5{ padding:0 10px 0 143px;}
+.depart_level ul li .depart_input1{ margin:7px 5px 0 0; float:left;}
+.depart_level ul li .span_line{ clear:both;border-bottom:1px dashed #999; display:block; height:0px;}
+.gather{ display:block; float:left; width:15px; height:28px; background:url(/static/ads_m_1.0/web/images/ico_add.gif) no-repeat 0 9px;}
+.spread{ display:block; float:left; width:15px; height:28px; background:url(/static/ads_m_1.0/web/images/ico_add.gif) no-repeat 0 -17px;}
+.gather_report{ display:block; float:left; width:15px; height:28px; background:url(/static/ads_m_1.0/web/images/report_ico.gif) no-repeat 0 10px;}
+.spread_report{ display:block; float:left; width:15px; height:28px; background:url(/static/ads_m_1.0/web/images/report_ico.gif) no-repeat 0 -10px;}
+.d_input{ display:block; width:10px; float:left; padding-right:5px;}
+.d_input input {margin-top: 8px;height: 15px;position: absolute; left: -1000px;}
+.d_input .checkboxOn,.d_input .checkboxOff,.d_input .checkboxcurr {display: block;height: 15px; margin: 8px 10px 0 0;width: 15px;}
+.d_input .checkboxOn {background: url(/static/ads_m_1.0/web/images/checkbox_on.gif) no-repeat  ;}
+.d_input .checkboxOff{background: url(/static/ads_m_1.0/web/images/checkbox_off.gif) no-repeat;}
+.d_input .checkboxcurr{background: url(/static/ads_m_1.0/web/images/checkbox_curr.gif) no-repeat;}
+

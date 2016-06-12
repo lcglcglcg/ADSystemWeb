@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>健康网盟-报表管理</title>
+<link rel="stylesheet" type="text/css" href="/static/ads_c_2.0/web/css/report.css"/>
+<link rel="stylesheet" type="text/css" href="/static/ads_c_2.0/web/css/step1.css"/>
+<link rel="stylesheet" type="text/css" href="/static/ads_c_2.0/web/css/step2.css"/>
+<link rel="stylesheet" type="text/css" href="/static/ads_c_2.0/web/css/directional.css"/>
+<link rel="stylesheet" type="text/css" href="/static/ads_c_2.0/web/css/step_common.css"/>
+<link rel="stylesheet" type="text/css" href="/static/ads_c_2.0/web/css/ding_report.css"/>
+<link rel="stylesheet" type="text/css" href="/static/ads_c_2.0/web/css/page.css"/>
+</head>
+<body>
+<!--#include virtual="/public/public.shtml"-->
+<script language="javascript" src="/static/web/js/common/common_time.js"></script>
+<script language="javascript" src="/static/web/js/page/report.js"></script>
+<!--#include virtual="/public/header.shtml"-->
+<div class="main">
+  <div class="re_power"> <a id="titlek1" class="re_curr">标准报告</a> <a id="titlek2">综合报告</a> <a id="titlek3">报告下载</a> </div>
+  <div class="re_main"> 
+    <!-- 标准报告 start --> 
+    <!--#include virtual="/report/standard.shtml"--> 
+    <!-- 标准报告 end --> 
+    <!--#include virtual="/report/general.shtml"-->
+    <!--报告下载 start --> 
+    <!--#include virtual="/report/list.shtml"--> 
+    <!-- 报告下载 end --> 
+  </div>
+</div>
+<!--#include virtual="/report/sub.html"--> 
+<!--#include virtual="/public/footer.html"-->
+</body>
+</html>

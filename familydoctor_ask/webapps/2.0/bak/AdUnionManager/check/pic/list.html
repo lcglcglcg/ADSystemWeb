@@ -1,0 +1,53 @@
+<xmp id="listCheckPicTitle" style="display:none;">
+  <tr>
+    <th class="table_wa"><input type="checkbox" name="listCheckPicCheckboxAll" onclick="window.checkPic.selectAll.call(this);" />
+      </td>
+    <th class="table_wb_tt">图片创意</th>
+    <th class="table_wd">创意名称</th>
+    <th class="table_we">登录名</th>
+    <th class="table_wf">修改时间</th>
+    <th class="table_we">网盟状态</th>
+    <th class="table_wc">DSP状态</th>
+    <th class="table_wc">操作</th>
+  </tr>
+</xmp>
+<xmp id="listCheckPicList" style="display:none;">
+  <tr id="pic_{CREATIVE_ID}" name="listPicTr">
+    <td name="listPicTd" class="table_wa"><input type="checkbox" name="listCheckPicCheckbox" value="{CREATIVE_ID}"  onclick="window.checkPic.selectId.call(this);" /></td>
+    <td name="listPicTd" class="table_wb"><div class="cy_img">
+        <table border="1">
+          <tr>
+            <td><a value="{CREATIVE_ID}" name="viewPic" ><img src="{CREATIVE_FILE_PATH}" /></a></td>
+          </tr>
+        </table>
+        <span class="pic_guige">{CREATIVE_IMG_SIZE}<a value="{CREATIVE_ID}" name="viewPic">预览创意</a>&nbsp;&nbsp;<a name="view" style="display:none;">查看修改后创意及状态</a></span> </div></td>
+    <td name="listPicTd" class="table_wd">{CREATIVE_NAME}</td>
+    <td  name="listPicTd"class="table_we"><a style="color:#00F;" name="loginName" value="{ACCOUNT_ID}">{ACCOUNT_NAME}</a></td>
+    <td name="listPicTd" class="table_wf">{LATE_LOGIN_TIME}</td>
+    <td name="listPicTd" class="table_we {creativeStateCss}">{CREATIVE_STATE}</td>
+    <td name="listPicTd" class="table_wc {creativeDspStateCss}">{CREATIVE_DSP_STATE}</td>
+    <td name="listPicTd" class="table_wc"><a value="{CREATIVE_ID}" name="errTools">{errToolsTest}</a><br /><br /><a value="{CREATIVE_ID}" name="tools">{toolTest}</a></td>
+  </tr>
+</xmp>
+<xmp id="listCheckPicTempList" style="display:none;">
+  <tr id="pic_{CREATIVE_ID}_tmp" name="listPicTr">
+    <td name="listPicTd" class="table_wa"><input type="checkbox" name="listCheckPicTmpCheckbox" value="{CREATIVE_ID}"  onclick="window.checkPic.selectId.call(this,1);" /></td>
+    <td name="listPicTd" class="table_wb"><div class="cy_img">
+        <table border="1">
+          <tr>
+            <td><a value="{CREATIVE_ID}" name="viewPicTmp" ><img src="{CREATIVE_FILE_PATH}" /></a></td>
+          </tr>
+        </table>
+        <span class="pic_guige">{CREATIVE_IMG_SIZE}<a value="{CREATIVE_ID}" name="viewPicTmp">预览创意</a>&nbsp;&nbsp;<a name="view">查看修改前创意及状态</a></span> </div></td>
+    <td name="listPicTd" class="table_wd">{CREATIVE_NAME}</td>
+    <td name="listPicTd" class="table_we"><a name="loginName" value="{ACCOUNT_ID}">{ACCOUNT_NAME}</a></td>
+    <td name="listPicTd" class="table_wf">{LATE_LOGIN_TIME}</td>
+    <td name="listPicTd" class="table_wc {stateCss}">{CREATIVE_STATE}</td>
+    <td name="listPicTd" class="table_wc"><a value="{CREATIVE_ID}" name="toolTmps">{toolTest}</a></td>
+  </tr>
+</xmp>
+<xmp id="listCheckPicErr" style="display:none;">
+  <tr>
+    <td colspan="12"><div class="warn">没有符合条件的数据</div></td>
+  </tr>
+</xmp>

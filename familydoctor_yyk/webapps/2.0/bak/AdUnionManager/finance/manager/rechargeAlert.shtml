@@ -1,0 +1,115 @@
+<div class="recharge_box" id="recharge_alert" style="display:none;">
+  <div class="recharge_title"><b>充值</b><span>
+    <input name="close" type="image" src="/static/ads_m_1.0/web/images/view_close.gif" style="cursor:pointer;">
+    </span></div>
+  <div class="recharge_main">
+    <div class="miaoshu">
+      <div class="ms_lf">
+        <ul>
+          <li>登录名：</li>
+          <li>公司名称：</li>
+          <li>开户时间：</li>
+          <li>投资总额：</li>
+        </ul>
+      </div>
+      <div class="ms_rg">
+        <ul>
+          <input grequired type="hidden" name="ACCOUNT_ID" />
+          <li name="LOGIN_NAME"></li>
+          <li name="COMPANY_NAME"></li>
+          <li name="CREATE_TIME"></li>
+          <li><span class="red" name="INVEST"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;当前账面余额(￥)：<span class="red" name="BALANCE"></span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="shuru">
+      <div>
+        <div class="shuru_lf">
+          <ul>
+            <li class="h20"><s class="red">*</s> 充值金额(￥)：</li>
+          </ul>
+        </div>
+        <div class="shuru_rg">
+          <ol>
+            <li class="h20">
+              <input grequired gplaceholder="充值金额不可以为空，并且必须为正数、小数，小数点后不超过2位" name="MONEY" type="number" class="input01">
+            </li>
+          </ol>
+        </div>
+      </div>
+      <div>
+        <div class="shuru_lf">
+          <ul>
+            <li class="h20"><s class="red">*</s> 付款方式：</li>
+          </ul>
+        </div>
+        <div class="shuru_rg">
+          <ol>
+              <li class="h20">
+                  <label style="float:left; margin-right:10px;">
+                      <input type="radio" name="BRAND_TYPE" value="0" id="RadioGroup1_0" style="float:left; margin:5px 2px 0 0;" checked="checked">
+                      非品牌广告</label>
+                  <label>
+                      <input type="radio" name="BRAND_TYPE" value="1" id="RadioGroup1_1" style="float:left; margin:5px 2px 0 0;">
+                      品牌广告</label>
+              </li>
+            <li class="h20">
+              <select name="PAYMENT_TYPE" onchange="window.rechargeManager.rechargeChange.call(this);">
+                <option value="1">支票</option>
+                <option value="2">汇款</option>
+                <option value="3">现金</option>
+              </select>
+            </li>
+          </ol>
+        </div>
+      </div>
+      <div name="payment_1">
+        <div class="shuru_lf">
+          <ul>
+            <li class="h60"><s class="red">*</s> 凭证备注：</li>
+          </ul>
+        </div>
+        <div class="shuru_rg">
+          <ol>
+            <li class="h60">
+              <textarea name="ACCOUNTING_DOCUMENT_REMARK"></textarea>
+            </li>
+          </ol>
+        </div>
+      </div>
+      <div name="payment_2">
+        <div class="shuru_lf">
+          <ul>
+            <li class="h20"><s class="red">*</s> 凭证号：</li>
+          </ul>
+        </div>
+        <div class="shuru_rg">
+          <ol>
+            <li class="h20">
+              <input name="ACCOUNTING_DOCUMENT_NUMBER" gplaceholder="请勿使用除字母、数字、下划线、横杠、英文句点外的其他字符" gpattern="^[._a-zA-Z0-9-]+$" type="text" class="input01">
+            </li>
+          </ol>
+        </div>
+      </div>
+      <div name="payment_2">
+        <div class="shuru_lf">
+          <ul>
+            <li class="h20"><s class="red">*</s> 凭证文件：</li>
+          </ul>
+        </div>
+        <div class="shuru_rg">
+          <ol>
+            <li class="h20">
+              <input type="text" readonly="readonly" name="ACCOUNTING_DOCUMENT_FILE" class="input01">
+              <a id="rechargeAlertUp">上传</a></li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="c_btn" align="center">
+    <ol>
+      <li><a name="submit">保存</a><a name="close">取消</a></li>
+    </ol>
+  </div>
+</div>

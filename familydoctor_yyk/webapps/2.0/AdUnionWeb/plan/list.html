@@ -1,0 +1,45 @@
+<xmp id="listPlanHtmlTitle" style="display:none;">
+ <tr class="table_title">
+    <td class="table_wa text_center_bg"><input type="checkbox" name="listPlanCheckAll"  onclick="window.plan.selectAll.call(this);" /></td>
+    <th name="listPlanTool" value="0" class="table_wb" onclick="window.plan.orderBy.call(this,'CAMPAIGN_NAME');" > <a><span>推广计划</span></a> </th>
+    <th name="listPlanTool" value="1" class="table_wc" onclick="window.plan.orderBy.call(this,'CAMPAIGN_STATUS');" > <a><span>状态</span></a> </th>
+    <th name="listPlanTool" value="2" class="table_wd" onclick="window.plan.orderBy.call(this,'CAMPAIGN_BUDGET');" > <a><span>每日预算</span></a> </th>
+    <th name="listPlanTool" value="3" class="table_wd" onclick="window.plan.orderBy.call(this,'CAMPAIGN_IMPRESSION');" > <a><span>展现次数</span></a> </th>
+    <th name="listPlanTool" value="4" class="table_wd" onclick="window.plan.orderBy.call(this,'CAMPAIGN_CLICK');" > <a><span>点击次数</span></a> </th>
+    <th name="listPlanTool" value="5" class="table_wd" onclick="window.plan.orderBy.call(this,'CAMPAIGN_CTR');" > <a><span>点击率</span></a> </th>
+    <th name="listPlanTool" value="6" class="table_wd" onclick="window.plan.orderBy.call(this,'CAMPAIGN_CPC');" > <a><span>平均点击价格</span></a> </th>
+    <th name="listPlanTool" value="7" class="table_wd" onclick="window.plan.orderBy.call(this,'CAMPAIGN_COST');" > <a><span>总消费</span></a> </th>
+    <th name="listPlanTool" value="8" class="table_wd" onclick="window.plan.orderBy.call(this,'CAMPAIGN_CPM');" > <a><span>千次展现成本</span></a> </th>
+    <th class="table_we">操作</th>
+  </tr>
+</xmp>
+<xmp id="listPlanHtmlList" style="display:none;">
+  <tr name="listPlanTr" id="planId{CAMPAIGN_ID}">
+    <td class="table_wa text_center" name="listPlanTd"><input type="checkbox" name="listPlanCheckId" value="{CAMPAIGN_ID}" onclick="window.plan.selectId.call(this);" /></td>
+    <td class="table_wb text_left" name="listPlanTd"><div class="key_div"><a name="treePlanClick" value="{CAMPAIGN_ID}" class="link" id="planName{CAMPAIGN_ID}">{CAMPAIGN_NAME}</a><a class="key_btn1" name="editname" value="{CAMPAIGN_ID}"></a></div></td>
+    <td class="table_wc text_left" name="listPlanTd"><div class="div_a">
+        <div class="zhuangt" id="campaignState{CAMPAIGN_ID}"> <span class="{campaignStateCss}">{CAMPAIGN_STATUS}</span> <span class="{stateCss}" value="{CAMPAIGN_ID}" name="pause"></span> </div>
+      </div></td>
+    <td class="table_wd" name="listPlanTd"><div class="key_div"><a class="key_btn2" value="{CAMPAIGN_ID}" name="budget"></a><span id="planBudget{CAMPAIGN_ID}" class="figure" >￥{CAMPAIGN_BUDGET}</span></div></td>
+    <td class="table_wd" name="listPlanTd"><span class="figure">{CAMPAIGN_IMPRESSION}</span></td>
+    <td class="table_wd" name="listPlanTd"><span class="figure">{CAMPAIGN_CLICK}</span></td>
+    <td class="table_wd" name="listPlanTd"><span class="figure">{CAMPAIGN_CTR}</span></td>
+    <td class="table_wd" name="listPlanTd"><span class="figure">￥{CAMPAIGN_CPC}</span></td>
+    <td class="table_wd" name="listPlanTd"><span class="figure">￥{CAMPAIGN_COST}</span></td>
+    <td class="table_wd" name="listPlanTd"><span class="figure">￥{CAMPAIGN_CPM}</span></td>
+    <td class="table_we caozuo" name="listPlanTd"><a value="{CAMPAIGN_ID}" name="edit"></a></td>
+  </tr>
+</xmp>
+<xmp id="listPlanHtmlEnd" style="display:none;">
+  <tr class="tongji">
+    <td class="table_wa">&nbsp;</td>
+    <td class="table_wb text_left" colspan="3"><span class="total_lf" >合计-{CAMPAIGN_COUNT}个推广计划(<span name="validCampaignCountSpan">{CAMPAIGN_ENABLED}</span>个有效)</span><span class="figure_rg">有效计划：￥<span name="validCampaignBudgetSumSpan">{CAMPAIGN_BUDGET}</span></span></td>
+   	<td class="table_wd"><span class="figure">{CAMPAIGN_IMPRESSION}</span></td>
+    <td class="table_wd"><span class="figure">{CAMPAIGN_CLICK}</span></td>
+    <td class="table_wd"><span class="figure">{CAMPAIGN_CTR}</span></td>
+    <td class="table_wd"><span class="figure">￥{CAMPAIGN_CPC}</span></td>
+    <td class="table_wd"><span class="figure">￥{CAMPAIGN_COST}</span></td>
+    <td class="table_wd"><span class="figure">￥{CAMPAIGN_CPM}</span></td>
+    <td class="table_we caozuo">&nbsp;</td>
+  </tr>
+</xmp>

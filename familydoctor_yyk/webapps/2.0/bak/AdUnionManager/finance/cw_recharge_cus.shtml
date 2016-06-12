@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>财务管理-充值查询</title>
+<!--#include virtual="/public/public.shtml"-->
+<script language="javascript" src="/static/web/js/common/common_time.js"></script> 
+<link rel="stylesheet" type="text/css" href="/static/ads_m_1.0/web/css/body_list.css">
+<link rel="stylesheet" type="text/css" href="/static/ads_m_1.0/web/css/account_add.css">
+<link rel="stylesheet" type="text/css" href="/static/ads_m_1.0/web/css/input.css">
+<link rel="stylesheet" type="text/css" href="/static/ads_m_1.0/web/css/page.css">
+</head>
+<body>
+<script>
+window.urlName='finance';
+</script>
+<!--#include virtual="/user/account_view.html"-->
+<!--#include virtual="/public/header.shtml"-->
+<div class="ad_box">
+  <div class="main">
+    <div class="curr_position">当前位置：财务管理>客户消费汇总</div>
+    <!-- 查询条件conditions start -->
+    <div class="conditions">
+      <ol>
+        <li class="conditions_li" name="mediaShow"><span>选择媒体：</span></li>
+        <li class="conditions_li" name="mediaShow">
+          <select name="MEDIA_ID" class="default_width">
+          </select>
+        </li>
+        <li class="conditions_li padl2" style="display:none;"><span>客户名称：</span></li>
+        <li class="conditions_li" style="display:none;">
+          <input name="ACCOUNT_NAME" type="text" class="inputh7">
+        </li>
+        <li class="conditions_li padl2"><span>日期范围：</span></li>
+        <li class="conditions_li">
+          <input name="findTime" type="text" class="times">
+          <input name="calendar" setvalue="latelySevenDays" setlastvalue="1" maxdate="yesterday" giveup type="image" src="/static/ads_m_1.0/web/images/calendar.gif" class="calendar">
+        </li>
+        <li class="conditions_li padl2"><label><input name="DATE_TYPE" type="checkbox" value="1" class="checkbox_01" checked="checked" />分日</label></li>
+        <li class="conditions_li padl2 c_select" style="display:none;"><a href="#">查询</a></li>
+        <li class="conditions_li padl2 c_select"><a href="#" id="subList">导出报表</a></li>
+      </ol>
+    </div>
+    <div class="s_content s_content_none">
+    <span style="height:60px;" id="setList">
+    </span>
+    </div>
+    <div class="s_content s_content_none" style="display:none;">
+    	<ul class="b_line">
+            <li class="wp140 f_bold">客户名称</li>
+            <li class="w140 f_bold">展现量</li>
+            <li class="w140 f_bold">点击量</li>
+            <li class="w170 f_bold">消费金额(￥)</li>
+            <li class="w170 f_bold">平均点击价格(￥)</li>
+            <li class="w170 f_bold">实际消费(￥)</li>
+       </ul>
+    	<ul id="ul_hover1">
+            <li class="wp140 f_center" ><a href="" target="_blank">bjsgnk</a></li>
+            <li class="w140 f_center">1000</li>
+            <li class="w140 f_center">1000</li>
+            <li class="w170 f_center">100.00</li>
+            <li class="w170 f_center">10.00</li>
+            <li class="w170 f_center">50</li>
+       </ul>
+    </div>
+    <div class="s_bottom" style="display:none;">
+      <div class="b_lf lf"> </div>
+      <!--#include virtual="/public/page.html"--> 
+    </div>
+  </div>
+</div>
+<!--#include virtual="/public/footer.html"--> 
+<script language="javascript" src="/static/web/js/page/manager/recharge/cus.js"></script> 

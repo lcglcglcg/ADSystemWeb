@@ -1,0 +1,46 @@
+/* CSS Document */
+/* 第三步-----------新建创意 */
+/* 左边 */
+/* 上传图片 */
+.input_img1{ height:24px; width:62px;}
+.three_content{ width:860px; overflow:hidden; padding:20px 10px 0 10px;}
+.three_lf{ width:500px;  float:left; background:#f8f8f8; padding:10px;}
+.three_rg{ width:310px; height:380px; float:right;}
+
+.three_lf .upload_word{ width:100px; float:left; text-align:right;}
+.three_lf .upload_cont{ width:385px; float:left;}
+.three_lf .upload_cont p{ clear:both; display:block;}
+.three_lf .upload_cont p.already_upload{ clear:both; display:block; width:360px; height:36px; line-height:36px; border:1px solid #cef1c9; background:#e9fce6; padding:0 10px;}
+.three_lf .upload_cont p.already_upload a{ float:right; margin-top:5px;}
+.three_lf .upload_cont p.already_upload .already_word{ float:left; color:#019702;}
+.three_lf .upload_cont .zu_content{ width:385px; height:180px; margin:10px 0; border:1px solid #ababab; background:#FFF; overflow-x:hidden; overflow-y:scroll;}
+.three_lf .upload_cont .zu_content  ul li{ width:380px; height:24px; line-height:24px; background:url(/static/ads_c_2.0/web/images/hui_cha.gif) no-repeat 340px center; padding-left:5px;}
+.three_lf .upload_cont .zu_content  ul li:hover{ background: #fef8e9 url(/static/ads_c_2.0/web/images/cha.gif) no-repeat 340px center; cursor:pointer;}
+.three_lf .upload_cont .zu_content  ul li a.delete{ display:block; width:15px; height:15px; float:left; margin: 4px 0 0 15px;}
+.three_lf .upload_cont .zu_content  ul li a.delete:hover{background:url(/static/ads_c_2.0/web/images/cha.gif) no-repeat 0 center;}
+.three_lf .upload_cont .zu_content .zu_cont_lf{ float:left; width:200px; margin-right:20px;}
+.three_lf .upload_cont .zu_content .zu_cont_rg{ float:left; width:100px;}
+
+/* 访问URL */
+.three_lf .url .url_lf{ float:left; width:104px; text-align:right;}
+.three_lf .url .url_lf1{ float:left; width:104px; text-align:right;}
+
+.three_lf .url .url_rg{ float:left; width:380px;}
+.three_lf .url .url_rg input{ width:240px; margin-right:5px;}
+.three_lf .url .url_rg a span{ color:#000;}
+.three_lf .url .url_rg span{ color:#999;}
+
+/* 右边 */
+.three_rg .show_img{ display:block; width:310px; height:280px; overflow:hidden; position:relative;}
+.three_rg .show_img .show_img_photo{height:250px; padding:2px; border:1px solid #dedede;background:url(/static/ads_c_2.0/web/images/no_photo.jpg) no-repeat  ;}
+.three_rg .show_img .show_img_photo span{ background:#FFF;width:306px; height:246px;position:relative; display:table-cell; vertical-align:middle; text-align:center;}
+.three_rg .show_img .show_img_photo span div.white_bg{*position:absolute; /*针对IE6/7的Hack*/	top:50%; /*针对IE6/7的Hack*/}
+.three_rg .show_img .show_img_photo span img{*position:relative; /*针对IE6/7的Hack*/	top:-50%;left:-50%; /*针对IE6/7的Hack*/
+max-width:300px; max-height:210px;
+zoom: expression( function(elm) { if (elm.width > 300 || elm.height > 210 ){ if (elm.width>elm.height) { elm.width=300; } else{ elm.height=210; } } elm.style.zoom = '1'; } (this) )}
+
+.three_rg .show_img .show_img_photo a.bottom_fangda{ display:block; width:22px; height:19px; background:url(/static/ads_c_2.0/web/images/magnifier.jpg) no-repeat center center; position:absolute; right:1px; bottom:3px; z-index:9999;}
+/* 右边规格 */
+.three_rg .guige{ clear:both; width:300px; padding:0 3px; margin-top:5px;}
+
+

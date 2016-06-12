@@ -1,0 +1,46 @@
+<div class="gz_alter_box" id="dict_media_alter" style="display:none;">
+  <div class="gz_alter_title"><b>修改媒体</b><span><input name="close_bnt" type="image" src="/static/ads_m_1.0/web/images/view_close.gif" onClick="$UE.close('dict_media_alter');" style="cursor:pointer;"></span></div>
+  <div class="gz_alter_main">
+  	<div class="gz_alter_cont">
+      <div class="cont_lf">
+      	<ul>
+        	<li class="h20"><s class="red">*</s> 媒体编号：</li>
+        	<li class="h20"><s class="red">*</s> 媒体名称：</li>
+        	<li class="h30"><s class="red">*</s> 媒体描述：</li>
+            <li class="h20"><s class="red">*</s> 媒体域名：</li>
+        	<li class="h20"><s class="red">*</s> 运营项目：</li>
+        	<li class="h20"><s class="red">*</s> 合作起止日期：</li>
+       </ul>
+      </div>
+      <div class="cont_rg">
+      	<ol>
+        	<li class="h20">ADM0001</li>
+        	<li class="h20"><input name="" type="text" class="input01" value="21CN健康频道" ><s>不超过30个字符长度</s></li>
+        	<li class="m_bottom"><textarea name="" cols="25" rows="" class="text01" style="float:left;">21CN健康频道相关描述信息</textarea><s>不超过100个字符长度</s></li>
+        	<li class="h20"><input name="" type="text" class="input03" value="http://health.21cn.com/"><s>不超过100个字符长度</s></li>
+        	<li class="h20">
+        	  <form id="form1" name="form1" method="post" action="">
+        	      <label class="lable1">
+        	        <input type="checkbox" name="CheckboxGroup1" value="复选框" id="CheckboxGroup1_0" />
+        	        专题</label>
+        	      <label  class="lable1">
+        	        <input type="checkbox" name="CheckboxGroup1" value="复选框" id="CheckboxGroup1_1" />
+        	        关键词包月</label>
+        	      <label class="lable1">
+        	        <input type="checkbox" name="CheckboxGroup1" value="复选框" id="CheckboxGroup1_2"/>
+        	        硬广</label>
+        	      <label class="lable1">
+        	        <input type="checkbox" name="CheckboxGroup1" value="复选框" id="CheckboxGroup1_3"/>
+        	        品牌</label>
+        	      <label class="lable1">
+        	        <input type="checkbox" name="CheckboxGroup1" value="复选框" id="CheckboxGroup1_4"/>
+        	        软文</label>
+      	    </form>
+        	</li>
+            <li class="h20"><form action="" method="get"><input name="time" type="text" class="a_times" value="2012-09-01/2013-08-31"><input name="calendar" type="image" src="/static/ads_m_1.0/web/images/calendar.gif" class="calendar"></form></li>
+       </ol>
+      </div>
+  	</div>
+<div class="gz_btn" align="center"><ol><li><a onclick="$UE.alert('保存成功！','$UE.close(\'dict_media_alter\');');">保存</a><a onClick="$UE.close('dict_media_alter');">取消</a></li></ol></div>
+  </div>
+</div>

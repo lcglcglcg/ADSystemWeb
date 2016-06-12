@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>财务管理-充值查询</title>
+<!--#include virtual="/public/public.shtml"-->
+<script language="javascript" src="/static/web/js/common/common_time.js"></script> 
+<link rel="stylesheet" type="text/css" href="/static/ads_m_1.0/web/css/body_list.css">
+<link rel="stylesheet" type="text/css" href="/static/ads_m_1.0/web/css/account_add.css">
+<link rel="stylesheet" type="text/css" href="/static/ads_m_1.0/web/css/input.css">
+<link rel="stylesheet" type="text/css" href="/static/ads_m_1.0/web/css/page.css">
+</head>
+<body>
+<script>
+window.urlName='finance';
+</script>
+<!--#include virtual="/user/account_view.html"-->
+<!--#include virtual="/public/header.shtml"-->
+<div class="ad_box">
+  <div class="main">
+    <div class="curr_position">当前位置：财务管理>媒体每日汇总</div>
+    <!-- 查询条件conditions start -->
+    <div class="conditions">
+      <ol>
+      <li class="conditions_li" name="mediaShow"><span>子域名：</span></li>
+        <li class="conditions_li" name="mediaShow">
+          <input name="FIND_TYPE_R" type="checkbox" />
+        </li>
+        <li class="conditions_li" name="mediaShow"><span>&nbsp;选择媒体：</span></li>
+        <li class="conditions_li" name="mediaShow">
+          <select name="MEDIA_ID" class="default_width">
+          </select>
+        </li>
+        <li class="conditions_li padl2"><span>日期范围：</span></li>
+        <li class="conditions_li">
+          <input name="findTime" type="text" class="times">
+          <input name="calendar" nottool="1" setvalue="latelySevenDays" setlastvalue="1" maxdate="yesterday" giveup type="image" src="/static/ads_m_1.0/web/images/calendar.gif" class="calendar">
+        </li>
+        <li class="conditions_li padl2 c_select" style="display:none;"><a href="#">查询</a></li>
+        <li class="conditions_li padl2 c_select"><a href="#" id="subList">导出报表</a></li>
+      </ol>
+    </div>
+    <div class="s_content s_content_none">
+    <span style="height:60px;" id="setList">
+    </span>
+    </div>
+    <div class="s_bottom" style="display:none;">
+      <div class="b_lf lf"> </div>
+    </div>
+  </div>
+</div>
+<!--#include virtual="/public/footer.html"--> 
+<script language="javascript" src="/static/web/js/page/manager/recharge/media.js"></script> 

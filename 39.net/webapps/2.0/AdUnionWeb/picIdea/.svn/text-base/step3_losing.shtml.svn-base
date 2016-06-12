@@ -1,0 +1,14 @@
+<div class="lose_box" id="step3_losing" style="display:none;">
+  <div class="lose_title"><b>提示信息</b><span>
+    <input name="close" type="image" src="/static/ads_c_2.0/web/images/step_close.gif">
+    </span></div>
+  <div class="lose_cont">
+    <div class="lose_content" name="msg"></div>
+    <div class="l_reason" name="errList"> </div>
+    <div class="lose_btn" align="center">
+      <ol>
+        <li><a name="close" >确定</a></li>
+      </ol>
+    </div>
+  </div>
+</div>

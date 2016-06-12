@@ -1,0 +1,22 @@
+<xmp id="listTestIdeasHtmlTitle" style="display:none;">
+<tr class="table_title">
+    <td class="table_wa text_center_bg"><input type="checkbox" name="listTestIdeasCheckAll"  onclick="window.testIdea.selectAll.call(this);" /></td>    <th name="listTestIdeasTool" value="0" onclick="window.testIdea.orderBy.call(this,'title');"  class="table_wc_px_ttw"> <a><span>创意</span></a> </th>
+    <th name="listTestIdeasTool" value="1" onclick="window.testIdea.orderBy.call(this,'campaignName');"  class="table_wf"> <a><span>推广计划</span></a> </th>
+    <th name="listTestIdeasTool" value="2" onclick="window.testIdea.orderBy.call(this,'adgroupName');"  class="table_wf"> <a><span>推广组</span></a> </th> 
+</tr>
+</xmp>
+<xmp id="listTestIdeasHtmlList" style="display:none;">
+<tr name="listTestIdeaTr" id="creativeId{CREATIVE_ID}">
+    <td name="listTestIdeaTd" class="table_wa text_center"><input type="checkbox" name="listTestIdeasCheckId" value="{CREATIVE_ID}" onclick="window.testIdea.selectId.call(this);" /></td>
+    <td name="listTestIdeaTd" class="table_wc_px table_wc_px1"><div class="c_cy key_div"> <b class="add_blue">{TITLE}</b> <span class="c_cy1">{DESCRIPTION}</span> <span class="c_cy2"><i class="{guahaoV}">{DISPLAY_URL}</i></span> <span class="c_cy2"><a class="key_btn1" value="{CREATIVE_ID}" name="edit"></a> </div></td>
+    <td name="listTestIdeaTd" class="table_wf text_left"><a name="treePlanClick" value="{CREATIVE_ID}" class="link">{CAMPAIGN_NAME}</a></td>
+    <td name="listTestIdeaTd" class="table_wf text_left"><a name="treeUnitClick" value="{CREATIVE_ID}" class="link">{GROUP_NAME}</a></td>
+    
+  </tr>
+</xmp>
+<xmp id="listTestIdeasHtmlEnd" style="display:none;">
+  <tr class="tongji">
+    <td class="table_wa">&nbsp;</td>
+    <td class="table_wb text_left" colspan="4"></td>
+  </tr>
+</xmp>

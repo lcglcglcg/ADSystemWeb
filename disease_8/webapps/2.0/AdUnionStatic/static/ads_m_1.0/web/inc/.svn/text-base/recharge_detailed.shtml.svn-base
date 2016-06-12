@@ -1,0 +1,170 @@
+<div class="detailed_box" id="recharge_detailed" style="display:none;">
+  <div class="detailed_title"><b>充值明细</b><span><input name="close_bnt" type="image" src="/static/ads_m_1.0/web/images/view_close.gif" onClick="$UE.close('recharge_detailed');" style="cursor:pointer;"></span></div>
+  <div class="detailed_main">
+  	<div class="d_description bg_row3">
+    	<ul>
+        	<li>登录名：1PANDR4VLGC1</li>
+        	<li>公司名称：北京探网科技发展有限公司</li>
+        	<li>开户时间：2012-09-11</li>
+        </ul>
+    </div>
+    <div class="zonge">
+    	<ul>
+        	<li>投资总额(￥)：<s class="red">2,000,000.00</s></li>
+        	<li>当前账面余额(￥)：<s class="red">2,000,000.00</s></li>
+        </ul>
+    </div>
+    <div class="conditions d_conditions">
+		<ol>
+             <li class="conditions_li">
+                 <select name="de1">
+                  <option value="1">流水号</option>
+                  <option value="2">凭证</option>
+                  <option value="3">充值金额等于</option>
+                  <option value="4">充值金额大于等于</option>
+                  <option value="5">充值金额小于等于</option>
+               </select>
+            </li>
+            <li class="conditions_li padl2"><form action="" method="get"><input name="time" type="text" class="input06"></form></li>
+            <li class="conditions_li padl4"><span>付款方式：</span></li>
+            <li class="conditions_li">
+                <select name="de2">
+                  <option value="1">全部</option>
+                  <option value="2">支票</option>
+                  <option value="3">汇款</option>
+                  <option value="4">现金</option>
+                </select>
+            </li>
+		</ol>
+		<ol>
+            <li class="conditions_li"><span>充值时间：</span></li>
+            <li class="conditions_li"><form action="" method="get"><input name="time" type="text" class="times"><input name="calendar" type="image" src="/static/ads_m_1.0/web/images/calendar.gif" class="calendar"></form></li>
+             <li class="conditions_li padl4"><span>排序方式：</span></li>
+             <li class="conditions_li">
+                 <select name="de3">
+                  <option value="1">流水号</option>
+                  <option value="2">充值金额(￥)</option>
+                  <option value="3">付款方式</option>
+                  <option value="4">凭证</option>
+                  <option value="5">投资总额(￥)</option>
+                  <option value="6">账面余额(￥)</option>
+                  <option value="7">充值时间</option>
+               </select>
+            </li>
+             <li class="conditions_li padl2">
+                 <select name="de4">
+                  <option value="1">升序</option>
+                  <option value="2">降序</option>
+                </select>
+            </li>
+            <li class="conditions_li padl c_select"><a href="#">查询</a></li>
+            <li class="conditions_li padl2 c_select"><a href="#">导出报表</a></li>
+		</ol>
+    </div>
+    <div class="de_list">
+    	<ul class="d_line">
+            <li class="dw100 d_bold">流水号</li>
+            <li class="dw95 d_bold">充值金额(￥)</li>
+            <li class="dw70 d_bold">付款方式</li>
+            <li class="dw140 d_bold">凭证</li>
+            <li class="dw120 d_bold">投资总额(￥)</li>
+            <li class="dw120 d_bold">账面余额(￥)</li>
+            <li class="dw155 d_bold">充值时间</li>
+       </ul>
+    	<ul>
+            <li class="dw100">NO.12345678</li>
+            <li class="dw95" title="50,000.00">50,000.00</li>
+            <li class="dw70">支票</li>
+            <li class="dw140"><a onclick="$UE.open('recharge_view');">003994651099</a></li>
+            <li class="dw120" title="2,000,000.00">2,000,000.00</li>
+            <li class="dw120" title="2,000,000.00">2,000,000.00</li>
+            <li class="dw155">2012-09-01 15:15:15</li>
+       </ul>
+    	<ul>
+            <li class="dw100">NO.12345678</li>
+            <li class="dw95" title="50,000.00">50,000.00</li>
+            <li class="dw70">汇款</li>
+            <li class="dw140"><a onclick="$UE.open('recharge_view');">003994651099</a></li>
+            <li class="dw120" title="2,000,000.00">2,000,000.00</li>
+            <li class="dw120" title="2,000,000.00">2,000,000.00</li>
+            <li class="dw155">2012-09-01 15:15:15</li>
+       </ul>
+    	<ul>
+            <li class="dw100">NO.12345678</li>
+            <li class="dw95" title="50,000.00">50,000.00</li>
+            <li class="dw70">现金</li>
+            <li class="dw140"><a onclick="$UE.open('recharge_view2');">9月1日收到现金一万元</a></li>
+            <li class="dw120" title="2,000,000.00">2,000,000.00</li>
+            <li class="dw120" title="2,000,000.00">2,000,000.00</li>
+            <li class="dw155">2012-09-01 15:15:15</li>
+       </ul>
+    	<ul>
+            <li class="dw100">NO.12345678</li>
+            <li class="dw95" title="50,000.00">50,000.00</li>
+            <li class="dw70">支票</li>
+            <li class="dw140"><a onclick="$UE.open('recharge_view');">003994651099</a></li>
+            <li class="dw120" title="2,000,000.00">2,000,000.00</li>
+            <li class="dw120" title="2,000,000.00">2,000,000.00</li>
+            <li class="dw155">2012-09-01 15:15:15</li>
+       </ul>
+    	<ul>
+            <li class="dw100">NO.12345678</li>
+            <li class="dw95" title="50,000.00">50,000.00</li>
+            <li class="dw70">支票</li>
+            <li class="dw140"><a onclick="$UE.open('recharge_view');">003994651099</a></li>
+            <li class="dw120" title="2,000,000.00">2,000,000.00</li>
+            <li class="dw120" title="2,000,000.00">2,000,000.00</li>
+            <li class="dw155">2012-09-01 15:15:15</li>
+       </ul>
+    	<ul>
+            <li class="dw100">NO.12345678</li>
+            <li class="dw95" title="50,000.00">50,000.00</li>
+            <li class="dw70">支票</li>
+            <li class="dw140"><a onclick="$UE.open('recharge_view');">003994651099</a></li>
+            <li class="dw120" title="2,000,000.00">2,000,000.00</li>
+            <li class="dw120" title="2,000,000.00">2,000,000.00</li>
+            <li class="dw155">2012-09-01 15:15:15</li>
+       </ul>
+    	<ul>
+            <li class="dw100">NO.12345678</li>
+            <li class="dw95" title="50,000.00">50,000.00</li>
+            <li class="dw70">支票</li>
+            <li class="dw140"><a onclick="$UE.open('recharge_view');">003994651099</a></li>
+            <li class="dw120" title="2,000,000.00">2,000,000.00</li>
+            <li class="dw120" title="2,000,000.00">2,000,000.00</li>
+            <li class="dw155">2012-09-01 15:15:15</li>
+       </ul>
+    	<ul>
+            <li class="dw100">NO.12345678</li>
+            <li class="dw95" title="50,000.00">50,000.00</li>
+            <li class="dw70">支票</li>
+            <li class="dw140"><a onclick="$UE.open('recharge_view');">003994651099</a></li>
+            <li class="dw120" title="2,000,000.00">2,000,000.00</li>
+            <li class="dw120" title="2,000,000.00">2,000,000.00</li>
+            <li class="dw155">2012-09-01 15:15:15</li>
+       </ul>
+    	<ul>
+            <li class="dw100">NO.12345678</li>
+            <li class="dw95" title="50,000.00">50,000.00</li>
+            <li class="dw70">支票</li>
+            <li class="dw140"><a onclick="$UE.open('recharge_view');">003994651099</a></li>
+            <li class="dw120" title="2,000,000.00">2,000,000.00</li>
+            <li class="dw120" title="2,000,000.00">2,000,000.00</li>
+            <li class="dw155">2012-09-01 15:15:15</li>
+       </ul>
+    	<ul>
+            <li class="dw100">NO.12345678</li>
+            <li class="dw95" title="50,000.00">50,000.00</li>
+            <li class="dw70">支票</li>
+            <li class="dw140"><a onclick="$UE.open('recharge_view');">003994651099</a></li>
+            <li class="dw120" title="2,000,000.00">2,000,000.00</li>
+            <li class="dw120" title="2,000,000.00">2,000,000.00</li>
+            <li class="dw155">2012-09-01 15:15:15</li>
+       </ul>
+    </div>
+    <div class="cw_page_border">
+		<!--#include virtual="/static/ads_m_1.0/web/inc/page.html"-->
+    </div>          
+</div>
+<div class="d_btn" align="center"><ul><li><a onClick="$UE.close('recharge_detailed');" >关闭</a></li></ul></div>
+</div>

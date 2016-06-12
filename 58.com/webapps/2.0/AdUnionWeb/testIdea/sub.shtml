@@ -1,0 +1,119 @@
+<!-- 创意列表 预览层 -->
+
+<div class="check_box" id="add_preview" style="display:none;width:711px;">
+  <div class="check_title_box">
+    <div class="check_title"> <b>预览创意</b> <span>
+      <input name="close" type="image" src="/static/ads_c_2.0/web/images/view_close.gif"  style="cursor:pointer;">
+      </span> </div>
+  </div>
+  <div class="addp_main1">
+    <div class="cy_show">
+      <div class="cylf_show"> <em>左侧推广位预览：</em>
+        <div class="default_bg">
+          <div class="title_h"> <span class="line1_tt"> <i class="line1_cont"> <a class="font_nolink1" name="testTitle" target="_blank">这里显示您的推广标题</a> </i> <i class="line1tt_img" name="webim" style="display:{guahaoTokenDisplay};"></i> </span> <span class="zixun" style="display:{webimDisplay};" > <a class="font_nolink2" target="_blank">咨询</a> </span> <span class="guahao" name="guahaoToken" onclickName="guahao" style="display:{guahaoTokenDisplay};"> <a class="font_nolink2" target="_blank">挂号</a> </span>
+            <div class="pingl" name="guahaoToken" style="display:{guahaoTokenDisplay};">
+              <div class="start1">
+                <div class="start2" style="width:{starScore}%;"></div>
+              </div>
+              <a class="ping_nolink3" target="_blank">查看评论 </a> </div>
+          </div>
+          <div class="content_style"> <span class="content_word"> <a class="word_nolink" name="testDescription1">这里显示您的创意描述</a> </span> <span class="yi_name" keygh="hospType2" name="guahaoToken" style=" display:{guahaoTokenDisplay};">医院类型,医院性质</span> </div>
+          <div class="zi_link"> <span class="zi_link_lf" name="appendList" style="display:block;"> <i><a>子链预览1</a></i> | <i><a>子链预览2</a></i> | <i><a>子链预览3</a></i> | <i><a>子链预览4</a></i> | <i><a>子链预览5</a></i> <i class="zi_link_address" style="display:none;" name="testDisplayUrl"><a target="_blank">wangmeng.haomeit.com</a></i> </span> <span class="zi_link_rg" name="guahaoToken" style="display:{guahaoTokenDisplay};"> <a target="_blank">医院地址</a> </span> </div>
+        </div>
+      </div>
+    </div>
+    <div class="duan_box"> <em>右侧推广位预览：</em>
+      <div class="duan_title"> <span class="dtitle"> <a name="testTitle" class="duan_nolink1">这里显示您的推广标题</a> </span>
+        <div class="duan_cont"> <a class="duan_nolink2" name="testDescription1">这里显示您的创意描述</a> </div>
+        <div class="duan_line3"> <a class="duan_nolink3" name="testDisplayUrl">wangmeng.haomeit.com</a> <span class="url_bg"> <img src="/static/ads_c_2.0/web/images/cy_ico_01.png" width="16" height="16" style=" float:left; margin-top:3px;"/> </span> </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- 创意添加与修改 层 -->
+<div class="scommon_box  scommon_box_widen" id="step3_test" style="display:none;">
+  <div class="scommon_title">
+    <p name="altIdeaTitle">新建创意</p>
+    <a name="close"></a></div>
+  <div class="fujia_main scommon_main_h1widen">
+    <div class="all_title" name="altIdeaDaoHang"><span name="newMap"><font>新建</font>推广计划</span><span name="newMap" class="step_rg_bg"><font>新建</font>推广组</span><span class="span_three step_curr"><font>新建</font>创意</span></div>
+    <!-- 新建创意 内容 start--> 
+    <!-- 默认创意预览内容 -->
+    <div class="c_default"> 
+      <!-- 左边内容 -->
+      <div class="cd_lf" id="testIdeasFrom">
+        <input name="CAMPAIGN_ID" type="hidden" />
+        <input name="GROUP_ID" type="hidden" />
+        <input name="CREATIVE_ID" type="hidden" />
+        <ul style="width:485px; float:left;">
+          <li><em>创意标题：</em><s>最多50个字符</s></li>
+          <li>
+            <input type="text" class="input_w1" autofocus grequired name="TITLE" gmsgfor="#titleMsg" />
+          </li>
+          <li class="li_red" style="display:none;" name="ckMsg" id="titleMsg">请输入创意标题</li>
+          <li class="li_red" style="display:none;" name="ckMsg" id="titleMsgHand">请输入最少8个字符，最多50个字符长度的标题</li>
+          <li><em>电话：</em><s>最多50个字符</s></li>
+          <li>
+            <input type="text" class="input_w1"  name="TEL" gmsgfor="#titleMsg" />
+          </li>
+          <li><em>创意描述：</em><s>最多160个字符</s></li>
+          <li class="li_height">
+            <textarea grequired name="DESCRIPTION" gmsgfor="#description1Msg" style="resize:none" class="text_size"></textarea>
+          </li>
+          <li class="li_red" style="display:none;" name="ckMsg" id="description1Msg">请输入描述内容</li>
+          <li class="li_red" style="display:none;" name="ckMsg" id="description1MsgHand">请输入最少10个字符，最多160个字符长度的描述</li>
+           <li><em>显示网址：</em></li>
+          <li> http://
+            <input type="DISPLAYURL"  maxlength="1017" minlength="1" name="DISPLAY_URL"  class="input_w2"/>
+          </li>
+          <li><em>访问网址：</em></li>
+          <li> http://
+            <input type="DISPLAYURL"  maxlength="1017" minlength="1" name="DESTINATION_URL"  class="input_w2"/>
+          </li>
+          <li><em>WEBIM：</em></li>
+          <li> http://
+            <input type="text"  name="WEB_IM"  class="input_w2"/>
+          </li>
+        </ul>
+        <ul style="width:485px; float:left;">
+          <li><em>图片1：</em></li>
+          <li> http://
+            <input type="text"  maxlength="1017" minlength="1" name="IMG0_URL"  class="input_w2"/>
+          </li>
+           <li><em>图片2：</em></li>
+          <li> http://
+            <input type="text"  maxlength="1017" minlength="1" name="IMG1_URL"  class="input_w2"/>
+          </li>
+           <li><em>图片3：</em></li>
+          <li> http://
+            <input type="text"  maxlength="1017" minlength="1" name="IMG2_URL"  class="input_w2"/>
+          </li>
+           <li><em>图片4：</em></li>
+          <li> http://
+            <input type="text"  maxlength="1017" minlength="1" name="IMG3_URL"  class="input_w2"/>
+          </li>
+           <li><em>图片5：</em></li>
+          <li> http://
+            <input type="text"  maxlength="1017" minlength="1" name="IMG4_URL"  class="input_w2"/>
+          </li>
+           <li><em>图片6：</em></li>
+          <li> http://
+            <input type="text"  maxlength="1017" minlength="1" name="IMG5_URL"  class="input_w2"/>
+          </li>
+        </ul>
+        <!--公共按钮 新建创意-->
+        <div class="step_commom_btn" id="new_btn3">
+          <div class="s_c_width"><a class="btn" name="subIdeaSave"><span>保存</span></a><a class="btn" name="subIdeaSaveGoTo"><span>保存并添加创意</span></a><a class="btn" name="close" ><span>取消</span></a></div>
+        </div>
+      </div>
+      <!-- 右边内容 -->
+      
+      <!-- 底部内容 -->
+      <div class="cyrg_footer">  </div>
+    </div>
+    
+    <!-- 新建创意 内容 end--> 
+    
+  </div>
+</div>
+<script language="javascript" src="/static/web/js/page/testIdea.js"></script> 

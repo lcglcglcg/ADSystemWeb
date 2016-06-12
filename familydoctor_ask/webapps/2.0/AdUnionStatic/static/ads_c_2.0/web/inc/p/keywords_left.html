@@ -1,0 +1,95 @@
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+var pageName = "wait";
+$G(function(){
+	var showObj_1 = $G("#idWait32x32_baidu");
+	var objBtn_1 = $G("#idBtn_1");
+	objBtn_1[0].onclick = function(){
+		showObj_1.WinAlt({
+			isCenter:true,
+			lock:true,
+			lock_back:"#D1D1D1",
+			lock_opa:"30"
+		}).ObjMove();
+	}
+	
+});
+//-->
+function test2(){
+	document.getElementById("test2").scrollTop=document.getElementById("test1").scrollTop
+	}
+function test4(){
+	document.getElementById("test4").scrollTop=document.getElementById("test3").scrollTop
+	}
+</SCRIPT>
+<div class="left"> 
+      每行输入一个关键词，每个最多为20个汉字或40个英文<br />
+      最多可以输入100个关键词 (<span class="font_red">0</span>/100)<br />
+      <!--文本框开始-->
+      <div class="key_textarea"  id="idKey_te">
+      <div class="key_textarea_l" id="test4"style="height:310px;">1<br />2<br />3<br />4<br />5<br />6<br />7<br />8<br />9<br />10<br />11<br />12<br />13<br />14<br />15<br /><br /></div>
+     <textarea name="textfield" class="textarea_style" style="height:310px; width:314px;" id="test3" onscroll="test4();">男科医院
+男科医院网站
+"男科疾病"
+[男性不育]
+男科医院网站男科医院网站男科医院网站医院
+男科医院
+男科医院网站
+"男科疾病"
+[男性不育]
+男科医院网站男科医院网站男科医院网站医
+男科医院
+男科医院网站
+"男科疾病"
+[男性不育]
+男科医院网站男科医院网站男科医院网站医院院
+</textarea>
+      </div>
+      <div class="key_textarea1"  id="idKey_te1" style="display:none">
+      <div class="key_textarea_l" id="test2"style="height:356px;">1<br />2<br />3<br />4<br />5<br />6<br />7<br />8<br />9<br />10<br />11<br />12<br />13<br />14<br />15<br />16<br /><br /></div>
+     <textarea name="textfield" class="textarea_style" style="height:356px; width:314px;" id="test1" onscroll="test2();">男科医院
+男科医院网站
+"男科疾病"
+[男性不育]
+男科医院网站男科医院网站男科医院网站医院
+男科医院
+男科医院网站
+"男科疾病"
+[男性不育]
+男科医院网站男科医院网站男科医院网站医
+男科医院
+男科医院网站
+"男科疾病"
+[男性不育]
+男科医院网站男科医院网站男科医院网站医院院
+</textarea>
+      </div>
+      <!--文本框结束-->
+      <div class="prompt">
+        <ul>
+          <li class="pipei"><span>匹配方式：</span><span id="idA_pipei" class="prompt_1"></span></li>
+          <li>关键词  = 广泛匹配(默认)</li>
+          <li>"关键词" = 短语匹配</li>
+          <li>[关键词] = 精确匹配</li>
+        </ul>
+        <div class="error_keyw">
+               本单元层级内已有关键词：<br />
+               男科医院，男科医院网站<br />
+               男科医院，男科医院网站<br />
+               男科医院，男科医院网站<br />
+               男科医院，男科医院网站<br />
+               男科医院，男科医院网站<br />
+               男科医院，男科医院网站<br />
+               男科医院，男科医院网站<br />
+               男科医院，男科医院网站<br />
+               男科医院，男科医院网站<br />
+               男科医院，男科医院网站<br />
+               男科医院，男科医院网站<br />
+               男科医院，男科医院网站
+        </div>
+      </div>
+      <div class="choose_pro" id="idCh_pro">
+           <p><select><option>请选择推广计划</option><option>推广计划1</option><option>推广计划2</option></select></p>
+           <p><select><option>请选择推广单元</option><option>推广单元1</option><option>推广单元2</option><option>推广单元最长是十五个汉字的长度</option></select></p>
+      </div>
+</div>

@@ -1,0 +1,433 @@
+<div style="position:relative;display:none;" id="contb4">
+    <div class="program_div">
+ 	    <div class="table_up_select">
+        <div class="rrr">
+          <div class="s_left">
+            <ul class="s_ul">
+              <li class="s_li">
+                <select name="tf5">
+                  <option value="全部状态">全部状态</option>
+                  <option value="有效">有效</option>
+                  <option value="不宜推广">不宜推广</option>
+                  <option value="暂停">暂停</option>
+                  <option value="审核中">审核中</option>
+                  <option value="审核拒绝">审核拒绝</option>
+                  <option value="已删除">已删除</option>
+                  <option value="DSP审核通过">DSP审核通过</option>
+                  <option value="DSP审核拒绝">DSP审核拒绝</option>
+                </select>
+             </li>
+              <li class="s_li">
+                <input name="textfield" type="text" value="请输入创意标题"size="16" class="input_border col"/>
+              </li>
+              <li class="s_li guheight"> <span>
+                <input type="checkbox" name="checkbox3" value="checkbox">
+                </span><span>精确查询</span></li>
+              <li class="s_li"> <a href="#" class="btn"><span>查询</span></a> </li>
+              <li class="s_li" id="cl_li"> <a href="#" class="btn" onclick="$UE.open('click_dingx_kes')"><span>科室筛选</span></a> </li>
+              <li class="s_li" id="cs_li"> <a href="#" class="btn" onclick="$UE.open('match')"><span>匹配模式</span></a> </li>
+              <li class="s_li"> <a href="#" class="btn" onmouseover="arrow_hover();" onmouseout="arrow_no_hover();"><span>复制</span></a> </li>
+              <li class="s_li"> <a href="#" class="btn" onclick="$UE.open('c_paste')"><span>粘贴</span></a> </li>
+<!--              <li class="s_li"><a class="btn"  onclick="$UE.display('guolv','block')"><span>过滤项</span></a></li>
+-->              <li class="s_li all_time">
+                  <select name="tf6">
+                      <option value="今天" selected="selected">今天</option>
+                      <option value="昨天">昨天</option>
+                      <option value="最近7天">最近7天</option>
+                  </select>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+ <!--表格内容 开始-->
+      	<div class="table_list">
+            <div class="s_button">
+            <div class="rrr">
+              <ul class="s_ul s_ul_pad">
+                <li class="s_li"> <a class="btn" href="javascript:$UE.confirm('您确定要删除选中的创意吗？','删除成功！');"><span>删除</span></a> </li>
+                <li class="s_li"> <a class="btn" href="javascript:$UE.confirm('您确定要暂停选中的创意吗？','暂停成功！');"><span>暂停</span></a> </li>
+                <li class="s_li"> <a class="btn" id="download_btn" href="javascript:$UE.confirm('您确定要启用选中的创意吗？','启用成功！');"><span>启用</span></a> </li>
+<!--                <li class="s_li"><em><img src="/static/ads_c_2.0/web/images/u390.png" width="15" height="15"/>DSP审核中</em></li>
+-->                <li class="s_li"><em><img src="/static/ads_c_2.0/web/images/u392.png" width="15" height="15"/>DSP审核通过</em></li>
+               <li class="s_li"><em><img src="/static/ads_c_2.0/web/images/u394.png" width="15" height="15"/>DSP审核拒绝</em></li>
+                
+             </ul>
+    
+            </div>
+          </div>
+        	<table width="100%" >
+              <tr class="table_title">
+                <td class="table_wa text_center_bg"><input name="" type="checkbox" value="" /></td>
+                <th class="table_wc_px_tt">
+                    <a href="#"><span>创意</span></a>
+                </th>
+                <th class="table_wg">
+                    <a href="#"><span>推广计划</span></a>
+                </th>
+                <th class="table_wg">
+                    <a href="#"><span>推广组</span></a>
+                </th>
+                <th class="table_wf">
+                    <a href="#"><span>创意状态</span></a>
+                </th>
+                <th class="table_wg">
+                    <a href="#"><span>质量度</span></a>
+                </th>
+                <th class="table_wg">
+                    <a href="#"><span>展现次数</span></a>
+                </th>
+                <th class="table_wg">
+                    <a href="#"><span>点击次数</span></a>
+                </th>
+                <th class="table_wg">
+                    <a href="#"><span>点击率</span></a>
+                </th>
+                <th class="table_wg">
+                    <a href="#"><span>平均点击价格</span></a>
+                </th>
+                <th class="table_wg">
+                    <a href="#"><span>总消费</span></a>
+                </th>
+                <th class="table_wg">
+                    <a href="#"><span>千次展现成本</span></a>
+                </th>
+                <th class="table_we">操作</th>
+              </tr>
+              <tr style="display:none;">
+                <td colspan="13"><div class="warn">当前创意列表为空，推广组无法正常投放，请<a onclick="$UE.open('step_three');$UE.setValue('step3_name','新建创意');$UE.display('step_addtitle3','block')">添加创意</a></div></td>
+              </tr>
+              <tr style="display:none;">
+                <td colspan="13"><div class="no_data">没有符合条件的数据</div></td>
+              </tr>
+              <tr id="key_chc1" onmousemove="idBg(1,'key_chc');"onmouseout="idNoBg(1,'key_chc');">
+                <td class="table_wa text_center"><input name="" type="checkbox" value="" /></td>
+                <td class="table_wc_px">
+                	<div class="cy_img">
+                    	<table border="1">
+                          <tr>
+                            <td onClick="$UE.open('step_three');$UE.setValue('step3_name','修改创意');$UE.display('step_addtitle3','none');$UE.display('new_bnt3','none');$UE.display('update_bnt3','block');"><a href="#"><img src="/static/ads_c_2.0/web/images/p/cy_01.jpg"/></a></td>
+                          </tr>
+                        </table>
+                    <span class="pic_guige">728×90<a onClick="$UE.open('preview');">预览创意</a></span>
+                    </div>
+                </td>
+                <td class="table_wf text_left"><a href="#" class="link">推广计划推广计划推广推广计</a></td>
+                <td class="table_wf text_left"><a href="#" class="link">推广组推广组推广组推广组</a></td>
+                <td class="table_wc text_left">
+                    <div class="div_a">
+                    <div class="zhuangt">
+                    <span class="green"><img src="/static/ads_c_2.0/web/images/u390.png" width="15" height="15" class="zhuangt_img"/>有效</span>
+                    <span class="start_img" onclick="javascript:$UE.confirm('您确定暂停创意【创意名称】吗？','暂停成功！');"></span>
+                    </div>
+                    </div>
+                </td>
+                <td class="table_wg"><span class="figure">68</span></td>
+                <td class="table_wg"><span class="figure">68</span></td>
+                <td class="table_wg"><span class="figure">26</span></td>
+                <td class="table_wg"><span class="figure">0.88%</span></td>
+                <td class="table_wg"><span class="figure">￥200</span></td>
+                <td class="table_wg"><span class="figure">￥6000</span></td>
+                <td class="table_wg"><span class="figure">￥3000</span></td>
+                <td class="table_we caozuo"><a onClick="$UE.open('step_three');$UE.setValue('step3_name','修改创意');$UE.display('step_addtitle3','none');$UE.display('new_bnt3','none');$UE.display('update_bnt3','block');"></a></td>
+              </tr>
+              <tr id="key_chc2" onmousemove="idBg(2,'key_chc');"onmouseout="idNoBg(2,'key_chc');">
+                <td class="table_wa text_center"><input name="" type="checkbox" value="" /></td>
+                <td class="table_wc_px">
+                	<div class="cy_img">
+                    	<table border="1">
+                          <tr>
+                            <td><a href="#"><img src="/static/ads_c_2.0/web/images/p/cy_02.jpg"/></a></td>
+                          </tr>
+                        </table>
+                     <span class="pic_guige">728×90<a href="#">预览创意</a><a href="#">查看修改前创意及状态</a></span>
+                    </div>
+               </td>
+                <td class="table_wf text_left"><a href="#" class="link">推广计划推广计划推广推广计</a></td>
+                <td class="table_wf text_left"><a href="#" class="link">推广组推广组推广组推广组</a></td>
+                <td class="table_wc text_left">
+                    <div class="div_a">
+                    <div class="zhuangt light">
+                    <span class="red">不宜推广<img  src="/static/ads_c_2.0/web/images/bulb_dim.png" width="16" height="16" msgWidth="300" msgTitle="不宜推广：" title="提交" /></span>
+                    <span class="start_img" onclick="javascript:$UE.confirm('您确定暂停选中的推广计划吗？','暂停成功！');"></span>
+                    </div>
+                    </div>
+                </td>
+                <td class="table_wg"><span class="figure">68</span></td>
+                <td class="table_wg"><span class="figure">68</span></td>
+                <td class="table_wg"><span class="figure">26</span></td>
+                <td class="table_wg"><span class="figure">0.88%</span></td>
+                <td class="table_wg"><span class="figure">￥200</span></td>
+                <td class="table_wg"><span class="figure">￥6000</span></td>
+                <td class="table_wg"><span class="figure">￥3000</span></td>
+                <td class="table_we caozuo"><a onClick="$UE.open('step_three');"></a></td>
+              </tr>
+              <tr id="key_chc3" onmousemove="idBg(3,'key_chc');"onmouseout="idNoBg(3,'key_chc');">
+                <td class="table_wa text_center"><input name="" type="checkbox" value="" /></td>
+                <td class="table_wc_px pink">
+                	<div class="cy_img">
+                    	<table border="1">
+                          <tr>
+                            <td><a href="#"><img src="/static/ads_c_2.0/web/images/p/cy_02.jpg"/></a></td>
+                          </tr>
+                        </table>
+                     <span class="pic_guige">728×90<a href="#">预览创意</a><a href="#">查看修改后创意及状态</a></span>
+                    </div>
+               </td>
+                <td class="table_wf text_left"><a href="#" class="link">推广计划推广计划推广推广计</a></td>
+                <td class="table_wf text_left"><a href="#" class="link">推广组推广组推广组推广组</a></td>
+                <td class="table_wc text_left pink">
+                    <div class="div_a">
+                    <div class="zhuangt">
+                    <span class="orange"><img src="/static/ads_c_2.0/web/images/u394.png" width="15" height="15" class="zhuangt_img"/>暂停</span>
+                    <span> </span>
+                    </div>
+                    </div>
+                </td>
+                <td class="table_wg"><span class="figure">68</span></td>
+                <td class="table_wg"><span class="figure">68</span></td>
+                <td class="table_wg"><span class="figure">26</span></td>
+                <td class="table_wg"><span class="figure">0.88%</span></td>
+                <td class="table_wg"><span class="figure">￥200</span></td>
+                <td class="table_wg"><span class="figure">￥6000</span></td>
+                <td class="table_wg"><span class="figure">￥3000</span></td>
+                <td class="table_we caozuo"><span class="kong">--</span></td>
+              </tr>
+              <tr id="key_chc4" onmousemove="idBg(4,'key_chc');"onmouseout="idNoBg(4,'key_chc');">
+                <td class="table_wa text_center"><input name="" type="checkbox" value="" /></td>
+                <td class="table_wc_px">
+                	<div class="cy_img">
+                    	<table border="1">
+                          <tr>
+                            <td><a href="#"><img src="/static/ads_c_2.0/web/images/p/cy_02.jpg"/></a></td>
+                          </tr>
+                        </table>
+                     <span class="pic_guige">728×90<a href="#">预览创意</a></span>
+                    </div>
+               </td>
+                <td class="table_wf text_left"><a href="#" class="link">推广计划推广计划推广推广计</a></td>
+                <td class="table_wf text_left"><a href="#" class="link">推广组推广组推广组推广组</a></td>
+                <td class="table_wc text_left">
+                    <div class="div_a">
+                    <div class="zhuangt">
+                    <span class="orange">审核中</span>
+                    <span class="start_img" onclick="javascript:$UE.confirm('您确定暂停选中的推广计划吗？','暂停成功！');"></span>
+                    </div>
+                    </div>
+                </td>
+                <td class="table_wg"><span class="figure">68</span></td>
+                <td class="table_wg"><span class="figure">68</span></td>
+                <td class="table_wg"><span class="figure">26</span></td>
+                <td class="table_wg"><span class="figure">0.88%</span></td>
+                <td class="table_wg"><span class="figure">￥200</span></td>
+                <td class="table_wg"><span class="figure">￥6000</span></td>
+                <td class="table_wg"><span class="figure">￥3000</span></td>
+                <td class="table_we caozuo"><a onClick="$UE.open('step_three');"></a></td>
+              </tr>
+              <tr id="key_chc5" onmousemove="idBg(5,'key_chc');"onmouseout="idNoBg(5,'key_chc');">
+                <td class="table_wa text_center"><input name="" type="checkbox" value="" /></td>
+                <td class="table_wc_px">
+                	<div class="cy_img">
+                    	<table border="1">
+                          <tr>
+                            <td><a href="#"><img src="/static/ads_c_2.0/web/images/p/cy_02.jpg"/></a></td>
+                          </tr>
+                        </table>
+                     <span class="pic_guige">728×90<a href="#">预览创意</a></span>
+                    </div>
+               </td>
+                <td class="table_wf text_left"><a href="#" class="link">推广计划推广计划推广推广计</a></td>
+                <td class="table_wf text_left"><a href="#" class="link">推广组推广组推广组推广组</a></td>
+                <td class="table_wc text_left">
+                    <div class="div_a">
+                    <div class="zhuangt light">
+                    <span class="red">审核拒绝<a onmouseover="arrow_hover();" onmouseout="arrow_no_hover();" ><img src="/static/ads_c_2.0/web/images/bulb_dim.png" width="16" height="16" /></a></span>
+                    <span class="start_img" onclick="javascript:$UE.confirm('您确定暂停选中的推广计划吗？','暂停成功！');"></span>
+                    </div>
+                    </div>
+                </td>
+                <td class="table_wg"><span class="figure">68</span></td>
+                <td class="table_wg"><span class="figure">68</span></td>
+                <td class="table_wg"><span class="figure">26</span></td>
+                <td class="table_wg"><span class="figure">0.88%</span></td>
+                <td class="table_wg"><span class="figure">￥200</span></td>
+                <td class="table_wg"><span class="figure">￥6000</span></td>
+                <td class="table_wg"><span class="figure">￥3000</span></td>
+                <td class="table_we caozuo"><a onClick="$UE.open('step_three');"></a></td>              </tr>
+              <tr id="key_chc6" onmousemove="idBg(6,'key_chc');"onmouseout="idNoBg(6,'key_chc');">
+                <td class="table_wa text_center"><input name="" type="checkbox" value="" /></td>
+                <td class="table_wc_px">
+                	<div class="cy_img">
+                    	<table border="1">
+                          <tr>
+                            <td><a href="#"><img src="/static/ads_c_2.0/web/images/p/cy_02.jpg"/></a></td>
+                          </tr>
+                        </table>
+                     <span class="pic_guige">728×90<a href="#">预览创意</a></span>
+                    </div>
+               </td>
+                <td class="table_wf text_left"><a href="#" class="link">推广计划推广计划推广推广计</a></td>
+                <td class="table_wf text_left"><a href="#" class="link">推广组推广组推广组推广组</a></td>
+                <td class="table_wc text_left">
+                    <div class="div_a">
+                    <div class="zhuangt">
+                    <span class="red">不宜推广</span>
+                    <span class="stop_img" onclick="javascript:$UE.confirm('您确定启用创意【创意名称】吗？','启用成功！');"></span>
+                    </div>
+                    </div>
+                </td>
+                <td class="table_wg"><span class="figure">68</span></td>
+                <td class="table_wg"><span class="figure">68</span></td>
+                <td class="table_wg"><span class="figure">26</span></td>
+                <td class="table_wg"><span class="figure">0.88%</span></td>
+                <td class="table_wg"><span class="figure">￥200</span></td>
+                <td class="table_wg"><span class="figure">￥6000</span></td>
+                <td class="table_wg"><span class="figure">￥3000</span></td>
+                <td class="table_we caozuo"><a onClick="$UE.open('step_three');"></a></td>
+              </tr>
+              <tr>
+                <td class="table_wa text_center"><input name="" type="checkbox" value="" /></td>
+                <td class="table_wc_px">
+                	<div class="cy_img">
+                    	<table border="1">
+                          <tr>
+                            <td><a href="#"><img src="/static/ads_c_2.0/web/images/p/cy_02.jpg"/></a></td>
+                          </tr>
+                        </table>
+                     <span class="pic_guige">728×90<a href="#">预览创意</a></span>
+                    </div>
+               </td>
+                <td class="table_wf text_left"><a href="#" class="link">推广计划推广计划推广推广计</a></td>
+                <td class="table_wf text_left"><a href="#" class="link">推广组推广组推广组推广组</a></td>
+                <td class="table_wc text_left">
+                    <div class="div_a">
+                    <div class="zhuangt">
+                    <span class="red">不宜推广</span>
+                    <span class="start_img" onclick="javascript:$UE.confirm('您确定暂停选中的推广计划吗？','暂停成功！');"></span>
+                    </div>
+                    </div>
+                </td>
+                <td class="table_wg"><span class="figure">68</span></td>
+                <td class="table_wg"><span class="figure">68</span></td>
+                <td class="table_wg"><span class="figure">26</span></td>
+                <td class="table_wg"><span class="figure">0.88%</span></td>
+                <td class="table_wg"><span class="figure">￥200</span></td>
+                <td class="table_wg"><span class="figure">￥6000</span></td>
+                <td class="table_wg"><span class="figure">￥3000</span></td>
+                <td class="table_we caozuo"><a onClick="$UE.open('step_three');"></a></td>
+              </tr>
+              <tr>
+                <td class="table_wa text_center"><input name="" type="checkbox" value="" /></td>
+                <td class="table_wc_px">
+                	<div class="cy_img">
+                    	<table border="1">
+                          <tr>
+                            <td><a href="#"><img src="/static/ads_c_2.0/web/images/p/cy_01.jpg"/></a></td>
+                          </tr>
+                        </table>
+                    <span class="pic_guige">728×90<a href="#">预览创意</a></span>
+                    </div>
+                </td>
+                <td class="table_wf text_left"><a href="#" class="link">推广计划推广计划推广推广计</a></td>
+                <td class="table_wf text_left"><a href="#" class="link">推广组推广组推广组推广组</a></td>
+                <td class="table_wc text_left">
+                    <div class="div_a">
+                    <div class="zhuangt">
+                    <span class="green">有效</span>
+                    <span class="start_img" onclick="javascript:$UE.confirm('您确定暂停选中的推广计划吗？','暂停成功！');"></span>
+                    </div>
+                    </div>
+                </td>
+                <td class="table_wg"><span class="figure">68</span></td>
+                <td class="table_wg"><span class="figure">68</span></td>
+                <td class="table_wg"><span class="figure">26</span></td>
+                <td class="table_wg"><span class="figure">0.88%</span></td>
+                <td class="table_wg"><span class="figure">￥200</span></td>
+                <td class="table_wg"><span class="figure">￥6000</span></td>
+                <td class="table_wg"><span class="figure">￥3000</span></td>
+                <td class="table_we caozuo"><a onClick="$UE.open('step_three');"></a></td>
+              </tr>
+              <tr>
+                <td class="table_wa text_center"><input name="" type="checkbox" value="" /></td>
+                <td class="table_wc_px">
+                	<div class="cy_img">
+                    	<table border="1">
+                          <tr>
+                            <td><a href="#"><img src="/static/ads_c_2.0/web/images/p/cy_01.jpg"/></a></td>
+                          </tr>
+                        </table>
+                    <span class="pic_guige">728×90<a href="#">预览创意</a></span>
+                    </div>
+                </td>
+                <td class="table_wf text_left"><a href="#" class="link">推广计划推广计划推广推广计</a></td>
+                <td class="table_wf text_left"><a href="#" class="link">推广组推广组推广组推广组</a></td>
+                <td class="table_wc text_left">
+                    <div class="div_a">
+                    <div class="zhuangt">
+                    <span class="green">有效</span>
+                    <span class="start_img" onclick="javascript:$UE.confirm('您确定暂停选中的推广计划吗？','暂停成功！');"></span>
+                    </div>
+                    </div>
+                </td>
+                <td class="table_wg"><span class="figure">68</span></td>
+                <td class="table_wg"><span class="figure">68</span></td>
+                <td class="table_wg"><span class="figure">26</span></td>
+                <td class="table_wg"><span class="figure">0.88%</span></td>
+                <td class="table_wg"><span class="figure">￥200</span></td>
+                <td class="table_wg"><span class="figure">￥6000</span></td>
+                <td class="table_wg"><span class="figure">￥3000</span></td>
+                <td class="table_we caozuo"><a onClick="$UE.open('step_three');"></a></td>
+              </tr>
+              <tr>
+                <td class="table_wa text_center"><input name="" type="checkbox" value="" /></td>
+                <td class="table_wc_px">
+                	<div class="cy_img">
+                    	<table border="1">
+                          <tr>
+                            <td><a href="#"><img src="/static/ads_c_2.0/web/images/p/cy_01.jpg"/></a></td>
+                          </tr>
+                        </table>
+                    <span class="pic_guige">728×90<a href="#">预览创意</a></span>
+                    </div>
+                </td>
+                <td class="table_wf text_left"><a href="#" class="link">推广计划推广计划推广推广计</a></td>
+                <td class="table_wf text_left"><a href="#" class="link">推广组推广组推广组推广组</a></td>
+                <td class="table_wc text_left">
+                    <div class="div_a">
+                    <div class="zhuangt">
+                    <span class="green">有效</span>
+                    <span class="start_img" onclick="javascript:$UE.confirm('您确定暂停选中的推广计划吗？','暂停成功！');"></span>
+                    </div>
+                    </div>
+                </td>
+                <td class="table_wg"><span class="figure">68</span></td>
+                <td class="table_wg"><span class="figure">68</span></td>
+                <td class="table_wg"><span class="figure">26</span></td>
+                <td class="table_wg"><span class="figure">0.88%</span></td>
+                <td class="table_wg"><span class="figure">￥200</span></td>
+                <td class="table_wg"><span class="figure">￥6000</span></td>
+                <td class="table_wg"><span class="figure">￥3000</span></td>
+                <td class="table_we caozuo"><a onClick="$UE.open('step_three');"></a></td>
+              </tr>
+              <tr class="tongji">
+                <td class="table_wa">&nbsp;</td>
+                <td class="table_wb text_left" colspan="4">合计-10个创意(7个有效)</td>
+                <td class="table_wd"><span class="figure">68</span></td>
+                <td class="table_wd"><span class="figure">68</span></td>
+                <td class="table_wd"><span class="figure">26</span></td>
+                <td class="table_wd"><span class="figure">0.88%</span></td>
+                <td class="table_wd"><span class="figure">￥9.96</span></td>
+                <td class="table_wd"><span class="figure">￥2000</span></td>
+                <td class="table_wd"><span class="figure">￥6000</span></td>
+                <td class="table_we caozuo">&nbsp;</td>
+              </tr>
+          </table>
+        	 <!--表格内容 开始-->
+ 
+        </div>
+      </div>
+   <!--分页开始-->
+	<!--#include virtual="/static/ads_c_2.0/web/inc/tg_page.shtml"-->
+    <!--分页结束-->
+</div>

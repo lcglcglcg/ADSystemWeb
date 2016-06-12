@@ -1,0 +1,89 @@
+/* CSS Document */
+body{ font-size:12px; font-family:Arial, Helvetica, sans-serif;line-height:22px; color:#4b4b4b; background:#FFF;}
+body,div,ul,ol,li,dl,dt,dd,p,form,h1,h2,h3,h4,h5,h6{ padding:0; margin:0;}
+li{ list-style:none;}
+a{ text-decoration:none; cursor:pointer;}
+a:hover{ text-decoration:underline;}
+img{ border:none;}
+.red{ color:#a10327;}
+.gray{ color:#999;}
+s{ font-size:14px; padding-left:9px;}
+.mar_left{ margin-left:8px;}
+.mar_none{ padding-left:0; margin-left:0; display:inline-block;}
+.all_right{color:#090; font-weight:bold;}
+.clr_h10{ height:30px; background:url(/static/ads_c_2.0/web/images/register_2.jpg) repeat-x 0 bottom;}
+/* 头部 */
+.header{ height:92px; background:url(/static/ads_c_2.0/web/images/register_1.jpg) repeat;}
+.w_1000{ width:1000px;margin:0 auto;}
+.w_1000 h1{ float:left; height:90px; width:220px;}
+.w_1000 .top_nav{ float:right; height:80px; width:220px; color:#FFF; padding:14px 20px 0 0;}
+.top_nav a{ color:#FFF; text-decoration:none;}
+.top_nav a:hover{ color:#FFF; text-decoration:underline;}
+/* 注册内容 */
+.main{ padding-bottom:20px;background:#f5f5f5;}
+.welcome{ color:#999; height:40px; padding:20px 0 0 20px; background:url(/static/ads_c_2.0/web/images/register_2.jpg) repeat-x 0 bottom;}
+.welcome span{ font-size:18px; font-weight:bold; color:#666; padding-right:5px;}
+/* 账户信息 */
+.account{ padding:10px 0 0 20px; height:auto;}
+.account em{ display:block;color:#274ea0; font-weight:bold; font-style:normal; margin-bottom:26px;  font-size:14px;}
+.account ul li{ display:block; clear:both; margin-top:20px; height:28px; line-height:28px;}
+.account ul li.bottom_line{ height:16px;  background:url(/static/ads_c_2.0/web/images/register_2.jpg) repeat-x 0 center;}
+.account ul li label.re_name{ font-family:宋体;float:left; width:100px; height:28px; line-height:28px;  font-size:14px; color:#444444; text-align:right;}
+.account ul li div.ie_box{ display:block;float:left; height:28px; line-height:28px;}
+.account ul li p{ display:block;float:left; height:28px; line-height:28px;}
+.account ul li p li{ margin:0;}
+.account ul li p input{ float:left;  height:22px; line-height:22px;}
+.account ul li p.input1 input{ width:215px; border:1px solid #88accf;}
+.account ul li p.input2 input{ width:324px; border:1px solid #88accf;}
+.account ul li p.input3 input{ width:105px; border:1px solid #88accf;}
+.account ul li p s,.account ul li p span,.account ul li div.ie_box span{ display:block; height:28px; float:left; line-height:27px; padding-left:9px;}
+.account ul li p i{ display:block; height:28px; float:left; line-height:28px; font-style:normal;}
+.account ul li div.ie_box i{ display:block; height:28px; float:left; line-height:28px; font-style:normal;}
+/* 联系信息 */
+.account ul li p ul{ height:200px; overflow:hidden; overflow-y:scroll;}
+.account ul li p li{ margin:0;}
+.account ul li p .p_select_01{ float:left; width:217px;}
+.account ul li p .p_select_02{ width:134px;}
+.account ul li p span.re_code{display:block; width:77px; height:26px;float:left; margin:0 9px; padding:0;background:url(/static/ads_c_2.0/web/images/icon.gif) no-repeat 0 -750px; }
+.account ul li p span a{ color:#00F; text-decoration:underline;}
+.account ul li p span.clause{ margin:0; padding:0;}
+.account ul li p span.clause a{ color:#274ea0;text-decoration:none;}
+.account ul li p span.no_click{ float:left; width:119px; height:30px; text-align:center; padding:0; line-height:30px;background:url(/static/ads_c_2.0/web/images/find_btn.jpg) no-repeat; color:#666; font-weight:bold;}
+
+.account ul li div.ie_box li{ margin:0;}
+.account ul li div.ie_box .p_select_01{ float:left; width:217px;}
+.account ul li div.ie_box .p_select_02{ width:134px;}
+.account ul li div.ie_box span.re_code{display:block; width:77px; height:26px;float:left; margin:0 9px; padding:0;background:url(/static/ads_c_2.0/web/images/icon.gif) no-repeat 0 -750px; }
+.account ul li div.ie_box span a{ color:#00F; text-decoration:underline;}
+.account ul li div.ie_box span.clause{ margin:0; padding:0;}
+.account ul li div.ie_box span.clause a{ color:#274ea0;text-decoration:none;}
+.account ul li div.ie_box span.no_click{ float:left; width:119px; height:30px; text-align:center; padding:0; line-height:30px;background:url(/static/ads_c_2.0/web/images/find_btn.jpg) no-repeat; color:#666; font-weight:bold;}
+/* 按钮 */
+.account ul li p a{ text-decoration:none;}
+.account ul li p a.re_btn,.account ul li p a.find_btn,.account ul li p a.re_submit,.account ul li p a.go_back{ display:block; height:30px; line-height:30px;text-align:center;font-size:14px;font-weight:bold;}
+.account ul li p a.re_btn{ float:left;width:119px;background:url(/static/ads_c_2.0/web/images/re_buttom.jpg) no-repeat; color:#FFF;}
+.account ul li p a.re_btn:hover{background:url(/static/ads_c_2.0/web/images/re_hover.jpg) no-repeat; text-decoration:none;}
+.account ul li p a.find_btn{width:119px;background:url(/static/ads_c_2.0/web/images/find_btn.jpg) no-repeat; color:#555; float:left;}
+.account ul li p a.go_back{width:80px;background:url(/static/ads_c_2.0/web/images/go_back.jpg) no-repeat; color:#555; float:left;}
+
+.account ul li p a.find_btn:hover{ text-decoration:none;}
+.account ul li p a.re_submit{width:109px;background:url(/static/ads_c_2.0/web/images/submit_01.jpg) no-repeat; color:#FFF; margin-right:10px; float:left;}
+.account ul li p a.re_submit:hover{ text-decoration:none;background:url(/static/ads_c_2.0/web/images/submit_02.jpg) no-repeat; }
+/* 找回密码 */
+.account ul li b{ color:#666; font-size:14px;}
+.account ul li p span.right_code{ clear:both; float:left; color:#a10327; height:18px; line-height:18px; padding:0;}
+.account ul li div.ie_box span.right_code{ clear:both; float:left; color:#a10327; height:18px; line-height:18px; padding:0;}
+.account ul li.top_none{ margin:0;}
+/* 服务条款 */
+.welcome span.pact_tt{ display:block; text-align:center;}
+.pact_main{ color:#666; line-height:24px;}
+.main_title{ padding-top:20px; font-size:14px;}
+.main_num{ font-weight:bold; font-size:14px; padding:30px 0;}
+.level2{ text-indent:10px;}
+.h_20px{ height:20px;}
+/* 尾部 */
+.footer{height:67px; margin-top:1px;margin:0 auto;}
+.footer_w{ clear:both; position:relative;width:1000px; height:67px; line-height:67px; text-align:center; margin:0 auto; color:#666666;}
+.footer_w a{color:#666666;}
+.footer_w span{ margin-left:20px;}
+

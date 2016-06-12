@@ -1,0 +1,8 @@
+/* CSS Document */
+/* 加载 */
+.show_loading{ width:230px; height:30px; margin:0 auto; padding:5px 10px;}
+.show_loading img{ float:left;}
+.loading_text{ float:left; width:190px; height:40px; line-height:30px; padding-left:10px;}
+.content{ min-width:990px; _position:relative; _width:expression(document.body.clientWidth<=1000?"1000px":"auto" );
+}
+

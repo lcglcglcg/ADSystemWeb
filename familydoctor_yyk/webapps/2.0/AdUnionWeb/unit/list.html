@@ -1,0 +1,96 @@
+<xmp id="listUnitHtmlTitle_1" style="display:none;">
+  <tr class="table_title">
+    <td class="table_wa text_center_bg"><input type="checkbox" name="listUnitCheckAll"  onclick="window.units.selectAll.call(this);"  /></td>
+    <th name="listUnitTool" value="0" class="table_wd" onclick="window.units.orderBy.call(this,'adgroupName');" > <a><span>推广组</span></a> </th>
+    <th name="listUnitTool" value="1" class="table_wb" onclick="window.units.orderBy.call(this,'campaignName');" > <a><span>推广计划</span></a> </th>
+    <th name="listUnitTool" value="2" class="table_wc" onclick="window.units.orderBy.call(this,'adgroupState');" > <a><span>推广组状态</span></a> </th>
+    <th name="listUnitTool" value="3" class="table_wd" onclick="window.units.orderBy.call(this,'cpcPrice');" > <a><span>CPC出价</span></a> </th>
+   <th id="helpUnitTd" name="listUnitTool" value="10" class="table_wd" onclick="window.units.orderBy.call(this,'cpmPrice');" > <a><span>CPM出价</span></a> </th>
+    <th name="listUnitTool" value="4" class="table_wd" onclick="window.units.orderBy.call(this,'impression');" > <a><span>展现次数</span></a> </th>
+    <th name="listUnitTool" value="5" class="table_wd" onclick="window.units.orderBy.call(this,'click');" > <a><span>点击次数</span></a> </th>
+    <th name="listUnitTool" value="6" class="table_wd" onclick="window.units.orderBy.call(this,'clicksRatio');" > <a><span>点击率</span></a> </th>
+    <th name="listUnitTool" value="7" class="table_wd" onclick="window.units.orderBy.call(this,'avgCpc');" > <a><span>平均点击价格</span></a> </th>
+    <th name="listUnitTool" value="8" class="table_wd" onclick="window.units.orderBy.call(this,'cost');" > <a><span>总消费</span></a> </th>
+    <th name="listUnitTool" value="9" class="table_wd" onclick="window.units.orderBy.call(this,'cpm');" > <a><span>千次展现成本</span></a> </th>
+    <th class="table_we">操作</th>
+  </tr>
+</xmp>
+<xmp id="listUnitHtmlList_1" style="display:none;">
+  <tr name="listUnitTr" id="unitId{GROUP_ID}" >
+    <td name="listUnitTd" class="table_wa text_center"><input type="checkbox" name="listUnitCheckId" value="{GROUP_ID}" onclick="window.units.selectId.call(this);"  /></td>
+    <td name="listUnitTd" class="table_wd text_left"><div class="key_div"><span id="unitName{GROUP_ID}"><a name="treeUnitClick" value="{GROUP_ID}" class="link" >{GROUP_NAME}</a></span><a value="{GROUP_ID}" class="key_btn1" name="editname"></a></div></td>
+    <td name="listUnitTd" class="table_wb text_left"><a name="treePlanClick" value="{GROUP_ID}" class="link">{CAMPAIGN_NAME}</a></td>
+    <td name="listUnitTd" class="table_wc text_left"><div class="div_a">
+        <div class="zhuangt" id="adgroupState{GROUP_ID}"><span class="{adgroupStateCss}">{GROUP_STATUS}</span> <span class="{stateCss}" value="{GROUP_ID}" name="pause"></span></div>
+      </div></td>
+    <td name="listUnitTd" class="table_wd"><span name="unitPricesShow{GROUP_ID}" class="figure" style="display:none;">￥<input type="text" val="{GROUP_ID}" name="unitPricesInput{GROUP_ID}" value="{GROUP_CPC_PRICE}" style="width:70%;" /></span><div name="unitPricesNone{GROUP_ID}" class="key_div"><a class="key_btn2" value="{GROUP_ID}" name="priceCPC"></a><span id="unitcpcPrice{GROUP_ID}" class="figure" >￥{GROUP_CPC_PRICE}</span></div></td>
+    <td name="listUnitTd" class="table_wd"><span name="unitPricesCpmShow{GROUP_ID}" class="figure" style="display:none;">￥<input type="text" val="{GROUP_ID}" name="unitPricesCpmInput{GROUP_ID}" value="{GROUP_CPM_PRICE}" style="width:70%;" /></span><div name="unitPricesCpmNone{GROUP_ID}" class="key_div"><a class="key_btn2" value="{GROUP_ID}" name="priceCPM"></a><span id="unitcpmPrice{GROUP_ID}" class="figure" >￥{GROUP_CPM_PRICE}</span></div></td>
+    <td name="listUnitTd" class="table_wd"><span class="figure">{GROUP_IMPRESSION}</span></td>
+    <td name="listUnitTd" class="table_wd"><span class="figure">{GROUP_CLICK}</span></td>
+    <td name="listUnitTd" class="table_wd"><span class="figure">{GROUP_CTR}</span></td>
+    <td name="listUnitTd" class="table_wd"><span class="figure">￥{GROUP_CPC}</span></td>
+    <td name="listUnitTd" class="table_wd"><span class="figure">￥{GROUP_COST}</span></td>
+    <td name="listUnitTd" class="table_wd"><span class="figure">￥{GROUP_CPM}</span></td>
+    <td name="listUnitTd" class="table_we caozuo"><a value="{GROUP_ID}" name="edit"></a></td>
+  </tr>
+</xmp>
+<xmp id="listUnitHtmlEnd_1" style="display:none;">
+  <tr class="tongji">
+    <td class="table_wa">&nbsp;</td>
+    <td class="table_wb text_left" colspan="5">合计-{GROUP_COUNT}个推广组(<span name="validAdgroupCountSpan">{GROUP_ENABLED}</span>个有效)</td>
+    <td class="table_wd"><span class="figure">{GROUP_IMPRESSION}</span></td>
+    <td class="table_wd"><span class="figure">{GROUP_CLICK}</span></td>
+    <td class="table_wd"><span class="figure">{GROUP_CTR}</span></td>
+    <td class="table_wd"><span class="figure">￥{GROUP_CPC}</span></td>
+    <td class="table_wd"><span class="figure">￥{GROUP_COST}</span></td>
+    <td class="table_wd"><span class="figure">￥{GROUP_CPM}</span></td>
+    <td class="table_we caozuo">&nbsp;</td>
+  </tr>
+</xmp>
+<xmp id="listUnitHtmlTitle_2" style="display:none;">
+  <tr class="table_title">
+    <td class="table_wa text_center_bg"><input type="checkbox" name="listUnitCheckAll"  onclick="window.units.selectAll.call(this);"  /></td>
+    <th name="listUnitTool" value="0" class="table_wd" onclick="window.units.orderBy.call(this,'adgroupName');" > <a><span>推广组</span></a> </th>
+    <th name="listUnitTool" value="1" class="table_wb" onclick="window.units.orderBy.call(this,'campaignName');" > <a><span>推广计划</span></a> </th>
+    <th name="listUnitTool" value="2" class="table_wc" onclick="window.units.orderBy.call(this,'adgroupState');" > <a><span>推广组状态</span></a> </th>
+    <th name="listUnitTool" value="3" class="table_wd" onclick="window.units.orderBy.call(this,'cpcPrice');" > <a><span>组出价</span></a> </th>
+    <th name="listUnitTool" value="4" class="table_wd" onclick="window.units.orderBy.call(this,'impression');" > <a><span>展现次数</span></a> </th>
+    <th name="listUnitTool" value="5" class="table_wd" onclick="window.units.orderBy.call(this,'click');" > <a><span>点击次数</span></a> </th>
+    <th name="listUnitTool" value="6" class="table_wd" onclick="window.units.orderBy.call(this,'clicksRatio');" > <a><span>点击率</span></a> </th>
+    <th name="listUnitTool" value="7" class="table_wd" onclick="window.units.orderBy.call(this,'avgCpc');" > <a><span>平均点击价格</span></a> </th>
+    <th name="listUnitTool" value="8" class="table_wd" onclick="window.units.orderBy.call(this,'cost');" > <a><span>总消费</span></a> </th>
+    <th name="listUnitTool" value="9" class="table_wd" onclick="window.units.orderBy.call(this,'cpm');" > <a><span>千次展现成本</span></a> </th>
+    <th class="table_we">操作</th>
+  </tr>
+</xmp>
+<xmp id="listUnitHtmlList_2" style="display:none;">
+  <tr name="listUnitTr" id="unitId{GROUP_ID}" >
+    <td name="listUnitTd" class="table_wa text_center"><input type="checkbox" name="listUnitCheckId" value="{GROUP_ID}" onclick="window.units.selectId.call(this);"  /></td>
+    <td name="listUnitTd" class="table_wd text_left"><div class="key_div"><span id="unitName{GROUP_ID}"><a name="treeUnitClick" value="{GROUP_ID}" class="link" >{GROUP_NAME}</a></span><a value="{GROUP_ID}" class="key_btn1" name="editname"></a></div></td>
+    <td name="listUnitTd" class="table_wb text_left"><a name="treePlanClick" value="{GROUP_ID}" class="link">{CAMPAIGN_NAME}</a></td>
+    <td name="listUnitTd" class="table_wc text_left"><div class="div_a">
+        <div class="zhuangt" id="adgroupState{GROUP_ID}"><span class="{adgroupStateCss}">{GROUP_STATUS}</span> <span class="{stateCss}" value="{GROUP_ID}" name="pause"></span></div>
+      </div></td>
+    <td name="listUnitTd" class="table_wd"><span name="unitPricesShow{GROUP_ID}" class="figure" style="display:none;">￥<input type="text" val="{GROUP_ID}" name="unitPricesInput{GROUP_ID}" value="{GROUP_CPC_PRICE}" style="width:70%;" /></span><div name="unitPricesNone{GROUP_ID}" class="key_div"><a class="key_btn2" value="{GROUP_ID}" name="priceCPC"></a><span id="unitcpcPrice{GROUP_ID}" class="figure" >￥{GROUP_CPC_PRICE}</span></div></td>
+    <td name="listUnitTd" class="table_wd"><span class="figure">{GROUP_IMPRESSION}</span></td>
+    <td name="listUnitTd" class="table_wd"><span class="figure">{GROUP_CLICK}</span></td>
+    <td name="listUnitTd" class="table_wd"><span class="figure">{GROUP_CTR}</span></td>
+    <td name="listUnitTd" class="table_wd"><span class="figure">￥{GROUP_CPC}</span></td>
+    <td name="listUnitTd" class="table_wd"><span class="figure">￥{GROUP_COST}</span></td>
+    <td name="listUnitTd" class="table_wd"><span class="figure">￥{GROUP_CPM}</span></td>
+    <td name="listUnitTd" class="table_we caozuo"><a value="{GROUP_ID}" name="edit"></a></td>
+  </tr>
+</xmp>
+<xmp id="listUnitHtmlEnd_2" style="display:none;">
+  <tr class="tongji">
+    <td class="table_wa">&nbsp;</td>
+    <td class="table_wb text_left" colspan="4">合计-{GROUP_COUNT}个推广组(<span name="validAdgroupCountSpan">{GROUP_ENABLED}</span>个有效)</td>
+    <td class="table_wd"><span class="figure">{GROUP_IMPRESSION}</span></td>
+    <td class="table_wd"><span class="figure">{GROUP_CLICK}</span></td>
+    <td class="table_wd"><span class="figure">{GROUP_CTR}</span></td>
+    <td class="table_wd"><span class="figure">￥{GROUP_CPC}</span></td>
+    <td class="table_wd"><span class="figure">￥{GROUP_COST}</span></td>
+    <td class="table_wd"><span class="figure">￥{GROUP_CPM}</span></td>
+    <td class="table_we caozuo">&nbsp;</td>
+  </tr>
+</xmp>

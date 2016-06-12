@@ -1,0 +1,26 @@
+<div class="update_box" id="update_ph_pwd_step1" style="display:none;">
+  <div class="update_title"><b>密保手机修改密码</b><span><input name="close_bnt" type="image" src="/static/ads_c_2.0/web/images/step_close.gif" onClick="$UE.close('update_ph_pwd_step1');" style="cursor:pointer;"></span></div>
+  <div class="update_main">
+  	<div class="update_cont">
+    	<p><span class="light_blue">1.密保手机验证</span> > <span>2.修改密码</span></p>
+    	<p class="gray">更换您的密码手机，需要先验证您当前的密保手机。</p>
+ <!-- 第一行--> 
+        <div class="row_01">
+            <div class="update_cont_lf"><span class="red">*</span>已绑定手机号码：</div>
+            <div class="update_cont_rg">
+            	<input name="" type="text" class="u_input_01"/><span class="gray">2分钟内不可重复获取</span><br />
+                <div class="a_btn"><a href="#"><span>获取验证码</span></a></div>
+            </div>
+        </div>
+ <!-- 第二行--> 
+        <div class="row_01">
+            <div class="update_cont_lf"><span class="red">*</span>收到的验证码：</div>
+            <div class="update_cont_rg">
+            	<input name="" type="text" class="u_input_01"/><span class="gray">验证码是6位</span>
+                <div class="a_btn"><a onclick="javascript:$UE.close('update_ph_pwd_step1');$UE.open('pwd_update_step2');$UE.setValue('pwd_tt_name2','密保手机修改密码');$UE.setValue('step1_name','1.密保手机验证');"><span>开始验证</span></a></div>
+            </div>
+        </div>
+        <p class="up_gray1">如果没收到验证码，您可以：<br />1.确认您输入的手机号码是否正确。<br />2.请再等待一段时间。<br />3.确认您的手机号码是否是已绑定的号码</p>
+  	</div>
+  </div>
+</div>

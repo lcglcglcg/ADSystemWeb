@@ -1,0 +1,111 @@
+ <div class="scommon_box_new_box" id="select_keshi" style="display:none;">
+    <div class="detailed_title" id="touf_kes"><b>投放科室</b><span><input type="image" name="close_bnt" src="/static/ads_m_1.0/web/images/view_close.gif" onclick="$UE.close('select_keshi');" style="cursor:pointer;"></span></div>
+	<div class="scommon_box scommon_box_new_nk" >
+    	<div class="scommon_main">
+        
+            <div id="click_dingx" style="display:block;">
+                    <!--定向浏览行为 -->
+                        <div class="depart depart_new" id="clickGroupd1" style="disp lay:none;">
+                            <div class="tuijian_nav" id="contc1">
+                              
+                            <!--定向浏览行为 级别内容 start-->
+                            <div class="depart_level">
+                            <!-- 级别一 start-->
+                                <ul>
+                                    <li>
+                                        <a class="d_level1">
+                                           <span id="handlerbr1" class="gather" onclick="javascript:toggle('handlerbr1', 'contentbr1', 'gather', 'spread');"></span>
+                                            <span class="d_input">
+                                                <input type="checkbox" checked="" name="checkgroup" value="1" >
+                                                <label for="c1" class="checkboxOff"></label>
+                                            </span>
+                                            <span class="word1"><b>一级科室</b></span>
+                                            <span class="span_line"></span>
+                                        </a>
+                                <!-- 级别二 start-->
+                                        <ul id="contentbr1" style="display:none;">
+                                            <li>
+                                                <a class="d_level2_new">
+                                                    <span class="d_input">
+                                                        <input type="checkbox" checked="" name="checkgroup" value="2" >
+                                                        <label for="c1" class="checkboxOn"></label>
+                                                    </span>
+                                                    <span class="word1_02"><b>二级科室</b></span>
+                                                </a>
+                                           </li>
+                                            <li>
+                                                <a class="d_level2_new">
+                                                    <span class="d_input">
+                                                        <input type="checkbox" checked="" name="checkgroup" value="2" >
+                                                        <label for="c1" class="checkboxOff"></label>
+                                                    </span>
+                                                    <span class="word1_02"><b>二级科室</b></span>
+                                                </a>
+                                           </li>
+                                            <li>
+                                                <a class="d_level2_new">
+                                                    <span class="d_input">
+                                                        <input type="checkbox" checked="" name="checkgroup" value="2" >
+                                                        <label for="c1" class="checkboxOn"></label>
+                                                    </span>
+                                                    <span class="word1_02"><b>二级科室</b></span>
+                                                </a>
+                                           </li>
+                                        </ul>
+                                <!-- 级别二 end-->
+                                    </li>
+                                    <li>
+                                        <a class="d_level1">
+                                           <span id="handlerbr2" class="gather" onclick="javascript:toggle('handlerbr2', 'contentbr2', 'gather', 'spread');"></span>
+                                            <span class="d_input">
+                                                <input type="checkbox" checked="" name="checkgroup" value="1" >
+                                                <label for="c1" class="checkboxOff"></label>
+                                            </span>
+                                            <span class="word1"><b>男科</b></span>
+                                            <span class="span_line"></span>
+                                        </a>
+                                <!-- 级别二 start-->
+                                        <ul id="contentbr2" style="display:none;">
+                                            <li>
+                                                <a class="d_level2_new">
+                                                    <span class="d_input">
+                                                        <input type="checkbox" checked="" name="checkgroup" value="2" >
+                                                        <label for="c1" class="checkboxOn"></label>
+                                                    </span>
+                                                    <span class="word1_02"><b>二级男科</b></span>
+                                                </a>
+                                           </li>
+                                            <li>
+                                                <a class="d_level2_new">
+                                                    <span class="d_input">
+                                                        <input type="checkbox" checked="" name="checkgroup" value="2" >
+                                                        <label for="c1" class="checkboxOff"></label>
+                                                    </span>
+                                                    <span class="word1_02"><b>二级男科</b></span>
+                                                </a>
+                                           </li>
+                                            <li>
+                                                <a class="d_level2_new">
+                                                    <span class="d_input">
+                                                        <input type="checkbox" checked="" name="checkgroup" value="2" >
+                                                        <label for="c1" class="checkboxOn"></label>
+                                                    </span>
+                                                    <span class="word1_02"><b>二级男科</b></span>
+                                                </a>
+                                           </li>
+                                        </ul>
+                                <!-- 级别二 end-->
+                                    </li>
+                                </ul>
+                            <!-- 级别一 end-->
+                            </div>
+                            <!--定向浏览行为 级别内容 end-->
+                            </div>
+                        </div>
+                        
+            </div>   
+            <!--公共按钮-->
+                <div id="touf_kes_btn" align="center" class="c_btn"><ol class="select_re_ol"><li><a href="javascript:$UE.close('select_keshi');">确定</a></li></ol></div>
+        </div>
+    </div>
+</div>

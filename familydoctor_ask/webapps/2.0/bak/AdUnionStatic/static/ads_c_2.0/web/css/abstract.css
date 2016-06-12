@@ -1,0 +1,23 @@
+/* CSS Document */
+/* 当前所在的位置以及状态 */
+.abstract{ width:100%; margin:10px 0;overflow:hidden; padding-top:16px; _clear:both;}
+.abstract_pinpai{ width:100%; margin:10px 0;overflow:hidden; }
+.abstract a{ color:#00F;}
+.abstract ul{ overflow:hidden;}
+.abstract ul li{ display:block; float:left;height:28px;  line-height:28px;}
+.abstract1 ul li.lia,.abstract2 ul li.lia{ width:100%;}
+.abstract1 ul li.lia1{ width:20%;}
+.abstract1 ul li span{ margin:0 3px;}
+
+.abstract ul li p{ display:inline; margin-right:30px; background:url(/static/ads_c_2.0/web/images/t_point.jpg) no-repeat 0 5px; padding-left:10px;}
+.abstract ul li a{ margin:0 5px; color:#00F;}
+.abs_tt{ position:relative;}
+.abs_tt a,.abs_tt a:link{ color:#0033cc;}
+.abs_tt a:active{ outline:none;}
+.abs_tt a.new_right,.abs_tt a.new_right:link{ position:absolute; right:0;color:#0033cc;}
+/* 添加推广计划按钮 */
+.addpromotion{ color:#FFF; margin-bottom:10px;}
+.add_no_bottom{margin-bottom:0px;}
+.addpromotion a,.addpromotion a:link{text-align:center;color:#FFF; background:#4a74ca; padding:5px 10px; margin-right:20px;}
+.addpromotion a:hover{ text-decoration:none;}
+

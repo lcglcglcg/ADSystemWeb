@@ -1,0 +1,40 @@
+<li class="s_li" id="s_li_rg"><a class="btn_large" onclick="$UE.openInfo('openTestb3','defiend_contb1');" id="openTestb3"><span>自定义列</span><b></b></a> 
+    <div class="ul_defined" style="display:none;" id="defiend_contb1">
+        <div class="defined_tt"><b>自定义列</b><a href="#">恢复默认</a><span>已选择[14/18]</span></div>
+        <ol class="text_left">
+          <li><input name="" type="checkbox" value="" />基本信息</li>
+          <li class="de_lib de_lipad"><input name="" type="checkbox" value="" />推广计划</li>
+          <li class="de_lib"><input name="" type="checkbox" value="" />状态</li>
+        </ol>
+        <ol class="text_left">
+          <li><input name="" type="checkbox" value="" />基本数据</li>
+          <li class="de_lia de_lipad"><input name="" type="checkbox" value="" />每日预算</li>
+          <li class="de_lia"><input name="" type="checkbox" value="" />展现次数</li>
+          <li class="de_lia"><input name="" type="checkbox" value="" />点击次数</li>
+          <li class="de_lia"><input name="" type="checkbox" value="" />点击率数</li>
+          <li class="de_lia de_lipad"><input name="" type="checkbox" value="" />平均点击价格</li>
+          <li class="de_lia"><input name="" type="checkbox" value="" />总消费</li>
+          <li class="de_lia"><input name="" type="checkbox" value="" />千次展现成本</li>
+      </ol>
+        <ol class="text_left">
+          <li><input name="" type="checkbox" value="" />对话分析</li>
+          <li class="de_lib de_lipad"><input name="" type="checkbox" value="" />对话量</li>
+          <li class="de_lib"><input name="" type="checkbox" value="" />对话转化率</li>
+          <li class="de_lib"><input name="" type="checkbox" value="" />对话成本</li>
+      </ol>
+        <ol class="text_left">
+
+          <li><input name="" type="checkbox" value="" />预约分析</li>
+          <li class="de_lib de_lipad"><input name="" type="checkbox" value="" />预约量</li>
+          <li class="de_lib"><input name="" type="checkbox" value="" />对话预约率</li>
+          <li class="de_lib"><input name="" type="checkbox" value="" />预约成本</li>
+      </ol>
+        <ol class="text_left">
+          <li><input name="" type="checkbox" value="" />到诊分析</li>
+          <li class="de_lib de_lipad"><input name="" type="checkbox" value="" />到诊量</li>
+          <li class="de_lib"><input name="" type="checkbox" value="" />预约到诊率</li>
+          <li class="de_lib"><input name="" type="checkbox" value="" />到诊成本</li>
+      </ol>
+      <ol class="defined_btn"><li><a class="ture" id="idBtn_close" onClick="$UE.close('defiend_cont');">确定</a><a href="#">取消</a></li></ol>
+    </div>
+  </li>

@@ -1,0 +1,56 @@
+/* CSS Document */
+/* title 标题 */
+.notice_box{width:462px;background:#FFF; border:1px solid #23b7fa;}
+.notice_box .notice_title{width:447px; height:31px; line-height:31px; background:url(/static/ads_c_2.0/web/images/pub_bg.gif) repeat-x 0 -200px; padding-left:15px;}
+.notice_box .notice_title b{ float:left;}
+.notice_box .notice_title span{ float:right; padding:7px 10px 0 0;}
+/* notice_cont  */
+.notice_box .notice_main{ height:auto;padding:10px; background:#FFF;}
+.notice_cont{width:442px;} 
+.gz_congt_new{height:auto; overflow:hidden;}
+.gz_congt_new ul li.gz_new_lilf{ line-height:24px; float:left;width:100px; text-align:right;}
+.gz_congt_new ul li.gz_new_lirg{ line-height:24px;float:right; width:340px; word-wrap:break-word;}
+
+.notice_cont .cont_lf{ float:left; width:100px; text-align:right;}
+.notice_cont .cont_rg{ float:right; width:340px;}
+.notice_cont .cont_rg ol li{ display:inline; float:left; width:100%; line-height:24px;}
+.notice_cont .notice_cont_tt{ text-align:center; width:400px; margin:0 auto; margin-bottom:10px; background:#ffffcb; border:1px solid #ffe5b1; color:#219320; font-weight:bold;}
+/* c_btn 一个按钮居中 */
+.c_btn{ clear:both; height:22px ; padding-top:20px;}
+.c_btn ul{ width:462px; height:22px;}
+.c_btn ul li{ width:60px; height:22px;}
+.c_btn ul.c_paste_ulbtn{ width:120px; margin:0 auto;}
+.c_btn ul.c_paste_ulbtn li{ float:left;}
+.c_btn ul li a{ display:block; width:50px; height:22px; line-height:22px; float:left; text-align:center; font-weight:bold; background:url(/static/ads_c_2.0/web/images/icon.gif) no-repeat 0 -300px;}
+.c_btn ul li a:link,.c_btn ul li a:visited{ color:#000; font-weight:bold;text-decoration:none;}
+.c_btn ul li a:hover{ background:url(/static/ads_c_2.0/web/images/icon.gif) no-repeat 0 -250px; font-weight:bold;color:#FFF; text-decoration:none;}
+
+/* notice公告信息更多 */
+.main{margin: auto;width:1000px;}
+.cw_main{ width:978px;border-top:none; min-height:460px; padding:0 10px;}
+.financial_cont{ width:100%;}
+/* 描述信息内容----------开始 */
+.conditions{width:970px; background:#FFF; padding:20px 10px 0 0px;margin:0 auto;}
+.conditions ol{ height:22px;overflow:hidden; padding-bottom:5px;}
+.conditions ol li{ display:block; height:22px; line-height:22px; float:left;}
+.conditions ol li.cw_w100{ width:100px; overflow:hidden;}
+.conditions ol li.padl{ margin-left:7px;}
+.conditions ol li .input_liushui{ width:300px;}
+.conditions ol li a:link,.conditions ol li a:visited{ display:block; width:62px; height:19px; text-align:center; line-height:20px; color:#000; font-weight:bold; background:url(/static/ads_c_2.0/web/images/icon.gif) no-repeat 0 -150px; text-decoration:none;}
+.conditions ol li a:hover{ color:#ab0000; font-weight:bold; text-decoration:none;}
+/* 描述信息内容----------结束 */
+/* 公告信息---列表内容-------开始 */
+.content_list{ width:976px; border:1px solid #ABE4FE;overflow:hidden; min-height:200px;}
+.content_list ul{ clear:both; height:28px; border-bottom:1px solid #ABE4FE;}
+.content_list ul.t_line{ height:28px; background:#e8f4fa;}
+.content_list ul li{ display:block; float:left; height:28px; line-height:28px;}
+.content_list ul li.f_bold{ font-weight:bold; padding-left:20px;}
+.content_list ul li.f_center{ text-align:left;}
+.content_list ul li.w670{ width:670px;overflow: hidden; padding-left:20px;}
+.content_list ul li.w670 a,.content_list ul li.w670 a:link{ color:#00F;}
+.content_list ul li.w670 a.gg_title_visited{ color:#993333;text-decoration:none;}
+.content_list ul li.w260{ width:260px;overflow: hidden; padding-left:20px;}
+/* 公告信息---列表内容-----结束 */
+.c_select_pad1{ padding-top:2px;}
+.c_select_pad2{ margin-top:5px;}
+.c_select_01{ width:280px;}

@@ -1,0 +1,457 @@
+<div class="D_box" id="account_zz" style="display:none;">
+    <div class="d_title"><b><strong>查找资质</strong></b><span><input name="close_bnt" type="image" src="/static/ads_m_1.0/web/images/view_close.gif" onClick="$UE.close('account_zz');"></span></div>
+	<div class="main_cont"> 
+  	<div class="main_tt">
+   	  <ol>
+        <li class="w90"></li>
+   	    <li id="linka1" class="li_hover" onClick="clickTxt(1,'linka','conta','li_hover',2)">职业许可证</li>
+   	    <li id="linka2" onClick="clickTxt(2,'linka','conta','li_hover',2)">营业执照</li>
+   	    <li class="w90"></li>
+      </ol>
+    </div>
+  <div class="d_main" id="conta1" style="dis play:none;">
+	<div class="anniu"><a id="titlea1" onClick="clickqie(1,'titlea','contenta',4)">1</a> <a id="titlea2" onClick="clickqie(2,'titlea','contenta',4)">2</a> <a id="titlea3" onClick="clickqie(3,'titlea','contenta',4)">3</a> <a id="titlea4" onClick="clickqie(4,'titlea','contenta',4)">4</a></div>
+  	<div id="contenta1" style="disp lay:none;">
+  	<div class="d_main_lf">
+    	<ul>
+            <li class="tijiao"><span class="block">资质待审核</span></li>
+            <li><span class="red">*</span> 资质文件登记号：</li>
+            <li><span class="red">*</span> 资质机构名称：</li>
+            <li><span class="red">*</span> 地址：</li>
+            <li>所有制形式：</li>
+            <li>机构类别：</li>
+            <li>经营性质：</li>
+            <li>注册资金（单元：万元）：</li>
+            <li><span class="red">*</span> 法定代表人：</li>
+            <li><span class="red">*</span> 主要负责人：</li>
+            <li><span class="red">*</span> 有效期限：（起止日期）：</li>
+            <li><span class="red">*</span> 发证机关或登记机关：</li>
+            <li><span class="red">*</span> 发证日期：</li>
+            <li class="zz_h50"><span class="red">*</span> 诊疗科目：</li>
+            <li><span class="red">*</span> 资质文件：</li>
+            <li><span class="red">*</span> 最近效检日期：</li>
+            <li><span class="red">*</span> 最近效检凭证文件：</li>
+        </ul>
+    </div>
+  	<div class="d_main_rg">
+    	<ol>
+            <li><div class="anniu1"><a onClick="javascript:$UE.alert('审核通过成功！','clickqie(3,\'titlea\',\'contenta\',4)');">审核通过</a><a onClick="javascript:$UE.alert('审核拒绝成功！','clickqie(2,\'titlea\',\'contenta\',4)');">审核拒绝</a></div></li>
+            <li>PDY1007411010116A2102</li>
+            <li>北京万国中医医</li>
+            <li>北京市东城区香河园路甲3号（1号楼）</li>
+            <li>合伙制</li>
+            <li>中医（综合）医院</li>
+            <li>营利性</li>
+            <li>100</li>
+            <li>朱霖</li>
+            <li>姜永</li>
+            <li>自 2011年01月01日 至 2013年12月31日</li>
+            <li>东城区卫生局</li>
+            <li>2011年01月01日</li>
+            <li class="zz_h50">
+              <div class="text04">内科/外科/妇产科；计划生育专业/口腔科/医学检查科/医学影像科 中医科；内科专业；外科专业；妇产科专业；皮肤科专业；眼科专业；耳鼻咽喉科专业；肿瘤科专业；骨科专业******
+            </div></li>
+            <li class="lianjie"><a href="zizhi.shtml" target="_blank">点击查看</a></li>
+            <li>2011-12-28</li>
+            <li class="lianjie"><a href="pingzheng.shtml" target="_blank">点击查看</a></li>
+        </ol>
+    </div>
+	<div class="zz_btn" align="center"><ol><li><a onClick="$UE.close('account_zz');">关闭窗口</a></li></ol></div>
+  </div>
+  	<div id="contenta2" style="display:none;">
+  	<div class="d_main_lf">
+    	<ul>
+            <li class="tijiao"><span class="red">资质审核无效</span></li>
+            <li><span class="red">*</span> 资质文件登记号：</li>
+            <li><span class="red">*</span> 资质机构名称：</li>
+            <li><span class="red">*</span> 地址：</li>
+            <li>所有制形式：</li>
+            <li>机构类别：</li>
+            <li>经营性质：</li>
+            <li>注册资金（单元：万元）：</li>
+            <li><span class="red">*</span> 法定代表人：</li>
+            <li><span class="red">*</span> 主要负责人：</li>
+            <li><span class="red">*</span> 有效期限：（起止日期）：</li>
+            <li><span class="red">*</span> 发证机关或登记机关：</li>
+            <li><span class="red">*</span> 发证日期：</li>
+            <li class="zz_h50"><span class="red">*</span> 诊疗科目：</li>
+            <li><span class="red">*</span> 资质文件：</li>
+            <li><span class="red">*</span> 最近效检日期：</li>
+            <li><span class="red">*</span> 最近效检凭证文件：</li>
+        </ul>
+    </div>
+  	<div class="d_main_rg">
+    	<ol>
+            <li><div class="anniu1"><a onClick="javascript:$UE.alert('审核通过成功！','clickqie(3,\'titlea\',\'contenta\',4)');">审核通过</a></div></li>
+            <li><input name="" type="text" value="PDY1007411010116A2102" /></li>
+            <li><input name="" type="text" value="北京万国中医医院" /></li>
+            <li><input name="" type="text" value="北京市东城区香河园路甲3号（1号楼）" /></li>
+            <li><input name="" type="text" value="合伙制" /></li>
+            <li><input name="" type="text" value="中医（综合）医院" /></li>
+            <li><input name="" type="text" value="营利性" /></li>
+            <li><input name="" type="text" value="100" /></li>
+            <li><input name="" type="text" value="朱霖" /></li>
+            <li><input name="" type="text" value="姜永" /></li>
+            <li><input name="" type="text" class="input_01" value="2011-01-01/2013-12-31" /><input name="" type="image" src="static/ads_m_1.0/web/images/calendar.gif"  style="width:23px; height:18px;" class="input_02"/></li>
+            <li><input name="" type="text" value="东城区卫生局" /></li>
+            <li><input name="" type="text" class="input_01" value="2011-01-01" /><input name="" type="image" src="static/ads_m_1.0/web/images/calendar.gif"  style="width:23px; height:18px;" class="input_02"/></li>
+            <li class="zz_h50">
+              <textarea name="" cols="" rows="" class="select_in2"/>内科/外科/妇产科；计划生育专业/口腔科/医学检查科/医学影像科 中医科；内科专业；外科专业；妇产科专业；皮肤科专业；眼科专业；耳鼻咽喉科专业；肿瘤科专业；骨科专业******
+            </textarea></li>
+            <li><input name="" type="text" class="input_03"/><a href="#">浏览</a><a href="#">上传</a></li>
+            <li><input name="" type="text" class="input_01" value="2011-12-28" /><input name="" type="image" src="static/ads_m_1.0/web/images/calendar.gif"  style="width:23px; height:18px;" class="input_02"/></li>
+            <li><input name="" type="text" class="input_03"/><a href="#">浏览</a><a href="#">上传</a></li>
+        </ol>
+    </div>
+	<div class="zz_btn" align="center"><ol><li><a onClick="$UE.close('account_zz');">关闭窗口</a></li></ol></div>
+  </div>
+  	<div id="contenta3" style="display:none;">
+  	<div class="d_main_lf">
+    	<ul>
+            <li class="tijiao"><span class="green">资质正常生效</span></li>
+            <li><span class="red">*</span> 资质文件登记号：</li>
+            <li><span class="red">*</span> 资质机构名称：</li>
+            <li><span class="red">*</span> 地址：</li>
+            <li>所有制形式：</li>
+            <li>机构类别：</li>
+            <li>经营性质：</li>
+            <li>注册资金（单元：万元）：</li>
+            <li><span class="red">*</span> 法定代表人：</li>
+            <li><span class="red">*</span> 主要负责人：</li>
+            <li><span class="red">*</span> 有效期限：（起止日期）：</li>
+            <li><span class="red">*</span> 发证机关或登记机关：</li>
+            <li><span class="red">*</span> 发证日期：</li>
+            <li class="zz_h50"><span class="red">*</span> 诊疗科目：</li>
+            <li><span class="red">*</span> 资质文件：</li>
+            <li><span class="red">*</span> 最近效检日期：</li>
+            <li><span class="red">*</span> 最近效检凭证文件：</li>
+        </ul>
+    </div>
+  	<div class="d_main_rg">
+    	<ol>
+            <li><div class="anniu1"><a onClick="javascript:$UE.alert('审核拒绝成功！','clickqie(2,\'titlea\',\'contenta\',4)');">审核拒绝</a></div></li>
+            <li>PDY1007411010116A2102</li>
+            <li>北京万国中医医</li>
+            <li>北京市东城区香河园路甲3号（1号楼）</li>
+            <li>合伙制</li>
+            <li>中医（综合）医院</li>
+            <li>营利性</li>
+            <li>100</li>
+            <li>朱霖</li>
+            <li>姜永</li>
+            <li>自 2011年01月01日 至 2013年12月31日</li>
+            <li>东城区卫生局</li>
+            <li>2011年01月01日</li>
+            <li class="zz_h50">
+              <div class="text04">内科/外科/妇产科；计划生育专业/口腔科/医学检查科/医学影像科 中医科；内科专业；外科专业；妇产科专业；皮肤科专业；眼科专业；耳鼻咽喉科专业；肿瘤科专业；骨科专业******
+            </div></li>
+            <li class="lianjie"><a href="zizhi.shtml" target="_blank">点击查看</a></li>
+            <li>2011-12-28</li>
+            <li class="lianjie"><a href="pingzheng.shtml" target="_blank">点击查看</a></li>
+        </ol>
+    </div>
+  </div>
+  	<div id="contenta4" style="display:none;">
+  	<div class="d_main_lf">
+    	<ul>
+            <li class="tijiao"><span class="wine">资质过期失效</span></li>
+            <li><span class="red">*</span> 资质文件登记号：</li>
+            <li><span class="red">*</span> 资质机构名称：</li>
+            <li><span class="red">*</span> 地址：</li>
+            <li>所有制形式：</li>
+            <li>机构类别：</li>
+            <li>经营性质：</li>
+            <li>注册资金（单元：万元）：</li>
+            <li><span class="red">*</span> 法定代表人：</li>
+            <li><span class="red">*</span> 主要负责人：</li>
+            <li><span class="red">*</span> 有效期限：（起止日期）：</li>
+            <li><span class="red">*</span> 发证机关或登记机关：</li>
+            <li><span class="red">*</span> 发证日期：</li>
+            <li class="zz_h50"><span class="red">*</span> 诊疗科目：</li>
+            <li><span class="red">*</span> 资质文件：</li>
+            <li><span class="red">*</span> 最近效检日期：</li>
+            <li><span class="red">*</span> 最近效检凭证文件：</li>
+        </ul>
+    </div>
+  	<div class="d_main_rg">
+    	<ol>
+            <li>&nbsp;</li>
+            <li>PDY1007411010116A2102</li>
+            <li>北京万国中医医</li>
+            <li>北京市东城区香河园路甲3号（1号楼）</li>
+            <li>合伙制</li>
+            <li>中医（综合）医院</li>
+            <li>营利性</li>
+            <li>100</li>
+            <li>朱霖</li>
+            <li>姜永</li>
+            <li>自 2011年01月01日 至 2013年12月31日</li>
+            <li>东城区卫生局</li>
+            <li>2011年01月01日</li>
+            <li class="zz_h50">
+              <div class="text04">内科/外科/妇产科；计划生育专业/口腔科/医学检查科/医学影像科 中医科；内科专业；外科专业；妇产科专业；皮肤科专业；眼科专业；耳鼻咽喉科专业；肿瘤科专业；骨科专业******
+            </div></li>
+            <li class="lianjie"><a href="zizhi.shtml" target="_blank">点击查看</a></li>
+            <li>2011-12-28</li>
+            <li class="lianjie"><a href="pingzheng.shtml" target="_blank">点击查看</a></li>
+        </ol>
+    </div>
+  </div>
+  </div>
+  <div class="d_main" id="conta2" style="display:none;">
+	<div class="anniu"><a id="titleb1" onClick="clickqie(1,'titleb','contentb',4)">1</a> <a id="titleb2" onClick="clickqie(2,'titleb','contentb',4)">2</a> <a id="titleb3" onClick="clickqie(3,'titleb','contentb',4)">3</a> <a id="titleb4" onClick="clickqie(4,'titleb','contentb',4)">4</a></div>
+  	<div id="contentb1" style="disp lay:none;">
+  	<div class="d_main_lf">
+    	<ul>
+            <li class="tijiao"><span class="block">资质待审核</span></li>
+            <li><span class="red">*</span> 资质文件编号或注册号：</li>
+            <li><span class="red">*</span> 资质主题名称：</li>
+            <li><span class="red">*</span> 企业住所或经营场所：</li>
+            <li><span class="red">*</span> 法定代表人或合伙人姓名：</li>
+            <li>注册资金（单元：万元）：</li>
+            <li><span class="red">*</span> 企业类型：</li>
+            <li class="zz_h50"><span class="red">*</span> 经营范围或方式：</li>
+            <li>成立日期：</li>
+            <li>营业期限（起止日期）：</li>
+            <li><span class="red">*</span> 年检有效期限至：</li>
+            <li><span class="red">*</span> 发证机关或登记机关：</li>
+            <li><span class="red">*</span> 发照日期：</li>
+            <li><span class="red">*</span> 资质文件(封皮)：</li>
+            <li><span class="red">*</span> 资质文件(主体页)：</li>
+        </ul>
+    </div>
+  	<div class="d_main_rg">
+    	<ol>
+            <li><div class="anniu1"><a onClick="javascript:$UE.alert('审核通过成功！','clickqie(3,\'titleb\',\'contentb\',4)');">审核通过</a><a onClick="javascript:$UE.alert('审核拒绝成功！','clickqie(2,\'titleb\',\'contentb\',4)');">审核拒绝</a></div></li>
+            <li><input name="" type="text" /></li>
+            <li><input name="" type="text" /></li>
+            <li><input name="" type="text" /></li>
+            <li><input name="" type="text" /></li>
+            <li><input name="" type="text" /></li>
+            <li><input name="" type="text" /></li>
+            <li class="zz_h50"><textarea name="" cols="" rows="" class="select_in2"/></textarea></li>
+            <li><input name="" type="text" class="input_01" /><input name="" type="image" src="static/ads_m_1.0/web/images/calendar.gif"  style="width:23px; height:18px;" class="input_02"/></li>
+            <li><input name="" type="text" class="input_01" /><input name="" type="image" src="static/ads_m_1.0/web/images/calendar.gif"  style="width:23px; height:18px;" class="input_02"/></li>
+            <li><input name="" type="text" class="input_01" /><input name="" type="image" src="static/ads_m_1.0/web/images/calendar.gif"  style="width:23px; height:18px;" class="input_02"/></li>
+            <li><input name="" type="text" /></li>
+            <li><input name="" type="text" class="input_01" /><input name="" type="image" src="static/ads_m_1.0/web/images/calendar.gif"  style="width:23px; height:18px;" class="input_02"/></li>
+            <li><input name="" type="text" class="input_03"/><a href="#">浏览</a><a href="#">上传</a></li>
+            <li><input name="" type="text" class="input_03"/><a href="#">浏览</a><a href="#">上传</a></li>
+        </ol>
+    </div>
+	<div class="zz_btn" align="center"><ol><li><a onClick="$UE.close('account_zz');">关闭窗口</a></li></ol></div>
+    </div>
+  	<div id="contentb2" style="display:none;">
+  	<div class="d_main_lf">
+    	<ul>
+            <li class="tijiao"><span class="red">资质审核无效</span></li>
+            <li><span class="red">*</span> 资质文件编号或注册号：</li>
+            <li><span class="red">*</span> 资质主题名称：</li>
+            <li><span class="red">*</span> 企业住所或经营场所：</li>
+            <li><span class="red">*</span> 法定代表人或合伙人姓名：</li>
+            <li>注册资金（单元：万元）：</li>
+            <li><span class="red">*</span> 企业类型：</li>
+            <li class="zz_h50"><span class="red">*</span> 经营范围或方式：</li>
+            <li>成立日期：</li>
+            <li>营业期限（起止日期）：</li>
+            <li><span class="red">*</span> 年检有效期限至：</li>
+            <li><span class="red">*</span> 发证机关或登记机关：</li>
+            <li><span class="red">*</span> 发照日期：</li>
+            <li><span class="red">*</span> 资质文件(封皮)：</li>
+            <li><span class="red">*</span> 资质文件(主体页)：</li>
+        </ul>
+    </div>
+  	<div class="d_main_rg">
+    	<ol>
+            <li><div class="anniu1"><a onClick="javascript:$UE.alert('审核通过成功！','clickqie(3,\'titleb\',\'contentb\',4)');">审核通过</a></div></li>
+            <li><input name="" type="text" value="110101011769350" /></li>
+            <li><input name="" type="text" value="北京万国中医院医院（普通合伙）" /></li>
+            <li><input name="" type="text" value="北京市东城区香河园街甲" /></li>
+            <li><input name="" type="text" value="朱霖" /></li>
+            <li><input name="" type="text" /></li>
+            <li><input name="" type="text" value="普通合伙企业" /></li>
+            <li class="zz_h50">
+              <textarea name="" cols="" rows="" class="select_in2"/>内科/外科/妇产科；计划生育专业/口腔科/医学检查科/医学影像科 中医科；内科专业；外科专业；妇产科专业；皮肤科专业；眼科专业；耳鼻咽喉科专业；肿瘤科专业；骨科专业、肛肠科专业、推拿科专业、康复医学专业
+            </textarea></li>
+            <li><input name="" type="text" class="input_01" /><input name="" type="image" src="static/ads_m_1.0/web/images/calendar.gif"  style="width:23px; height:18px;" class="input_02"/></li>
+            <li><input name="" type="text" class="input_01" /><input name="" type="image" src="static/ads_m_1.0/web/images/calendar.gif"  style="width:23px; height:18px;" class="input_02"/></li>
+            <li><input name="" type="text" class="input_01" value="2013-03-28" /><input name="" type="image" src="static/ads_m_1.0/web/images/calendar.gif"  style="width:23px; height:18px;" class="input_02"/></li>
+            <li><input name="" type="text" value="北京市工商行政管理局东城分局" /></li>
+            <li><input name="" type="text" class="input_01" value="2012-03-21" /><input name="" type="image" src="static/ads_m_1.0/web/images/calendar.gif"  style="width:23px; height:18px;" class="input_02"/></li>
+            <li><input name="" type="text" class="input_03"/><a href="#">浏览</a><a href="#">上传</a></li>
+            <li><input name="" type="text" class="input_03"/><a href="#">浏览</a><a href="#">上传</a></li>
+        </ol>
+    </div>
+	<div class="zz_btn" align="center"><ol><li><a onClick="$UE.close('account_zz');">关闭窗口</a></li></ol></div>
+    </div>
+  	<div id="contentb3" style="display:none;">
+  	<div class="d_main_lf">
+    	<ul>
+            <li class="tijiao"><span class="green">资质正常生效</span></li>
+            <li><span class="red">*</span> 资质文件编号或注册号：</li>
+            <li><span class="red">*</span> 资质主题名称：</li>
+            <li><span class="red">*</span> 企业住所或经营场所：</li>
+            <li><span class="red">*</span> 法定代表人或合伙人姓名：</li>
+            <li>注册资金（单元：万元）：</li>
+            <li><span class="red">*</span> 企业类型：</li>
+            <li class="zz_h50"><span class="red">*</span> 经营范围或方式：</li>
+            <li>成立日期：</li>
+            <li>营业期限（起止日期）：</li>
+            <li><span class="red">*</span> 年检有效期限至：</li>
+            <li><span class="red">*</span> 发证机关或登记机关：</li>
+            <li><span class="red">*</span> 发照日期：</li>
+            <li><span class="red">*</span> 资质文件(封皮)：</li>
+            <li><span class="red">*</span> 资质文件(主体页)：</li>
+        </ul>
+    </div>
+  	<div class="d_main_rg">
+    	<ol>
+            <li><div class="anniu1"><a onClick="javascript:$UE.alert('审核拒绝成功！','clickqie(2,\'titleb\',\'contentb\',4)');">审核拒绝</a></div></li>
+            <li>110101011769350</li>
+            <li>北京万国中医院医院（普通合伙）</li>
+            <li>北京市东城区香河园街甲</li>
+            <li>朱霖</li>
+            <li>--</li>
+            <li>&nbsp;</li>
+            <li class="zz_h50">
+              <div class="text04">内科/外科/妇产科；计划生育专业/口腔科/医学检查科/医学影像科 中医科；内科专业；外科专业；妇产科专业；皮肤科专业；眼科专业；耳鼻咽喉科专业；肿瘤科专业；骨科专业******
+            </div></li>
+            <li>--</li>
+            <li>--</li>
+            <li>2013年03月28日</li>
+            <li>北京市工商行政管理局东城分局</li>
+            <li>2012年03月21日</li>
+            <li class="lianjie"><a href="fengpi.shtml" target="_blank">点击查看</a></li>
+            <li class="lianjie"><a href="zhuti.shtml" target="_blank">点击查看</a></li>
+        </ol>
+    </div>
+    </div>
+  	<div id="contentb4" style="display:none;">
+  	<div class="d_main_lf">
+    	<ul>
+            <li class="tijiao"><span class="wine">资质拒绝失效</span></li>
+            <li><span class="red">*</span> 资质文件编号或注册号：</li>
+            <li><span class="red">*</span> 资质主题名称：</li>
+            <li><span class="red">*</span> 企业住所或经营场所：</li>
+            <li><span class="red">*</span> 法定代表人或合伙人姓名：</li>
+            <li>注册资金（单元：万元）：</li>
+            <li><span class="red">*</span> 企业类型：</li>
+            <li class="zz_h50"><span class="red">*</span> 经营范围或方式：</li>
+            <li>成立日期：</li>
+            <li>营业期限（起止日期）：</li>
+            <li><span class="red">*</span> 年检有效期限至：</li>
+            <li><span class="red">*</span> 发证机关或登记机关：</li>
+            <li><span class="red">*</span> 发照日期：</li>
+            <li><span class="red">*</span> 资质文件(封皮)：</li>
+            <li><span class="red">*</span> 资质文件(主体页)：</li>
+        </ul>
+    </div>
+  	<div class="d_main_rg">
+    	<ol>
+            <li>&nbsp;</li>
+            <li>110101011769350</li>
+            <li>北京万国中医院医院（普通合伙）</li>
+            <li>北京市东城区香河园街甲</li>
+            <li>朱霖</li>
+            <li>--</li>
+            <li>&nbsp;</li>
+            <li class="zz_h50">
+              <div class="text04">内科/外科/妇产科；计划生育专业/口腔科/医学检查科/医学影像科 中医科；内科专业；外科专业；妇产科专业；皮肤科专业；眼科专业；耳鼻咽喉科专业；肿瘤科专业；骨科专业******
+            </div></li>
+            <li>--</li>
+            <li>--</li>
+            <li>2013年03月28日</li>
+            <li>北京市工商行政管理局东城分局</li>
+            <li>2012年03月21日</li>
+            <li class="lianjie"><a href="fengpi.shtml" target="_blank">点击查看</a></li>
+            <li class="lianjie"><a href="zhuti.shtml" target="_blank">点击查看</a></li>
+        </ol>
+    </div>
+    </div>
+  	<div id="contentb5" style="display:none;">
+  	<div class="d_main_lf">
+    	<ul>
+            <li class="tijiao"><span class="red">资质审核无效</span></li>
+            <li><span class="red">*</span> 资质文件编号或注册号：</li>
+            <li><span class="red">*</span> 资质主题名称：</li>
+            <li><span class="red">*</span> 企业住所或经营场所：</li>
+            <li><span class="red">*</span> 法定代表人或合伙人姓名：</li>
+            <li>注册资金（单元：万元）：</li>
+            <li><span class="red">*</span> 企业类型：</li>
+            <li class="zz_h50"><span class="red">*</span> 经营范围或方式：</li>
+            <li>成立日期：</li>
+            <li>营业期限（起止日期）：</li>
+            <li><span class="red">*</span> 年检有效期限至：</li>
+            <li><span class="red">*</span> 发证机关或登记机关：</li>
+            <li><span class="red">*</span> 发照日期：</li>
+            <li><span class="red">*</span> 资质文件(封皮)：</li>
+            <li><span class="red">*</span> 资质文件(主体页)：</li>
+        </ul>
+    </div>
+  	<div class="d_main_rg">
+    	<ol>
+            <li><div class="anniu1"><a id="titleb2" onClick="clickqie(2,'titleb','contentb',6)">修改</a></div></li>
+            <li>110101011769350</li>
+            <li>北京万国中医院医院（普通合伙）</li>
+            <li>北京市东城区香河园街甲</li>
+            <li>朱霖</li>
+            <li>--</li>
+            <li>&nbsp;</li>
+            <li class="zz_h50">
+              <div class="text04">内科/外科/妇产科；计划生育专业/口腔科/医学检查科/医学影像科 中医科；内科专业；外科专业；妇产科专业；皮肤科专业；眼科专业；耳鼻咽喉科专业；肿瘤科专业；骨科专业******
+            </div></li>
+            <li>--</li>
+            <li>--</li>
+            <li>2013年03月28日</li>
+            <li>北京市工商行政管理局东城分局</li>
+            <li>2012年03月21日</li>
+            <li class="lianjie"><a href="fengpi.shtml" target="_blank">点击查看</a></li>
+            <li class="lianjie"><a href="zhuti.shtml" target="_blank">点击查看</a></li>
+        </ol>
+    </div>
+    </div>
+  	<div id="contentb6" style="display:none;">
+  	<div class="d_main_lf">
+    	<ul>
+            <li class="tijiao"><span class="wine">资质过期失效</span></li>
+            <li><span class="red">*</span> 资质文件编号或注册号：</li>
+            <li><span class="red">*</span> 资质主题名称：</li>
+            <li><span class="red">*</span> 企业住所或经营场所：</li>
+            <li><span class="red">*</span> 法定代表人或合伙人姓名：</li>
+            <li>注册资金（单元：万元）：</li>
+            <li><span class="red">*</span> 企业类型：</li>
+            <li class="zz_h50"><span class="red">*</span> 经营范围或方式：</li>
+            <li>成立日期：</li>
+            <li>营业期限（起止日期）：</li>
+            <li><span class="red">*</span> 年检有效期限至：</li>
+            <li><span class="red">*</span> 发证机关或登记机关：</li>
+            <li><span class="red">*</span> 发照日期：</li>
+            <li><span class="red">*</span> 资质文件(封皮)：</li>
+            <li><span class="red">*</span> 资质文件(主体页)：</li>
+        </ul>
+    </div>
+  	<div class="d_main_rg">
+    	<ol>
+            <li><div class="anniu1"><a id="titleb2" onClick="clickqie(2,'titleb','contentb',6)">修改</a></div></li>
+            <li>110101011769350</li>
+            <li>北京万国中医院医院（普通合伙）</li>
+            <li>北京市东城区香河园街甲</li>
+            <li>朱霖</li>
+            <li>--</li>
+            <li>&nbsp;</li>
+            <li class="zz_h50">
+              <div class="text04">内科/外科/妇产科；计划生育专业/口腔科/医学检查科/医学影像科 中医科；内科专业；外科专业；妇产科专业；皮肤科专业；眼科专业；耳鼻咽喉科专业；肿瘤科专业；骨科专业******
+            </div></li>
+            <li>--</li>
+            <li>--</li>
+            <li>2013年03月28日</li>
+            <li>北京市工商行政管理局东城分局</li>
+            <li>2012年03月21日</li>
+            <li class="lianjie"><a href="fengpi.shtml" target="_blank">点击查看</a></li>
+            <li class="lianjie"><a href="zhuti.shtml" target="_blank">点击查看</a></li>
+        </ol>
+    </div>
+    </div>
+  </div>
+</div>
+</div>

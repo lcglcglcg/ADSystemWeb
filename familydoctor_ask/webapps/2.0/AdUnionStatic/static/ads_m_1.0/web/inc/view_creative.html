@@ -1,0 +1,30 @@
+<!-- width:980px;是原图宽度(960px)+20px -->
+<div class="check_box" id="view_creative" style="display:none;width:980px;">
+ <div class="check_title_box">
+      <div class="check_title">
+        <b>查看创意</b>
+        <span><input name="close_bnt" type="image" src="/static/ads_m_1.0/web/images/view_close.gif" onClick="$UE.close('view_creative');" style="cursor:pointer;"></span>
+      </div>
+  </div>
+  <div class="check_main">
+  	<div class="check_cont">
+        <img src="/static/ads_m_1.0/web/images/p/cy_02.jpg" width="960" height="250" />
+    </div>
+    <div class="miaoshu">
+    	<p class="xia_line">经典香水瓶包装设计欣赏 平面</p>
+    	<p class="m_guige">250x250 | 20KB</p>
+    	<p class="m_web">www.zcool.com.cn</p>
+    </div>
+	<div id="check_btn_new" class="check_btn" align="center">
+    	<ol>
+        	<li class="wm_dsp_li">
+                <a id="wm_tg" href="javascript:$UE.alert('审核通过成功！','$UE.close(\'view_creative\')');">通过</a>
+                <a id="wm_refuse" href="javascript:$UE.close('view_creative');$UE.open('view_refuse2');">拒绝</a>
+                <a id="wmdsp_close" href="javascript:$UE.close('view_creative');">关闭</a>
+                <span id="no_link_tg" href="/">通过</span>
+                <span id="no_link_refuse" href="/">拒绝</span>
+            </li>
+        </ol>
+   </div>
+  </div>
+</div>

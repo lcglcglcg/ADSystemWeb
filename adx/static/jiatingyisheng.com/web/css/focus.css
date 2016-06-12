@@ -1,0 +1,21 @@
+@charset "utf-8";
+/* CSS Document */
+.jtyy_qie_box{ width:250px; height:250px; background:#fff; position:relative;font-family: "宋体"; margin:0; padding:0;}
+
+.jtyy_qie_box a.close_link{ position:absolute; right:1px; top:0px; z-index:999;display: inline-block;font-family: "宋体";overflow: hidden;text-align: center;text-decoration: none; float:left; cursor:pointer;color: #fff;}
+.jtyy_qie_box a.close_link img{ border:none;}
+
+/* focus */
+.jtyy_qie_box .focus{ width:250px; height:250px; position:relative;}
+.jtyy_qie_box .focus img{ border:none;}
+.jtyy_qie_box .l_box_bg{background: url(../images/img1.jpg); position:relative;height:250px;}
+.jtyy_qie_box .l_box_bg1{ background: url(../images/img2.jpg); position:relative;height:250px;}
+.jtyy_qie_box .l_box_bg2{ background: url(../images/img3.jpg); position:relative;height:250px;}
+
+/* 透明切换背景 */
+.jtyy_qie_box .tm_bg{ width:240px; height:12px;position:absolute; z-index:999; bottom:5px;left:5px;}
+.jtyy_qie_box .tm_btn{ height:12px; width:240px;}
+.jtyy_qie_box .tm_btn a,.tm_btn a:link{ display:block; float:left; width:12px; height:12px; text-align:center; margin-right:5px; background:#000; color:#fff; font-size:11px; line-height:12px;}
+.jtyy_qie_box .tm_btn a:hover,.jtyy_qie_box .tm_btn a.jtyy_current{ background:#636464;color:#fff;}
+.jtyy_qie_box .tm_bg img{ border:none;}
+

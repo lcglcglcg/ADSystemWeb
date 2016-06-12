@@ -1,0 +1,30 @@
+<div id="announcementListLiMenu" style="display:none;">
+	<ul class="b_line">
+        <li class="w50"><input type="checkbox" name="announcementCheckboxAll" onclick="window.announcement.selectAll.call(this);"></li>
+        <li class="w398 f_bold">公告标题</li>
+        <li class="w140 f_bold" title="CPM:非搜索引擎来路-每千次计费">预计发布日期</li>
+        <li class="w180 f_bold">创建时间</li>
+        <li class="w100 f_bold">状态</li>
+        <li class="w88 f_bold">操作</li>
+    </ul>
+</div>
+<div id="announcementListLi" style="display:none;">
+  <ul id="ul_hover1">
+    <li class="w50"><input type="checkbox" name="announcementCheckbox" value="{announcementId}"  onclick="window.announcement.selectId.call(this);"></li>
+    <li class="w398"><a name="title" value="{announcementId}" title="{announcementTitle}">{announcementTitle}</a></li>
+    <li class="w140 f_center" title="实际发布日期 {sendTime}">{sendData}</li>
+    <li class="w180 f_center" title="创建人：{createByUname}；最后一次修改时间：{lastUpdateTime}；最后一次修改人：{lastUpdateByUname}">{createTime}</li>
+    <li class="w100 f_center {stateCss}">{sendState}</li>
+    <li class="w88 f_center">{tools}</li>
+</ul>
+</div>
+<div id="announcementListLiFoot" style="display:none;">
+    <ul class="t_line">
+    	<li></li>
+    </ul>
+</div>
+<div id="announcementListLiErr" style="display:none;">
+  <ul class="t_line">
+    <li>没有符合条件的数据</li>
+  </ul>
+</div>

@@ -1,0 +1,37 @@
+<div class="update_box" id="pwd_update_step2" style="display:none;">
+<input name="PROTECT_QUESTION" type="hidden"/>
+<input name="PROTECT_ANSWER" type="hidden"/>
+  <div class="update_title"><b id="pwd_tt_name2">密保问题>修改密码</b><span><input name="close_bnt" type="image" src="/static/ads_c_2.0/web/images/step_close.gif" style="cursor:pointer;"></span></div>
+  <div class="update_main">
+  	<div class="update_cont">
+    	<p><span id="step1_name">1.密保问题验证</span> > <span class="light_blue">2.修改密码</span></p>
+    	<p class="gray">新密码至少6位，包括数字、大小写英文字母。</p>
+ <!-- 第一行--> 
+        <div class="row_01">
+            <div class="update_cont_lf"><span class="red">*</span>旧密码：</div>
+            <div class="update_cont_rg">
+            	<input name="PASS_OLD" type="password" grequired gmsgfun maxlength="16" minlength="6" class="u_input_02"/>
+            </div>
+        </div>
+ <!-- 第二行--> 
+        <div class="row_01">
+            <div class="update_cont_lf"><span class="red">*</span>新密码：</div>
+            <div class="update_cont_rg">
+            	<input name="PASS_NEW" type="password" grequired gmsgfun maxlength="16" minlength="6" class="u_input_02"/>
+            </div>
+        </div>
+ <!-- 第三行--> 
+        <div class="row_01">
+            <div class="update_cont_lf"><span class="red">*</span>再次输入新密码：</div>
+            <div class="update_cont_rg">
+            	<input name="PASS_NEW_CK" unitval=".PASS_NEW" type="password" grequired gmsgfun maxlength="16" minlength="6" class="u_input_02"/>
+            </div>
+        </div>
+  	</div>
+    <div class="a_btn" align="center">
+    	<p class="one_btn_w">
+            <a name="pwdEditSub"><span>修改密码</span></a>
+        </p>
+    </div>
+  </div>
+</div>

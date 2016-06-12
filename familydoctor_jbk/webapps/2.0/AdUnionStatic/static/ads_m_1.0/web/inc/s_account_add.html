@@ -1,0 +1,49 @@
+<div class="account_box" id="s_account_add" style="display:none;">
+  <div class="account_title"><b>新增用户</b><span><input name="close_bnt" type="image" src="/static/ads_m_1.0/web/images/view_close.gif" onClick="$UE.close('s_account_add');" style="cursor:pointer;"></span></div>
+  <div class="account_main">
+  	<div class="account_cont">
+      <div class="cont_lf">
+      	<ul>
+         	<li class="h20"><s class="red">*</s> 用户名：</li>
+        	<li class="h20"><s class="red">*</s> 登录密码：</li>
+        	<li class="h20"><s class="red">*</s> 确认密码：</li>
+        	<li class="h20"><s class="red">*</s> 姓名：</li>
+         	<li class="h20"><s class="red">*</s> 部门：</li>
+        	<li class="h20"><s class="red">*</s> 所属角色：</li>
+        	<li class="h20"><s class="red">*</s> 移动电话：</li>
+        	<li class="h20"><s class="red">*</s> 电子邮件：</li>
+      </ul>
+      </div>
+      <div class="cont_rg">
+      	<ol>
+        	<li class="h20"><input name="" type="text" class="input01" value=""></li>
+        	<li class="h20"><input name="" type="text" class="input01" value=""></li>
+        	<li class="h20"><input name="" type="text" class="input01" value="" disabled></li>
+        	<li class="h20"><input name="" type="text" class="input01" value=""></li>
+        	<li class="h20">
+               <div class="conditions_limit">
+                    <select name="khal1" style="width:220px;">
+                      <option value="1"></option>
+                    </select>
+                </div>
+          </li>
+        	<li class="h20">
+               <div class="lf">
+            		<div class="conditions_limit" id="test_btn1">
+                        <select name="khal1" style="width:220px;">
+                          <option value="1">系统管理员</option>
+                          <option value="1">客服人员</option>
+                        </select>
+                    </div>
+                   <div id="test_btn2" style="display:none;"><img src="/static/ads_m_1.0/web/images/test_select.jpg" width="245" height="21"></div>
+              </div>
+                <div class="test_btn"><a onClick="$UE.display('test_btn1','block');$UE.display('test_btn2','none');">1</a> <a onClick="$UE.display('test_btn1','none');$UE.display('test_btn2','block');">2</a></div>
+            </li>
+        	<li class="h20"><input name="" type="text" class="input01" value=""></li>
+        	<li class="h20"><input name="" type="text" class="input01" value=""></li>
+	       </ol>
+      </div>
+  	</div>
+<div class="c_btn" align="center"><ol><li><a href="javascript:$UE.close('s_account_add');$UE.alert('保存成功！','$UE.open(\'s_account_view\')');">保存</a><a href="#">重置</a></li></ol></div>
+  </div>
+</div>

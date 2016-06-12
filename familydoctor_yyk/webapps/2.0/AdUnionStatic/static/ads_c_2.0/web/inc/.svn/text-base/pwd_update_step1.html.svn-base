@@ -1,0 +1,40 @@
+<div class="update_box" id="pwd_update_step1" style="display:none;">
+  <div class="update_title"><b id="pwd_tt_name1">密保问题修改密码</b><span><input name="close_bnt" type="image" src="/static/ads_c_2.0/web/images/step_close.gif" onClick="$UE.close('pwd_update_step1');" style="cursor:pointer;"></span></div>
+  <div class="update_main">
+  	<div class="update_cont">
+    	<p><span class="light_blue">1.密保问题验证</span> > <span>2.修改密码</span></p>
+    	<p class="gray" id="check_update_style1">成功回答密保问题后，即可修改密码。</p>
+ <!-- 第一行--> 
+        <div class="row_01">
+            <div class="update_cont_lf">密保问题：</div>
+            <div class="update_cont_rg">
+                 <select name="pwd4" class="u_input_01">
+                  <option value="1">请选择密保问题</option>
+                  <option value="2">您父亲的全名?</option>
+                  <option value="3">您母亲的全名?</option>
+                  <option value="4">您配偶的全名?</option>
+                  <option value="5">您父亲的生日?</option>
+                  <option value="6">您母亲的生日?</option>
+                  <option value="7">您初中最好朋友的生日?</option>
+                  <option value="8">您初中最好朋友的全名?</option>
+                  <option value="9">您就读的小学的全名?</option>
+                  <option value="10">您就读的初中的全名?</option>
+                  <option value="11">您身份证的最后八位?</option>
+                </select>
+            </div>
+        </div>
+ <!-- 第二行--> 
+        <div class="row_01">
+            <div class="update_cont_lf">密保答案：</div>
+            <div class="update_cont_rg">
+            	<input name="" type="text" class="u_input_01"/><span class="gray">不能超过10个汉字</span>
+            </div>
+        </div>
+  	</div>
+    <div class="a_btn" align="center">
+    	<p class="one_btn_w" id="check_update_btn_style1">
+            <a onclick="javascript:$UE.close('pwd_update_step1');$UE.open('pwd_update_step2');"><span>开始验证</span></a>
+        </p>
+    </div>
+  </div>
+</div>

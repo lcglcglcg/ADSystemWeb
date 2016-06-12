@@ -1,0 +1,51 @@
+	<div class="scommon_box" id="step_three" style="display:none;">
+    	<div class="scommon_title"><p>上传图片</p><a href="javascript:;" name="cancel"></a></div>
+    	<div class="scommon_main">
+            <div class="three_content">
+                <div class="three_lf">
+                	<div class="upload_word"><p>上传图片：</p></div>
+                	<div class="upload_cont">
+                    	<span><input id="upIdeas" type="image" class="input_img1" src="/static/ads_m_1.0/web/images/btn_shangc.gif" name="" alt=""></span>
+                        <p>支持批量上传图片，相同尺寸的图片只可上传一张。</p>
+                        <p class="already_upload"><span class="already_word">已上传0张。</span><a class="btn"><span>全部清空</span></a></p>
+                    <!--上传后的信息-->
+                        <div class="zu_content">
+                        	<ul id="fileList">
+
+                            </ul>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="three_rg">
+                	<div class="show_img">
+                    	<p>创意预览:</p>
+                		<div class="show_img_photo">
+                        	<span>
+                            	<div class="white_bg">
+                                <img isrc="/static/ads_m_1.0/web/images/l_bnt_01.gif">
+                                </div>
+							</span>
+                        	<a class="bottom_fangda" name="viewBig"></a>
+                        </div>
+                    </div>    
+                    <div class="guige">
+                        DSP尺寸：120X600 160X600 200X200 250X250 300X250 336X280 468X60 640X60 640X80 728X90 960X60 960X90
+                    </div>
+                </div>
+        <!--公共按钮 新建创意-->
+                <div class="step_commom_btn" align="center">
+                	<div class="s_c_width1">
+                    	<a class="btn" name="save"><span>保存</span></a>
+                        <a class="btn" name="cancel"><span>取消</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--div id="step_three_creative" style="display: none;" class="change_box">
+        <div class="clearfix"><input type="text" class="change_boxInput" value="">
+            <a class="btn"><span>保存</span></a> <a class="btn" name="close"><span>取消</span></a>
+        </div>
+    </div-->

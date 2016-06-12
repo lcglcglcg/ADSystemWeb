@@ -1,0 +1,34 @@
+/**
+ * 分页样式
+ * @author:王哲
+ * @date:2013-6-5
+ */
+.c_foot_left{ color:#F00;float:left; width:100%; height:25px;border-bottom:#dae2e7 solid 1px; background:#FAFBFD; line-height:25px; text-align:left;}
+.add_border{border-left: 1px solid #DFDFDF;border-right: 1px solid #DFDFDF;}
+.talk_list_contentB{width:100%; float:right;}
+
+.talk_list_content ul li{ float:left; overflow:hidden;line-height:30px; height:30px;}
+.talk_list_cTimeC ul li div{ border-left:1px #cecdce solid; text-align:center;line-height:25px; height:25px; width:100%;}
+
+.talk_list_cBL{width:8%; float:left; padding-left:5px; color:#F00; font-weight:bold; padding-top:6px;}
+.talk_list_cBL a{ font-weight:normal;}
+.talk_list_cBR{max-width:90%; float:right; padding-right:10px;padding-top:8px; height:25px; overflow:hidden;}
+
+.talk_list_cBR ul{ display:block;}
+.talk_list_cBR ul li.page_lf{ float:left; height:24px; line-height:24px;}
+
+.talk_list_cBR ul li.li_pad10{padding-right:10px;}
+.talk_list_cBR ul li.li_mar10{margin-right:10px;}
+.talk_list_cBR ul li.li_mar5{margin-right:5px;}
+.talk_list_cBR ul li.li_lmar5{margin-left:5px; }
+.talk_list_cBR ul li .input_w100{ width:30px; height:16px; color:#000; margin:-1px 5px 0 3px;}
+.talk_list_cBR ul li a{ margin:0 2px; color:#0033CC;height:24px; line-height:24px;}
+.talk_list_cBR ul li a:hover{ color:#F00;}
+.talk_list_cBR ul li.li_go{margin:0;}
+
+.talk_list_cBR ul li.li_go a.mar_none{ display:block; background:url(/static/ads_c_2.0/web/images/btn_bg.gif) left 0; padding-left:5px;height:24px; line-height:24px; _width:12px;}
+.talk_list_cBR ul li.li_go a.mar_none:hover{ background:url(/static/ads_c_2.0/web/images/btn_bg.gif) left -48px; color:#000; text-decoration:none;}
+.talk_list_cBR ul li.li_go a.mar_none span{display:block;  background:url(/static/ads_c_2.0/web/images/btn_bg.gif) right 0; padding-right:5px; height:24px; line-height:24px; _width:12px;}
+.talk_list_cBR ul li.li_go a.mar_none:hover span{ background:url(/static/ads_c_2.0/web/images/btn_bg.gif) right -48px; color:#000; text-decoration:none;}
+
+.talk_list_cBR ul li .select_p1{ width:90px;}

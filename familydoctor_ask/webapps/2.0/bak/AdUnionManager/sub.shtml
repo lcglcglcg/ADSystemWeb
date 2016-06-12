@@ -1,0 +1,23 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>登陆界面</title>
+</head>
+<body>
+<iframe name="postiframe" style="width:1px; height:1px;"></iframe>
+<form action="/action/" target="postiframe">
+<input name="server" id="addserver" />
+<input type="submit" value="提交" />
+</form>
+<script>
+var postData={
+	'ADD_MANAGER_ACCOUNT':'{"ACCOUNT_ID":"","API_TOKEN":"","LOGIN_NAME":"aaaaaaa","COMPANY_NAME":"公司名称公司名称","COMPANY_SITE":"http://a.com","ADDRESS":"通信地址通信地址通信地址通信地址","POSTCODE":"100111","CONTACT":"联系人","TELEPHONE":"010-11111111","FAX":"010-11111111","MOBILE":"13911111111","EMAIL":"1@q.com","WEBIM":"http://a.com/aaaaaaaaaaaaaaaaaaaaaaaaaa","GUAHAO_TOKEN":"http://a.com/aaaaaaaaaaaaaaaaaaaaaaaaaa||http://a.com/aaaaaaaaaaaaaaaaaaaaaaaaaa","HOSPITAL_IMG":"","PROVINCE_ID":"1000200000","CITY_ID":"1000200001","LOGIN_PASSWORD":"111111","REGION_NAME_CN":"上海 宝山区","INDUSTRY":"","INSERT_TYPE":"14","PACKET_TYPE":"ADD_MANAGER_ACCOUNT"}'
+};
+function addData(key){
+	window.document.getElementById('addserver').value=postData[key];
+}
+</script>
+创建用户:<a style="cursor:pointer;" onclick="addData('ADD_MANAGER_ACCOUNT');">ADD_MANAGER_ACCOUNT</a>
+</body>
+</html>

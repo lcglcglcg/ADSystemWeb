@@ -1,0 +1,14 @@
+<div class="step2_true_box" id="step2_true" style="display:none;">
+  <div class="step2_true_title"><b>确认提示信息</b><span><input name="close_bnt" type="image" src="/static/ads_c_2.0/web/images/step_close.gif" onClick="$UE.close('step2_true');"></span></div>
+  <div class="step2_true_cont">
+  	<div class="step2_true_content">推广组出价过低，可能会导致该推广组下广告无展现机会，请确认是否继续？</div>
+    <div class="step2_true_btn" align="center">
+        <ul>
+             <li>
+                 <a onClick="javascript:$UE.close('step_second');$UE.close('step2_true');$UE.open('click_step3');$UE.setValue('step3_name','新建创意');$UE.display('new_btn3','block');">是</a>
+                 <a onClick="$UE.close('step2_true');">否</a>
+             </li>
+        </ul>
+    </div>
+  </div>
+</div>

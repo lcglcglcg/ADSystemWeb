@@ -1,0 +1,56 @@
+<div class="abstract">
+    <div class="abstract1" style="dis play:none;" id="contf1">
+        <div class="abs_tt"><b>推广账户</b><a href="http://15talk.haomeit.com/download.shtml" target="_blank" class="new_right">医务通在线咨询系统，永久免费使用，去下载看看！</a></div>
+        <ul>
+            <li class="lia"><p>当前余额：<span class="red">￥20000.00</span></p><p>有效计划个数：<span class="red">50</span></p><p>有效计划每日总预算：<span class="red">￥10000.00</span></p></li>
+        </ul>
+    <div class="addpromotion"><a onClick="$UE.open('step_first');$UE.setValue('step1_name','新建计划');$UE.display('step_addtitle1','block');$UE.display('new_bnt1','block');$UE.display('update_bnt1','none');"><b>+</b> 添加推广计划</a></div>
+    </div>
+    
+    <div class="abstract2" style="display:none;" id="contf2">
+        <div class="abs_tt"><a onclick="$UE.display('contf2','none');$UE.display('contf3','none');$UE.display('contf1','block');" >推广账户</a> > 推广计划<a href="http://15talk.haomeit.com/download.shtml" target="_blank" class="new_right">医务通在线咨询系统，永久免费使用，去下载看看！</a></div>
+        <ul>
+            <li class="lia"><p>名称：推广计划一 <a onclick="$UE.open('step_first');$UE.setValue('step1_name','修改计划');$UE.display('step_addtitle1,new_bnt1,step2_dingx3','none');$UE.display('update_bnt1','block');">修改全部设置</a></p></li>
+            <li class="lia"><p>状态：<span class="green">有效</span><a onClick="$UE.open('upadte_box');">修改</a></p><p>每日预算：￥1000.00<a onClick="$UE.open('yusuan_box');">修改</a></p><p>投放地域：全部地域</p><p>投放时段：全时段</p></li>
+        </ul>
+    <div class="addpromotion"><a onClick="createDX();"><b>+</b> 添加推广组</a></div>
+    </div>
+<!-- 文字推广 -->    
+ 	<!-- 文字推广-搜索 -->    
+   <div class="abstract2" style="display:none;" id="contf3">
+        <div class="abs_tt"><a onclick="$UE.display('contf2','none');$UE.display('contf3','none');$UE.display('contf1','block');" >推广账户</a> > <a onclick="$UE.display('contf1','none');$UE.display('contf3','none');$UE.display('contf2','block');" >推广计划一</a> > 推广组<a href="http://15talk.haomeit.com/download.shtml" target="_blank" class="new_right">医务通在线咨询系统，永久免费使用，去下载看看！</a></div>
+        <ul>
+            <li class="lia"><p>名称：推广组-结石科 <a onClick="$UE.open('step_second');$UE.setValue('step2_name','修改推广组');$UE.display('step_addtitle2,new_bnt2,step2_dingx1,step2_dingx2,step2_dingx4,zu_pay2,click_dingx,match_ask,zu_pay_pipei','none'); $UE.display('step2_dingx3,update_bnt2,zu_pay1','block'); ">修改全部设置</a></p></li>
+            <li class="lia"><p>状态：<span class="green">有效</span><a onClick="$UE.open('upadte_box');">修改</a></p><p>CPC出价：￥10.00<a onClick="$UE.open('zuchujai_box');">修改</a></p><p>精准定向：定向搜索行为</p></li>
+        </ul>
+        <div class="addpromotion"><a onClick="$UE.open('add_keyword');"><b>+</b> 添加关键词</a><a onClick="createCY();"><b>+</b> 添加创意</a></div>
+    </div>
+ 	<!-- 文字推广-浏览 -->  
+   <div class="abstract2" style="display:none;" id="contf4">
+        <div class="abs_tt"><a onclick="$UE.display('contf2','none');$UE.display('contf3','none');$UE.display('contf1','block');" >推广账户</a> > <a onclick="$UE.display('contf1','none');$UE.display('contf3','none');$UE.display('contf2','block');" >推广计划一</a> > 推广组<a href="http://15talk.haomeit.com/download.shtml" target="_blank" class="new_right">医务通在线咨询系统，永久免费使用，去下载看看！</a></div>
+        <ul>
+            <li class="lia"><p>名称：推广组-结石科 <a onClick="$UE.open('step_second');$UE.setValue('step2_name','修改推广组');$UE.display('step_addtitle2,new_bnt2,step2_dingx1,step2_dingx2,step2_dingx3,zu_pay2,match_ask,zu_pay_pipei','none'); $UE.display('step2_dingx4,update_bnt2,zu_pay1,click_dingx','block'); ">修改全部设置</a></p></li>
+            <li class="lia"><p>状态：<span class="green">有效</span><a onClick="$UE.open('upadte_box');">修改</a></p><p>CPC出价：￥10.00<a onClick="$UE.open('zuchujai_box');">修改</a></p><p>精准定向：定向浏览行为</p></li>
+        </ul>
+    <div class="addpromotion"><a onClick="createCY();"><b>+</b> 添加创意</a></div>
+    </div>
+<!-- 图片推广 -->    
+ 	<!-- 图片推广-搜索 -->    
+    <div class="abstract2" style="display:none;" id="contf5">
+        <div class="abs_tt"><a onclick="$UE.display('contf2','none');$UE.display('contf3','none');$UE.display('contf1','block');" >推广账户</a> > <a onclick="$UE.display('contf1','none');$UE.display('contf3','none');$UE.display('contf2','block');" >推广计划一</a> > 推广组<a href="http://15talk.haomeit.com/download.shtml" target="_blank" class="new_right">医务通在线咨询系统，永久免费使用，去下载看看！</a></div>
+        <ul>
+            <li class="lia"><p>名称：推广组-结石科 <a onClick="$UE.open('step_second');$UE.setValue('step2_name','修改推广组');$UE.display('step_addtitle2,new_bnt2,step2_dingx1,step2_dingx2,zu_pay1,click_dingx,match_ask,step2_dingx4,zu_pay_pipei','none');$UE.display('step2_dingx3,update_bnt2,zu_pay2','block'); ">修改全部设置</a></p></li>
+            <li class="lia"><p>状态：<span class="green">有效</span><a onClick="$UE.open('upadte_box');">修改</a></p><p>CPC出价：￥10.00<a onClick="$UE.open('zuchujai_box');">修改</a></p><p>CPM出价：￥10.00<a onClick="$UE.open('zuchujai_box');">修改</a></p><p>精准定向：定向搜索行为</p></li>
+        </ul>
+    <div class="addpromotion"><a onClick="$UE.open('add_keyword');"><b>+</b> 添加关键词</a><a onClick="createCY();"><b>+</b> 添加创意</a></div>
+    </div>
+ 	<!-- 图片推广-浏览 -->    
+    <div class="abstract2" style="display:none;" id="contf6">
+        <div class="abs_tt"><a onclick="$UE.display('contf2','none');$UE.display('contf3','none');$UE.display('contf1','block');" >推广账户</a> > <a onclick="$UE.display('contf1','none');$UE.display('contf3','none');$UE.display('contf2','block');" >推广计划一</a> > 推广组<a href="http://15talk.haomeit.com/download.shtml" target="_blank" class="new_right">医务通在线咨询系统，永久免费使用，去下载看看！</a></div>
+        <ul>
+            <li class="lia"><p>名称：推广组-结石科 <a onClick="$UE.open('step_second');$UE.setValue('step2_name','修改推广组');$UE.display('step_addtitle2,new_bnt2,step2_dingx1,step2_dingx2,step2_dingx3,zu_pay1,match_ask,zu_pay_pipei','none'); $UE.display('update_bnt2,zu_pay2,step2_dingx4,click_dingx','block');">修改全部设置</a></p></li>
+            <li class="lia"><p>状态：<span class="green">有效</span><a onClick="$UE.open('upadte_box');">修改</a></p><p>CPC出价：￥10.00<a onClick="$UE.open('zuchujai_box');">修改</a></p><p>CPM出价：￥10.00<a onClick="$UE.open('zuchujai_box');">修改</a></p><p>精准定向：定向浏览行为</p></li>
+        </ul>
+    <div class="addpromotion"><a onClick="createCY();"><b>+</b> 添加创意</a></div>
+    </div>
+</div>

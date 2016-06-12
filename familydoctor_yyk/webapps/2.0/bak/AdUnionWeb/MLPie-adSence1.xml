@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<chart caption='' pieRadius='70' piefillAlpha='80' pieBorderThickness='2' hoverFillColor='c6e5ff' pieBorderColor='FFFFFF' useHoverColor='1' bordercolor="ffffff" bgcolor='ffffff' baseFontSize="12" basefontColor='272627' outCnvBaseFontSize='11'>
+     <category label='消费合计&#xA;￥1280'  Color='ffffff' toolText='消费金额合计&#xA;￥1280.00'>
+        <category value='800.00' Color='3984d8' toolText='文字推广消费金额&#xA;￥800.00'>
+        </category>
+     <category value='480.00' Color='f99900' toolText='图片推广消费金额&#xA;￥480.00'>
+     </category>
+  </category>
+  <styles>
+     <definition>
+        <style name='myHTMLFont' type='font' isHTML='1' />
+     </definition>
+     <application>
+        <apply toObject='TOOLTIP' styles='myHTMLFont' />
+     </application>
+  </styles>
+  </chart>

@@ -1,0 +1,290 @@
+<!--页面内的弹出框 start-->
+<!--匹配方式弹出框 start-->
+<div id="idDiv_pipei" style="display:none;">
+  <div class="prompt_info_top">
+    <p class="margin_5">信息提示：</p>
+    <p id="idDiv_pipei_close" class="prompt_close"></p>
+  </div>
+  <div class="prompt_info_center">我们为您提供了精确匹配、短语匹配、广泛匹配三种不同类型的关键词匹配方式，使用不同的匹配方式将帮助您通过不同的方式定位潜在客户，您可以通过特殊符号标示关键词的匹配模式。关键词 = 广泛匹配：针对关键词的相关搜索词自动展现您的创意； "关键词" = 短语匹配：只在用户搜索词与关键词字面一致、或者搜索词包含关键词时才展现对应的创意；[关键词] = 精确匹配：用户搜索词与关键词字面完全一致时才展现对应的创意。 </div>
+  <div class="prompt_info_bottom"></div>
+</div>
+<!--量身推荐问号弹出框 start-->
+<div id="idDiv_tuijian" style="display:none;">
+  <div class="prompt_info_top">
+    <p class="margin_5">量身推荐：</p>
+    <p id="idDiv_tuijian_close" class="prompt_close"></p>
+  </div>
+  <div class="prompt_info_center">针对具体的推广计划或推广单元的业务内容，为您提供量身定制的推荐关键词。</div>
+  <div class="prompt_info_bottom"></div>
+</div>
+<!--日均搜索量弹出框 start-->
+<div id="idDiv_daily" style="display:none;">
+  <div class="prompt_info_top">
+    <p class="margin_5">日均搜索量：</p>
+    <p id="idDiv_daily_close" class="prompt_close"></p>
+  </div>
+  <div class="prompt_info_center">最近一周内网民的日均搜索次数或者范围。日均搜索量大小仅与关键词本身、推广地域有关系，一般来说，推广地域越多，同一个关键词的日均搜索量越大。</div>
+  <div class="prompt_info_bottom"></div>
+</div>
+<!--竞争激烈程度弹出框 start-->
+<div id="idDiv_compete" style="display:none;">
+  <div class="prompt_info_top">
+    <p class="margin_5">竞争激烈程度：</p>
+    <p id="idDiv_compete_close" class="prompt_close"></p>
+  </div>
+  <div class="prompt_info_center">数字越大，代表该关键词被越多的同行所关注。此外，竞争激烈程度还与您选择的具体地域以及该关键词在不同匹配方式下，竞争者的数量有关。</div>
+  <div class="prompt_info_bottom"></div>
+</div>
+<!--设置地区弹出框 start-->
+<div id="idDiv_areadiv" style=" display:none;">
+  <div class="choose_area">
+    <p class="area_text"><b>选择查询地区</b></p>
+    <p class="area_text Color_1">可以帮助您挑选出适合在特定地域推广的关键词，而不影响您的实际投放地域</p>
+    <p class="area_text"><input type="radio" name="radiobutton" value="radiobutton" /> 全部地域&nbsp;&nbsp;&nbsp;
+			<input type="radio" name="radiobutton" value="radiobutton" /> 
+                部分区域</p>
+    <ul>
+      <li style="background:#D3E5FB;" class="area_big">&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="checkbox">
+        &nbsp;&nbsp;&nbsp;中国地区</li>
+      <li class="area_big">
+        <p>
+          <input type="checkbox" name="checkbox2" value="checkbox" />
+          华北地区</p>
+        <ul class="city_area">
+          <li>
+            <input type="checkbox" name="checkbox2" value="checkbox" />
+            北京</li>
+          <li>
+            <input type="checkbox" name="checkbox22" value="checkbox" />
+            天津</li>
+          <li>
+            <input type="checkbox" name="checkbox23" value="checkbox" />
+            河北</li>
+          <li>
+            <input type="checkbox" name="checkbox24" value="checkbox" />
+            山西</li>
+          <li>
+            <input type="checkbox" name="checkbox25" value="checkbox" />
+            内蒙古</li>
+        </ul>
+      </li>
+      <li class="area_big area_bg">
+        <p>
+          <input type="checkbox" name="checkbox2" value="checkbox" />
+          东北地区</p>
+        <ul class="city_area">
+          <li>
+            <input type="checkbox" name="checkbox2" value="checkbox" />
+            辽宁</li>
+          <li>
+            <input type="checkbox" name="checkbox22" value="checkbox" />
+            吉林</li>
+          <li>
+            <input type="checkbox" name="checkbox23" value="checkbox" />
+            黑龙江</li>
+        </ul>
+      </li>
+      <li class="area_big">
+        <p>
+          <input type="checkbox" name="checkbox2" value="checkbox" />
+          华东地区</p>
+        <ul class="city_area">
+          <li>
+            <input type="checkbox" name="checkbox2" value="checkbox" />
+            上海</li>
+          <li>
+            <input type="checkbox" name="checkbox22" value="checkbox" />
+            江苏</li>
+          <li>
+            <input type="checkbox" name="checkbox23" value="checkbox" />
+            浙江</li>
+          <li>
+            <input type="checkbox" name="checkbox24" value="checkbox" />
+            安徽</li>
+          <li>
+            <input type="checkbox" name="checkbox25" value="checkbox" />
+            福建</li>
+          <li>
+            <input type="checkbox" name="checkbox24" value="checkbox" />
+            江西</li>
+          <li>
+            <input type="checkbox" name="checkbox25" value="checkbox" />
+            山东</li>
+        </ul>
+      </li>
+      <li class="area_big area_bg">
+        <p>
+          <input type="checkbox" name="checkbox2" value="checkbox" />
+          华中地区</p>
+        <ul class="city_area">
+          <li>
+            <input type="checkbox" name="checkbox2" value="checkbox" />
+            河南</li>
+          <li>
+            <input type="checkbox" name="checkbox22" value="checkbox" />
+            湖北</li>
+          <li>
+            <input type="checkbox" name="checkbox23" value="checkbox" />
+            湖南</li>
+        </ul>
+      </li>
+      <li class="area_big">
+        <p>
+          <input type="checkbox" name="checkbox2" value="checkbox" />
+          华南地区</p>
+        <ul class="city_area">
+          <li>
+            <input type="checkbox" name="checkbox2" value="checkbox" />
+            广东</li>
+          <li>
+            <input type="checkbox" name="checkbox22" value="checkbox" />
+            海南</li>
+          <li>
+            <input type="checkbox" name="checkbox23" value="checkbox" />
+            广西</li>
+        </ul>
+      </li>
+      <li class="area_big area_bg">
+        <p>
+          <input type="checkbox" name="checkbox2" value="checkbox" />
+          西南地区</p>
+        <ul class="city_area">
+          <li>
+            <input type="checkbox" name="checkbox2" value="checkbox" />
+            重庆</li>
+          <li>
+            <input type="checkbox" name="checkbox22" value="checkbox" />
+            四川</li>
+          <li>
+            <input type="checkbox" name="checkbox23" value="checkbox" />
+            贵州</li>
+          <li>
+            <input type="checkbox" name="checkbox24" value="checkbox" />
+            云南</li>
+          <li>
+            <input type="checkbox" name="checkbox25" value="checkbox" />
+            西藏</li>
+        </ul>
+      </li>
+      <li class="area_big">
+        <p>
+          <input type="checkbox" name="checkbox2" value="checkbox" />
+          西北地区</p>
+        <ul class="city_area">
+          <li>
+            <input type="checkbox" name="checkbox2" value="checkbox" />
+            陕西</li>
+          <li>
+            <input type="checkbox" name="checkbox22" value="checkbox" />
+            甘肃</li>
+          <li>
+            <input type="checkbox" name="checkbox23" value="checkbox" />
+            青海</li>
+          <li>
+            <input type="checkbox" name="checkbox24" value="checkbox" />
+            宁夏</li>
+          <li>
+            <input type="checkbox" name="checkbox25" value="checkbox" />
+            新疆</li>
+        </ul>
+      </li>
+      <li class="area_big area_bg">
+        <p>
+          <input type="checkbox" name="checkbox2" value="checkbox" />
+          其他地区</p>
+        <ul class="city_area">
+          <li>
+            <input type="checkbox" name="checkbox2" value="checkbox" />
+            香港</li>
+          <li>
+            <input type="checkbox" name="checkbox22" value="checkbox" />
+            澳门</li>
+          <li>
+            <input type="checkbox" name="checkbox23" value="checkbox" />
+            台湾</li>
+        </ul>
+      </li>
+      <li class="area_big" style="background:#D3E5FB;">
+        <ul class="city_area">
+          <li style="padding-left:15px;">
+            <input type="checkbox" name="checkbox2" value="checkbox" />
+            国外</li>
+        </ul>
+      </li>
+      <li class="area_big">
+        <ul class="city_area">
+          <li style="padding-left:15px;">
+            <input type="checkbox" name="checkbox2" value="checkbox" />
+            日本</li>
+          <li>
+            <input type="checkbox" name="checkbox22" value="checkbox" />
+            其他国家</li>
+        </ul>
+      </li>
+      
+    </ul><br />
+    <div class="area_btn"><a href="#" class="btn btn_1"><span>确定</span></a><a class="btn btn_1" id="idDiv_areadiv_close"><span>取消</span></a></div>
+  </div>
+</div>
+<!--高级设置弹出框-->
+<div id="idDiv_adv_setting" style="display:none;">
+ <div class="adv_setting">
+  <div class="adv_setting_top"><span>不显示包含以下词汇的推荐结果：</span><span id="idDiv_adv_setting_close" class="prompt_close1"></span></div>
+  <p class="Color_1">每行一词，最多10个词</p>
+  <p><textarea name="textfield" cols="33" rows="5">
+</textarea></p>
+  <p><input type="checkbox" /> 显示地域拓展词 <span class="Color_1">即带有拓展地域名称的关键词，如北京鲜花。</span></p>
+  <p><input type="checkbox" /> 显示搜索量最高月份</p>
+  <p><a href="#" class="btn btn_1"><span>确定</span></a></p>
+ </div>
+</div>
+<!--量身推荐弹出框-->
+<div id="idDiv_recommended" style="display:none;">
+ <div class="adv_setting">
+  <div class="adv_setting_top"><span><b>选择要量身推荐关键词的推广计划或推广单元</b></span><span id="idDiv_recommended_close" class="prompt_close1"></span></div>
+  <p><input type="radio" name="radiobutton" value="radiobutton" /> 选择推广计划&nbsp;&nbsp;&nbsp;
+			<input type="radio" name="radiobutton" value="radiobutton" /> 
+                选择推广单元</p>
+  <p><select><option>推广计划1</option><option>推广计划2</option><option>推广计划3</option></select></p>
+  <p><select><option>推广计划1-推广单元1</option><option>推广计划1-推广单元2</option><option>推广计划2-推广单元1</option><option>推广计划2-推广单元1</option><option>推广计划3-推广单元1</option><option>推广计划3-推广单元1</option></select></p>
+  <p><a href="#" class="btn btn_1"><span>确定</span></a></p>
+ </div>
+</div>
+<!--关注潜在客户弹出框 start-->
+<div id="idDiv_customer" style="display:none;">
+  <div class="prompt_info_top">
+    <p class="margin_5">关注潜在客户：</p>
+    <p id="idDiv_customer_close" class="prompt_close"></p>
+  </div>
+  <div class="prompt_info_center">下面的词网民爱搜，针对性强(网民曾经通过这些真实的搜索词寻找过您的网站)。</div>
+  <div class="prompt_info_bottom"></div>
+</div>
+<!--关注最新商机弹出框 start-->
+<div id="idDiv_business" style="display:none;">
+  <div class="prompt_info_top">
+    <p class="margin_5">关注最新商机：</p>
+    <p id="idDiv_business_close" class="prompt_close"></p>
+  </div>
+  <div class="prompt_info_center">根据您的业务，我们精选出最新出现的网民搜索词，帮助您快一步，抢占商机。</div>
+  <div class="prompt_info_bottom"></div>
+</div>
+<!--同行动态弹出框 start-->
+<div id="idDiv_dynamic" style="display:none;">
+  <div class="prompt_info_top">
+    <p class="margin_5">同行动态：</p>
+    <p id="idDiv_dynamic_close" class="prompt_close"></p>
+  </div>
+  <div class="prompt_info_center">下面是我们根据您所在行业为您挑选出来的词，和您的业务非常相关并且您的同行也非常关注。</div>
+  <div class="prompt_info_bottom"></div>
+</div>
+<!--网民还会这么搜弹出框 start-->
+<div id="idDiv_repeat_search" style="display:none;">
+  <div class="prompt_info_top">
+    <p class="margin_5">结果太少：</p>
+    <p id="idDiv_repeat_search_close" class="prompt_close"></p>
+  </div>
+  <div class="prompt_info_center">下面的词您也许会感兴趣。以您输入的词汇为依据，这里提供了更多的推荐关键词。</div>
+  <div class="prompt_info_bottom"></div>
+</div>
+<!--页面内的弹出框end-->

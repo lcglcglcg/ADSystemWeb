@@ -1,0 +1,111 @@
+/* CSS Document */
+.main{  margin: auto;width:98%;}
+.re_power{ height:26px; width:100%; margin-top:20px; background:url(/static/ads_c_2.0/web/images/cw_tt_bg.jpg) repeat-x;}
+.re_power a{ display:block; width:80px; text-align:center; float:left;height:24px; line-height:25px; background:#d4e7fa; border:1px solid #8bbbde;color:#0066cc;margin-right:5px;} 
+.re_power a:hover,.re_power .re_curr{text-decoration:none; font-weight:bold;height:25px; background:#fff; border-bottom:none; }
+.re_main{ width:100%;border:1px solid #9ec6e0;border-top:none; min-height:360px;}
+td span.figure{display:block; height:22px; line-height:22px; cursor:pointer;width:95%;  font-size:12px; font-family:宋体; font-variant:normal; overflow:hidden;word-wrap: break-word;word-break: break-all;}
+/* 标准报告-------------开始 */
+.standard,.complex{padding:20px 15px 30px 30px;}
+.row{ width:100%; float:left; margin:3px 0;}
+.standard_lf{ float:left; width:70px; text-align:left;}
+.standard_rg{ float:left; width:800px;}
+.pc_01{ border:1px solid #88accf; height:18px; line-height:18px; width:230px; vertical-align:middle; padding-left:2px;float:left;}
+.pc_img{ border:1px solid #88accf; border-left:none; vertical-align:middle; padding:4px 1px 3px 2px; float:left;}
+.standard_rg a{ margin:0 5px; color:#0033CC;}
+.standard_rg a.rg_hover{ color:#000; font-weight:bold; text-decoration:none;}
+.standard_rg .select_zhibiao{ width:110px;}
+/* 标准报告----数据指标----自定义 */
+.re_defiend{ padding-left:45px; height:24px; line-height:24px;}
+/* 按钮 */
+.re_btn{ clear:both; width:100%; height:24px; padding:10px 0;}
+.re_btn a,.re_btn a:link,.re_btn a:visited{ display:block; height:24px; line-height:24px; text-align:center; float:left;background:url(/static/ads_c_2.0/web/images/btn_bg.gif) left 0; color:#000; font-weight:bold; text-decoration:none;margin-right:15px; padding-left:10px;}
+.re_btn a:hover{ background:url(/static/ads_c_2.0/web/images/btn_bg.gif) left -48px; font-weight:bold; text-decoration:none;}
+.re_btn a span{ display:block;height:24px; line-height:24px; text-align:center; background:url(/static/ads_c_2.0/web/images/btn_bg.gif) right 0; padding-right:10px;}
+.re_btn a:hover span{ background:url(/static/ads_c_2.0/web/images/btn_bg.gif) right -48px; text-decoration:none;}
+
+/* 标准报告-------------结束 */
+/* 综合报告------------开始 */
+.comp_defiend{ width:900px; height:348px;}
+.comp_one{ width:280px;float:left; height:348px; border:1px solid #cfdce4; overflow:hidden;}
+.comp_title{ background:#f4f7fb; height:28px; border-bottom:1px solid #e8f0f6; line-height:28px; padding:0 5px;}
+.comp_title b{ float:left; color:#000;}
+.comp_title a{ float:right; color:#0033CC;}
+.comp_cont{ height:294px; overflow:hidden; color:#000;}
+
+.comp_search{height: 20px;padding:8px 12px;}
+.comp_search_input,.comp_search_input1{ border: 1px solid #DFDFDF;height: 20px;padding-left: 5px; padding-right: 26px;}
+.comp_search_btn,.comp_search_btn1{ background: url("/static/ads_c_2.0/web/images/esui_reset.png") no-repeat -14px 1px;cursor: pointer;display: block;height: 20px;width: 26px;position: relative;right: 0;top: -20px;}
+.comp_search_input{width:230px;}
+.comp_search_btn{left:230px;}
+.comp_search_input1{width:230px;}
+.comp_search_btn1{left:230px;}
+
+.comp_name{ padding:0 10px;}
+.comp_name .comp_name_lf{ float:left;}
+.comp_name .comp_name_rg{ float:right; width:70px;}
+
+.comp_cont ul li .link_green{ color:#009900;}
+.comp_cont ul li .link_red{ color:#F00;}
+.comp_cont ul li a:hover{ text-decoration:none;}
+.comp_text,.comp_two_text{ clear:both; overflow:hidden; overflow-y:scroll; height:256px;}
+.comp_text ul li,.comp_three ul li,.comp_two_text ul li{ padding-left:10px; height:22px; overflow:hidden;}
+.comp_text ul li:hover{ background:#f8f9fc; cursor:pointer;}
+.comp_zongji{ height:25px; line-height:25px; background:#f8f9fc; padding-left:10px;}
+.comp_zongji span.gong{ display:block; width:100px; float:left;}
+.comp_zongji span.xuanze_delete{ display:block; width:165px; float:right; text-align:right; padding-right:5px;}
+
+/* 中间一个宽一点的*/
+.comp_two{ width:280px;float:left; height:348px; border:1px solid #cfdce4; border-left:none; overflow:hidden;}
+.comp_two_text ul li:hover{ background:#f8f9fc url(/static/ads_c_2.0/web/images/right3_arrow.gif) no-repeat 200px center; cursor:pointer;}
+.comp_two_text ul li.huise_arrow:hover{ background:#f8f9fc url(/static/ads_c_2.0/web/images/huise_arrow.gif) no-repeat 200px center; cursor:pointer;}
+.comp_three .moren,.comp_two_text .moren{ color:#999; padding-left:10px;}
+/* 第三个*/
+.comp_three{clear:both; overflow:hidden; overflow-y:scroll; height:294px;}
+
+/* 推广组最右边的样式*/
+.comp_one_level1{ width:100%;}
+.comp_hover_style{ background:#f8f9fc url(/static/ads_c_2.0/web/images/cha.gif) no-repeat right center; cursor:pointer;}
+.comp_three span.comp_pad{ padding-left:15px;}
+
+/* 综合报告------------结束 */
+/* 标准报告/综合报告---查看报告-表格---开始 */
+.s_download{ padding:10px;}
+.s_download p.s_tishi{ height:30px; line-height:30px; color:#F00;}
+.s_table_list{ width:100%; overflow:hidden; text-align:center;}
+table{ width:100%;border:1px solid #dae2e7;border-collapse:collapse;}
+.s_table_list td{ padding:5px; border:1px solid #dfdfdf; text-align:right;}
+.re_table_wc{ width:16%;}
+.re_table_wb{ width:10%;}
+.re_table_wd{ width:12%;}
+.re_table_we{ width:8%;}
+.s_table_list .td_color{color:#667799; font-weight:bold;}
+.s_table_list .td_bgcolor{background:#fafbfd;font-weight:bold;}
+.s_table_list p.complex_view{ display:block; height:30px; width:100%; position:relative; text-align:left;}
+.s_table_list td a{ display:block; width:13px; height:14px; position:relative; right:-99%; top:-15px; background:url(/static/ads_c_2.0/web/images/download_01.gif) no-repeat center center;}
+.s_table_list td a:hover{ background:url(/static/ads_c_2.0/web/images/download_02.gif) no-repeat center center;}
+/* 标准报告/综合报告---查看报告-表格--结束 */
+/* 报告下载------------开始 */
+.re_download{ padding:10px;}
+.re_download p{ height:30px; line-height:30px;}
+.re_download .down_list { border: 1px solid #dfdfdf; width:100%;}
+
+/* 报告下载----表格 */
+.re_table_list{ width:100%; overflow:hidden; }
+table{ width:100%;border:1px solid #dae2e7;border-collapse:collapse;}
+.re_table_list td{ padding:10px 5px; border:1px solid #dfdfdf;}
+.re_table_list th{background:#fafbfd; padding:15px 5px;color:#667799; text-align:left; border:1px solid #dfdfdf;}
+.re_table_wa{ width:20%;}
+td a{color:#0033CC; }
+/* 报告下载------------结束 */
+/* 表格的排序 */
+.s_table_list td.total_left{ text-align:left; padding-left:20px;}
+.s_table_list td.text_center{ text-align:center;}
+.s_table_list th{ background:#fafbfd;color:#667799; padding:5px 0;}
+.s_table_list th a{ display:block; height:100%; width:100%;}
+.s_table_list th a:hover{background: url(/static/ads_c_2.0/web/images/top.gif) no-repeat center top; text-decoration:none;}
+.s_table_list th a.top_curr{background: url(/static/ads_c_2.0/web/images/top_curr.gif) no-repeat center top;}
+.s_table_list th a span{ display:block; height:100%; width:100%; text-decoration:none;color:#667799; padding-top:3px; padding-bottom:3px;}
+.s_table_list th a span:hover{background:url(/static/ads_c_2.0/web/images/bottom.gif) no-repeat center bottom;}
+.s_table_list th a span.bottom_curr{background:url(/static/ads_c_2.0/web/images/bottom_curr.gif) no-repeat center bottom;}
+

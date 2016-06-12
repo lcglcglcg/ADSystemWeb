@@ -1,0 +1,70 @@
+ <div class="scommon_box_new_box" id="select_keshi_check" style="display:none;">
+    <div class="detailed_title" id="touf_kes"><b>投放科室</b><span><input type="image" name="close_bnt" src="/static/ads_m_1.0/web/images/view_close.gif" onclick="$UE.close('select_keshi_check');" style="cursor:pointer;"></span></div>
+	<div class="scommon_box scommon_box_new_nk" >
+    	<div class="scommon_main">
+        
+            <div id="click_dingx" style="display:block;">
+                    <!--定向浏览行为 -->
+                        <div class="depart depart_new">
+                            <div class="tuijian_nav">
+                            	<div class="ke_check_new">
+                                    <select name="" class="depart_select">
+                                        <option value="1">选择或输入定向科室</option>
+                                        <option value="2">内科</option>
+                                        <option value="3">外科</option>
+                                    </select>
+                                </div>
+                            <!--定向浏览行为 级别内容 start-->
+                            <div class="depart_level">
+                            <!-- 级别一 start-->
+                                <ul>
+                                    <li>
+                                        <a class="d_level1">
+                                            <span class="d_input">
+                                                <input type="checkbox" checked="" name="checkgroup" value="1" >
+                                                <label for="c1" class="checkboxOn"></label>
+                                            </span>
+                                            <span class="word1"><b>内科</b></span>
+                                            <span class="span_line"></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="d_level1">
+                                            <span class="d_input">
+                                                <input type="checkbox" checked="" name="checkgroup" value="1" >
+                                                <label for="c1" class="checkboxOn"></label>
+                                            </span>
+                                            <span class="word1"><b>内科</b></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="d_level1">
+                                            <span class="d_input">
+                                                <input type="checkbox" checked="" name="checkgroup" value="1" >
+                                                <label for="c1" class="checkboxOff"></label>
+                                            </span>
+                                            <span class="word1"><b>内科</b></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="d_level1">
+                                            <span class="d_input">
+                                                <input type="checkbox" checked="" name="checkgroup" value="1" >
+                                                <label for="c1" class="checkboxOff"></label>
+                                            </span>
+                                            <span class="word1"><b>内科</b></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            <!-- 级别一 end-->
+                            </div>
+                            <!--定向浏览行为 级别内容 end-->
+                            </div>
+                        </div>
+                        
+            </div>   
+            <!--公共按钮-->
+                <div id="touf_kes_btn" align="center" class="c_btn"><ol class="select_re_ol"><li><a href="javascript:$UE.close('select_keshi_check');">确定</a></li></ol></div>
+        </div>
+    </div>
+</div>

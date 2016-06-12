@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>登陆界面</title>
+<link rel="stylesheet" type="text/css" href="/static/ads_c_2.0/web/css/login.css">
+</head>
+<body>
+<!--#include virtual="/public/public.shtml"-->
+<script language="javascript" src="/static/web/js/thirdparty/md5-min.js"></script>
+<script language="javascript" src="/static/web/js/page/login.js"></script>
+<!--登陆页头部 start-->
+<div class="header">
+  <div class="logo"><img src="/static/ads_c_2.0/web/images/logo.jpg"/></div>
+  <div class="haimeit"><img src="/static/ads_c_2.0/web/images/index_img.jpg"/></div>
+</div>
+
+<!--登陆 start-->
+<div class="box_bg">
+    <div class="l_box_bg" id="box_bg">
+        <div class="l_box">
+          <ul>
+            <li class="title">健康网盟投放中心</li>
+            <li>
+            	<em>账　号：</em>
+                <span class="l_username"><input name="ACCOUNT" type="LOGIN" autofocus grequired gmsgfun maxlength="16" minlength="4" class="l_username"></span>
+            </li>
+            <li>
+            	<em>密　码：</em>
+                <span class="l_password"><input name="PASSWORD" type="password" grequired gmsgfun maxlength="16" minlength="6" class="l_password"></span>
+            </li>
+            <li>
+            	<em>验证码：</em>
+                <span><input name="VAR_CODE" type="text" class="v_code" grequired maxlength="4"  minlength="4" title="看不清，请点击验证码进行刷新" ></span>
+              <b><img name="resVercode" width="77" height="30" ></b>
+              <a name="resVercode" class="huan">换一张！</a>
+            </li>
+            <li class="l_btn"><a id="submit" class="landed" ></a><a style="display:none;" class="login" target="_blank" href="/register/index.shtml"></a></li>
+            <li class="bottom_line"><a style="display:none;" href="findPassWord.shtml" target="_blank">忘记密码？</a></li>
+          </ul>
+    </div>
+         <!--透明切换背景 start-->
+        <div class="tm_bg" align="center">
+            <div class="tm_btn" id="bgPic"><a value="l_box_bg" ></a><a value="l_box_bg1"></a><a value="l_box_bg2"></a></div>
+        </div>
+    </div>
+</div>
+<!--尾部 start-->
+<div class="footer">
+  <div class="footer_w"><a>关于我们</a> | <a>QQ:15811184488</a> | <a>TEL:15811184488</a> <span>京ICP备10019628号  ©haomeit.com</span></div>
+</div>
+</body>
+</html>

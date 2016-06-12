@@ -1,0 +1,85 @@
+<!--#include virtual="/user/search.html"-->
+<div class="header">
+  <div class="logo">
+	<div class="logo_img"><img src="/static/ads_m_1.0/web/images/logo_01.gif" ><img src="/static/ads_m_1.0/web/images/logo_02.gif"></div>
+    <div class="welcome">
+        <ul class="rg">
+         <li>欢迎您，admin，今天是2012年12月12日</li>　
+         <li class="w60"><a>修改密码</a></li> |
+         <li><a>退出</a></li>
+        </ul>
+     </div>
+  </div>
+<div class="nav" id="nav">
+   	  <ul>
+       	  <li style="display:none;"><a name="list" path="index" href="/index.shtml" >首页</a><span></span></li>
+       	  <li style="display:none;"><a name="list" path="user">客户管理</a>
+            <span>
+        	  <div class="subnav" style="display:none;">
+              	<ol>
+                	<li><a href="/user/">账号管理</a></li>
+                	<li><a href="/user/announcement.shtml">客户公告管理</a></li>
+                	<li style="display:none;"><a>客户日志</a></li>
+                </ol>
+              </div>
+          </span></li>
+          <li style="display:none;"><a name="list" path="brand">品牌广告</a>
+            <span>
+        	  <div class="subnav" style="display:none;">
+              	<ol>
+                	<li><a href="/brand/">订单管理</a></li>
+<!--                	<li><a href="kh_announcement.shtml">客户公告管理</a></li>
+                	<li><a href="daily.shtml">客户日志</a></li>
+                	<li><a href="kh_tf_account.shtml">账号投放管理</a></li>
+-->                </ol>
+              </div>
+          </span></li>
+          
+       	  <li style="display:none;"><a name="list" path="check">广告审核</a>
+            <span>
+        	  <div class="subnav" style="display:none;">
+              	<ol>
+                	<li><a href="/check/pic/">图片创意审核</a></li>
+                	<li><a href="/check/word/">文字创意审核</a></li>
+                	<li><a href="/check/append/">附加创意审核</a></li>
+                    <li><a href="/check/brand/">品牌创意审核</a></li>
+                </ol>
+              </div>
+          </span></li>
+          <li style="display:none;"><a name="list" path="finance">财务管理</a>
+            <span>
+        	  <div class="subnav" style="display:none;">
+              	<ol>
+                	<li name="listyylook"><a href="/finance/rechargeManager.shtml">充值管理</a></li>
+                	<li name="listyylook"><a href="/finance/rechargeSearch.shtml">充值查询</a></li>
+                	<li><a href="/finance/cw_recharge_cus.shtml">客户消费汇总</a></li>
+                	<li><a href="/finance/cw_recharge_media.shtml">媒体每日汇总</a></li>
+                </ol>
+              </div>
+            </span></li>
+
+		  <li style="display:none;"><a name="list" path="operate" id="operate_channel">运营管理</a>
+            <span class="last">
+        	  <div class="subnav" style="display:none;">
+				  <ol>
+					  <li><a href="/operate/DSP.html">DSP运营</a></li>
+				  </ol>
+			  </div>
+            </span>
+		  </li>
+       	  <!--<li style="display:none;"><a name="list" path="ini">字典管理</a>
+            <span class="last">
+        	  <div class="subnav" style="display:none;">
+              	<ol>
+                	<li><a>创意管理</a></li>
+                	<li><a>媒体管理</a></li>
+                	<li><a>科室管理</a></li>
+                	<li><a>病种管理</a></li>
+                	<li><a>关键词管理</a></li>
+                </ol>
+              </div>
+            </span></li>-->
+      </ul>
+  </div>
+</div>
+<script language="javascript" src="/static/web/js/page/manager/header.js"></script>

@@ -1,0 +1,49 @@
+/* CSS Document */
+body{font-size:12px; font-family:宋体; margin:0; padding:0;}
+ul,ol,li,dl,dt,dd{ display:block; margin:0; padding:0; list-style:none;}
+img,a img{ border:none;}
+a{ cursor:pointer;}
+.lf{ float:left;}
+.rg{ float:right;}
+s{ text-decoration:none;}
+/* color 颜色 */
+.red{ color:#F00;}
+.green{ color:#07BF0B;}
+.rose{ color:#C805C1;}
+.brown{color:#7E2903;}
+.cyan{ color:#45BDBE;}
+.orange{ color:#ff9966;}
+.purple{ color:#6600cc;}
+.pink{ color:#ff00ff;}
+.wine{ color:#990066;}
+.sky_blue{ color:#0794c9;}
+/* title 标题 */
+.gz_alter_box{width:540px;background:#FFF; border:1px solid #23b7fa;}
+.gz_alter_box .gz_alter_title{ height:31px; line-height:31px; background:url(../images/pub_bg.gif) repeat-x 0 -200px; padding-left:15px;}
+.gz_alter_box .gz_alter_title b{ float:left;}
+.gz_alter_box .gz_alter_title span{ float:right; padding:7px 10px 0 0;}
+.gz_alter_box .gz_alter_main{padding:10px;width:519px; overflow:hidden;}
+/* gz_alter_cont  */
+.gz_alter_cont{ height:206px; margin-bottom:10px; border:1px solid #CCC;}
+.ul_row1{ height:22px;  width:505px; float:left; padding-left:12px; border-bottom:1px solid #CCC; }
+.ul_row2{ height:46px;width:505px; float:left; padding-left:12px; border-bottom:1px solid #CCC; }
+.ul_last{ height:22px; line-height:22px; width:505px; float:left; padding-left:12px;}
+.ul_row1 .w100,.ul_row2 .w100,.ul_last .w100{ height:22px; line-height:22px; width:100px; float:left; color:#999;}
+.ul_row1 .w80,.ul_row2 .w80,.ul_last .w80{ height:22px; line-height:22px; width:78px; float:left;}
+.w63{ width:63px; float:left;}
+.gz_alter_cont input{ margin-right:5px;}
+/* close_btn 关闭按钮 */
+.close_btn{ clear:both; height:30px;}
+.close_btn ol{ text-align:center; height:30px; padding-left:135px;}
+.close_btn ol li{ display:inline;font-weight:bold;}
+.close_btn ol li a{ display:block; width:50px; height:22px; line-height:22px; float:left; text-align:center; background:url(../images/icon.gif) no-repeat 0 -300px; margin-left:20px;}
+.close_btn ol li a:link,.close_btn ol li a:visited{ color:#000; font-weight:bold;text-decoration:none;}
+.close_btn ol li a:hover{ background:url(../images/icon.gif) no-repeat 0 -250px; font-weight:bold;color:#FFF; text-decoration:none;}
+.close_btn .pad40{ padding-left:180px;}
+.close_btn ol.pad20{ padding-left:170px;}
+
+
+
+
+
+

@@ -1,0 +1,46 @@
+<div class="abstract">
+  <div class="abstract1" name="toolEditMenu">
+    <div class="abs_tt"><b>推广账户</b><a href="http://15talk.haomeit.com/download.shtml" target="_blank" class="new_right">医务通在线咨询系统，永久免费使用，去下载看看！</a></div>
+    <ul>
+      <!--<li class="lia"><p>近期行为出价比例：<span class="red">75%</span><a onClick="$UE.open('price_ratio_box');">修改</a></p></li>-->
+      <li class="lia">
+        <p>当前余额：<span class="red">￥<span name="balance"></span></span></p>
+        <p>有效计划个数：<span class="red" name="effectiveCampaignCount"></span></p>
+        <p>有效计划每日总预算：<span class="red">￥<span name="campaignBalance"></span></span></p>
+      </li>
+      <!-- li class="lia"><p>当前余额：<span class="red">￥0.00</span></p></li>
+            <li class="lia1"><p>有效计划个数：<span class="red">50</span></p></li>
+            <li class="lia1"><p>有效计划每日总预算：<span class="red">￥10000.00</span></p></li-->
+    </ul>
+    <div class="addpromotion"><a name="addPlan"><b>+</b> 添加推广计划</a></div>
+  </div>
+  <div class="abstract2" style="display:none;" name="toolEditMenu">
+    <div class="abs_tt"></div>
+    <ul>
+      <li class="lia">
+        <p></p>
+      </li>
+      <li class="lia">
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+      </li>
+    </ul>
+    <div class="addpromotion"><a><b>+</b> 添加推广组</a></div>
+  </div>
+  <div class="abstract2" style="display:none;" name="toolEditMenu">
+    <div class="abs_tt"></div>
+    <ul>
+      <li class="lia">
+        <p></p>
+      </li>
+      <li class="lia">
+        <p></p>
+        <p></p>
+        <p></p>
+      </li>
+    </ul>
+    <div class="addpromotion"><a name="keywordAdd"><b>+</b> 添加关键词</a><a name="ideasAdd"><b>+</b> 添加创意</a></div>
+  </div>
+</div>

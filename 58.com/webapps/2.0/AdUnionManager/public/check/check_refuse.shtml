@@ -1,0 +1,13 @@
+<div class="refuse_backg" id="view_refuse2" style="display:none;">
+  <div class="title">填写审核拒绝原因</div>
+    <div class="cont">
+		<div class="write_reason">
+        	<textarea class="write_reason_text"></textarea>
+        </div>
+        <div class="r_btn" align="center">
+             <ul>
+                <li><a name="save" href="javascript:;">保存</a><a name="close">取消</a></li> 
+             </ul>
+        </div>
+    </div>
+</div>

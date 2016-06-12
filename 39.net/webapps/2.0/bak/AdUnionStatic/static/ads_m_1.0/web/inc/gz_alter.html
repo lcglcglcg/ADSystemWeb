@@ -1,0 +1,45 @@
+<div class="gz_alter_box" id="gz_alter" style="display:none;">
+  <div class="gz_alter_title"><b>修改专题</b><span><input name="close_bnt" type="image" src="/static/ads_m_1.0/web/images/view_close.gif" onClick="$UE.close('gz_alter');" style="cursor:pointer;"></span></div>
+  <div class="gz_alter_main">
+  	<div class="gz_alter_cont">
+      <div class="cont_lf">
+      	<ul>
+        	<li class="h20"><s class="red">*</s> 专题编号：</li>
+        	<li class="h20"><s class="red">*</s> 专题名称：</li>
+        	<li class="h30">专题描述：</li>
+        	<li class="h20"><s class="red">*</s> 专题URL默认根路径：</li>
+        	<li class="h20">URL根路径特定配置：</li>
+         	<li class="h20"></li>
+         	<li class="h130"></li>
+        	<li class="h22"><s class="red">*</s> 区域CPC价格(￥)：</li>
+        	<li class="h20"><s class="red">*</s> 区域CPM价格(￥)：</li>
+        	<li class="h20">区域服务客户数最大值：</li>
+       </ul>
+      </div>
+      <div class="cont_rg">
+      	<ol>
+        	<li class="h20">ZT000001</li>
+        	<li class="h20"><input name="" type="text" class="input01"  value="男科" ><s>不超过30个字符长度</s></li>
+        	<li class="m_bottom"><textarea name="" cols="25" rows="" class="text01" style="float:left;">男科专题的描述信息</textarea><s>不超过100个字符长度</s></li>
+         	<li class="h20"><input name="" type="text" value="/nk/" class="input01"><s>不超过30个字符长度</s></li>
+       	  <li class="h20"><select name=""  class="input06">
+       	    <option value="1">选择URL路径需要特殊配置的媒体</option>
+       	    <option value="2">新浪健康频道</option>
+       	    <option value="3">网易健康频道</option>
+       	    <option value="4">腾讯健康频道</option>
+       	    <option value="5">21CN健康频道</option>
+          </select></li>
+         	<li class="h20"><input name="" type="text" style="float:left;"><a href="">添加</a><a>修改</a><a>删除</a></li>
+        	<li class="m_bottom"><SELECT multiple="" id="leftSel" name="D1" class="select_in_h150">
+						<OPTION value="72">网易健康频道(/nanke/)</OPTION>
+						<OPTION value="73">21CN健康频道(/nanke/)</OPTION>
+                     	</SELECT></li>
+        	<li class="h20"><input name="" type="text" value="30.00"  class="input03"><s class="red">CPC:搜索引擎来路-单次计费</s></li>
+        	<li class="h20"><input name="" type="text" value="10.00"  class="input03"><s class="red">CPM:非搜索引擎来路-每千次计费</s></li>
+        	<li class="h20"><input name="" type="text"  class="input03"><s class="red">空值表示可服务的客户数无限制</s></li>
+       </ol>
+      </div>
+  	</div>
+<div class="gz_btn" align="center"><ol><li><a onclick="$UE.alert('保存成功！','$UE.close(\'gz_alter\');');">保存</a><a onClick="$UE.close('gz_alter');" >取消</a></li></ol></div>
+  </div>
+</div>

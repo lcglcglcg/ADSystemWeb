@@ -1,0 +1,96 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>财务管理-充值管理</title>
+<!--#include virtual="/public/public.shtml"-->
+<link rel="stylesheet" type="text/css" href="/static/ads_m_1.0/web/css/body_list.css">
+<link rel="stylesheet" type="text/css" href="/static/ads_m_1.0/web/css/account_add.css">
+<link rel="stylesheet" type="text/css" href="/static/ads_m_1.0/web/css/input.css">
+<link rel="stylesheet" type="text/css" href="/static/ads_m_1.0/web/css/page.css">
+<link rel="stylesheet" type="text/css" href="/static/ads_m_1.0/web/css/description.css"/>
+<link rel="stylesheet" type="text/css" href="/static/ads_m_1.0/web/css/cw_gl_recharge.css"/>
+<link rel="stylesheet" type="text/css" href="/static/ads_m_1.0/web/css/recharge_detailed.css"/>
+<link rel="stylesheet" type="text/css" href="/static/ads_m_1.0/web/css/refuse.css"/>
+<script language="javascript" src="/static/web/js/common/common_time.js"></script>
+</head>
+<body>
+<script>
+window.urlName='finance';
+</script>
+<!--#include virtual="/public/header.shtml"-->
+<div class="ad_box">
+  <div class="main">
+  	<div class="curr_position">当前位置：<span>财务管理>充值管理</span></div>
+<!-- 查询条件conditions start -->
+    <div class="conditions">
+		<ol>
+             <li class="conditions_li">
+                <select name="FIND_NAME_TYPE">
+                    <option value="1">登录名</option>
+                    <option value="2">公司名称</option>
+                    <option value="3">公司网址</option>
+                    <option value="4">投资总额大于等于</option>
+                    <option value="5">投资总额小于等于</option>
+                    <option value="6">当前账面余额大于等于</option>
+                    <option value="7">当前账面余额小于等于</option>
+                </select>
+            </li>
+            <li class="conditions_li padl2"><input name="FIND_NAME" type="text" class="input06"></li>
+            <li class="conditions_li padl2"><label><input name="find_type_none" type="checkbox" value="" class="checkbox_01" checked="checked"/>隐藏从未充值过的客户</label></li>
+		</ol>
+		<ol>
+            <li class="conditions_li"><span>开户时间：</span></li>
+            <li class="conditions_li"><input name="findtime" type="text" class="times"><input notValue="true" name="calendar" type="image" src="/static/ads_m_1.0/web/images/calendar.gif" class="calendar"></li>
+            <li class="conditions_li padl4"><span class="w40">状态：</span></li>
+            <li class="conditions_li">
+                <select name="STATUS">
+                  <option value="">全部</option>
+                  <option value="1">已开通</option>
+                  <option value="2">已冻结</option>
+                </select>
+            </li>
+             <li class="conditions_li padl4"><span>排序方式：</span></li>
+             <li class="conditions_li">
+                <select name="SORT_COLUMN">
+                    <option value="1">开户时间</option>
+                    <option value="2">登录名</option>
+                    <option value="3">公司名称</option>
+                    <option value="4">投资总额(￥)</option>
+                    <option value="5">账面余额(￥)</option>
+                    <option value="6">状态</option>
+                </select>
+            </li>
+             <li class="conditions_li padl2">
+                     <select name="SORT_TYPE">
+                  <option value="1">升序</option>
+                  <option value="2" selected="selected">降序</option>
+                </select>
+            </li>
+            <li class="conditions_li padl c_select"><a style="background: url('/static/ads_m_1.0/web/images/icon.gif') no-repeat scroll 0 -150px;color: #000000;display: block;font-weight: bold;height: 19px;line-height: 20px;text-align: center;text-decoration: none;width: 62px;" id="subList">查询</a></li>
+            <li class="conditions_li padl2 c_select"><a target="_blank" style="background: url('/static/ads_m_1.0/web/images/icon.gif') no-repeat scroll 0 -150px;color: #000000;display: block;font-weight: bold;height: 19px;line-height: 20px;text-align: center;text-decoration: none;width: 62px;" id="exportReport">导出报表</a></li>
+		</ol>
+    </div>
+<!-- 查询条件conditions end -->
+<!-- 查询条件s_content start -->
+    <div class="s_content" id="listData"></div>
+<!-- 查询条件s_content end -->
+     <div class="s_bottom"
+      	<div class="b_lf lf" style="display:none;">>
+        	<ol>
+        	  <li><a id="rechargeManagerRecharge">充值</a></li>
+              </ol>
+        </div>
+		<!--#include virtual="/public/page.html"-->
+      </div>
+  </div>
+</div>
+<!--#include virtual="/user/account_view.html"-->
+<!--#include virtual="/finance/manager/list.html"-->
+<!--#include virtual="/finance/manager/rechargeAlert.shtml"-->
+<!--#include virtual="/finance/manager/rechargeDetailed.shtml"-->
+<!--#include virtual="/public/footer.html"-->
+<script language="javascript" src="/static/web/js/thirdparty/swfupload.js"></script> 
+<script language="javascript" src="/static/web/js/thirdparty/swfupload.queue.js"></script> 
+<script language="javascript" src="/static/web/js/common/common_upload.js"></script> 
+<script language="javascript" src="/static/web/js/page/manager/rechargeManager.js"></script>

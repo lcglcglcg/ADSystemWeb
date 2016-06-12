@@ -1,0 +1,548 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!--#include virtual="/public/public_step.shtml"-->
+<title>推广计划</title>
+</head>
+<body>
+<!--#include virtual="/public/public.shtml"--> 
+<script language="javascript" src="/static/web/js/common/common_time.js"></script> 
+<!--#include virtual="/public/header.shtml"-->
+<div class="content"> 
+  <!--#include virtual="/public/left_nav_new.html"-->
+  <div class="c_right" id="change_width"> 
+    <!--#include virtual="/public/abstract.shtml"-->
+    <div class="c_content"> 
+      <!--#include virtual="/public/right_nav_new.html"--> 
+      <!--table内容 开始--> 
+      <!--推广计划内容--------开始-->
+      <div class="program_div" style="position:relative;display:none;" id="contb1">
+        <div class="table_up_select">
+          <div class="rrr">
+            <div class="s_left">
+              <ul class="s_ul">
+                <li class="s_li">
+                  <select name="FIND_STATUS" >
+                    <option value="100">全部状态</option>
+                    <option value="1">有效</option>
+                    <option value="2">处于暂停时段</option>
+                    <option value="3">每日预算不足</option>
+                    <option value="4">未开始</option>
+                    <option value="5">暂停</option>
+                    <option value="6">已下线</option>
+                  </select>
+                </li>
+                <li class="s_li">
+                  <input name="FIND_NAME" type="text" value="请输入计划名称" size="16" class="input_border col"/>
+                </li>
+                <li class="s_li guheight">
+                  <label><span>
+                    <input type="checkbox" giveup name="FIND_TYPE">
+                    </span><span>精确查询</span></label>
+                </li>
+                <li class="s_li"><a class="btn" name="subPlanList"><span>查询</span></a> </li>
+                <li class="s_li" style="display:none;"><a class="btn" name="planListGl"><span>过滤项</span></a></li>
+                <li class="s_li all_time">
+                  <select name="DATE_TYPE" style="width:80px" >
+                    <option value="1" selected="selected">今天</option>
+                    <option value="2">昨天</option>
+                    <option value="3">最近7天</option>
+                  </select>
+                </li>
+              </ul>
+            </div>
+            <!--#include virtual="/public/guolvxiang.shtml"--> 
+          </div>
+        </div>
+        
+        <!-- 表格内容------开始-->
+        <div class="table_list">
+          <div class="s_button">
+            <div class="rrr">
+              <ul class="s_ul s_ul_pad">
+                <li class="s_li"> <a class="btn" id="planToolsDelAll"><span>删除</span></a> </li>
+                <li class="s_li"> <a class="btn" id="planToolsSotpAll"><span>暂停</span></a> </li>
+                <li class="s_li"> <a class="btn" id="planToolsStartAll"><span>启用</span></a> </li>
+              </ul>
+            </div>
+          </div>
+          <!--#include virtual="/plan/list.html"-->
+          <div class="table_list" id="listPlanEach"></div>
+          <!-- 表格内容------开始--> 
+          
+        </div>
+      </div>
+      <!--推广计划内容--------结束--> 
+      
+      <!--推广组内容--------开始-->
+      <div class="program_div" style="position:relative;display:none;" id="contb2">
+        <div class="table_up_select">
+          <div class="rrr">
+            <div class="s_left">
+              <ul class="s_ul">
+                <li class="s_li">
+                  <select name="FIND_STATUS">
+                    <option value="100">全部状态</option>
+                    <option value="1">有效</option>
+                    <option value="2">计划处于暂停时段</option>
+                    <option value="3">计划每日预算不足</option>
+                    <option value="4">计划未开始</option>
+                    <option value="5">计划已暂停</option>
+                    <option value="8">暂停</option>
+                    <option value="6">计划已下线</option>
+                    <option value="7">出价过低</option>
+                  </select>
+                </li>
+                <li class="s_li">
+                  <input name="FIND_NAME" type="text" value="请输入组名称" size="16" class="input_border col"/>
+                </li>
+                <li class="s_li guheight">
+                  <label><span>
+                    <input type="checkbox" giveup name="FIND_TYPE" >
+                    </span><span>精确查询</span></label>
+                </li>
+                <li class="s_li"> <a name="subUnitList" class="btn"><span>查询</span></a> </li>
+                <li class="s_li" style="display:none;"><a class="btn" name="unitListGl"><span>过滤项</span></a></li>
+                <li class="s_li all_time">
+                  <select name="DATE_TYPE" style="width:80px" >
+                    <option value="1" selected="selected">今天</option>
+                    <option value="2">昨天</option>
+                    <option value="3">最近7天</option>
+                  </select>
+                </li>
+              </ul>
+            </div>
+            <!--#include virtual="/public/guolvxiang.shtml"--> 
+          </div>
+        </div>
+        <!-- 表格内容------开始-->
+        <div class="table_list">
+          <div class="s_button">
+            <div class="rrr">
+              <ul class="s_ul s_ul_pad">
+                <li class="s_li"> <a class="btn" id="unitToolsDelAll"><span>删除</span></a> </li>
+                <li class="s_li"> <a class="btn" id="unitToolsSotpAll"><span>暂停</span></a> </li>
+                <li class="s_li"> <a class="btn" id="unitToolsStartAll"><span>启用</span></a> </li>
+                <li class="s_li_new">
+                  <ol>
+                    <li class="s_li" name="unitToolsEditPrice"> <a class="btn" id="unitToolsEditPriceAll"><span>批量修改</span></a> </li>
+                    <li class="s_li_new1" style="display:none;" name="unitToolsEditPriceOpen"> <span title="">CPC:
+                      <input type="text" class="input_border2" name="unitPricesInputAll" >
+                      </span> <span title="">CPM:
+                      <input type="text" class="input_border2" name="unitPricesCpmInputAll">
+                      </span> </li>
+                    <li class="s_li_new2" style="display:none;" name="unitToolsEditPriceOpen"><a class="btn" id="unitToolsEditPriceSave"><span>保存修改</span></a></li>
+                    <li class="s_li_new2" style="display:none;" name="unitToolsEditPriceOpen"><a class="btn" id="unitToolsEditPriceClear"><span>取消修改</span></a></li>
+                  </ol>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!--#include virtual="/unit/list.html"-->
+          <div id="listUnitEach" class="table_list"></div>
+          <!-- 表格内容------开始--> 
+          
+        </div>
+      </div>
+      <!--推广组内容--------结束--> 
+      <!--图片创意内容--------开始-->
+      <div class="program_div" style="position:relative;display:none;" id="contb3">
+        <div class="table_up_select">
+          <div class="rrr">
+            <div class="s_left">
+              <ul class="s_ul">
+                <li class="s_li">
+                  <select name="FIND_STATUS">
+                    <option value="100">全部状态</option>
+                    <option value="1">有效</option>
+                    <option value="2">不宜推广</option>
+                    <option value="3">暂停</option>
+                    <option value="4">审核中</option>
+                    <option value="5">审核拒绝</option>
+                    <option value="6">已删除</option>
+                    <!--<option value="11">DSP审核中</option>-->
+                    <option value="12">DSP审核拒绝</option>
+                    <option value="10">DSP审核通过</option>
+                  </select>
+                </li>
+                <li class="s_li">
+                  <input name="FIND_NAME" type="text" value="请输入创意标题" class="input_border col"/>
+                </li>
+                <li class="s_li guheight">
+                  <label><span>
+                    <input type="checkbox" giveup name="FIND_TYPE">
+                    </span><span>精确查询</span></label>
+                </li>
+                <li class="s_li"> <a name="subIdeasList"  class="btn"><span>查询</span></a> </li>
+                <li class="s_li"> <a name="ideasCopy"  class="btn"><span>复制</span></a> </li>
+                <li class="s_li" style="display:none;"><a class="btn" name="ideasListGl"><span>过滤项</span></a></li>
+                <li class="s_li all_time">
+                  <select name="DATE_TYPE" style="width:80px">
+                    <option value="1" selected="selected">今天</option>
+                    <option value="2">昨天</option>
+                    <option value="3">最近7天</option>
+                  </select>
+                </li>
+              </ul>
+            </div>
+            <!--#include virtual="/public/guolvxiang.shtml"--> 
+          </div>
+        </div>
+        
+        <!-- 表格内容------开始-->
+        <div class="table_list">
+          <div class="s_button">
+            <div class="rrr">
+              <ul class="s_ul s_ul_pad">
+                <li class="s_li"> <a class="btn" id="picIdeasToolsDelAll"><span>删除</span></a> </li>
+                <li class="s_li"> <a class="btn" id="picIdeasToolsSotpAll"><span>暂停</span></a> </li>
+                <li class="s_li"> <a class="btn" id="picIdeasToolsStartAll"><span>启用</span></a> </li>
+                <li class="s_li"><em><img src="/static/ads_c_2.0/web/images/u392.png" width="15" height="15"/>DSP审核通过</em></li>
+                <li class="s_li"><em><img src="/static/ads_c_2.0/web/images/u394.png" width="15" height="15"/>DSP审核拒绝</em></li>
+              </ul>
+            </div>
+          </div>
+          <!--#include virtual="/picIdea/list.html"-->
+          <div id="listPicIdeasEach" class="table_list"></div>
+          <!-- 表格内容------开始--> 
+          
+        </div>
+      </div>
+      <!--图片创意内容--------结束--> 
+      <!--文字创意内容--------开始-->
+      <div class="program_div" style="position:relative;display:none;" id="contb4">
+        <div class="table_up_select">
+          <div class="rrr">
+            <div class="s_left">
+              <ul class="s_ul">
+                <li class="s_li">
+                  <select name="FIND_STATUS">
+                    <option value="100">全部状态</option>
+                    <option value="1">有效</option>
+                    <option value="2">不宜推广</option>
+                    <option value="3">暂停</option>
+                    <option value="4">审核中</option>
+                    <option value="5">审核拒绝</option>
+                    <option value="6">已删除</option>
+                  </select>
+                </li>
+                <li class="s_li">
+                  <input name="FIND_NAME" type="text" value="请输入创意标题" class="input_border col"/>
+                </li>
+                <li class="s_li guheight">
+                  <label><span>
+                    <input type="checkbox" giveup name="FIND_TYPE">
+                    </span><span>精确查询</span></label>
+                </li>
+                <li class="s_li"> <a name="subIdeasList"  class="btn"><span>查询</span></a> </li>
+                <li class="s_li"> <a name="ideasCopy"  class="btn"><span>复制</span></a> </li>
+                <li class="s_li" style="display:none;"><a class="btn" name="ideasListGl"><span>过滤项</span></a></li>
+                <li class="s_li all_time">
+                  <select name="DATE_TYPE" style="width:80px" >
+                    <option value="1" selected="selected">今天</option>
+                    <option value="2">昨天</option>
+                    <option value="3">最近7天</option>
+                  </select>
+                </li>
+              </ul>
+            </div>
+            <!--#include virtual="/public/guolvxiang.shtml"--> 
+          </div>
+        </div>
+        
+        <!-- 表格内容------开始-->
+        <div class="table_list">
+          <div class="s_button">
+            <div class="rrr">
+              <ul class="s_ul s_ul_pad">
+                <li class="s_li"> <a class="btn" id="testIdeasToolsDelAll"><span>删除</span></a> </li>
+                <li class="s_li"> <a class="btn" id="testIdeasToolsSotpAll"><span>暂停</span></a> </li>
+                <li class="s_li"> <a class="btn" id="testIdeasToolsStartAll"><span>启用</span></a> </li>
+              </ul>
+            </div>
+          </div>
+          <!--#include virtual="/testIdea/list.html"-->
+          <div id="listTestIdeasEach" class="table_list"></div>
+          <!-- 表格内容------开始--> 
+          
+        </div>
+      </div>
+      <!--文字创意内容--------结束--> 
+      
+      <!-------------------附加创意 开始------------------------->
+      <div style="position:relative;display:none;" id="contb5">
+        <div class="program_div">
+          <div class="table_up_select">
+            <div class="rrr">
+              <div class="s_left">
+                <ul class="s_ul">
+                  <li class="s_li">
+                    <select name="FIND_STATUS">
+                      <option value="100">全部状态</option>
+                      <option value="1">有效</option>
+                      <option value="2">不宜推广</option>
+                      <option value="3">暂停</option>
+                      <option value="4">审核中</option>
+                      <option value="5">审核拒绝</option>
+                    </select>
+                  </li>
+                  <li class="s_li">
+                    <input name="FIND_NAME" type="text" value="请输入子链名称" size="16" class="input_border col" />
+                  </li>
+                  <li class="s_li"> <a name="subAppendIdeasList"  class="btn"><span>查询</span></a> </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!--表格内容 开始-->
+          <div class="table_list">
+            <div class="s_button">
+              <div class="rrr">
+                <ul class="s_ul s_ul_pad">
+                  <li class="s_li">
+                    <div class="addpromotion add_no_bottom"> <a id="appendIdeasAdd"><b>+</b> 添加附加创意</a> </div>
+                  </li>
+                  <li class="s_li"> <a class="btn" id="appendIdeasToolsDelAll"><span>删除</span></a> </li>
+                  <li class="s_li"> <a class="btn" id="appendIdeasToolsSotpAll"><span>暂停</span></a> </li>
+                  <li class="s_li"> <a class="btn" id="appendIdeasToolsStartAll"><span>启用</span></a> </li>
+                </ul>
+              </div>
+            </div>
+            <!--#include virtual="/appendIdea/list.html"-->
+            <div id="listAppendIdeasEach" class="table_list"></div>
+            <!-- 表格内容 开始--> 
+          </div>
+        </div>
+        <div class="c_foot_left add_border" title="">绑定的附加创意在左侧推广时，只有在状态有效的时候才会展示。</div>
+      </div>
+      
+      <!----------------------附加创意 结束----------------------------------> 
+      <!-------------------关键词 开始------------------------->
+      <div style="position:relative;display:none;" id="contb6">
+        <div class="program_div">
+          <div class="table_up_select">
+            <div class="rrr">
+              <div class="s_left">
+                <ul class="s_ul">
+                  <li class="s_li">
+                    <input name="FIND_NAME" type="text" value="请输入关键词名称" size="16" class="input_border1 col"/>
+                  </li>
+                  <li class="s_li guheight"> <span>
+                    <input type="checkbox" name="FIND_TYPE" value="checkbox">
+                    </span><span>精确查询</span></li>
+                  <li class="s_li"> <a name="subKeyWdList"  class="btn"><span>查询</span></a> </li>
+                  <li class="s_li"><a name="getKeyWd"  class="btn"><span>导出</span></a> </li>
+                  <li class="s_li all_time">
+                    <select name="DATE_TYPE" style="width:80px" >
+                      <option value="1" selected="selected">今天</option>
+                      <option value="2">昨天</option>
+                      <option value="3">最近7天</option>
+                    </select>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          
+          <!--表格内容 开始-->
+          <div class="table_list">
+            <div class="s_button">
+              <div class="rrr">
+                <ul class="s_ul s_ul_pad">
+                  <li class="s_li"> <a id="KeyWdToolsDelAll" class="btn"><span>删除</span></a> </li>
+                </ul>
+              </div>
+            </div>
+            <!--#include virtual="/keyword/list.html"-->
+            <div id="listKeyWdEach" class="table_list"></div>
+          </div>
+        </div>
+      </div>
+      <!-------------------关键词 结束-------------------------> 
+      <!--table内容结束--> 
+      <!--分页开始-->
+      <div class="c_foot">
+        <div class="c_foot_left">上述并非实时数据，系统可能无法为您提供3小时内的数据。</div>
+        <!--#include virtual="/public/page.html"--> 
+      </div>
+      <!--分页结束--> 
+      
+    </div>
+    
+    <!------------------------ 弹出层HTML 开始-------------------------------------------> 
+    <!--修改计划名称开始-->
+    <div class="change_box boxWidth1" id="planNameEdit" style="display:none; left:275px; top:315px;">
+      <div class="clearfix">
+        <input type="PLANNAME" ckname="plan" gmsgfun maxlength="30" minlength="1" name="CAMPAIGN_NAME" class="change_boxInput" grequired >
+        <a class="btn" name="sub"><span>保存</span></a> <a class="btn" name="close"><span>取消</span></a> </div>
+      <p class="red" name="planNameCk" style="display:none;">该名称已存在，请重新输入！</p>
+    </div>
+    <!--修改计划名称结束--> 
+    <!--修改每日预算开始-->
+    <div class="change_box boxWidth1" id="planBudgetEdit" style="display:none; left:275px; top:315px;">
+      <div class="clearfix"><span class="cpc">￥</span>
+        <input type="CAMPAIGNBUDGET|NUMBER" gmsgfun maxlength="100000" minlength="50"  name="CAMPAIGN_BUDGET" grequired title="每日预算不能为空" class="change_boxInput" notatl >
+        <a class="btn" name="subBudget"><span>保存</span></a> <a class="btn" name="close"><span>取消</span></a> </div>
+      <p class="red" style="display:none;" name="planBudgetEdit_Ck" >每日预算应该是￥50到￥100000之间的整数</p>
+    </div>
+    <!--修改每日预算结束--> 
+    <!--修改状态开始-->
+    <div class="change_box boxWidth1" id="stateEdit" style="display:none; left:275px; top:315px;">
+      <div class="clearfix">
+        <div class="conditions_limit lf" style="margin-right:30px;">
+          <div class="selectStyle select_50">
+            <select style="width:55px;">
+              <option value="1">有效</option>
+              <option value="2">暂停</option>
+              <option value="0">删除</option>
+            </select>
+          </div>
+        </div>
+        <a class="btn" name="sub"><span>保存</span></a><a class="btn" name="close"><span>取消</span></a></div>
+    </div>
+    <!--修改状态结束--> 
+    <!--修改组名称开始-->
+    <div class="change_box boxWidth1" id="unitNameEdit" style="display:none; left:275px; top:315px;">
+      <div class="clearfix">
+        <input ckname="units" type="UNITNAME" name="GROUP_NAME" class="change_boxInput" grequired gmsgfun maxlength="30" minlength="1"  >
+        <a class="btn" name="sub"><span>保存</span></a> <a class="btn" name="close"><span>取消</span></a> </div>
+      <p class="red" name="unitNameCk" style="display:none;">该名称已存在，请重新输入！</p>
+    </div>
+    <!--修改组名称结束--> 
+    <!--修改组出价开始-->
+    <div class="change_box boxWidth1" id="unitCpcEdit" style="display:none; left:275px; top:315px;">
+      <div class="clearfix"><span class="cpc">CPC￥</span>
+        <input type="UNITPRICE|NUMBER" name="GROUP_PRICE" gmsgfun maxlength="999.99" minlength="0.05" class="change_boxInput" >
+        <a class="btn" name="sub"><span>保存</span></a> <a class="btn" name="close"><span>取消</span></a> </div>
+      <p class="red" style="display:none;" name="unitCpcEdit_Ck" >出价应该是￥0.05到￥999.99之间的数字</p>
+    </div>
+    <!--修改组出价结束--> 
+    <!--修改图片创意名称开始-->
+    <div class="change_box boxWidth1" id="uploadIdeasTitleEdit" style="display:none; left:275px; top:315px;">
+      <div class="clearfix">
+        <input type="hidden" name="CREATIVE_IMG_ID" >
+        <input type="hidden" name="CREATIVE_ID" >
+        <input type="PICNAME" name="CREATIVE_NAME" grequired gmsgfun maxlength="40" minlength="1" class="change_boxInput">
+        <a class="btn" name="subPicIdeasTitle"><span>保存</span></a> <a class="btn" name="close"><span>取消</span></a> </div>
+    </div>
+    <!--修改图片创意名称结束--> 
+    <!--复制创意开始-->
+    <div class="notice_box" id="c_paste" style="display:none;">
+      <div class="notice_title"><b>提示信息</b><span>
+        <input name="close_bnt" type="image" src="/static/ads_c_2.0/web/images/step_close.gif" style="cursor:pointer;">
+        </span></div>
+      <div class="notice_main">
+        <div class="notice_cont">
+          <div class="notice_cont_tt">√ 复制成功！请选择粘贴目标：</div>
+          <div class="gz_congt_new">
+            <ul>
+              <li class="gz_new_lilf"><s class="red">*</s> 推广计划：</li>
+              <li class="gz_new_lirg c_select_pad1">
+                <select name="CAMPAIGN_ID" class="c_select_01">
+                </select>
+              </li>
+            </ul>
+          </div>
+          <div class="gz_congt_new c_select_pad2">
+            <ul>
+              <li class="gz_new_lilf"><s class="red">*</s> 推广组：</li>
+              <li class="gz_new_lirg c_select_pad1">
+                <select name="GROUP_ID" class="c_select_01">
+                </select>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="c_btn" align="center">
+          <ul class="c_paste_ulbtn">
+            <li><a name="ideasPaste">粘贴</a></li>
+            <li><a name="close_bnt">取消</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!--复制创意结束--> 
+    <!------------------------ 弹出层HTML 结束-------------------------------------------> 
+  </div>
+</div>
+<!--#include virtual="/picIdea/step3_losing.shtml"--> 
+<!--#include virtual="/plan/sub.shtml"--> 
+<!--#include virtual="/keyword/sub.html"--> 
+<!--#include virtual="/unit/sub.shtml"--> 
+<!--#include virtual="/testIdea/sub.shtml"--> 
+<!--#include virtual="/picIdea/sub.shtml"--> 
+<!--#include virtual="/appendIdea/sub.shtml"--> 
+<!--#include virtual="/public/footer.html"-->
+<div class="guide_wm" style="display:none;">
+  <div class="guide_wm_step3" id="guide_wm_step3"><img src="/static/ads_c_2.0/web/images/guide-wm-step3.png"></div>
+  <div class="guide_wm_step4" id="guide_wm_step4" style="display:none;"><img src="/static/ads_c_2.0/web/images/guide-wm-step4.png"></div>
+  <div class="guide_wm_step5" id="guide_wm_step5" style="display:none;"><img src="/static/ads_c_2.0/web/images/guide-wm-step5.png"></div>
+  <a class="guide_wm_close"> <img src="/static/ads_c_2.0/web/images/exit-wm.png"> </a> <a id="guide_wm_next3" class="guide_wm_next2"> <img src="/static/ads_c_2.0/web/images/next-wm1.png"> </a> <a id="guide_wm_next4" class="guide_wm_next4" style="display:none;"> <img src="/static/ads_c_2.0/web/images/next-wm1.png"> </a> <a id="guide_wm_next5" class="guide_wm_next5" href="/index.shtml" style="display:none;"> <img src="/static/ads_c_2.0/web/images/next-wm1.png"> </a> </div>
+<script>
+/*window.helpPicUnit=function(){
+	window.helpPicUnit=function(){};
+	var jscookie=$G.jscookie()
+	,	cindex=jscookie.get('wmindex')||0
+	;
+	if(cindex>2)return;
+	var dom=$G('div:guide_wm');
+	if(window.ideaType==1){
+		dom.show();
+	}
+	$G('a:guide_wm_close').click(function(){
+		dom.none();
+		jscookie.set('wmindex',6);
+	});
+	var guide_wm_step3=$G('#guide_wm_step3')
+	,	guide_wm_next3=$G('#guide_wm_next3')
+	,	guide_wm_step4=$G('#guide_wm_step4')
+	,	guide_wm_next4=$G('#guide_wm_next4')
+	,	guide_wm_step5=$G('#guide_wm_step5')
+	,	guide_wm_next5=$G('#guide_wm_next5')
+	;
+	guide_wm_next3.Each(function(){
+		this.style.position='absolute';
+		this.style.left='665px';
+		this.style.top='442px';
+	});
+	guide_wm_next3.click(function(){
+		guide_wm_next3.none();
+		guide_wm_step3.none();
+		guide_wm_step4.show();
+		guide_wm_next4.show();
+	});
+	var img=$G('img',guide_wm_step4[0])
+	,	helpUnitTd=$G('#helpUnitTd')
+	,	helpDom=$G.Obj(helpUnitTd[0])
+	;
+	img[0].style.position='absolute';
+	img[0].style.left=(helpDom.x-1035)+'px';
+	
+	guide_wm_next4[0].style.position='absolute';
+	guide_wm_next4[0].style.left=(helpDom.x-355)+'px';
+	guide_wm_next4[0].style.top=(helpDom.y-52)+'px';
+	
+	guide_wm_next4.click(function(){
+		guide_wm_next4.none();
+		guide_wm_step4.none();
+		guide_wm_step5.show();
+		guide_wm_next5.show();
+	});
+	$G.AttachEvent(window,"resize",function(){
+		var helpUnitTd=$G('#helpUnitTd')
+		,	helpDom=$G.Obj(helpUnitTd[0])
+		;
+		img[0].style.left=(helpDom.x-1035)+'px';
+	});
+	
+	guide_wm_next5[0].style.position='absolute';
+	guide_wm_next5[0].style.left='850px';
+	guide_wm_next5[0].style.top='437px';
+	//img[0].style.width=w.w+'px';
+	//img[0].style.height=w.h+'px';
+};*/
+</script> 
+<script language="javascript" src="/static/web/js/page/toufang.js"></script>
+</body>
+</html>

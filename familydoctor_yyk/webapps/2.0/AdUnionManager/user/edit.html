@@ -1,0 +1,119 @@
+<div class="account_box" id="account_edit" style="display:none;">
+<input type="hidden" name="ACCOUNT_ID" />
+  <div class="account_title"><b name="userNew">新增账号</b><b name="userEdit">修改账号</b><span><input name="close" type="image" src="/static/ads_m_1.0/web/images/view_close.gif" style="cursor:pointer;"></span></div>
+  <div class="account_main">
+  	<div class="account_cont">
+      <div class="cont_lf">
+      	<ul>
+        	<li class="h20" style="display:none;">API-Token：</li>
+         	<li class="h20"><s class="red">*</s> 登录名：</li>
+         	<li class="h20" name="userNew"><s class="red">*</s> 登录密码：</li>
+        	<li class="h20" name="userNew"><s class="red">*</s> 确认密码：</li>
+        	<li class="h20"><s class="red">*</s> 公司名称：</li>
+        	<li class="h20"><s class="red">*</s> 公司网址：</li>
+        	<li class="h20">所属行业：</li>
+         	<li class="h20"><s class="red">*</s> 所在区域：</li>
+            <li class="h20"><s class="red">*</s> 投放区域限制：</li>
+        	<li class="h20"><s class="red">*</s> 通信地址：</li>
+        	<li class="h20"><s class="red">*</s> 邮编：</li>
+        	<li class="h20"><s class="red">*</s> 联系人：</li>
+        	<li class="h20"><s class="red">*</s> 固定电话：</li>
+        	<li class="h20">传真：</li>
+        	<li class="h20">移动电话：</li>
+        	<li class="h20"><s class="red">*</s> 电子邮件：</li>
+        	<li class="h20">咨询链接：</li>
+        	<li class="h20">挂号网医院ID：</li>
+            <li class="h20">科室ID：</li>
+            <li class="h20">医院缩略图：</li>
+            <li class="h20">销售：</li>
+        	<li class="h20">所属客服：</li>
+        	<li class="h20">医生标识：</li>
+      </ul>
+      </div>
+      <div class="cont_rg">
+      	<ol>
+       	    <li class="h20" style="display:none;">
+            <ul>
+                	<li style=" float:left;" ><input name="API_TOKEN" type="text" class="input01"></li>
+                    <li class="lf" name="userEdit"><label><input type="checkbox" class="lf"><span class="qiyong">启用</span></label></li>
+                    <li><a name="userNew" onfn="token" >生成</a><a name="userEdit" onfn="token">重置</a></li>
+                </ul>
+            </li>
+        	<li class="h20"><input grequired gmsgfun maxlength="16" minlength="4" name="LOGIN_NAME" type="LOGIN" class="input01"></li>
+        	<li class="h20" name="userNew"><input type="password" grequired gmsgfun maxlength="16" minlength="6" name="pass1" class="input01"></li>
+        	<li class="h20" name="userNew"><input type="password" grequired gmsgfun maxlength="16" minlength="6" name="pass2" class="input01"></li>
+        	<li class="h20"><input grequired gmsgfun maxlength="100" minlength="6" name="COMPANY_NAME" type="COMPANYNAME" class="input01"></li>
+        	<li class="h20"><input grequired gmsgfun maxlength="2000" minlength="1" name="COMPANY_SITE" type="URL" class="input01"></li>
+        	<li class="h20">
+               <div class="conditions_limit">
+                 <div class="selectStyle select_180">
+                    <select name="INDUSTRY" style="width:220px;" >
+                    </select>
+                 </div>
+                </div>
+          </li>
+        	<li class="h20" id="szqydisplay">
+               <div class="lf">
+               <div class="conditions_limit">
+                 <div class="selectStyle select_50">
+                    <select id="accountParent" name="PROVINCE_ID" style="width:55px;" ></select>
+                 </div>
+                </div>
+                </div>
+               <div class="lfp">
+               <div class="conditions_limit">
+                 <div class="selectStyle select_50">
+                      <select id="accountRegion" name="CITY_ID" style="width:110px;" ></select>
+                 </div>
+                </div>
+                </div>
+          </li>
+          <li class="h20">
+        	    <label class="new_label">
+        	      <input type="radio" giveup name="PLACE_REGION_SUB" value="2" class="new_label_input">
+        	      省级</label>
+        	    <label>
+        	      <input type="radio" giveup name="PLACE_REGION_SUB" value="1" class="new_label_input" checked="checked">
+        	      省市级</label>
+        	</li>
+            
+        	<li class="h20"><input grequired gmsgfun maxlength="100" minlength="20" name="ADDRESS" type="ADDRESS" class="input01"></li>
+        	<li class="h20"><input grequired gmsgfun maxlength="6" minlength="6" name="POSTCODE" type="ZIPCODE" class="input01"></li>
+        	<li class="h20"><input grequired gmsgfun maxlength="16" minlength="4" name="CONTACT" type="CONTACT" class="input01"></li>
+        	<li class="h20"><input grequired gmsgfun name="TELEPHONE" type="TEL" class="input01"></li>
+        	<li class="h20"><input gmsgfun name="FAX" type="FAX" class="input01"></li>
+        	<li class="h20"><input gmsgfun maxlength="100" minlength="6" name="MOBILE" type="MOBILE" class="input01"></li>
+        	<li class="h20"><input grequired gmsgfun maxlength="100" minlength="6" name="EMAIL" type="EMAIL" class="input01"></li>
+        	<li class="h20">
+            	<ul>
+                	<li><input gmsgfun maxlength="1024" minlength="20" name="WEBIM" type="WEBIM" class="input01_1"><a onfn="webim" target="_blank">浏览</a></li>
+                </ul>
+            </li>
+        	<li class="h20">
+            	<ul>
+                	<li><input name="GUAHAO_TOKEN" type="text" class="input01_1"><a onfn="guahaoToken" target="_blank">浏览</a></li>
+                </ul>
+            </li>
+            <li class="h20">
+            	<ul>
+                	<li><input id="guahaoKey" type="text" class="input01_1"><a onfn="guahaoKey" target="_blank">浏览</a></li>
+                </ul>
+            </li>
+            <li class="h20">
+            	<ul>
+                	<li><input readonly="readonly" name="HOSPITAL_IMG" type="text" class="input01_1"><a id="hospitalImgFile">上传</a></li>
+                </ul>
+            </li>
+            <li class="h20"><input name="SALES" type="text" class="input01"></li>
+        	<li class="h20"><input name="CUSTOMER_SERVICE" type="text" class="input01"></li>
+			<li class="h20" >
+				<input name="doctors_id" type="text" class="input01">
+			</li>
+	       </ol>
+      </div>
+  	</div>
+<div class="c_btn" align="center"><ol><li><a onfn="save" name="submit">保存</a><a name="userNew" onfn="rest">重置</a><span name="userEdit"><a name="close">取消</a></span></li></ol></div>
+  </div>
+</div>
+<script language="javascript" src="/static/web/js/common/common_industry.js"></script>
+<script language="javascript" src="/static/web/js/page/manager/accountEdit.js"></script>

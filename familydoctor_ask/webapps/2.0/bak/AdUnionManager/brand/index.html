@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>客户管理-账号管理</title>
+<!--#include virtual="/public/public.shtml"-->
+<link rel="stylesheet" type="text/css" href="/static/ads_m_1.0/web/css/body_list.css">
+<link rel="stylesheet" type="text/css" href="/static/ads_m_1.0/web/css/account_add.css">
+<link rel="stylesheet" type="text/css" href="/static/ads_m_1.0/web/css/input.css">
+<link rel="stylesheet" type="text/css" href="/static/ads_m_1.0/web/css/page.css">
+<link rel="stylesheet" type="text/css" href="/static/ads_m_1.0/web/css/gz_alter.css">
+<link rel="stylesheet" type="text/css" href="/static/ads_m_1.0/web/css/description.css"/>
+<link rel="stylesheet" type="text/css" href="/static/ads_m_1.0/web/css/refuse.css"/>
+<link rel="stylesheet" type="text/css" href="/static/ads_m_1.0/web/css/system.css"/>
+<link rel="stylesheet" type="text/css" href="/static/ads_m_1.0/web/css/order_view_creative.css"/>
+<link rel="stylesheet" type="text/css" href="/static/ads_m_1.0/web/css/recharge_detailed.css"/>
+<link rel="stylesheet" type="text/css" href="/static/ads_m_1.0/web/css/select_region.css"/>
+<link rel="stylesheet" type="text/css" href="/static/ads_m_1.0/web/css/select_keshi.css"/>
+<script language="javascript" src="/static/web/js/common/common_time.js"></script>
+</head>
+<body>
+<script>
+window.urlName='brand';
+</script>
+<!--#include virtual="/user/account_view.html"-->
+<!--#include virtual="/public/header.shtml"-->
+<!--#include virtual="/tool/keshi.html"-->
+<!--#include virtual="/tool/region.html"-->
+<div class="ad_box">
+  <div class="main">
+    <div class="curr_position">当前位置：<span>品牌广告>订单查询</span></div>
+    <!-- 查询条件conditions start -->
+    <div class="conditions">
+      <ol>
+        <li class="conditions_li padl2">
+          <select name="FIND_TYPE" >
+            <option value="1">订单编号</option>
+            <option value="2">登录名</option>
+          </select>
+        </li>
+        <li class="conditions_li padl2">
+            <input name="FIND_NAME" type="text" class="input07_3" value="">
+        </li>
+        <li class="conditions_li padl2"><span>投放科室：</span></li>
+        <li class="conditions_li brand_select_img"> <a id="putKeshi"><img src="/static/ads_m_1.0/web/images/select_kq_01.jpg"/></a> </li>
+        <li class="conditions_li padl3"><span>投放区域：</span></li>
+        <li class="conditions_li brand_select_img"> <a id="putRegion"><img src="/static/ads_m_1.0/web/images/select_kq_02.jpg"/></a> </li>
+        <li class="conditions_li padl3"><span>投放时间：</span></li>
+        <li class="conditions_li">
+          <input type="text" class="times_new" name="putTime">
+          <input type="image" class="calendar" src="/static/ads_m_1.0/web/images/calendar.gif" name="calendar" setvalue="day"  maxdate="3012-01-01" >
+        </li>
+      </ol>
+      <ol>
+        <li class="conditions_li padl2"><span>创建日期：</span></li>
+        <li class="conditions_li">
+          <input type="text" class="times_new" name="createTime">
+          <input type="image" class="calendar" src="/static/ads_m_1.0/web/images/calendar.gif" name="calendar" setvalue="day"  maxdate="3012-01-01">
+        </li>
+        <li class="conditions_li padl3"><span>订单状态：</span></li>
+        <li class="conditions_li">
+          <select name="STATUS">
+            <option value="100">全部状态</option>
+            <option value="4">申请中</option>
+            <option value="6">申请拒绝</option>
+            <option value="5">已过期</option>
+            <option value="3">待投放</option>
+            <option value="1">投放中</option>
+            <option value="2">已结束</option>
+          </select>
+        </li>
+        <li class="conditions_li padl4"><span>排序方式：</span></li>
+        <li class="conditions_li">
+          <select name="SORT_COLUMN">
+            <option value="1">订单编号</option>
+            <option value="2">登录名</option>
+            <option value="3">投放时长</option>
+            <option value="4">开始日期</option>
+            <option value="5">结束日期</option>
+            <option value="6">广告消费</option>
+            <option value="7">创建时间</option>
+            <option value="8">状态</option>
+          </select>
+        </li>
+        <li class="conditions_li padl2">
+          <select name="SORT_TYPE">
+              <option value="1">升序</option>
+              <option value="2" selected="selected">降序</option>
+            </select>
+        </li>
+        <li class="conditions_li padl2">
+          <input type="checkbox" checked="checked" class="checkbox_01" value="2" name="BALANCE_TYPE">
+          隐藏已失效订单</li>
+        <li class="conditions_li padl3 c_select"><a id="subList">查询</a></li>
+        <li class="conditions_li padl3 c_select"><a href="add.html" target="_blank">新增广告</a></li>
+      </ol>
+    </div>
+    <!-- 查询条件conditions end --> 
+    <!-- 查询条件s_content start -->
+    <div class="s_content" id="brandList"></div>
+    <!-- 查询条件s_content end -->
+    <div class="s_bottom">
+      <div class="b_lf lf"></div>
+      <!--#include virtual="/public/page.html"--> 
+    </div>
+  </div>
+</div>
+<!--#include virtual="/brand/list.html"-->
+<script language="javascript" src="/static/web/js/page/manager/brand.js"></script>
+<!--#include virtual="/public/footer.html"-->

@@ -1,0 +1,26 @@
+<div id="ListLiSelectMenu" style="display:none;">
+<ul class="d_line">
+  <li class="dw50">
+    <input type="checkbox" name="checkboxSelectAll" onclick="window.brandSelect.selectAll.call(this);">
+  </li>
+  <li class="dw120 d_bold">一级科室</li>
+  <li class="dw239 d_bold">二级科室</li>
+  <li class="dw120 d_bold">一级区域</li>
+  <li class="dw239 d_bold">二级区域</li>
+  <li class="dw120 d_bold">状态</li>
+  <li class="dw80 d_bold">操作</li>
+</ul>
+
+</div>
+<div id="listLiSelect" style="display:none;">
+  <ul>
+   <li class="dw50">
+     <input type="checkbox" cd="{STATUS}" name="checkSelectbox" value="{regKs_ID}" onclick="window.brandSelect.selectId.call(this);">
+  </li>
+  <li class="dw120">{DEPT_PARNT_CODE}</li>
+  <li class="dw239">{DEPT_SERIALIZE}</li>
+  <li class="dw120">{REGION_PARNT_CODE}</li>
+  <li class="dw239">{REGION_SERIALIZE}</li>
+  <li class="dw120 {STATUSCss}">{STATUS}</li>
+  <li class="dw80 red"><a value="{regKs_ID}">删除</a></li>
+</div>

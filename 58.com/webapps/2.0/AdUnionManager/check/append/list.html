@@ -1,0 +1,27 @@
+<xmp id="listCheckAppendTitle" style="display:none;">
+  <tr>
+    <th class="table_wa"><input type="checkbox" name="listCheckAppendCheckboxAll" onclick="window.checkAppend.selectAll.call(this);" /></td>
+    <th class="table_wg_tt">附加创意</td>
+    <th class="table_we">登录名</td>
+    <th class="table_wh">修改时间</td>
+    <th class="table_wc">状态</td>
+    <th class="table_wc">操作</td>
+  </tr>
+</xmp>
+<xmp id="listCheckAppendList" style="display:none;">
+  <tr id="Append_{creativeId}" name="listAppendTr">
+    <td name="listAppendTd" class="table_wa"><input type="checkbox" name="listCheckAppendCheckbox" value="{CREATIVE_ID}"  onclick="window.checkAppend.selectId.call(this);" /></td>
+    <td name="listAppendTd" class="table_wg">
+    <div class="add_ch">{CREATIVE_CONTENT}</div>
+    </td>
+    <td name="listAppendTd" class="table_we"><a name="loginName" style="color:#00F;" value="{ACCOUNT_ID}">{ACCOUNT_NAME}</a></td>
+    <td name="listAppendTd" class="table_wh">{LATE_LOGIN_TIME}</td>
+    <td name="listAppendTd" class="table_wc {stateCss}">{CREATIVE_STATE}</td>
+    <td name="listAppendTd" class="table_wc"><a value="{CREATIVE_ID}" name="tools">{toolTest}</a></td>
+  </tr>
+</xmp>
+<xmp id="listCheckAppendErr" style="display:none;">
+  <tr>
+    <td colspan="12"><div class="warn">没有符合条件的数据</div></td>
+  </tr>
+</xmp>

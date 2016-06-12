@@ -1,0 +1,26 @@
+/* CSS Document */
+/*  凭证弹框 */
+.D_box{  background:#FFFFFF; border: 1px solid #23B7FA;margin: 0 auto;overflow: hidden;width: 800px;}
+.D_box .d_title{ height:31px; line-height:31px; background:url(/static/ads_m_1.0/web/images/pub_bg.gif) repeat-x 0 -200px; padding-left:15px;}
+.D_box .d_title b{ float:left;}
+.D_box .d_title span{ float:right; padding:7px 10px 0 0;}
+/*  main_tt start*/
+.D_box .main_tt{ width:780px; height:28px; margin-top:10px;}
+.D_box .main_tt ol {height:28px; border-bottom:1px solid #d3d2d2; }
+.D_box .main_tt ol li{ display:block; height:28px; width:117px; float:left; text-align:center; line-height:25px; cursor:pointer;}
+.D_box .main_tt ol .li_hover{ cursor:pointer; height:28px; width:118px; background:url(/static/ads_m_1.0/web/images/de_04.gif) repeat-x;border:1px solid #d3d2d2; border-bottom:none; } 
+/*  main_tt end*/
+.main_pad{ height:300px; width:800px; border: 1px solid #dedede;}
+.main_pad .main_title{ height:28px; line-height:28px; font-weight:bold; border-bottom: 1px solid #dedede;padding-left:10px;}
+.main_pad .main_rcontent ul{height:28px;width:800px;  border-bottom: 1px solid #dedede;}
+.main_pad .main_rcontent ul li{ float:left;height:28px; line-height:28px; }
+.main_pad .main_rcontent ul li.rw160{ width:170px; overflow:hidden;padding-left:10px;}
+.main_pad .main_rcontent ul li.rw190{ width:210px; overflow:hidden;}
+.dark_red{ color:#863a23;}
+.font14{ font-size:16px; font-weight:bold;}
+.main_pad .main_rcontent ul li.r_total{ font-weight:bold; padding-left:10px;}
+
+
+
+
+

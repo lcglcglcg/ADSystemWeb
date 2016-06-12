@@ -1,0 +1,14 @@
+<div class="refuse_backg" id="recharge_view2" style="display:none;">
+  <div class="title">查看凭证备注</div>
+    <div class="cont">
+		<div class="write_pingzheng">
+			9月1日收到现金1万元，用于绩效现金发放。
+        </div>
+        <div class="r_btn" align="center">
+             <ol>
+                <li><a id="idBtn_close" onClick="$UE.close('recharge_view2');">关闭</a></li> 
+             </ol>
+        </div>
+    </div>
+  
+</div>

@@ -1,0 +1,125 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!--#include virtual="/public/public.shtml"-->
+<!--#include virtual="/public/public_step.shtml"-->
+<link href="/static/ads_c_2.0/web/css/keywords.css" rel="stylesheet" media="screen" type="text/css" />
+<link href="/static/ads_c_2.0/web/css/left_nav.css" rel="stylesheet" media="screen" type="text/css" />
+<link href="/static/ads_c_2.0/web/css/right_nav.css" rel="stylesheet" media="screen" type="text/css" />
+<link href="/static/ads_c_2.0/web/css/abstract.css" rel="stylesheet" media="screen" type="text/css" />
+<link href="/static/ads_c_2.0/web/css/preview.css" rel="stylesheet" media="screen" type="text/css" />
+<link href="/static/ads_c_2.0/web/css/table_list.css" rel="stylesheet" media="screen" type="text/css" />
+<link href="/static/ads_c_2.0/web/css/click_add.css" rel="stylesheet" media="screen" type="text/css" />
+<link href="/static/ads_c_2.0/web/css/page.css" rel="stylesheet" media="screen" type="text/css" />
+<link rel="stylesheet" type="text/css" href="/static/ads_c_2.0/web/css/step3_losing.css">
+<link rel="stylesheet" type="text/css" href="/static/ads_c_2.0/web/css/notice.css"/>
+<title>推广计划</title>
+</head>
+<body>
+<!--#include virtual="/public/header.shtml"--> 
+<div class="content">
+  <div class="c_right_new_brand">
+    <div class="abstract_pinpai"></div>
+    <div class="scommon_box">
+        <div class="scommon_main"> 
+          <!--左侧内容 -->
+          <div class="apply_ad_lf" id="select_keshi">
+            <div class="scommon_main scommon_main_new1">
+              <div class="depart depart_new_apply1"><span style="display:none;">
+                <select name="diseaseLeve_1" giveup write findlist gtext="选择或输入定向科室" >
+                </select>
+                </span>
+                <div class="tuijian_nav"> 
+                  
+                  <!--定向浏览行为 级别内容 start-->
+                  <div class="depart_level depart_level_h"> 
+                    <!-- 级别一 start-->
+                    <ul name="diseaseLeveEach_1" >
+                    </ul>
+                    <!-- 级别一 end--> 
+                  </div>
+                  <!--定向浏览行为 级别内容 end--> 
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!--右侧内容 -->
+          <div class="apply_ad_rg">
+            <div class="level2 level2_clear"> 
+              <!--投放地域-->
+              <div class="city"> <span class="tf_web">投放地域：</span>
+                <label class="label_mar_rg">
+                  <input type="radio" class="input_valign" value="1" name="REGION_TYPE">
+                  全部地域 </label>
+                <label>
+                  <input type="radio" checked="checked" class="input_valign" value="2" name="REGION_TYPE">
+                  选择地域 </label>
+                <!--全部地域内容-->
+                <div style="position:relative;" id="RadioGroup1apb2" class="level3_city level3_city_pad_leftnew">
+                  <ol class="title">
+                    <li>
+                      <label>
+                        <input giveup name="regionAll" type="checkbox" value="中国地区" class="input_valign"/>
+                        中国地区</label>
+                    </li>
+                  </ol>
+                  <span id="RegionListEach"></span>
+                  <ol class="title">
+                    <li class="li_w95">
+                      <label>
+                        <input giveup type="checkbox" name="otherRegion" class="input_valign"/>
+                        其他地区</label>
+                    </li>
+                  </ol>
+                  <ol class="row1">
+                    <li class="li_pad1 li_w95">
+                      <label>
+                        <input giveup type="checkbox" name="otherRegionVal" subname="1009900000" class="input_valign"/>
+                        <span>全部</span></label>
+                    </li>
+                  </ol>
+                  <div id="regionSelectDiv" style="display:none;width:600px; height:295px; background:#fff; opacity:0.6; position:absolute; top:0px; left:0px;"></div>
+                </div>
+                <!--选择地域内容--> 
+                
+              </div>
+            </div>
+          </div>
+          <div class="level2 level2_clear">
+            <div class="schedule">
+              <div class="level3_schedule" id="addBrandTime">
+                <ul>
+                  <li>投放日期：
+                    <input type="text" class="time_app" name="time">
+                    <input type="image" mindate="day" setvalue="day"  maxdate="3012-01-01"  class="calendar" src="/static/ads_c_2.0/web/images/dataImg.jpg"  name="calendar">
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="step1_cont">
+            <ul>
+              <li class="nopad">消费预算：￥
+                <input type="text" class="input_02" name="addBrandPrice" maxlength="100000" minlength="1">
+                元</li>
+            </ul>
+          </div>
+          
+          <!--按钮 -->
+          <div align="center" style="" id="update_bnt1" class="step_commom_btn">
+            <div class="s_c_width1"> <a name="addBrandSub" class="btn"><span>提交</span></a> <a name="addBrandRes" class="btn"><span>重置</span></a> </div>
+          </div>
+        </div>
+    </div>
+    </div>
+</div>
+<script>window.keshiClass='word3';</script>
+<script language="javascript" src="/static/web/js/common/common_time.js"></script>
+<script language="javascript" src="/static/web/js/page/keshi.js"></script> 
+<script language="javascript" src="/static/web/js/page/region.js"></script> 
+<script language="javascript" src="/static/web/js/page/brand/add.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+<div id="diseaseList2" style="display:none;">
+  <div class="depart_tt"> <span class="d_span1">
+    <select class="depart_select" name="diseaseLeve_1" giveup write findlist gtext="选择或输入定向科室" >
+    </select>
+    </span> <span class="gray" onclick="$G.log(window.disease.getid());">定向浏览行为只能针对一个科室进行设置</span> </div>
+  <div class="tuijian_nav" id="contc1"> 
+    <!--定向浏览行为 全选反选按钮-->
+    <div class="result depart_result"> <b style="display:none;">已选择<s class="dark_red" name="diseaseSelectCount" >0</s>个</b> <span class="re_arrow"> <a class="re_delete" name="diseaseSelectAll" >全选</a> <a class="re_delete" style="display:none;" name="diseaseSelectDifferent">反选</a> <a class="re_delete" name="diseaseSelectClear">清空选择</a> </span> </div>
+    <!--定向浏览行为 级别内容 start-->
+    <div class="depart_level"> 
+      <!-- 级别一 start-->
+      <ul name="diseaseLeveEach_1" >
+      </ul>
+      <!-- 级别一 end--> 
+    </div>
+    <!--定向浏览行为 级别内容 start--> 
+  </div>
+  <!--定向浏览行为 添加全部按钮--> 
+</div>
+<script language="javascript" src="/static/web/js/page/disease.js"></script>

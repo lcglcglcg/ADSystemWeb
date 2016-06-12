@@ -1,0 +1,9 @@
+@charset "utf-8";
+/* CSS Document */
+body{font-family: "宋体"; margin:0; padding:0;}
+a.block1:hover{ border:2px solid #4792ff;background:#fff; color:#000;}
+
+a.block2:hover{ border:2px solid #71cdc9;background:#fff; color:#000;}
+
+a.block3:hover{ border:2px solid #ad68d7;background:#fff; color:#000;}
+

@@ -1,0 +1,50 @@
+<div class="refuse_backg" id="view_refuse" style="display:none;">
+  <div class="title">审核拒绝的原因</div>
+  <div class="cont cont_wm_ds">
+    <div class="wm_cont" id="wm_cont">
+      <div class="cont_t">
+        <ul>
+          <li class="t_lf">网盟拒绝原因：</li>
+          <li class="t_rg" name="CREATIVE_REFUSE_REASON"></li>
+        </ul>
+      </div>
+      <div class="cont_b">
+        <ul>
+          <li class="b_lf">审核人：</li>
+          <li class="b_rg" name="AUDITOR_NAME" ></li>
+        </ul>
+      </div>
+      <div class="cont_b">
+        <ul>
+          <li class="b_lf">审核时间：</li>
+          <li class="b_rg" name="AUDITOR_UPDATE_TIME"></li>
+        </ul>
+      </div>
+    </div>
+    <div class="dsp_cont" id="dsp_cont" style="display:none;">
+      <div class="cont_t">
+        <ul>
+          <li class="t_lf">DSP拒绝原因：</li>
+          <li class="t_rg" name="CREATIVE_DSP_REFUSE_REASON"></li>
+        </ul>
+      </div>
+      <div class="cont_b">
+        <ul>
+          <li class="b_lf">审核人：</li>
+          <li class="b_rg" name="AUDITOR_NAME" ></li>
+        </ul>
+      </div>
+      <div class="cont_b">
+        <ul>
+          <li class="b_lf">审核时间：</li>
+          <li class="b_rg" name="AUDITOR_UPDATE_TIME"></li>
+        </ul>
+      </div>
+    </div>
+    <div class="r_btn" align="center">
+      <ul class="new_one_btn">
+        <li><a style="display:none;">查看创意</a><a name="close">关闭</a></li>
+      </ul>
+    </div>
+  </div>
+</div>

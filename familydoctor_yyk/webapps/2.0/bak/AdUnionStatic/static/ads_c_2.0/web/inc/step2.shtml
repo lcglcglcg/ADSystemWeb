@@ -1,0 +1,576 @@
+	<div class="scommon_box" id="step_second" style="display:none;">
+    	<div class="scommon_title"><p id="step2_name">新建推广组</p><a onClick="$UE.close('step_second');"></a></div>
+    	<div class="scommon_main">
+        	<div class="all_title" id="step_addtitle2"><span class="step_rg_bg">新建推广计划</span><span class="step_curr">新建推广组</span><span class="span_three">新建创意</span></div>
+            <div class="step1_cont">
+            	<ul>
+                	<li><span class="step1_lf">推广组名称：</span><span class="step1_rg"><input name="" type="text" class="input_01"/><span class="gray">最多30个字符</span></span></li>
+                </ul>
+            </div>
+                <!--精准定向 单选按钮-->
+            <div class="step1_cont">
+            	<ul>
+                <!--精准定向 单选按钮-->
+                	<li class="nopad"><span class="step1_lf">精准定向：</span>
+                    	<span class="step1_rg">
+							<!--修改文字推广的精准定向 单选按钮-->
+                                <p style="display:none;" id="step2_dingx3">
+                                    定向搜索行为
+                              </p>
+                                <p style="display:none;" id="step2_dingx4">
+                                    定向浏览行为
+                              </p>
+							<!--点击推广的精准定向 单选按钮-->
+                                <p style="display:none;" id="step2_dingx1">
+                                  <label>
+                                    <input type="radio" name="directGroup1" value="d4" id="RadioGroup1_1" onClick="$UE.display('clickGroupd2,zu_pay_pipei','none');$UE.display('clickGroupd1','block');" checked="checked"/>
+                                    定向浏览行为</label>
+                                  <label>
+                                    <input type="radio" name="directGroup1" value="d5" id="RadioGroup1_1" onClick="$UE.display('clickGroupd1,zu_pay_pipei','none');$UE.display('clickGroupd2','block');"/>
+                                    定向搜索行为</label>
+                                 <br />
+                              </p>
+							<!--展现推广的精准定向 单选按钮-->
+                                 <p style="display:none;" id="step2_dingx2">
+                                  <label>
+                                    <input type="radio" name="directGroup" value="d1" id="RadioGroup2_0" onClick="$UE.display('directGroupd2,directGroupd3,directGroupd4','none');$UE.display('directGroupd1','block');" checked="checked"/>
+                                    媒体定向</label>
+                                  <label>
+                                    <input type="radio" name="directGroup" value="d2" id="RadioGroup2_1" onClick="$UE.display('directGroupd1,directGroupd3,directGroupd4','none');$UE.display('directGroupd2','block');"/>
+                                    定向浏览行为</label>
+                                  <label>
+                                    <input type="radio" name="directGroup" value="d3" id="RadioGroup2_1" onClick="$UE.display('directGroupd1,directGroupd2,directGroupd4','none');$UE.display('directGroupd3','block');"/>
+                                    定向搜索行为</label>
+                                  <label>
+                                    <input type="radio" name="directGroup" value="d4" id="RadioGroup2_1" onClick="$UE.display('directGroupd1,directGroupd2,directGroupd3','none');$UE.display('directGroupd4','block');"/>
+                                    定向回头客</label>
+                                  <br />
+                              </p>
+                      </span>
+                    </li>
+                </ul>
+            </div>
+<!--精准定向 开始-->
+<div id="click_dingx" style="display:block;">
+        <!--定向浏览行为 -->
+            <div class="depart" id="clickGroupd1" style="disp lay:none;">
+                <div class="depart_tt">
+                	<span class="d_span1">
+                        <select name="" class="depart_select">
+                        <option value="1">选择或输入定向科室</option>
+                        <option value="2">内科</option>
+                        <option value="3">外科</option>
+                        </select>
+                    </span>
+                    <span class="gray">定向浏览行为只能针对一个科室进行设置</span>
+                </div>
+                <div class="tuijian_nav" id="contc1">
+                <!--定向浏览行为 全选反选按钮-->
+                    <div class="result depart_result">
+                        <b>已选择<s class="dark_red">3</s>个</b>
+                        <span class="re_arrow">
+                            <a id="all_select1" class="re_delete" onclick="$UE.display('all_select1','none');$UE.display('all_select2','block');">全选</a>
+                            <a id="all_select2" class="re_delete" onclick="$UE.display('all_select2','none');$UE.display('all_select1','block');" style="display:none;">反选</a>
+                            <a href="#" class="re_delete">清空选择</a>
+                        </span>
+                    </div>
+                <!--定向浏览行为 级别内容 start-->
+                	<div class="depart_level">
+                	<!-- 级别一 start-->
+                    	<ul>
+                        	<li>
+                            	<a class="d_level1">
+                                	<span class="d_input">
+                                        <input type="checkbox" checked="" name="checkgroup" value="1" >
+                                        <label for="c1" class="checkboxOff"></label>
+                                    </span>
+                                    <span class="word1"><b>一级科室</b>(<s class="dark_red">0</s>/1)</span>
+                                    <span class="span_line"></span>
+                                </a>
+                		<!-- 级别二 start-->
+                                <ul>
+                                	<li>
+                                        <a class="d_level2">
+                                           <span id="handlera1" class="gather" onclick="javascript:toggle('handlera1', 'contenta1', 'gather', 'spread');"></span>
+                                            <span class="d_input">
+                                                <input type="checkbox" checked="" name="checkgroup" value="2" >
+                                                <label for="c1" class="checkboxOff"></label>
+                                            </span>
+                                            <span class="word1"><b>二级科室</b>(<s class="dark_red">0</s>/1)</span>
+                                        </a>
+                                <!-- 级别三 start-->
+                                        <ul id="contenta1" style="display:none;">
+                                            <li>
+                                                <a class="d_level3">
+                                                   <span id="handlera2" class="gather" onclick="javascript:toggle('handlera2', 'contenta2', 'gather', 'spread');"></span>
+                                                   <span class="d_input">
+                                                       <input type="checkbox" checked="" name="checkgroup" value="3" >
+                                                       <label for="c1" class="checkboxOff"></label>
+                                                    </span>
+                                                    <span class="word1">一级病种(<s class="dark_red">0</s>/2)</span>
+                                                </a>
+                                        <!-- 级别四 start-->
+                                                <ul id="contenta2" style="display:none;">
+                                                    <li>
+                                                        <a class="d_level4">
+                                                           <span id="handlera3" class="gather" onclick="javascript:toggle('handlera3', 'contenta3', 'gather', 'spread');"></span>
+                                                               <span class="d_input">
+                                                                   <input type="checkbox" checked="" name="checkgroup" value="4" >
+                                                                   <label for="c1" class="checkboxOff"></label>
+                                                                </span>
+                                                            <span class="word1_03">二级病种二级病种二级病种二级病种二级病种(<s class="dark_red">1</s>/4)</span>
+                                                       </a>
+                                                <!-- 级别五 start-->
+                                                        <ul id="contenta3" style="display:none;">
+                                                            <li>
+                                                                <a class="d_level5">
+                                                                   <span class="d_input">
+                                                                       <input type="checkbox" checked="" name="checkgroup" value="5" >
+                                                                       <label for="c1" class="checkboxcurr"></label>
+                                                                    </span>
+                                                                    <span class="word1_03">三级病种</span>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="d_level5">
+                                                                   <span class="d_input">
+                                                                       <input type="checkbox" checked="" name="checkgroup" value="5" >
+                                                                       <label for="c1" class="checkboxOn"></label>
+                                                                    </span>
+                                                                    <span class="word1_03">三级病种</span>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="d_level5">
+                                                                   <span class="d_input">
+                                                                       <input type="checkbox" checked="" name="checkgroup" value="5" >
+                                                                       <label for="c1" class="checkboxcurr"></label>
+                                                                    </span>
+                                                                    <span class="word1_03">三级病种</span>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="d_level5">
+                                                                   <span class="d_input">
+                                                                       <input type="checkbox" checked="" name="checkgroup" value="5" >
+                                                                       <label for="c1" class="checkboxcurr"></label>
+                                                                    </span>
+                                                                    <span class="word1_03">三级病种</span>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                 <!-- 级别五 end-->
+                                                    </li>
+                                                    <li>
+                                                        <a class="d_level4">
+                                                           <span id="handlera3_1" class="gather" onclick="javascript:toggle('handlera3_1', 'contenta3_1', 'gather', 'spread');"></span>
+                                                               <span class="d_input">
+                                                                   <input type="checkbox" checked="" name="checkgroup" value="4" >
+                                                                   <label for="c1" class="checkboxOn"></label>
+                                                                </span>
+                                                            <span class="word1_03">二级病种二级病种二级病种二级病种二级病种(<s class="dark_red">1</s>/1)</span>
+                                                       </a>
+                                                <!-- 级别五 start-->
+                                                        <ul id="contenta3_1" style="display:none;">
+                                                            <li>
+                                                                <a class="d_level5">
+                                                                   <span class="d_input">
+                                                                       <input type="checkbox" checked="" name="checkgroup" value="5" >
+                                                                       <label for="c1" class="checkboxOn"></label>
+                                                                    </span>
+                                                                    <span class="word1_03">三级病种</span>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                 <!-- 级别五 end-->
+                                                    </li>
+                                                </ul>
+                                         <!-- 级别四 end-->
+                                            </li>
+                                        </ul>
+                                 <!-- 级别三 end-->
+                                   </li>
+                                </ul>
+                		<!-- 级别二 end-->
+                            </li>
+                        </ul>
+                	<!-- 级别一 end-->
+                    </div>
+                <!--定向浏览行为 级别内容 end-->
+                </div>
+        			<!--定向浏览行为 添加全部按钮-->
+            </div>
+            
+       <!--定向搜索行为 -->
+            <div class="glance" id="clickGroupd2" style="display:none;">
+           <!--定向搜索行为 左侧展示-->
+                <div class="glance_left">
+                    <div class="glr_hsz"><span class="y_select">输入/导入关键词</span><a href="#">全部删除</a></div>
+                    <div class="tuijian_nav">
+          <!--定向搜索行为 推荐结果-->
+                        <div class="result">
+                            <span class="re_arrow"><a href="#" class="re_all">添加全部</a></span>
+                            <span class="re_arrow"><input type="image" class="input_img" src="/static/ads_c_2.0/web/images/btn_daoru.gif" name="" alt=""></span>
+                        </div>
+          <!--定向搜索行为 推荐结果的展示-->
+                        <div class="result_show_keyword">
+                            <div class="res_textarea">
+                            	<textarea name="" cols="" rows="">
+                                	
+                                </textarea>
+                            </div>
+                        <div class="lf_zhushi">
+                        	<ul>
+                            	<li>每个关键词最多为20个汉字或40个英文</li>
+<!--                            	<li><span>匹配方式：</span><span class="class_ts" onmouseout="arrow_no_hover1();" onmouseover="arrow_hover1();"></span></li>
+                            	<li>[关键词]=精确匹配</li>
+                            	<li>[关键词]=广泛匹配（默认）</li>
+-->                            </ul>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+           <!--定向搜索行为 右侧展示-->
+           	    <div class="glance_right">
+                	<div class="glr_hsz"><span class="y_select">已选关键词(32)</span><a href="#">全部删除</a></div>
+                    <div class="res_rg_shu">
+                      <!--共两级别 第一级别-->
+                    	<div class="rg_num">
+                        	<div>
+                       		<!--第一级别-->
+                           		<div class="rg_level" onmouseover="$UE.display('delete_id','block')" onmouseout="$UE.display('delete_id','none')">
+                                    <span class="rg_level_tt1">关键词</span>
+                                    <a href="#" class="delete" id="delete_id" style="display:none;"></a>
+                            	</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+</div>            
+
+<div id="show_dingx" style="display:none;">
+			<!-- 媒体定向-->
+            <div class="level3_city glance" id="directGroupd1" style="disp lay:none;">
+                <ol class="title">
+                    <li><input name="" type="checkbox" value="" class="input_valign"/>所有媒体</li>
+                </ol>
+                <ol class="row1">
+                    <li class="li_w144">
+                        <div class="li_div">
+                            <div id="steptitlec1" onMouseOver="over_qie(1,'steptitlec','stepcontc','li_web_border1')"  onmouseout="out_qie(1,'steptitlec','stepcontc','')">
+                                <div class="hover_ceng_title" title="新浪健康频道"><input name="" type="checkbox" value="" class="input_valign"/><span>新浪健康频道</span><span class="zongshu" title="">11/20</span></div>
+                            </div>
+                            <div class="block2" style="display:none;" id="stepcontc1" onMouseOver="over_qie(1,'steptitlec','stepcontc','li_web_border1')"  onmouseout="out_qie(1,'steptitlec','stepcontc','')">
+                                <!--hover的层-->
+                                <div class="hover_ceng">
+                                    <ul>
+                                        <li title="买卖租赁"><input name="" type="checkbox" value=""/>买卖租赁</li>
+                                        <li title="家居装饰"><input name="" type="checkbox" value="" />家居装饰</li>
+                                        <li title="博彩/彩票"><input name="" type="checkbox" value="" />博彩/彩票</li>
+                                        <li title="买卖租赁"><input name="" type="checkbox" value="" />买卖租赁</li>
+                                        <li title="家居装饰"><input name="" type="checkbox" value="" />家居装饰</li>
+                                        <li title="博彩/彩票"><input name="" type="checkbox" value="" />博彩/彩票</li>
+                                        <li title="大兴区"><input name="" type="checkbox" value="" />大兴区</li>
+                                        <li title="买卖租赁"><input name="" type="checkbox" value="" />买卖租赁</li>
+                                    </ul>
+                                </div>
+                        </div>
+                        </div>
+                    </li>
+                    <li class="li_w144"><input name="" type="checkbox" value="" class="input_valign"/><span>新浪</span></li>
+                    <li class="li_w144"><input name="" type="checkbox" value="" class="input_valign"/><span>新浪</span></li>
+                    <li class="li_w144"><input name="" type="checkbox" value="" class="input_valign"/><span>新浪</span></li>
+                </ol>
+                <ol class="row1">
+                    <li class="li_w144"><input name="" type="checkbox" value="" class="input_valign"/><span>新浪</span></li>
+                    <li class="li_w144"><input name="" type="checkbox" value="" class="input_valign"/><span>新浪</span></li>
+                    <li class="li_w144"><input name="" type="checkbox" value="" class="input_valign"/><span>新浪</span></li>
+                </ol>
+                <ol class="row1">
+                    <li class="li_w144"><input name="" type="checkbox" value="" class="input_valign"/><span>新浪</span></li>
+                    <li class="li_w144"><input name="" type="checkbox" value="" class="input_valign"/><span>新浪</span></li>
+                    <li class="li_w144"><input name="" type="checkbox" value="" class="input_valign"/><span>新浪</span></li>
+                </ol>
+                <ol class="row1">
+                    <li class="li_w144"><input name="" type="checkbox" value="" class="input_valign"/><span>新浪</span></li>
+                    <li class="li_w144"><input name="" type="checkbox" value="" class="input_valign"/><span>新浪</span></li>
+                    <li class="li_w144"><input name="" type="checkbox" value="" class="input_valign"/><span>新浪</span></li>
+                </ol>
+            </div>
+            
+        <!--定向浏览行为 -->
+            <div class="depart" id="directGroupd2" style="display:none;">
+                <div class="depart_tt">
+                	<span class="d_span1">
+                        <select name="" class="depart_select">
+                        <option value="1">选择或输入定向科室</option>
+                        <option value="2">内科</option>
+                        <option value="3">外科</option>
+                        </select>
+                    </span>
+                    <span class="gray">定向浏览行为只能针对一个科室进行设置</span>
+                </div>
+                <div class="tuijian_nav" id="contc1">
+                <!--定向浏览行为 全选反选按钮-->
+                    <div class="result depart_result">
+                        <b>已选择<s class="dark_red">3</s>个</b>
+                        <span class="re_arrow">
+                            <a id="all_select1" class="re_delete" onclick="$UE.display('all_select1','none');$UE.display('all_select2','block');">全选</a>
+                            <a id="all_select2" class="re_delete" onclick="$UE.display('all_select2','none');$UE.display('all_select1','block');" style="display:none;">反选</a>
+                            <a href="#" class="re_delete">清空选择</a>
+                        </span>
+                    </div>
+                <!--定向浏览行为 级别内容 start-->
+                	<div class="depart_level">
+                	<!-- 级别一 start-->
+                    	<ul>
+                        	<li>
+                            	<a class="d_level1">
+                                	<span class="d_input">
+                                        <input type="checkbox" checked="" name="checkgroup" value="1" >
+                                        <label for="c1" class="checkboxOff"></label>
+                                    </span>
+                                    <span class="word1"><b>一级科室</b>(<s class="dark_red">0</s>/1)</span>
+                                    <span class="span_line"></span>
+                                </a>
+                		<!-- 级别二 start-->
+                                <ul>
+                                	<li>
+                                        <a class="d_level2">
+                                           <span id="handlera1" class="gather" onclick="javascript:toggle('handlera1', 'contenta1', 'gather', 'spread');"></span>
+                                            <span class="d_input">
+                                                <input type="checkbox" checked="" name="checkgroup" value="2" >
+                                                <label for="c1" class="checkboxOff"></label>
+                                            </span>
+                                            <span class="word1"><b>二级科室</b>(<s class="dark_red">0</s>/1)</span>
+                                        </a>
+                                <!-- 级别三 start-->
+                                        <ul id="contenta1" style="display:none;">
+                                            <li>
+                                                <a class="d_level3">
+                                                   <span id="handlera2" class="gather" onclick="javascript:toggle('handlera2', 'contenta2', 'gather', 'spread');"></span>
+                                                   <span class="d_input">
+                                                       <input type="checkbox" checked="" name="checkgroup" value="3" >
+                                                       <label for="c1" class="checkboxOff"></label>
+                                                    </span>
+                                                    <span class="word1">一级病种(<s class="dark_red">0</s>/2)</span>
+                                                </a>
+                                        <!-- 级别四 start-->
+                                                <ul id="contenta2" style="display:none;">
+                                                    <li>
+                                                        <a class="d_level4">
+                                                           <span id="handlera3" class="gather" onclick="javascript:toggle('handlera3', 'contenta3', 'gather', 'spread');"></span>
+                                                               <span class="d_input">
+                                                                   <input type="checkbox" checked="" name="checkgroup" value="4" >
+                                                                   <label for="c1" class="checkboxOff"></label>
+                                                                </span>
+                                                            <span class="word1">二级病种二级病种二级病种二级病种二级病种(<s class="dark_red">1</s>/4)</span>
+                                                       </a>
+                                                <!-- 级别五 start-->
+                                                        <ul id="contenta3" style="display:none;">
+                                                            <li>
+                                                                <a class="d_level5">
+                                                                   <span class="d_input">
+                                                                       <input type="checkbox" checked="" name="checkgroup" value="5" >
+                                                                       <label for="c1" class="checkboxcurr"></label>
+                                                                    </span>
+                                                                    <span class="word1">三级病种</span>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="d_level5">
+                                                                   <span class="d_input">
+                                                                       <input type="checkbox" checked="" name="checkgroup" value="5" >
+                                                                       <label for="c1" class="checkboxOn"></label>
+                                                                    </span>
+                                                                    <span class="word1">三级病种</span>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="d_level5">
+                                                                   <span class="d_input">
+                                                                       <input type="checkbox" checked="" name="checkgroup" value="5" >
+                                                                       <label for="c1" class="checkboxcurr"></label>
+                                                                    </span>
+                                                                    <span class="word1">三级病种</span>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="d_level5">
+                                                                   <span class="d_input">
+                                                                       <input type="checkbox" checked="" name="checkgroup" value="5" >
+                                                                       <label for="c1" class="checkboxcurr"></label>
+                                                                    </span>
+                                                                    <span class="word1">三级病种</span>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                 <!-- 级别五 end-->
+                                                    </li>
+                                                    <li>
+                                                        <a class="d_level4">
+                                                           <span id="handlera3_1" class="gather" onclick="javascript:toggle('handlera3_1', 'contenta3_1', 'gather', 'spread');"></span>
+                                                               <span class="d_input">
+                                                                   <input type="checkbox" checked="" name="checkgroup" value="4" >
+                                                                   <label for="c1" class="checkboxOn"></label>
+                                                                </span>
+                                                            <span class="word1">二级病种二级病种二级病种二级病种二级病种(<s class="dark_red">1</s>/1)</span>
+                                                       </a>
+                                                <!-- 级别五 start-->
+                                                        <ul id="contenta3_1" style="display:none;">
+                                                            <li>
+                                                                <a class="d_level5">
+                                                                   <span class="d_input">
+                                                                       <input type="checkbox" checked="" name="checkgroup" value="5" >
+                                                                       <label for="c1" class="checkboxOn"></label>
+                                                                    </span>
+                                                                    <span class="word1">三级病种</span>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                 <!-- 级别五 end-->
+                                                    </li>
+                                                </ul>
+                                         <!-- 级别四 end-->
+                                            </li>
+                                        </ul>
+                                 <!-- 级别三 end-->
+                                   </li>
+                                </ul>
+                		<!-- 级别二 end-->
+                            </li>
+                        </ul>
+                	<!-- 级别一 end-->
+                    </div>
+                <!--定向浏览行为 级别内容 end-->
+                </div>
+        			<!--定向浏览行为 添加全部按钮-->
+            </div>
+            
+       <!--定向搜索行为 -->
+            <div class="glance" id="directGroupd3" style="display:none;">
+           <!--定向搜索行为 左侧展示-->
+                <div class="glance_left">
+                    <div class="glr_hsz"><span class="y_select">输入/导入关键词</span><a href="#">全部删除</a></div>
+                    <div class="tuijian_nav">
+          <!--定向搜索行为 推荐结果-->
+                        <div class="result">
+                            <span class="re_arrow"><a href="#" class="re_all">添加全部</a></span>
+                            <span class="re_arrow"><input type="image" class="input_img" src="/static/ads_c_2.0/web/images/btn_daoru.gif" name="" alt=""></span>
+                        </div>
+          <!--定向搜索行为 推荐结果的展示-->
+                        <div class="result_show_keyword">
+                            <div class="res_textarea">
+                            	<textarea name="" cols="" rows="">
+                                	
+                                </textarea>
+                            </div>
+                        <div class="lf_zhushi">
+                        	<ul>
+                            	<li>每个关键词最多为20个汉字或40个英文</li>
+<!--                            	<li><span>匹配方式：</span><span class="class_ts" onmouseout="arrow_no_hover1();" onmouseover="arrow_hover1();"></span></li>
+                            	<li>[关键词]=精确匹配</li>
+                            	<li>[关键词]=广泛匹配（默认）</li>
+-->                            </ul>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+           <!--定向搜索行为 右侧展示-->
+           	    <div class="glance_right">
+                	<div class="glr_hsz"><span class="y_select">已选关键词(32)</span><a href="#">全部删除</a></div>
+                    <div class="res_rg_shu">
+                      <!--共两级别 第一级别-->
+                    	<div class="rg_num">
+                        	<div>
+                       		<!--第一级别-->
+                           		<div class="rg_level">
+                                    <span class="rg_level_tt1">关键词</span>
+                            	</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+    <!-- 定向回头客-->
+            <div class="return_cus" id="directGroupd4" style="display:none; padding-left:132px;">
+                <p>
+                <label>
+                <input type="checkbox" name="CheckboxGroup1" value="复选框" id="CheckboxGroup1_0" />
+                访问行为</label>
+                <label>
+                <input type="checkbox" name="CheckboxGroup1" value="复选框" id="CheckboxGroup1_1" />
+                咨询行为</label>
+                <br />
+                </p>
+            </div>
+</div>            
+
+<!--精准定向 结束-->
+   
+             <!--匹配模式-->
+            <div class="step1_cont" id="zu_pay_pipei" style="display:block;">
+            	<ul>
+                	<li class="nopad"><span class="step1_lf">匹配模式：<a class="ask" onmouseover="arrow_hover1();" onmouseout="arrow_no_hover1();" id="match_ask">？</a></span>
+                    	<span class="step1_rg">
+                              <label>
+                                <input type="radio" name="RadioGroup1" value="单选" id="RadioGroup1_0" />
+                                精准匹配</label>
+                              <label>
+                                <input type="radio" name="RadioGroup1" value="单选" id="RadioGroup1_2" />
+                                短语匹配</label>
+					   </span>
+                    </li>
+                </ul>
+            </div>
+   
+         <!--div组出价开始-->
+             <!--文字推广div组出价-->
+            <div class="step1_cont" id="zu_pay1" style="display:block;">
+            	<ul>
+                	<li class="nopad"><span class="step1_lf">CPC出价：</span>
+                    	<span class="step1_rg">
+                            <p>
+                                <input name="" type="text" class="input_01"/><span class="gray" >CPC指单次点击出价</span>
+                            </p>
+                       </span></li>
+                </ul>
+            </div>
+             <!--图片推广div组出价-->
+            <div class="step1_cont" id="zu_pay2" style="display:none;">
+            	<ul>
+                	<li class="nopad"><span class="step1_lf">CPC出价：</span>
+                    	<span class="step1_rg">
+                            <p>
+                               <input name="" type="text" class="input_01"/><span class="gray">CPC指单次点击出价</span>
+                            </p>
+                       </span>
+                   </li>
+                	<li class="nopad"><span class="step1_lf">CPM出价：</span>
+                    	<span class="step1_rg">
+                            <p>
+                               <input name="" type="text" class="input_01"/><span class="gray">CPM指千次展现出价</span>
+                            </p>
+                       </span>
+                   </li>
+                </ul>
+            </div>
+         <!--div组出价结束-->
+        <!--公共按钮 新建推广组-->
+            <div class="step_commom_btn" align="center" id="new_bnt2">
+                <div class="s_c_width">
+                    <a class="btn" onclick="javascript:$UE.open('step2_true');"><span>保存并继续</span></a>
+                    <a class="btn" onClick="javascript:$UE.confirm('您确定要中止新建推广组操作吗？','','$UE.close(\'step_second\')');"><span>取消</span></a>
+               </div>
+            </div>
+        <!--公共按钮 修改推广组-->
+            <div class="step_commom_btn" align="center" id="update_bnt2" style="display:none;">
+                <div class="s_c_width1">
+                    <a class="btn" onclick="javascript:$UE.alert('修改成功！','$UE.close(\'step_second\')');"><span>保存</span></a>
+                    <a class="btn" onClick="javascript:$UE.confirm('您确定要中止修改推广组操作吗？','','$UE.close(\'step_second\')');"><span>取消</span></a>
+               </div>
+            </div>
+        </div>
+    </div>

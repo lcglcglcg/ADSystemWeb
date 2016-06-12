@@ -1,0 +1,55 @@
+<div class="complex" style="display:none;" id="contk2"> 
+  <!--时间范围 start-->
+  <div class="row">
+    <div class="standard_lf">时间范围：</div>
+    <div class="standard_rg">
+      <input name="findtime" type="text" class="pc_01" />
+      <input setvalue="day" setlastvalue="0" name="calendar" type="image" src="/static/ads_c_2.0/web/images/dataImg.jpg" class="pc_img">
+    </div>
+  </div>
+  <!--时间范围 end--> 
+  <!--报告类型 start-->
+  <div class="row">
+    <div class="standard_lf">报告类型：</div>
+    <div class="standard_rg"> <a class="rg_hover" name="reportType" >地域报告</a><span style=" display:none;" > | <a  name="reportType" >媒体报告</a>| <a  name="reportType" >定向浏览报告</a>| <a  name="reportType" >定向词报告</a></span><br />
+    </div>
+  </div>
+  <!--报告类型 end--> 
+  <!--地域单元 start-->
+  <div class="row" name="reportType_display">
+    <div class="standard_lf">地域单元：</div>
+    <div class="standard_rg"> <a name="regionUnit" class="rg_hover">默认</a>| <a name="regionUnit">分地域</a> </div>
+  </div>
+  <span style="display:none;" >
+  <!--地域单元 end--> 
+  <!--媒体单元 start-->
+  <div class="row" name="reportType_display" style="display:none;">
+    <div class="standard_lf">媒体单元：</div>
+    <div class="standard_rg"> <a name="mediaUnit" class="rg_hover">默认</a>| <a name="mediaUnit" >分频道</a> </div>
+  </div>
+  <!--媒体单元 end--> 
+  <!--科室粒度和病种粒度 start-->
+  <div name="reportType_display" style="display:none;">
+    <div class="row">
+      <div class="standard_lf">科室粒度：</div>
+      <div class="standard_rg"> <a name="departmentType" class="rg_hover">一级科室</a>| <a name="departmentType" >二级科室</a> </div>
+    </div>
+    <div class="row">
+      <div class="standard_lf">病种粒度：</div>
+      <div class="standard_rg"> <a name="diseaseType" class="rg_hover">一级病种</a>| <a name="diseaseType" >二级病种</a>| <a name="diseaseType" >三级病种</a> </div>
+    </div>
+  </div>
+  </span>
+  <!--科室粒度和病种粒度 end-->
+  <!--时间单位 start-->
+  <div class="row">
+    <div class="standard_lf">时间单位：</div>
+    <div class="standard_rg"><a class="rg_hover" name="reportDate">默认</a>|<a name="reportDate">分日</a>|<a name="reportDate">分周</a>|<a name="reportDate">分月</a></div>
+  </div>
+  <!--时间单位 end-->
+  <div class="re_btn" id="complex_btn4"> <a class="btn" style="display:none;"><span>查看报告</span></a> <a class="btn"><span>定制报告</span></a> </div>
+<div class="s_download">
+      <p class="s_tishi">报告并非实时数据，系统可能无法为您提供3小时内的数据。</p>
+    </div>
+</div>
+<script language="javascript" src="/static/web/js/page/general.js"></script>

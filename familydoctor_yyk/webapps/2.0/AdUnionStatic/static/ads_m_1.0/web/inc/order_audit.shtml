@@ -1,0 +1,152 @@
+<div class="detailed_box" id="order_audit" style="display:none;">
+  <div class="detailed_title"><b>订单审核</b><span><input name="close_bnt" type="image" src="/static/ads_m_1.0/web/images/view_close.gif" onClick="$UE.close('order_audit');" style="cursor:pointer;"></span></div>
+  <div class="detailed_main">
+    <div class="conditions d_conditions">
+		<ol>
+            <li class="conditions_li"><span>投放科室：</span></li>
+             <li class="conditions_li brand_select_img">
+                    <a onclick="$UE.open('select_keshi');"><img src="/static/ads_m_1.0/web/images/select_kq_01.jpg"/></a>
+            </li>
+             <li class="conditions_li padl4"><span>投放区域：</span></li>
+             <li class="conditions_li brand_select_img">
+                    <a onclick="$UE.open('select_region');"><img src="/static/ads_m_1.0/web/images/select_kq_02.jpg"/></a>
+            </li>
+             <li class="conditions_li padl4"><span>投放时间：</span></li>
+             <li class="conditions_li">
+                <input type="text" class="times_new" name="time" value="2015/01/01-2015/01/31"><input type="image" class="calendar" src="/static/ads_m_1.0/web/images/calendar.gif" name="calendar">
+            </li>
+            <li class="conditions_li padl c_select"><a class="brand_ad_a" href="#">查询可投放档期</a></li>
+		</ol>
+    </div>
+    <div id="view_keputau" style="display:block;">
+        <div class="add_brand_btn">
+            <a id="titleau1" onClick="$UE.display('add_keputau','block');$UE.display('add_checkau','none');$UE.setClass3('titleau',2,'',1,'add_brand_btn_curr');">添加</a>
+            <a id="titleau2" class="add_brand_btn_curr" onClick="$UE.display('add_keputau','none');$UE.display('add_checkau','block');$UE.setClass3('titleau',2,'',2,'add_brand_btn_curr');">已选择(4)</a>
+        </div>
+        <div id="add_keputau" style="display:none;">
+            <div class="de_list">
+                <ul class="d_line">
+                    <li class="dw50"><input name="c_title" type="checkbox" value=""></li>
+                    <li class="dw120 d_bold">一级科室</li>
+                    <li class="dw100 d_bold">二级科室</li>
+                    <li class="dw120 d_bold">一级区域</li>
+                    <li class="dw100 d_bold">二级区域</li>
+                    <li class="dw120 d_bold">状态</li>
+                    <li class="dw80 d_bold">操作</li>
+               </ul>
+                <ul>
+                    <li class="dw50"><input name="c_title" type="checkbox" value=""></li>
+                    <li class="dw120">男科</li>
+                    <li class="dw100">不孕不育</li>
+                    <li class="dw120">上海</li>
+                    <li class="dw100">全部</li>
+                    <li class="dw120 green">可投放</li>
+                    <li class="dw80"><a href="#">添加</a></li>
+               </ul>
+                <ul>
+                    <li class="dw50"><input name="c_title" type="checkbox" value=""></li>
+                    <li class="dw120">男科</li>
+                    <li class="dw100">不孕不育</li>
+                    <li class="dw120">黑龙江</li>
+                    <li class="dw100">哈尔滨,佳木斯,齐齐哈尔</li>
+                    <li class="dw120 green">可投放</li>
+                    <li class="dw80"><a href="#">添加</a></li>
+               </ul>
+                <ul>
+                    <li class="dw50"><input name="c_title" type="checkbox" value="" disabled></li>
+                    <li class="dw120">男科</li>
+                    <li class="dw100">不孕不育</li>
+                    <li class="dw120">北京</li>
+                    <li class="dw100">全部</li>
+                    <li class="dw120 red">冲突</li>
+                    <li class="dw80"><span>--</span></li>
+               </ul>
+                <ul>
+                    <li class="dw50"><input name="c_title" type="checkbox" value="" disabled></li>
+                    <li class="dw120">男科</li>
+                    <li class="dw100">不孕不育</li>
+                    <li class="dw120">安徽</li>
+                    <li class="dw100">合肥、铜陵、芜湖、池州</li>
+                    <li class="dw120 red">冲突</li>
+                    <li class="dw80"><span>--</span></li>
+               </ul>
+            </div>
+            <div class="cw_page_border">
+                <div class="b_lf lf">
+                    <ol>
+                      <li><a href="#">批量添加</a></li>
+                      <li><a href="#">重置</a></li>
+                      </ol>
+                </div>
+                <div class="b_rg rg">
+                </div>
+            </div>  
+        </div> 
+               
+        <div id="add_checkau" style="display:block;">
+            <div class="de_list">
+                <ul class="d_line">
+                    <li class="dw50"><input name="c_title" type="checkbox" value=""></li>
+                    <li class="dw120 d_bold">一级科室</li>
+                    <li class="dw100 d_bold">二级科室</li>
+                    <li class="dw120 d_bold">一级区域</li>
+                    <li class="dw100 d_bold">二级区域</li>
+                    <li class="dw120 d_bold">状态</li>
+                    <li class="dw80 d_bold">操作</li>
+               </ul>
+                <ul>
+                    <li class="dw50"><input name="c_title" type="checkbox" value=""></li>
+                    <li class="dw120">男科</li>
+                    <li class="dw100">不孕不育</li>
+                    <li class="dw120">上海</li>
+                    <li class="dw100">全部</li>
+                    <li class="dw120 green">可投放</li>
+                    <li class="dw80"><a href="#">删除</a></li>
+               </ul>
+                <ul>
+                    <li class="dw50"><input name="c_title" type="checkbox" value=""></li>
+                    <li class="dw120">男科</li>
+                    <li class="dw100">不孕不育</li>
+                    <li class="dw120">安徽</li>
+                    <li class="dw100">合肥、铜陵、芜湖、池州</li>
+                    <li class="dw120 green">可投放</li>
+                    <li class="dw80"><a href="#">删除</a></li>
+               </ul>
+                <ul>
+                    <li class="dw50"><input name="c_title" type="checkbox" value=""></li>
+                    <li class="dw120">男科</li>
+                    <li class="dw100">不孕不育</li>
+                    <li class="dw120">北京</li>
+                    <li class="dw100">全部</li>
+                    <li class="dw120 green">可投放</li>
+                    <li class="dw80"><a href="#">删除</a></li>
+               </ul>
+                <ul>
+                    <li class="dw50"><input name="c_title" type="checkbox" value="" disabled></li>
+                    <li class="dw120">男科</li>
+                    <li class="dw100">不孕不育</li>
+                    <li class="dw120">黑龙江</li>
+                    <li class="dw100">哈尔滨,佳木斯,齐齐哈尔</li>
+                    <li class="dw120 red">冲突</li>
+                    <li class="dw80"><a href="#">删除</a></li>
+               </ul>
+            </div>
+            <div class="cw_page_border">
+                <div class="b_lf lf">
+                    <ol>
+                      <li><a href="javascript:$UE.confirm('确定批量删除吗？','删除成功！');">批量删除</a></li>
+                      <li>广告消费：<input name="" type="text" value="5000" class="order_input1"> 元</li>
+                    </ol>
+                </div>
+                <div class="b_rg rg">
+                    <ol>
+                      <li><a href="javascript:$UE.close('order_audit');$UE.open('view_refuse2');">拒绝</a></li>
+                      <li><a href="javascript:$UE.alert('审核通过成功！','$UE.close(\'order_audit\')');">通过</a></li>
+                      <li>投放客户登录名：<input name="" type="text" class="order_input1" value="四川结石病" ></li>
+                     </ol>
+                </div>
+            </div>  
+        </div>
+    </div>    
+</div>
+</div>

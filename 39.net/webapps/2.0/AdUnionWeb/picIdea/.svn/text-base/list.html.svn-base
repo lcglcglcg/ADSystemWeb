@@ -1,0 +1,56 @@
+<xmp id="listPicIdeasHtmlTitle" style="display:none;">
+  <tr class="table_title">
+    <td class="table_wa text_center_bg"><input type="checkbox" name="listPicIdeasCheckAll"  onclick="window.picIdea.selectAll.call(this);" /></td>
+    <th name="listIdeasTool" value="0" onclick="window.picIdea.orderBy.call(this,'creativeName');" class="table_wc_px_tt"> <a><span>创意</span></a> </th>
+    <th name="listIdeasTool" value="1" onclick="window.picIdea.orderBy.call(this,'CAMPAIGN_NAME');" class="table_wg"> <a><span>推广计划</span></a> </th>
+    <th name="listIdeasTool" value="2" onclick="window.picIdea.orderBy.call(this,'GROUP_NAME');" class="table_wg"> <a><span>推广组</span></a> </th>
+    <th name="listIdeasTool" value="3" onclick="window.picIdea.orderBy.call(this,'creativeState');" class="table_wf"> <a><span>创意状态</span></a> </th>
+    <th name="listIdeasTool" value="4" onclick="window.picIdea.orderBy.call(this,'quality');" class="table_wg"> <a><span>质量度</span></a> </th>
+    <th name="listIdeasTool" value="5" onclick="window.picIdea.orderBy.call(this,'CREATIVE_IMPRESSION');" class="table_wg"> <a><span>展现次数</span></a> </th>
+    <th name="listIdeasTool" value="6" onclick="window.picIdea.orderBy.call(this,'CREATIVE_CLICK');" class="table_wg"> <a><span>点击次数</span></a> </th>
+    <th name="listIdeasTool" value="7" onclick="window.picIdea.orderBy.call(this,'clicksRatio');" class="table_wg"> <a><span>点击率</span></a> </th>
+    <th name="listIdeasTool" value="8" onclick="window.picIdea.orderBy.call(this,'avgCpc');" class="table_wg"> <a><span>平均点击价格</span></a> </th>
+    <th name="listIdeasTool" value="9" onclick="window.picIdea.orderBy.call(this,'CREATIVE_COST');" class="table_wg"> <a><span>总消费</span></a> </th>
+    <th name="listIdeasTool" value="10" onclick="window.picIdea.orderBy.call(this,'cpm');" class="table_wg"> <a><span>千次展现成本</span></a> </th>
+    <th class="table_we">操作</th>
+  </tr>
+</xmp>
+<xmp id="listPicIdeasHtmlList" style="display:none;">
+  <tr name="listIdeasTr" id="ideasId{CREATIVE_ID}" >
+    <td name="listIdeasTd" class="table_wa text_center"><input type="checkbox" name="listPicIdeasCheckId" value="{CREATIVE_ID}" onclick="window.picIdea.selectId.call(this,'');"  /></td>
+    <td name="listIdeasTd" class="table_wc_px {editpink}"><div class="cy_img">
+        <table border="1">
+          <tr>
+            <td name="edit" value="{CREATIVE_ID}"><a><img src="{CREATIVE_FILE_PATH}"/></a></td>
+          </tr>
+        </table>
+        <span class="pic_guige">{CREATIVE_IMG_SIZE}<a name="ideaDemo" value="{CREATIVE_ID}">预览创意</a></span> </div></td>
+    <td name="listIdeasTd" class="table_wf text_left"><a name="treePlanClick" value="{CREATIVE_ID}" class="link">{CAMPAIGN_NAME}</a></td>
+    <td name="listIdeasTd" class="table_wf text_left"><a name="treeUnitClick" value="{CREATIVE_ID}" class="link">{GROUP_NAME}</a></td>
+    <td name="listIdeasTd" class="table_wc text_left {editpink}"><div class="div_a">
+        <div class="zhuangt" id="creativeState{CREATIVE_ID}"><span class="{creativeStateCss}">{CREATIVE_STATUS}</span> <span class="{stateCss}" name="pause" value="{CREATIVE_ID}"></span></div>
+      </div></td>
+    <td name="listIdeasTd" class="table_wg"><span class="figure">1</span></td>
+    <td name="listIdeasTd" class="table_wg"><span class="figure">{CREATIVE_IMPRESSION}</span></td>
+    <td name="listIdeasTd" class="table_wg"><span class="figure">{CREATIVE_CLICK}</span></td>
+    <td name="listIdeasTd" class="table_wg"><span class="figure">{CREATIVE_CTR}</span></td>
+    <td name="listIdeasTd" class="table_wg"><span class="figure">￥{CREATIVE_CPC}</span></td>
+    <td name="listIdeasTd" class="table_wg"><span class="figure">￥{CREATIVE_COST}</span></td>
+    <td name="listIdeasTd" class="table_wg"><span class="figure">￥{CREATIVE_CPM}</span></td>
+    <td name="listIdeasTd" class="table_we caozuo"><a name="edit" value="{CREATIVE_ID}" ></a></td>
+  </tr>
+</xmp>
+<xmp id="listPicIdeasHtmlEnd" style="display:none;">
+  <tr class="tongji">
+    <td class="table_wa">&nbsp;</td>
+    <td class="table_wb text_left" colspan="4">合计-{CREATIVE_COUNT}个创意(<span name="validCreativeCountSpan">{CREATIVE_ENABLED}</span>个有效)</td>
+    <td class="table_wd"><span class="figure">1</span></td>
+    <td class="table_wd"><span class="figure">{CREATIVE_IMPRESSION}</span></td>
+    <td class="table_wd"><span class="figure">{CREATIVE_CLICK}</span></td>
+    <td class="table_wd"><span class="figure">{CREATIVE_CTR}</span></td>
+    <td class="table_wd"><span class="figure">￥{CREATIVE_CPC}</span></td>
+    <td class="table_wd"><span class="figure">￥{CREATIVE_COST}</span></td>
+    <td class="table_wd"><span class="figure">￥{CREATIVE_CPM}</span></td>
+    <td class="table_we caozuo">&nbsp;</td>
+  </tr>
+</xmp>

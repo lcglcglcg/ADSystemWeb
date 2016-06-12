@@ -1,0 +1,19 @@
+<div class="lose_box" id="step3_losing" style="display:none;">
+  <div class="lose_title"><b>提示信息</b><span><input name="close_bnt" type="image" src="/static/ads_c_2.0/web/images/step_close.gif" onClick="javascript:$UE.close('step3_losing');"></span></div>
+  <div class="lose_cont">
+  	<div class="lose_content">成功上传图片1张，失败1张。</div>
+  	<div class="l_reason">
+    	<ul>
+        	<li class="lf_li" title="05-01">05-01</li><li class="rg_li" title="不支持该尺寸">不支持该尺寸</li>
+        </ul>
+    	<ul>
+        	<li class="lf_li" title="05-02">05-01</li><li class="rg_li" title="不支持该尺寸">不支持该尺寸</li>
+        </ul>
+    </div>
+    <div class="lose_btn" align="center">
+        <ol>
+             <li><a onClick="javascript:$UE.close('step3_losing');">确定</a></li>
+        </ol>
+    </div>
+  </div>
+</div>

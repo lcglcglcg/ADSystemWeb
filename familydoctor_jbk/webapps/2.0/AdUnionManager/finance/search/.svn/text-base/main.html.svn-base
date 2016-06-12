@@ -1,0 +1,98 @@
+<!--#include virtual="/public/public.shtml"-->
+<link rel="stylesheet" type="text/css" href="/static/ads_m_1.0/web/css/body_list.css">
+<link rel="stylesheet" type="text/css" href="/static/ads_m_1.0/web/css/account_add.css">
+<link rel="stylesheet" type="text/css" href="/static/ads_m_1.0/web/css/input.css">
+<link rel="stylesheet" type="text/css" href="/static/ads_m_1.0/web/css/page.css">
+<link rel="stylesheet" type="text/css" href="/static/ads_m_1.0/web/css/description.css"/>
+<link rel="stylesheet" type="text/css" href="/static/ads_m_1.0/web/css/cw_gl_recharge.css"/>
+<link rel="stylesheet" type="text/css" href="/static/ads_m_1.0/web/css/recharge_detailed.css"/>
+<link rel="stylesheet" type="text/css" href="/static/ads_m_1.0/web/css/refuse.css"/>
+<script language="javascript" src="/static/web/js/common/common_time.js"></script>
+<div class="detailed_box">
+  <div class="detailed_title"><b>充值明细</b><span>
+    <input name="closeMain" type="image" src="/static/ads_m_1.0/web/images/view_close.gif" style="cursor:pointer;">
+    </span></div>
+  <div class="detailed_main"> <span id="detailedTitle">
+    <div class="d_description bg_row3">
+      <ul>
+        <li>登录名：<s name="LOGIN_NAME"></s></li>
+        <li>公司名称：<s name="COMPANY_NAME"></s></li>
+        <li>开户时间：<s name="CREATE_TIME"></s></li>
+      </ul>
+    </div>
+    <div class="zonge">
+      <ul>
+        <li>投资总额(￥)：<s class="red" name="INVEST"></s></li>
+        <li>当前账面余额(￥)：<s class="red" name="BALANCE"></s></li>
+      </ul>
+    </div>
+    </span>
+    <div class="conditions d_conditions" id="findSearch">
+      <ol>
+        <li class="conditions_li">
+          <select name="FIND_NAME_TYPE">
+            <option value="1">登录名</option>
+            <option value="2">公司名称</option>
+            <option value="3">公司网址</option>
+            <option value="4">流水号</option>
+            <option value="5">充值金额等于</option>
+            <option value="6">充值金额大于等于</option>
+            <option value="7">充值金额小于等于</option>
+          </select>
+        </li>
+        <li class="conditions_li padl2">
+          <input name="FIND_NAME" type="text" class="input06">
+        </li>
+        <li class="conditions_li padl4"><span>付款方式：</span></li>
+        <li class="conditions_li">
+          <select name="MONEY_TYPE">
+            <option value="100">全部</option>
+            <option value="1">支票</option>
+            <option value="2">汇款</option>
+            <option value="3">现金</option>
+          </select>
+        </li>
+      </ol>
+      <ol>
+        <li class="conditions_li"><span>充值时间：</span></li>
+        <li class="conditions_li">
+          <input name="findtime" type="text" class="times">
+          <input notValue="true" name="calendar" type="image" src="/static/ads_m_1.0/web/images/calendar.gif" class="calendar">
+        </li>
+        <li class="conditions_li padl4"><span>排序方式：</span></li>
+        <li class="conditions_li">
+          <select name="SORT_COLUMN">
+            <option value="1">充值时间</option>
+            <option value="2">登录名</option>
+            <option value="3">公司名称</option>
+            <option value="4">流水号</option>
+            <option value="5">充值金额(￥)</option>
+            <option value="6">投资总额(￥)</option>
+            <option value="7">账面余额(￥)</option>
+          </select>
+        </li>
+        <li class="conditions_li padl2">
+          <select name="SORT_TYPE">
+            <option value="1">升序</option>
+            <option value="2" selected="selected">降序</option>
+          </select>
+        </li>
+        <li class="conditions_li padl c_select"><a style="background: url('/static/ads_m_1.0/web/images/icon.gif') no-repeat scroll 0 -150px;color: #000000;display: block;font-weight: bold;height: 19px;line-height: 20px;text-align: center;text-decoration: none;width: 62px;" id="subList">查询</a></li>
+        <li class="conditions_li padl2 c_select"><a target="_blank" style="background: url('/static/ads_m_1.0/web/images/icon.gif') no-repeat scroll 0 -150px;color: #000000;display: block;font-weight: bold;height: 19px;line-height: 20px;text-align: center;text-decoration: none;width: 62px;" id="exportReport">导出报表</a></li>
+      </ol>
+    </div>
+    <div class="de_list" id="listData" style="height:300px;"> </div>
+    <div class="cw_page_border"> 
+      <!--#include virtual="/public/page.html"--> 
+    </div>
+  </div>
+  <div class="d_btn" align="center">
+    <ul>
+      <li><a name="closeMain">关闭</a></li>
+    </ul>
+  </div>
+</div>
+<!--#include virtual="/finance/search/view.shtml"--> 
+<!--#include virtual="/finance/search/view2.shtml"--> 
+<!--#include virtual="/finance/search/listAlert.html"--> 
+<script language="javascript" src="/static/web/js/page/manager/rechargeSearch.js"></script>

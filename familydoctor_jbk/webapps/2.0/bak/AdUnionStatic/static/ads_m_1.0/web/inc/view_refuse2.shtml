@@ -1,0 +1,16 @@
+<div class="refuse_backg" id="view_refuse2" style="display:none;">
+  <div class="title">填写审核拒绝原因</div>
+    <div class="cont">
+		<div class="write_reason">
+        	<textarea name="" cols="" rows="" class="write_reason_text">
+            
+            </textarea>
+        </div>
+        <div class="r_btn" align="center">
+             <ul>
+                <li><a href="javascript:$UE.alert('保存成功！创意已拒绝','$UE.close(\'view_refuse2\')');">保存</a><a id="idBtn_close" onClick="$UE.close('view_refuse2');">取消</a></li> 
+             </ul>
+        </div>
+    </div>
+  
+</div>

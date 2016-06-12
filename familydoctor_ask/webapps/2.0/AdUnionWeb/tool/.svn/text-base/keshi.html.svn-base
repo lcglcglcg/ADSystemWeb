@@ -1,0 +1,26 @@
+<div class="scommon_box scommon_box_new_nk" id="select_keshi" style="display:none;">
+  <div class="scommon_main scommon_main_new">
+    <div id="click_dingx" style="display:block;"> 
+      <!--定向浏览行为 -->
+      <div class="depart depart_new">
+        <div class="tuijian_nav"> <span style="display:none;">
+          <select class="depart_select" name="diseaseLeve_1" giveup write findlist gtext="选择或输入定向科室" >
+          </select>
+          </span> 
+          <!--定向浏览行为 级别内容 start-->
+          <div class="depart_level"> 
+            <!-- 级别一 start-->
+            <ul name="diseaseLeveEach_1" ></ul>
+            <!-- 级别一 end--> 
+          </div>
+          <!--定向浏览行为 级别内容 end--> 
+        </div>
+      </div>
+    </div>
+    <!--公共按钮 新建推广组-->
+    <div class="step_commom_btn" align="center" id="new_bnt2">
+      <div class="s_c_width4"> <a class="btn" name="close"><span>确定</span></a> </div>
+    </div>
+  </div>
+</div>
+<script language="javascript" src="/static/web/js/page/keshi.js"></script>

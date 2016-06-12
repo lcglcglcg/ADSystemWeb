@@ -1,0 +1,28 @@
+<div id="liMenu" style="display:none;">
+  <ul class="d_line">
+    <li class="dw100 d_bold">流水号</li>
+    <li class="dw95 d_bold">充值金额(￥)</li>
+    <li class="dw70 d_bold">付款方式</li>
+    <li class="dw140 d_bold">凭证</li>
+    <li class="dw120 d_bold">投资总额(￥)</li>
+    <li class="dw120 d_bold">账面余额(￥)</li>
+    <li class="dw155 d_bold">充值时间</li>
+  </ul>
+</div>
+<div id="liData" style="display:none;">
+  <ul>
+    <li class="dw100">{SWIFT_NUMBER}</li>
+    <li class="dw95" title="{MONEY}">{MONEY}</li>
+    <li class="dw70">{paymentTypeText}</li>
+    <li class="dw140"><a value="{SWIFT_NUMBER}" onFn="{PAYMENT_TYPE}" target="_blank">{paymentTypeValue}</a></li>
+    <li class="dw120" title="{INVEST}">{INVEST}</li>
+    <li class="dw120" title="{CURRENT_MONEY_BALANCE}">{CURRENT_MONEY_BALANCE}</li>
+    <li class="dw155">{CREATE_TIME}</li>
+  </ul>
+</div>
+<div id="liFoot" style="display:none;"> </div>
+<div id="liErr" style="display:none;">
+  <ul>
+    <li>没有符合条件的数据</li>
+  </ul>
+</div>

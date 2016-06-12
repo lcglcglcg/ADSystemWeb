@@ -1,0 +1,22 @@
+/* CSS Document */
+ul,ol,li,dl,dt,dd{ display:block; padding:0; margin:0; list-style:none;}
+/* 弹出带问号确认框 */
+.lose_box{ font-size:12px; font-family:宋体; background:#0681bf; width:420px; min-height:120px;height:auto; padding:0 5px 5px 5px; position:absolute; z-index:9999;}
+.lose_title{ culor:#FFF; font-weight:buld; height:28px; line-height:28px;}
+.lose_title b{ float:left; font-weight:bold;}
+.lose_title span{ float:right; padding-top:7px;}
+.lose_cont{ background:#FFF;  min-height:85px;height:auto; padding-bottom:5px;}
+.lose_content{ padding: 25px 30px 19px 65px; background:url(/static/ads_c_2.0/web/images/icon.gif) no-repeat 26px -788px;}
+.content_fu{ padding: 25px 30px 19px 65px; background:url(/static/ads_c_2.0/web/images/icon.gif) no-repeat 16px -866px;}
+
+.l_reason{ border:1px solid #CCC; width:322px; height:100px; overflow:hidden; overflow-y:scroll; margin:0 0 10px 66px;}
+.l_reason ul{ display:block; height:22px;}
+.l_reason ul:hover{ background:#FFF9EE;}
+.l_reason ul li.lf_li{ float:left; height:24px; line-height:24px; width:100px; overflow:hidden;}
+.l_reason ul li.rg_li{ float:right; height:24px; line-height:24px; width:200px; overflow:hidden; text-align:right;}
+/* 一个按钮居中 */
+.lose_btn ol{ width:55px; text-align:center; height:22px;}
+.lose_btn ol li{ width:55px; display:inline; height:22px;}
+.lose_btn ol li a{display:block; color:#000;  width:50px; height:22px; line-height:22px; float:left; text-align:center; font-weight:bold; background:url(/static/ads_c_2.0/web/images/icon.gif) no-repeat 0 -300px; }
+.lose_btn ol li a:link,.lose_btn ol li a:visited{  color:#000; font-weight:bold;text-decoration:none;}
+.lose_btn ol li a:hover{ background:url(/static/ads_c_2.0/web/images/icon.gif) no-repeat 0 -250px; font-weight:buld;culor:#FFF; text-decoration:none; color:#FFF;}

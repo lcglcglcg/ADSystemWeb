@@ -1,0 +1,28 @@
+@charset "utf-8";
+/* CSS Document */
+html,body,div,span,dl,dt,dd,ol,ul,li{ margin:0; padding:0; border:0;}
+body { font-family:Arial, Helvetica, sans-serif;}
+h1, h2, h3, h4, h5, h6 {font-weight:normal;margin:0; padding:0;}
+li{ list-style:none;}
+p{ margin:0; padding:0;}
+.clr{ clear:both; height:0px;}
+
+.header,.product_bg,.hmt_main,.hmt_footer{ width:480px; margin:0 auto; }
+/*header start*/
+.header{height:79px; background:url(/static/58_media/web/images/index_01.jpg) repeat center center;}
+.top{height:79px;}
+.top .logo{ float:left; padding:4px 0 0 4px;}
+.top .top_menu{ float:right; font-size:1em; font-family:宋体;color:#fff; padding-top:58px;}
+.top .top_menu a,.top .top_menu a:link{ color:#fff; text-decoration:none;}
+.top .top_menu a:hover{ color:#fff; text-decoration:underline;}
+
+.header_right{ float:right;height:75px; margin-left:100px; overflow:hidden;}
+.header_right .m_top{ height:37px; padding-right:10px;}
+.header_right h1{ font-style:normal; font-family:微软雅黑; font-size:1em; text-align:right; margin-right:10px; height:37px; line-height:40px; overflow:hidden; color:#fff;}
+.header_right span{ height:25px; padding-top:12px; float:right;}
+.m_menu{ float:right;width:100px; height:75px;}
+.m_menu a,.m_menu a:link{ height:75px; line-height:75px; display:block; float:left; cursor:pointer; }
+.m_menu a.m_guahao,.m_menu a.m_guahao:link{ background:url(/static/58_media/web/images/mobile_04.jpg) no-repeat left center;width:40px; font-family:宋体; font-size:0.875em;color:#fff; margin-right:3px; text-decoration:underline; padding-left:15px;}
+.m_menu a img{ margin-top:28px;}
+
+.m_box{ border:1px solid #0965b0; height:auto;height:200px;}

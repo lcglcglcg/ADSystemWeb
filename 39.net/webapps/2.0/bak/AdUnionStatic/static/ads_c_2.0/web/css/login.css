@@ -1,0 +1,52 @@
+/* CSS Document */
+*{margin:0px;padding:0px;}
+body{font-family:"宋体";font-size:12px;color:#000;background:#FFF; min-width:1000px;_width:expression((document.documentElement.clientWidth < 1000) ? "1000px":"auto");}
+div,ul,ol,li,dl,dt,dd,form{ margin:0; padding:0;}
+ul,ol,li,dl,dt,dd{ display:block; list-style:none;}
+img,a img{border:none;}
+a:visited{ color:#00F; text-decoration:none;}
+a:link{ text-decoration:none;}
+a:hover{ text-decoration:underline; cursor:pointer;}
+b{ display:block; width:77px; height:32px;float:left;margin-top:2px; margin-right:12px; background:url(/static/ads_c_2.0/web/images/icon.gif) no-repeat 0 -750px;  font-weight:normal; text-align:center;}
+/* 登陆界面头部 */
+.header{ width:1000px; height:127px; margin:0 auto;}
+.header .logo{ float:left; margin:30px 0 17px 20px;}
+.header .haimeit{ float:right; margin:78px 20px 17px 0;}
+
+/* 登陆界面 */
+.box_bg{ clear:both; background: url(/static/ads_c_2.0/web/images/login_bg.jpg) repeat center top;}
+.l_box_bg{background: url(/static/ads_c_2.0/web/images/login_img1.jpg) no-repeat center top; position:relative;}
+.l_box_bg1{ background: url(/static/ads_c_2.0/web/images/login_img2.jpg) no-repeat center top; position:relative;}
+.l_box_bg2{ background: url(/static/ads_c_2.0/web/images/login_img3.jpg) no-repeat center top; position:relative;}
+.l_box{ width:350px; height:367px; margin:0 auto; padding:20px 0 0 620px;}
+.l_box ul{ height:310px; width:310px; border:1px solid #9dbed0; padding-left:35px;filter:Alpha(opacity=80);background:#FFF; background:rgba(255,255,255,0.5);}
+.l_box ul li{ display:block; height:36px; line-height:36px; margin-bottom:10px;}
+.l_box ul li.title{ height:50px; line-height:60px; font-size:18px; font-family:微软雅黑; font-weight:bold; border-bottom:1px solid #CCC;}
+.l_box ul li em{ display:block; float:left;width:65px; height:36px; line-height:36px; font-family:宋体; font-style:normal; font-size:16px; text-align:right;}
+.l_box ul li span{ display:block; float:left;height:36px; }
+.l_box ul li input{border:none; background:none; height:34px; line-height:34px;font-size:14px; width:195px;padding:2px 5px 0 5px;}
+.l_box ul li span.l_username,.l_box ul li span.l_password{width:220px;background:url(/static/ads_c_2.0/web/images/input_bg.gif) no-repeat;}
+
+.l_box ul li input.v_code{ width:75px; background:url(/static/ads_c_2.0/web/images/code_bg.gif) no-repeat; float:left; text-align:left; font-size:14px;}
+.l_box ul li a.huan{ color:#0066cc;}
+.l_box ul li.bottom_line{ width:325px; background:url(/static/ads_c_2.0/web/images/bottom_line.jpg) repeat-x 0 top; margin-left:-15px; text-align:right; line-height:40px;}
+.l_box ul li.bottom_line a{ color:#999; margin-right:15px;}
+/* 按钮 */
+.l_box ul .l_btn{ height:50px;}
+.l_box ul .l_btn input{width:84px; background:none;}
+.l_box ul .l_btn a{ display:block; float:left; height:36px; width:122px; text-decoration:none;}
+.l_box ul .l_btn a.landed{background:url(/static/ads_c_2.0/web/images/landed.jpg) no-repeat; margin-right:30px;}
+.l_box ul .l_btn a.login{background:url(/static/ads_c_2.0/web/images/login.jpg) no-repeat;}
+
+/* 透明切换背景 */
+.tm_bg{ height:20px; padding-top:10px;margin:0 auto; position:relative; top:-30px;filter:Alpha(opacity=80);background:#FFF; background:rgba(255,255,255,0.5);}
+.tm_btn{ height:30px; width:300px;}
+.tm_btn a{ display:block; float:left; width:41px; height:13px; margin-right:50px; background:#CCC;}
+.tm_btn a:hover,.tm_btn .current{ background:#004c92;}
+
+/* 尾部 */
+.footer{background:#f7f7f7; height:67px; margin-top:1px;margin:0 auto; margin-top:-30px;}
+.footer_w{ clear:both; position:relative; top:-23px;width:1000px; height:67px; line-height:67px; text-align:center; margin:0 auto; color:#666666;}
+.footer_w a{color:#666666;}
+.footer_w span{ margin-left:20px;}
+

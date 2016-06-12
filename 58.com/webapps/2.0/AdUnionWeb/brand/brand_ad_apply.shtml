@@ -1,0 +1,28 @@
+<xmp id="listTitle_3" style="display:none;">
+  <tr class="table_title">
+    <td name="listTool" class="table_wa text_center_bg"><input type="checkbox" name="listCheckAll"  onclick="window.brands.selectAll.call(this);" /></td>
+    <th name="listTool" class="table_wd text_center" value="0" onclick="window.brands.orderBy.call(this);"> <a><span>订单编号</span></a> </th>
+    <th name="listTool" class="table_wd text_center" value="1" onclick="window.brands.orderBy.call(this);"> <a><span>投放科室</span></a> </th>
+    <th name="listTool" class="table_wd thbg_curr" value="2" onclick="window.brands.orderBy.call(this);"> <a><span>投放地域</span></a> </th>
+    <th name="listTool" class="table_wd thbg_curr" value="3" onclick="window.brands.orderBy.call(this);"> <a><span>投放时长</span></a> </th>
+    <th name="listTool" class="table_wd text_center" value="4" onclick="window.brands.orderBy.call(this);"> <a><span>开始日期</span></a> </th>
+    <th name="listTool" class="table_wd text_center" value="5" onclick="window.brands.orderBy.call(this);"> <a><span>结束日期</span></a> </th>
+    <th name="listTool" class="table_wd text_center" value="6" onclick="window.brands.orderBy.call(this);"> <a><span>消费预算</span></a> </th>
+    <th name="listTool" class="table_wd text_center" value="7" onclick="window.brands.orderBy.call(this);"> <a href="#"><span>申请时间</span></a> </th>
+    <th name="listTool" class="table_wd text_center" value="8" onclick="window.brands.orderBy.call(this);"> <a><span>状态</span></a> </th>
+  </tr>
+</xmp>
+<xmp id="listList_3" style="display:none;">
+  <tr name="listTr" id="id{BRAND_ID}">
+  	<td name="listTd" class="table_wa text_center"><input type="checkbox" name="listCheckId" value="{BRAND_ID}" onclick="window.brands.selectId.call(this);" /></td>
+    <td name="listTd" class="table_wd text_center"><span class="figure">{AD_ORDER_NO}</span></td>
+    <td name="listTd" class="table_wd text_center"><a value="{DEPT_CODE}" name="dept" class="p_a_style1">{DEPT_NAME}></a></td>
+    <td name="listTd" class="table_wd text_center">{REGION_SERIALIZE_NAME}></td>
+    <td name="listTd" class="table_wd text_center"><span class="figure">{DAYS}天</span></td>
+    <td name="listTd" class="table_wd text_center"><span class="figure">{SHOW_TIME_START}</span></td>
+    <td name="listTd" class="table_wd text_center"><span class="figure">{SHOW_TIME_END}</span></td>
+    <td name="listTd" class="table_wd text_center"><span class="figure">￥{PRICE}</span></td>
+    <td name="listTd" class="table_wd text_center">{CREATE_TIME}</td>
+    <td name="listTd" class="table_wd text_center {stateCss}">{BRAND_STATUS}<a href="javascript:;" style="display: {isHide};"><img width="16" tip="{BRAND_REFUSE_REASON}" height="16" src="/static/ads_c_2.0/web/images/bulb_dim.png" /></a></td>
+  </tr>
+</xmp>

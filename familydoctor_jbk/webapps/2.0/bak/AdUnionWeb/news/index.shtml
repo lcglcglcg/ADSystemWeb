@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>健康网盟-最新公告</title>
+<link rel="stylesheet" type="text/css" href="/static/ads_c_2.0/web/css/notice.css"/>
+<link rel="stylesheet" type="text/css" href="/static/ads_c_2.0/web/css/page.css"/>
+</head>
+
+<body>
+<!--#include virtual="/public/public.shtml"-->
+<!--#include virtual="/public/header.shtml"-->
+<div class="main">
+    <div class="cw_main" name="noticeFrom">
+<!-- 公告信息---more start -->
+      <!-- 查询条件conditions start -->
+      <div class="conditions">
+          <ol>
+              <li><input name="TITLE" type="text" class="input_liushui" value="搜索 公告标题" /></li>
+              <li class="padl c_select"><a href="#" id="searchSub">查询</a></li>
+          </ol>
+      </div>
+    <!-- 查询条件conditions end -->
+    <!-- 列表内容content_list start -->
+      <div class="content_list" id="getListByNew">
+         
+      </div>
+    <!-- 列表内容content_list end -->
+<!-- 公告信息---more end -->
+      <div class="cw_page_border">
+      <!--#include virtual="/public/page.html"-->
+      </div>       
+	</div>
+</div>
+<!--#include virtual="/news/notice.html"-->
+<script language="javascript" src="/static/web/js/page/noticeMore.js"></script>
+<!--#include virtual="/public/footer.html"-->
+</body>
+</html>

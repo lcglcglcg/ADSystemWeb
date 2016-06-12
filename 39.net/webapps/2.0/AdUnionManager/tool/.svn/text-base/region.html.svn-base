@@ -1,0 +1,36 @@
+<div class="scommon_box_new_box1" id="RegionList" style="display:none;">
+  <div class="scommon_box scommon_box_new" >
+    <div class="city city_new"> 
+      <!--div第三级内容-->
+      <div class="level3_city level3_city_pad_left">
+        <ol class="region_title">
+          <li>
+            <input giveup name="regionAll" type="checkbox" value="中国地区"  class="input_valign" style="margin-left:5px;"/>
+            中国地区</li>
+        </ol>
+        <span id="RegionListEach"></span>
+        <ol class="region_title">
+          <li class="li_w95">
+            <label>
+              <input giveup type="checkbox" name="otherRegion" class="input_valign"/>
+              其他地区</label>
+          </li>
+        </ol>
+        <ol class="row1">
+          <li class="li_pad1 li_w95">
+            <label>
+              <input giveup type="checkbox" name="otherRegionVal" subname="1009900000" class="input_valign"/>
+              <span>全部</span></label>
+          </li>
+        </ol>
+      </div>
+      <!--公共按钮-->
+      <div id="touf_quy_btn" align="center" class="c_btn">
+        <ol class="select_re_ol">
+          <li><a name="close">确定</a></li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</div>
+<script language="javascript" src="/static/web/js/page/region.js"></script>

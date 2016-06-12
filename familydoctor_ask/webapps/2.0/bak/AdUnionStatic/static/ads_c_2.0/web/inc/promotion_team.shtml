@@ -1,0 +1,346 @@
+<div style="position:relative;display:none;" id="contb2">
+    <div class="program_div">
+ 	    <div class="table_up_select">
+        <div class="rrr">
+          <div class="s_left">
+            <ul class="s_ul">
+              <li class="s_li">
+                <select name="tf3">
+                  <option value="全部状态">全部状态</option>
+                  <option value="有效">有效</option>
+                  <option value="计划处于暂停时段">计划处于暂停时段</option>
+                  <option value="计划每日预算不足">计划每日预算不足</option>
+                  <option value="计划未开始">计划未开始</option>
+                  <option value="计划已暂停">计划已暂停</option>
+                  <option value="暂停">暂停</option>
+                  <option value="计划已下线">计划已下线</option>
+                </select>
+              </li>
+              <li class="s_li">
+                <input name="textfield" type="text" value="请输入组名称"size="16" class="input_border col"/>
+              </li>
+              <li class="s_li guheight"> <span>
+                <input type="checkbox" name="checkbox3" value="checkbox">
+                </span><span>精确查询</span></li>
+              <li class="s_li"> <a href="#" class="btn"><span>查询</span></a> </li>
+              <li class="s_li" id="tl_li"> <a href="#" class="btn" onclick="$UE.open('click_dingx_kes')"><span>科室筛选</span></a> </li>
+              <li class="s_li" id="ts_li"> <a class="btn" onclick="$UE.open('match')"><span>匹配模式</span></a> </li>
+              <li class="s_li" style="display:none;"><a class="btn" onclick="$UE.display('guolv','block')"><span>过滤项</span></a></li>
+              <li class="s_li all_time">
+                  <select name="tf4">
+                      <option value="今天" selected="selected">今天</option>
+                      <option value="昨天">昨天</option>
+                      <option value="最近7天">最近7天</option>
+                  </select>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+ <!--表格内容 开始-->
+      	<div class="table_list">
+            <div class="s_button">
+                <div class="rrr">
+                  <ul class="s_ul s_ul_pad">
+                        <li class="s_li"> <a class="btn" href="javascript:$UE.confirm('您确定要删除选中的推广组吗？','删除成功！');"><span>删除</span></a> </li>
+                        <li class="s_li"> <a class="btn" href="javascript:$UE.confirm('您确定要暂停选中的推广组吗？','暂停成功！');"><span>暂停</span></a> </li>
+                        <li class="s_li"> <a class="btn" id="download_btn" href="javascript:$UE.confirm('您确定要启用选中的推广组吗？','启用成功！');"><span>启用</span></a> </li>
+                        <li class="s_li_new">
+                            <ol>
+                                <li class="s_li"><a class="btn" id="download_btn" onclick="$UE.open('batch_modify_w')"><span>批量修改出价</span></a></li>
+                                <li class="s_li_new1">
+                                    <span title="">CPC:<input type="text" class="input_border2"></span>                               
+                                    <span title="">CPM:<input type="text" class="input_border2"></span>                               
+                                </li>
+                                <li class="s_li_new2"><a class="btn" id="download_btn" onclick="$UE.open('batch_modify_w')"><span>保存修改</span></a></li>
+                                <li class="s_li_new2"><a class="btn" id="download_btn" onclick="$UE.open('batch_modify_w')"><span>取消修改</span></a></li>
+                            </ol>
+                        </li>
+                 </ul>
+        
+                </div>
+          </div>
+            <table width="100%" >
+                  <tr class="table_title">
+                    <td class="table_wa text_center_bg"><input name="" type="checkbox" value="" /></td>
+                    <th class="table_wd">
+                        <a href="#"><span>推广组</span></a>
+                    </th>
+                    <th class="table_wb">
+                        <a href="#"><span>推广计划</span></a>
+                    </th>
+                    <th class="table_wc">
+                        <a href="#"><span>推广组状态</span></a>
+                    </th>
+                    <th class="table_wd">
+                        <a href="#"><span>定向方式</span></a>
+                    </th>
+                    <th class="table_wd">
+                        <a href="#"><span>CPC出价</span></a>
+                    </th>
+                    <th class="table_wd">
+                        <a href="#"><span>展现次数</span></a>
+                    </th>
+                    <th class="table_wd">
+                        <a href="#"><span>点击次数</span></a>
+                    </th>
+                    <th class="table_wd">
+                        <a href="#"><span>点击率</span></a>
+                    </th>
+                    <th class="table_wd">
+                        <a href="#"><span>平均点击价格</span></a>
+                    </th>
+                    <th class="table_wd">
+                        <a href="#"><span>总消费</span></a>
+                    </th>
+                    <th class="table_wd">
+                        <a href="#"><span>千次展现成本</span></a>
+                    </th>
+                    <th class="table_we">操作</th>
+                  </tr>
+                  <tr style="display:none;">
+                  	<td colspan="12"><div class="warn">当前推广组列表为空，推广计划无法正常投放，请<a onclick="$UE.open('step_second');$UE.setValue('step2_name','新建推广组');$UE.display('step_addtitle2','block');$UE.display('new_bnt2','block');$UE.display('update_bnt2','none');" >添加推广组</a></div></td>
+                  </tr>
+                  <tr style="display:none;">
+                    <td colspan="12"><div class="no_data">没有符合条件的数据</div></td>
+                  </tr>
+                  <tr id="key_chb1" onmousemove="idBg(1,'key_chb');"onmouseout="idNoBg(1,'key_chb');">
+                    <td class="table_wa text_center"><input name="" type="checkbox" value="" /></td>
+                    <td class="table_wd text_left"><div class="key_div"><a href="#" class="link">推广组</a><a onClick="$UE.open('step_second_change_box');" class="key_btn1"></a></div></td>
+                    <td class="table_wb text_left"><a href="#" class="link">推广计划推广计划推广计划推广计</a></td>
+                    <td class="table_wc text_left">
+                        <div class="div_a">
+                        <div class="zhuangt">
+                        <span class="green">有效</span>
+                        <span class="start_img" onclick="javascript:$UE.confirm('您确定暂停推广组【推广组名称】吗？','暂停成功！');"></span>
+                        </div>
+                        </div>
+                    </td>
+                    <td class="table_wd"><span class="figure text_center">浏览定向</span></td>
+                    <td class="table_wd"><div class="key_div"><a onClick="$UE.open('zuchujai_box');" class="key_btn2"></a><span class="figure">￥10.00</span></div></td>
+                    <td class="table_wd"><span class="figure">68</span></td>
+                    <td class="table_wd"><span class="figure">68</span></td>
+                    <td class="table_wd"><span class="figure">0.88%</span></td>
+                    <td class="table_wd"><span class="figure">￥9.96</span></td>
+                    <td class="table_wd"><span class="figure">￥2000</span></td>
+                    <td class="table_wd"><span class="figure">￥6000</span></td>
+                    <td class="table_we caozuo"><a onClick="$UE.open('step_second');$UE.setValue('step2_name','修改推广组');$UE.display('step_addtitle2,new_bnt2,step2_dingx1,step2_dingx2,step2_dingx3,zu_pay2,match_ask,zu_pay_pipei','none'); $UE.display('step2_dingx4,update_bnt2,zu_pay1,click_dingx','block');"></a></td>
+                  </tr>
+                  <tr id="key_chb2" onmousemove="idBg(2,'key_chb');"onmouseout="idNoBg(2,'key_chb');">
+                    <td class="table_wa text_center"><input name="" type="checkbox" value="" /></td>
+                    <td class="table_wd text_left"><div class="key_div"><a href="#" class="link">推广组</a><a onClick="$UE.open('step_second_change_box');" class="key_btn1"></a></div></td>
+                    <td class="table_wb text_left"><a href="#" class="link">推广计划推广计划推广计划推广计</a></td>
+                    <td class="table_wc text_left">
+                        <div class="div_a">
+                        <div class="zhuangt">
+                        <span class="orange">计划处于暂停时段</span>
+                        <span class="start_img"> </span>
+                        </div>
+                        </div>
+                    </td>
+                    <td class="table_wd"><span class="figure text_center">浏览定向</span></td>
+                    <td class="table_wd"><div class="key_div"><a onClick="$UE.open('zuchujai_box');" class="key_btn2"></a><span class="figure">￥10.00</span></div></td>
+                    <td class="table_wd"><span class="figure">68</span></td>
+                    <td class="table_wd"><span class="figure">68</span></td>
+                    <td class="table_wd"><span class="figure">0.88%</span></td>
+                    <td class="table_wd"><span class="figure">￥9.96</span></td>
+                    <td class="table_wd"><span class="figure">￥2000</span></td>
+                    <td class="table_wd"><span class="figure">￥6000</span></td>
+                    <td class="table_we caozuo"><a onClick="$UE.open('step_second');$UE.setValue('step2_name','修改推广组');$UE.display('step_addtitle2,new_bnt2,step2_dingx1,step2_dingx2,step2_dingx3,zu_pay2,match_ask,zu_pay_pipei','none'); $UE.display('step2_dingx4,update_bnt2,zu_pay1,click_dingx','block');"></a></td>
+                  </tr>
+                  <tr id="key_chb3" onmousemove="idBg(3,'key_chb');"onmouseout="idNoBg(3,'key_chb');">
+                    <td class="table_wa text_center"><input name="" type="checkbox" value="" /></td>
+                    <td class="table_wd text_left"><div class="key_div"><a href="#" class="link">推广组</a><a onClick="$UE.open('step_second_change_box');" class="key_btn1"></a></div></td>
+                    <td class="table_wb text_left"><a href="#" class="link">推广计划推广计划推广计划推广计</a></td>
+                    <td class="table_wc text_left">
+                        <div class="div_a">
+                        <div class="zhuangt">
+                        <span class="orange">计划每日预算不足</span>
+                        <span class="start_img"> </span>
+                        </div>
+                        </div>
+                    </td>
+                    <td class="table_wd"><span class="figure text_center">浏览定向</span></td>
+                    <td class="table_wd"><div class="key_div"><a href="#" class="key_btn2"></a><span class="figure">￥10.00</span></div></td>
+                    <td class="table_wd"><span class="figure">68</span></td>
+                    <td class="table_wd"><span class="figure">68</span></td>
+                    <td class="table_wd"><span class="figure">0.88%</span></td>
+                    <td class="table_wd"><span class="figure">￥9.96</span></td>
+                    <td class="table_wd"><span class="figure">￥2000</span></td>
+                    <td class="table_wd"><span class="figure">￥6000</span></td>
+                    <td class="table_we caozuo"><a onClick="$UE.open('step_second');$UE.setValue('step2_name','修改推广组');$UE.display('step_addtitle2,new_bnt2,step2_dingx1,step2_dingx2,step2_dingx3,zu_pay2,match_ask,zu_pay_pipei','none'); $UE.display('step2_dingx4,update_bnt2,zu_pay1,click_dingx','block');"></a></td>
+                  </tr>
+                  <tr id="key_chb4" onmousemove="idBg(4,'key_chb');"onmouseout="idNoBg(4,'key_chb');">
+                    <td class="table_wa text_center"><input name="" type="checkbox" value="" /></td>
+                    <td class="table_wd text_left"><div class="key_div"><a href="#" class="link">推广组</a><a onClick="$UE.open('step_second_change_box');" class="key_btn1"></a></div></td>
+                    <td class="table_wb text_left"><a href="#" class="link">推广计划推广计划推广计划推广计</a></td>
+                    <td class="table_wc text_left">
+                        <div class="div_a">
+                        <div class="zhuangt">
+                        <span class="orange">计划未开始</span>
+                        <span class="start_img"> </span>
+                        </div>
+                        </div>
+                    </td>
+                    <td class="table_wd"><span class="figure text_center">浏览定向</span></td>
+                    <td class="table_wd"><div class="key_div"><a href="#" class="key_btn2"></a><span class="figure">￥10.00</span></div></td>
+                    <td class="table_wd"><span class="figure">68</span></td>
+                    <td class="table_wd"><span class="figure">68</span></td>
+                    <td class="table_wd"><span class="figure">0.88%</span></td>
+                    <td class="table_wd"><span class="figure">￥9.96</span></td>
+                    <td class="table_wd"><span class="figure">￥2000</span></td>
+                    <td class="table_wd"><span class="figure">￥6000</span></td>
+                    <td class="table_we caozuo"><a onClick="$UE.open('step_second');$UE.setValue('step2_name','修改推广组');$UE.display('step_addtitle2,new_bnt2,step2_dingx1,step2_dingx2,step2_dingx3,zu_pay2,match_ask,zu_pay_pipei','none'); $UE.display('step2_dingx4,update_bnt2,zu_pay1,click_dingx','block');"></a></td>
+                  </tr>
+                  <tr id="key_chb5" onmousemove="idBg(5,'key_chb');"onmouseout="idNoBg(5,'key_chb');">
+                    <td class="table_wa text_center"><input name="" type="checkbox" value="" /></td>
+                    <td class="table_wd text_left"><div class="key_div"><a href="#" class="link">推广组</a><a onClick="$UE.open('step_second_change_box');" class="key_btn1"></a></div></td>
+                    <td class="table_wb text_left"><a href="#" class="link">推广计划推广计划推广计划推广计</a></td>
+                    <td class="table_wc text_left">
+                        <div class="div_a">
+                        <div class="zhuangt">
+                        <span class="orange">计划已暂停</span>
+                        <span class="start_img"> </span>
+                        </div>
+                        </div>
+                    </td>
+                    <td class="table_wd"><span class="figure text_center">浏览定向</span></td>
+                    <td class="table_wd"><div class="key_div"><a href="#" class="key_btn2"></a><span class="figure">￥10.00</span></div></td>
+                    <td class="table_wd"><span class="figure">68</span></td>
+                    <td class="table_wd"><span class="figure">68</span></td>
+                    <td class="table_wd"><span class="figure">0.88%</span></td>
+                    <td class="table_wd"><span class="figure">￥9.96</span></td>
+                    <td class="table_wd"><span class="figure">￥2000</span></td>
+                    <td class="table_wd"><span class="figure">￥6000</span></td>
+                    <td class="table_we caozuo"><a onClick="$UE.open('step_second');$UE.setValue('step2_name','修改推广组');$UE.display('step_addtitle2,new_bnt2,step2_dingx1,step2_dingx2,step2_dingx3,zu_pay2,match_ask,zu_pay_pipei','none'); $UE.display('step2_dingx4,update_bnt2,zu_pay1,click_dingx','block');"></a></td>
+                  </tr>
+                  <tr id="key_chb6" onmousemove="idBg(6,'key_chb');"onmouseout="idNoBg(6,'key_chb');">
+                    <td class="table_wa text_center"><input name="" type="checkbox" value="" /></td>
+                    <td class="table_wd text_left"><div class="key_div"><a href="#" class="link">推广组</a><a onClick="$UE.open('step_second_change_box');" class="key_btn1"></a></div></td>
+                    <td class="table_wb text_left"><a href="#" class="link">推广计划推广计划推广计划推广计</a></td>
+                    <td class="table_wc text_left">
+                        <div class="div_a">
+                        <div class="zhuangt">
+                        <span class="orange">暂停</span>
+                        <span class="stop_img" onclick="javascript:$UE.confirm('您确定启用推广组【推广组名称】吗？','启用成功！');"> </span>
+                        </div>
+                        </div>
+                    </td>
+                    <td class="table_wd"><span class="figure text_center">浏览定向</span></td>
+                    <td class="table_wd"><div class="key_div"><a href="#" class="key_btn2"></a><span class="figure">￥10.00</span></div></td>
+                    <td class="table_wd"><span class="figure">68</span></td>
+                    <td class="table_wd"><span class="figure">68</span></td>
+                    <td class="table_wd"><span class="figure">0.88%</span></td>
+                    <td class="table_wd"><span class="figure">￥9.96</span></td>
+                    <td class="table_wd"><span class="figure">￥2000</span></td>
+                    <td class="table_wd"><span class="figure">￥6000</span></td>
+                    <td class="table_we caozuo"><a onClick="$UE.open('step_second');$UE.setValue('step2_name','修改推广组');$UE.display('step_addtitle2,new_bnt2,step2_dingx1,step2_dingx2,step2_dingx3,zu_pay2,match_ask,zu_pay_pipei','none'); $UE.display('step2_dingx4,update_bnt2,zu_pay1,click_dingx','block');"></a></td>
+                  </tr>
+                  <tr id="key_chb7" onmousemove="idBg(7,'key_chb');"onmouseout="idNoBg(7,'key_chb');">
+                    <td class="table_wa text_center"><input name="" type="checkbox" value="" /></td>
+                    <td class="table_wd text_left"><div class="key_div"><a href="#" class="link">推广组</a><a onClick="$UE.open('step_second_change_box');" class="key_btn1"></a></div></td>
+                    <td class="table_wb text_left"><a href="#" class="link">推广计划推广计划推广计划推广计</a></td>
+                    <td class="table_wc text_left">
+                        <div class="div_a">
+                        <div class="zhuangt">
+                        <span class="red">计划已下线</span>
+                        <span class="start_img"> </span>
+                        </div>
+                        </div>
+                    </td>
+                    <td class="table_wd"><span class="figure text_center">浏览定向</span></td>
+                    <td class="table_wd"><div class="key_div"><a href="#" class="key_btn2"></a><span class="figure">￥10.00</span></div></td>
+                    <td class="table_wd"><span class="figure">68</span></td>
+                    <td class="table_wd"><span class="figure">68</span></td>
+                    <td class="table_wd"><span class="figure">0.88%</span></td>
+                    <td class="table_wd"><span class="figure">￥9.96</span></td>
+                    <td class="table_wd"><span class="figure">￥2000</span></td>
+                    <td class="table_wd"><span class="figure">￥6000</span></td>
+                    <td class="table_we caozuo"><a onClick="$UE.open('step_second');$UE.setValue('step2_name','修改推广组');$UE.display('step_addtitle2,new_bnt2,step2_dingx1,step2_dingx2,step2_dingx3,zu_pay2,match_ask,zu_pay_pipei','none'); $UE.display('step2_dingx4,update_bnt2,zu_pay1,click_dingx','block');"></a></td>
+                  </tr>
+                  <tr>
+                    <td class="table_wa text_center"><input name="" type="checkbox" value="" /></td>
+                    <td class="table_wd text_left"><div class="key_div"><a href="#" class="link">推广组</a><a onClick="$UE.open('step_second_change_box');" class="key_btn1"></a></div></td>
+                    <td class="table_wb text_left"><a href="#" class="link">推广计划推广计划推广计划推广计</a></td>
+                    <td class="table_wc text_left">
+                        <div class="div_a">
+                        <div class="zhuangt">
+                        <span class="red">计划已下线</span>
+                        <span class="start_img"> </span>
+                        </div>
+                        </div>
+                    </td>
+                    <td class="table_wd"><span class="figure text_center">定向搜索</span></td>
+                    <td class="table_wd"><div class="key_div"><a href="#" class="key_btn2"></a><span class="figure">￥10.00</span></div></td>
+                    <td class="table_wd"><span class="figure">68</span></td>
+                    <td class="table_wd"><span class="figure">68</span></td>
+                    <td class="table_wd"><span class="figure">0.88%</span></td>
+                    <td class="table_wd"><span class="figure">￥9.96</span></td>
+                    <td class="table_wd"><span class="figure">￥2000</span></td>
+                    <td class="table_wd"><span class="figure">￥6000</span></td>
+                    <td class="table_we caozuo"><a onClick="$UE.open('step_second');$UE.setValue('step2_name','修改推广组');$UE.display('step_addtitle2,new_bnt2,step2_dingx1,step2_dingx2,step2_dingx4,zu_pay2,click_dingx,match_ask,zu_pay_pipei','none'); $UE.display('step2_dingx3,update_bnt2,zu_pay1','block');"></a></td>
+                  </tr>
+                  <tr>
+                    <td class="table_wa text_center"><input name="" type="checkbox" value="" /></td>
+                    <td class="table_wd text_left"><div class="key_div"><a href="#" class="link">推广组</a><a onClick="$UE.open('step_second_change_box');" class="key_btn1"></a></div></td>
+                    <td class="table_wb text_left"><a href="#" class="link">推广计划推广计划推广计划推广计</a></td>
+                    <td class="table_wc text_left">
+                        <div class="div_a">
+                        <div class="zhuangt">
+                        <span class="red">计划已下线</span>
+                        <span class="start_img"> </span>
+                        </div>
+                        </div>
+                    </td>
+                    <td class="table_wd"><span class="figure text_center">定向搜索</span></td>
+                    <td class="table_wd"><div class="key_div"><a href="#" class="key_btn2"></a><span class="figure">￥10.00</span></div></td>
+                    <td class="table_wd"><span class="figure">68</span></td>
+                    <td class="table_wd"><span class="figure">68</span></td>
+                    <td class="table_wd"><span class="figure">0.88%</span></td>
+                    <td class="table_wd"><span class="figure">￥9.96</span></td>
+                    <td class="table_wd"><span class="figure">￥2000</span></td>
+                    <td class="table_wd"><span class="figure">￥6000</span></td>
+                    <td class="table_we caozuo"><a onClick="$UE.open('step_second');$UE.setValue('step2_name','修改推广组');$UE.display('step_addtitle2,new_bnt2,step2_dingx1,step2_dingx2,step2_dingx4,zu_pay2,click_dingx,match_ask,zu_pay_pipei','none'); $UE.display('step2_dingx3,update_bnt2,zu_pay1','block');"></a></td>
+                  </tr>
+                  <tr>
+                    <td class="table_wa text_center"><input name="" type="checkbox" value="" /></td>
+                    <td class="table_wd text_left"><div class="key_div"><a href="#" class="link">推广组</a><a onClick="$UE.open('step_second_change_box');" class="key_btn1"></a></div></td>
+                    <td class="table_wb text_left"><a href="#" class="link">推广计划推广计划推广计划推广计</a></td>
+                    <td class="table_wc text_left">
+                        <div class="div_a">
+                        <div class="zhuangt">
+                        <span class="red">计划已下线</span>
+                        <span class="start_img"> </span>
+                        </div>
+                        </div>
+                    </td>
+                    <td class="table_wd"><span class="figure text_center">定向搜索</span></td>
+                    <td class="table_wd"><div class="key_div"><a href="#" class="key_btn2"></a><span class="figure">￥10.00</span></div></td>
+                    <td class="table_wd"><span class="figure">68</span></td>
+                    <td class="table_wd"><span class="figure">68</span></td>
+                    <td class="table_wd"><span class="figure">0.88%</span></td>
+                    <td class="table_wd"><span class="figure">￥9.96</span></td>
+                    <td class="table_wd"><span class="figure">￥2000</span></td>
+                    <td class="table_wd"><span class="figure">￥6000</span></td>
+                    <td class="table_we caozuo"><a onClick="$UE.open('step_second');$UE.setValue('step2_name','修改推广组');$UE.display('step_addtitle2,new_bnt2,step2_dingx1,step2_dingx2,step2_dingx4,zu_pay2,click_dingx,match_ask,zu_pay_pipei','none'); $UE.display('step2_dingx3,update_bnt2,zu_pay1','block');"></a></td>
+                  </tr>
+                  <tr class="tongji">
+                    <td class="table_wa">&nbsp;</td>
+                    <td class="table_wb text_left" colspan="5">合计-10个推广组(7个有效)</td>
+                    <td class="table_wd"><span class="figure">68</span></td>
+                    <td class="table_wd"><span class="figure">68</span></td>
+                    <td class="table_wd"><span class="figure">0.88%</span></td>
+                    <td class="table_wd"><span class="figure">￥9.96</span></td>
+                    <td class="table_wd"><span class="figure">￥2000</span></td>
+                    <td class="table_wd"><span class="figure">￥6000</span></td>
+                    <td class="table_we caozuo">&nbsp;</td>
+                  </tr>
+              </table>
+ <!-- 表格内容 开始-->
+ 
+        </div>
+      </div>
+   <!--分页开始-->
+	<!--#include virtual="/static/ads_c_2.0/web/inc/tg_page.shtml"-->
+    <!--分页结束-->
+</div>

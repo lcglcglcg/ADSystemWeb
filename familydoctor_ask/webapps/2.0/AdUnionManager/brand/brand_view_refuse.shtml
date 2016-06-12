@@ -1,0 +1,33 @@
+<div class="refuse_backg" id="brand_view_refuse" style="display:none;">
+  <div class="title">审核拒绝的原因</div>
+    <div class="cont cont_wm_ds">
+    	<div class="wm_cont">
+            <div class="cont_t">
+                <ul>
+                    <li class="t_lf">拒绝原因：</li>
+                    <li class="t_rg">图片信息非法，包含了和本行业无关的信息。</li>
+                </ul>
+            </div>
+            
+            <div class="cont_b">
+                 <ul>
+                     <li class="b_lf">审核人：</li>
+                     <li class="b_rg">杨振国/系统自动审核</li>
+                 </ul>
+            </div>
+            
+            <div class="cont_b">
+                 <ul>
+                     <li class="b_lf">审核时间：</li>
+                     <li class="b_rg">2013-06-06 12:12:12</li>
+                 </ul>
+            </div>
+        </div>
+        <div class="r_btn" align="center">
+             <ul class="new_one_btn">
+                <li><a id="idBtn_close">关闭</a></li> 
+             </ul>
+        </div>
+    </div>
+  
+</div>

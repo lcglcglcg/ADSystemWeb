@@ -1,0 +1,80 @@
+/* CSS Document */
+.main{margin: auto;width:1000px;}
+.cw_power{ height:26px; width:100%; margin-top:20px; background:url(/static/ads_c_2.0/web/images/cw_tt_bg.jpg) repeat-x;}
+.cw_power a{ display:block; width:80px; text-align:center; float:left;height:24px; line-height:25px; background:#d4e7fa; border:1px solid #8bbbde;color:#0066cc;margin-right:5px;} 
+.cw_power a:hover,.cw_power .cw_curr{text-decoration:none; font-weight:bold;height:25px; background:#fff; border-bottom:none; }
+.cw_main{ width:998px;border:1px solid #9ec6e0;border-top:none; min-height:440px;}
+/* 财务信息内容 */
+.loading_height{height:400px; position:relative;}
+.financial_cont{ width:100%;}
+/* 描述信息内容----------开始 */
+.conditions{width:960px; background:#FFF; padding:20px 10px 0 10px;}
+.conditions ol{ height:22px; padding-bottom:5px;}
+.conditions ol li{ display:block; height:22px; line-height:22px;}
+.conditions ol.conth1_ol li{ display:block; float:left; height:22px; line-height:22px;}
+.conditions ol li.tions_lf{ float:left;}
+
+.conditions ol li.cw_w100{ width:100px; overflow:hidden;}
+.pc_01{ border:1px solid #cccccc; height:18px; line-height:18px; width:230px; vertical-align:middle; padding-left:2px;float:left;}
+.pc_img{ border:1px solid #cccccc; border-left:none; vertical-align:middle; padding:4px 1px 3px 2px; float:left;}
+.conditions ol li.padl{ margin-left:7px;}
+.conditions ol li.padl_01{ margin:0 25px;}
+.conditions ol li.jibie_01{ position:relative; z-index:999;}
+.conditions ol li.padl1{ margin-left:20px; }
+.conditions ol li.padl3{ margin-left:25px;}
+.conditions ol li span{ display:block; float:left; width:65px;}
+.conditions ol li .input_liushui{border: 1px solid #CCCCCC;float: left;height: 18px;line-height: 18px; margin-left: 10px;vertical-align: middle;width: 167px;}
+.conditions ol li .select_w1{ width:70px;}
+.conditions ol li .select_w2{ width:110px;}
+.conditions ol li .select_w3{ width:60px;}
+.conditions ol li a:link,.conditions ol li a:visited{ display:block; width:62px; height:19px; text-align:center; line-height:20px; color:#000; font-weight:bold; background:url(/static/ads_c_2.0/web/images/icon.gif) no-repeat 0 -150px; text-decoration:none;}
+.conditions ol li a:hover{ color:#ab0000; font-weight:bold; text-decoration:none;}
+
+/* fusioncharts start */
+.content_list .list_lf{ width:489px; float:left; height:400px;}
+.content_list .list_rg{ width:489px; float:right; height:400px;}
+/* fusioncharts end */
+/* 描述信息内容----------结束 */
+/* 充值记录内容----------开始 */
+.content_list{ width:985px; border-top:1px solid #ABE4FE;overflow:hidden;margin:5px 5px 5px 5px !important; min-height:200px;height:auto;}
+.content_list ul{ clear:both; height:28px; border-bottom:1px solid #ABE4FE;}
+.content_list ul.t_line{ height:28px; background:#e8f4fa;}
+.content_list .content_list_lf ul li{ display:block; float:left; height:28px; line-height:28px;}
+.content_list ul li.f_bold{ font-weight:bold; text-align:center; padding-left:-10px;}
+.content_list ul li.f_center{ text-align:center;}
+.content_list ul li.w140{ width:128px;overflow: hidden; padding:0 2px;}
+.content_list ul li.w150{ width:150px;overflow: hidden;}
+.content_list ul li.w100{ width:90px;overflow: hidden; padding:0 5px;}
+.content_list ul li.w80{ width:70px;overflow: hidden; padding:0 5px;}
+.content_list ul li.w300{ width:300px;overflow: hidden; padding:0 5px;}
+.content_list ul li.w300 a{ color:#0033CC;}
+
+/*  main_tt end*/
+.main_pad{ height:300px; width:800px; border: 1px solid #dedede; background:#FFF;}
+.main_pad .main_title{ height:28px; line-height:28px; font-weight:bold; border-bottom: 1px solid #f2f2f2;padding-left:10px;}
+.main_pad .main_rcontent ul{height:28px;width:800px;  border-bottom: 1px solid #f2f2f2;}
+.main_pad .main_rcontent ul li{ float:left;height:28px; line-height:28px; }
+.main_pad .main_rcontent ul li.rw160{ width:170px; overflow:hidden;padding-left:10px;}
+.main_pad .main_rcontent ul li.rw190{ width:210px; overflow:hidden;}
+.dark_red{ color:#863a23;}
+.font14{ font-size:16px; font-weight:bold;}
+.main_pad .main_rcontent ul li.r_total{ font-weight:bold; padding-left:10px;}
+/* close_bnt 关闭按钮 */
+.delivery_btn{ clear:both; width:778px;  height:22px; background:#FFF;}
+.delivery_btn ol{height:22px; width:778px; }
+.delivery_btn ol li{height:22px; width:150px;}
+.delivery_btn ol li a{ display:block;color:#000; width:50px; height:22px; line-height:22px; float:left;font-weight:bold;text-align:center; background:url(/static/ads_c_2.0/web/images/icon.gif) no-repeat 0 -300px; margin:0 10px;}
+.delivery_btn ol li a:link,.delivery_btn ol li a:visited{ color:#000; font-weight:bold;text-decoration:none;}
+.delivery_btn ol li a:hover{ background:url(/static/ads_c_2.0/web/images/icon.gif) no-repeat 0 -250px; font-weight:bold;color:#FFF; text-decoration:none;}
+
+/* 财务翻页的边框*/
+.cw_page_border{ border-top: 1px solid #ABE4FE;}
+
+/* 充值记录内容----------结束 */
+
+
+
+
+
+
+

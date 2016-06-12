@@ -1,0 +1,37 @@
+/* CSS Document */
+.recharge_box{width:500px;background:#FFF; border:1px solid #23b7fa;}
+.recharge_box .recharge_title{width:485px; height:31px; line-height:31px; background:url(/static/ads_m_1.0/web/images/pub_bg.gif) repeat-x 0 -200px; padding-left:15px;}
+.recharge_box .recharge_title b{ float:left;}
+.recharge_box .recharge_title span{ float:right; padding:7px 10px 0 0;}
+/* recharge_cont  */
+.recharge_box .recharge_main{ padding:10px 10px 5px; border:none; background:none;}
+/* miaoshu  */
+.recharge_main .miaoshu{ height:103px; border:1px solid #c0bfbf; background:#f3f2f2; padding-top:6px;}
+.recharge_main .miaoshu .ms_lf{ float:left; width:140px;}
+.recharge_main .miaoshu .ms_rg{ float:right; width:330px;}
+.recharge_main .miaoshu .ms_lf ul li{ height:24px; line-height:24px; text-align:right;}
+.recharge_main .miaoshu .ms_rg ul li{ height:24px; line-height:24px; text-align:left;}
+/* shuru  */
+.recharge_main .shuru{ margin-top:10px; clear:both; overflow:hidden;border:1px solid #c0bfbf; padding-top:6px;}
+.recharge_main .shuru .shuru_lf { width:140px; float:left; }
+.recharge_main .shuru .shuru_lf ul li{height:22px; line-height:22px; text-align:right;}
+.recharge_main .shuru .shuru_rg{ width:330px; float:right;}
+.recharge_main .shuru .shuru_rg input{ float:left;}
+.recharge_main .shuru .shuru_rg ol li.h20 a{ display:block; width:48px; float:left; height:20px; background:url(/static/ads_m_1.0/web/images/icon.gif) repeat-x 0 -200px; color:#000; font-weight:bold; text-align:center; line-height:20px; text-decoration:none;}
+.recharge_main .shuru .shuru_rg ol li.h20 a:hover{ color:#FFF; font-weight:bold; text-align:center; line-height:20px; text-decoration:none;background:url(/static/ads_m_1.0/web/images/icon.gif) repeat-x 0 -250px;}
+.h20{ height:22px; line-height:22px; margin-bottom:8px;}
+.recharge_main .shuru .shuru_lf ul li.h60{ height:60px; line-height:22px; margin-bottom:8px;}
+.h60{ height:60px; line-height:22px; margin-bottom:8px;}
+.h60 textarea{ height:60px; width:240px; resize:none;}
+/* chaxun  */
+.recharge_main .chaxun{ margin:10px 0; height:110px; padding-left:30px;}
+.recharge_main .chaxun ol li.recharge_li_left{ float:left;}
+.recharge_main .chaxun ol li.padc1{ margin-left:30px;}
+.recharge_main .chaxun ol li a{ display:block; width:48px; height:20px; background:url(/static/ads_m_1.0/web/images/icon.gif) repeat-x 0 -200px; color:#000; font-weight:bold; text-align:center; line-height:20px; text-decoration:none;}
+.recharge_main .chaxun ol li a:hover{ color:#FFF; font-weight:bold; text-align:center; line-height:20px; text-decoration:none;background:url(/static/ads_m_1.0/web/images/icon.gif) repeat-x 0 -250px;}
+.recharge_main .chaxun .radio_re{ width:420px; padding-top:10px;}
+.recharge_main .chaxun .radio_re label{ display:block; margin-bottom:6px;}
+.recharge_main .chaxun .radio_re label input{margin:1px 4px 0 0; float:left;}
+
+
+

@@ -1,0 +1,22 @@
+/* CSS Document */
+/* 系统管理样式 */
+/* 角色管理样式 */
+.gz_alter_box .h20 ol li{ margin-bottom:10px;}
+.gz_alter_box .h20 ol li .rw_level1{ background:url(../images/role.jpg) no-repeat 0 center; padding-left:20px;}
+.gz_alter_box .h20 ol li .rw_level2{ display:block;background:url(../images/role.jpg) no-repeat 0 center; padding-left:20px; margin-left:30px;}
+
+.gz_alter_cont .cont_rg ol li.h20 .max_word{height:42px;line-height:22px; float:left; width:220px;margin:0 5px 5px 0; border:1px solid #7f9db9;overflow:hidden;word-wrap: break-word;word-break: break-all;}
+
+.gz_alter_box .h20 ol li .ra_level2{ display:block;margin-left:30px;line-height:22px;}
+.gz_alter_box .h20 ol li input.role_add{vertical-align:middle; margin-right:5px;}
+.gz_alter_box .h20 ol li .sa_input1{ width:220px;}
+
+
+
+
+
+
+
+
+
+

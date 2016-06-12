@@ -1,0 +1,29 @@
+<div id="keywordsList" style="display:none;"> 
+  <!--定向搜索行为 左侧展示-->
+  <div class="glance_left">
+    <div class="glr_hsz"><span class="y_select" >输入/导入关键词</span><a name="delWrite">全部删除</a></div>
+    <div class="tuijian_nav"> 
+      <!--定向搜索行为 推荐结果-->
+      <div class="result"> <span class="re_arrow"><a  name="addWriteAll" class="re_all">添加全部</a></span> <span class="re_arrow" name="upKeyword_MSG">
+        <input type="image" class="input_img" src="/static/ads_c_2.0/web/images/btn_daoru.gif" id="upKeyword">
+        </span> </div>
+      
+      <!--定向搜索行为 推荐结果的展示-->
+      <div class="result_show_keyword">
+        <div class="res_textarea">
+          <textarea></textarea>
+        </div>
+        <div class="lf_zhushi"><a name="keywordMsg">&nbsp;</a>每个关键词最多为20个汉字或40个英文</div>
+      </div>
+    </div>
+  </div>
+  <!--定向搜索行为 右侧展示-->
+  <div class="glance_right">
+    <div class="glr_hsz"><span class="y_select">已选关键词(<span name="keywordConut">0</span>)</span><a name="delSelect">全部删除</a></div>
+    <div class="res_rg_shu" name="keywordListDiv"> </div>
+  </div>
+</div>
+<script language="javascript" src="/static/web/js/thirdparty/swfupload.js"></script> 
+<script language="javascript" src="/static/web/js/thirdparty/swfupload.queue.js"></script> 
+<script language="javascript" src="/static/web/js/common/common_upload.js"></script> 
+<script language="javascript" src="/static/web/js/page/keywords.js"></script>

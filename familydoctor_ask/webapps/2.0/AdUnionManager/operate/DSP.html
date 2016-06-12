@@ -1,0 +1,166 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>运营管理-DSP运营</title>
+<!--#include virtual="/public/public.shtml"-->
+  <link rel="stylesheet" type="text/css" href="/static/ads_m_1.0/web/css/body_list.css">
+  <link rel="stylesheet" type="text/css" href="/static/ads_m_1.0/web/css/account_add.css">
+  <link rel="stylesheet" type="text/css" href="/static/ads_m_1.0/web/css/input.css">
+  <link rel="stylesheet" type="text/css" href="/static/ads_m_1.0/web/css/page.css">
+  <link rel="stylesheet" type="text/css" href="/static/ads_m_1.0/web/css/description.css"/>
+  <link rel="stylesheet" type="text/css" href="/static/ads_m_1.0/web/css/cw_gl_recharge.css"/>
+  <link rel="stylesheet" type="text/css" href="/static/ads_m_1.0/web/css/recharge_detailed.css"/>
+  <link rel="stylesheet" type="text/css" href="/static/ads_m_1.0/web/css/refuse.css"/>
+  <link rel="stylesheet" type="text/css" href="/static/ads_m_1.0/web/css/step_common.css"/>
+  <link rel="stylesheet" type="text/css" href="/static/ads_m_1.0/web/css/select_region.css"/>
+  <link rel="stylesheet" type="text/css" href="/static/ads_m_1.0/web/css/select_keshi.css"/>
+  <link rel="stylesheet" type="text/css" href="/static/ads_m_1.0/web/css/preview.css"/>
+    <script src="/static/web/js/thirdparty/handlebars-v3.0.3.min.js"></script>
+    <script src="/static/web/js/thirdparty/jquery-1.11.2.min.js"></script>
+    <script src="/static/web/js/common/common_upload.js"></script>
+    <script language="javascript" src="/static/web/js/thirdparty/swfupload.js"></script>
+    <script language="javascript" src="/static/web/js/thirdparty/swfupload.queue.js"></script>
+    <script language="javascript" src="/static/web/js/common/common_upload.js"></script>
+</head>
+<body>
+<script>
+window.urlName='operate';
+</script>
+<!--#include virtual="/public/header.shtml"-->
+<!--#include virtual="/tool/keshi.html"-->
+<!--#include virtual="/tool/region.html"-->
+<div class="ad_box">
+  <div class="main">
+    <div class="curr_position">当前位置：<span>运营管理>DSP运营</span></div>
+    <!-- 查询条件conditions start -->
+    <div class="conditions" id="formElements">
+      <ol>
+        <li class="conditions_li"><span class="w40">CPC≥</span></li>
+        <li class="conditions_li"><input name="cpc" type="text" class="input13_new" value="3"></li>
+        <li class="conditions_li padl2"><input name="budgetStart" type="text" class="input13_new" value=""></form></li>
+        <li class="conditions_li"><span class="w50">≤ 预算 ≤</span></li>
+        <li class="conditions_li"><input name="budgetEnd" type="text" class="input13_new"></form></li>
+        <li class="conditions_li padl2"><span class="w40">账户：</span></li>
+        <li class="conditions_li"><input name="accountName" type="text" class="input07_4"></li>
+        <li class="conditions_li padl2"><span>投放科室：</span></li>
+        <li class="conditions_li brand_select_img"><a id="putKeshi"><img src="/static/ads_m_1.0/web/images/select_kq_01.jpg"/></a> </li>
+        <li class="conditions_li padl3"><span>投放区域：</span></li>
+        <li class="conditions_li brand_select_img"><a id="putRegion"><img src="/static/ads_m_1.0/web/images/select_kq_02.jpg"/></a> </li>
+        <li class="conditions_li padl3">
+          <select name="order">
+            <option value="100" selected="selected">DSP状态&nbsp;</option>
+            <option value="0">有效</option>
+            <option value="1">已暂停</option>
+            <option value="2">未上传</option>
+            <option value="3">已上传</option>
+          </select>
+        </li>
+        <li class="conditions_li padl2 c_select"><a href="javascript:;" id="checkInfo">查询</a></li>
+      </ol>
+    </div>
+    <!-- 查询条件conditions end -->
+    <!-- 查询条件s_content start -->
+    <div class="s_content" id="infoList">
+
+    </div>
+    <!-- 查询条件s_content end -->
+    <div class="s_bottom">
+      <div class="b_lf lf">
+        <ol>
+          <!--        	  <li><a onClick="$UE.open('cw_gl_recharge2');">充值</a></li>
+          -->
+        </ol>
+      </div>
+      <!--#include virtual="/static/ads_m_1.0/web/inc/page.html"-->
+    </div>
+  </div>
+</div>
+
+<!--#include virtual="preview_default.html"-->
+
+<script src="/static/web/js/page/manager/operate/dsp.js"></script>
+
+
+<!-- 上传图片弹层 -->
+<!-- step3.shtml -->
+<!--#include virtual="step3.shtml"-->
+
+<!-- 以下为模板区域 -->
+<script id="operateList" type="text/x-handlebars-template">
+  <ul class="b_line">
+    <li class="w177 f_bold">账户</li>
+    <li class="w90 f_bold">预算</li>
+    <li class="w90 f_bold" style="cursor:pointer;" name="sort">CPC↓</li>
+    <li class="w410 f_bold">创意标题</li>
+    <li class="w90 f_bold">DSP状态</li>
+    <li class="w130 f_bold">操作</li>
+  </ul>
+  {{#each LIST}}
+
+  {{#compare "==" STATUS 0}}
+  <ul creativeId={{CREATIVE_ID}} style="background:#cdeaf9;">
+  {{/compare}}
+  {{#compare "==" STATUS 1}}
+  <ul creativeId={{CREATIVE_ID}} style="background:#cdeaf9;">
+  {{/compare}}
+  {{#compare "==" STATUS 2}}
+  <ul creativeId={{CREATIVE_ID}}>
+  {{/compare}}
+
+    <li class="w177 f_center">{{ACCOUNT_NAME}}</li>
+    <li class="w90 f_center">{{BUDGET}}</li>
+    <li class="w90 f_center">{{CPC_PRICE}}</li>
+    <li class="w410 f_center">{{TITLE}}</li>
+
+    {{#compare "==" STATUS 0}}
+        <li class="w90 f_center green">有效</li>
+    {{/compare}}
+    {{#compare "==" STATUS 1}}
+        <li class="w90 f_center orange">暂停</li>
+    {{/compare}}
+    {{#compare "==" STATUS 2}}
+        <li class="w90 f_center">未上传</li>
+    {{/compare}}
+
+    <li class="w130 f_center">
+        <a href="javascript:;" name="uploadTool">上传</a>
+
+        {{#compare "==" STATUS 2}}
+            <span>--</span>
+        {{/compare}}
+        {{#compare "==" STATUS 1}}
+            <a class="a_dsp_style" name="start"><img width="16" height="16" style="margin-top:6px;" src="/static/ads_m_1.0/web/images/li6_new.gif"></a>
+        {{/compare}}
+        {{#compare "==" STATUS 0}}
+            <a class="a_dsp_style"><img width="16" height="16" style="margin-top:6px;" src="/static/ads_m_1.0/web/images/li5_new.gif"></a>
+        {{/compare}}
+    </li>
+
+  </ul>
+  {{/each}}
+  <ul class="t_line">
+    <li></li>
+  </ul>
+
+</script>
+
+<script id="uploadFileTemplate" type="text/x-handlebars-template">
+  {{#each LIST}}
+  <li imgId="{{IMG_ID}}" imgUrl="{{FILE_PATH}}" fileSize="{{FILE_SIZE}}">
+    <span class="zu_cont_lf"><div class="key_div">{{IMG_NAME}}</div></span>
+    <span class="zu_cont_rg">{{IMG_SIZE}}</span>
+    <a name="delete" class="delete" href="javascript:;"></a>
+  </li>
+  {{/each}}
+</script>
+
+<script id="uploadFileTemplateTwo" type="text/x-handlebars-template">
+  <li imgId="{{CREATIVE_IMG_ID}}" imgUrl="{{CREATIVE_FILE_PATH}}" isNew="true" fileSize="{{CREATIVE_IMG_SIZE_IMGLENGTH}}">
+    <span class="zu_cont_lf"><div class="key_div">{{FILE_NAME}}</div></span>
+    <span class="zu_cont_rg">{{CREATIVE_IMG_SIZE}}</span>
+    <a class="delete" name="delete" href="javascript:;"></a>
+  </li>
+</script>
+
+<!--#include virtual="/public/footer.html"-->

@@ -1,0 +1,140 @@
+<div style="position:relative;display:none;" id="contb3">
+    <div class="program_div">
+ 	    <div class="table_up_select">
+        <div class="rrr">
+          <div class="s_left">
+            <ul class="s_ul">
+              <li class="s_li">
+                <input name="textfield" type="text" value="请输入关键词名称"size="16" class="input_border1 col"/>
+              </li>
+              <li class="s_li guheight"> <span>
+                <input type="checkbox" name="checkbox3" value="checkbox">
+                </span><span>精确查询</span></li>
+              <li class="s_li"> <a href="#" class="btn"><span>查询</span></a> </li>
+              <li class="s_li" id="l_li" style="display:none;"> <a href="#" class="btn" onclick="$UE.open('click_dingx_kes')"><span>科室筛选</span></a> </li>
+              <li class="s_li" id="s_li"> <a class="btn" onclick="$UE.open('match')"><span>匹配模式</span></a> </li>
+              <li class="s_li"> <a href="#" class="btn"><span>导出</span></a> </li>
+              <li class="s_li all_time">
+                  <select name="tf6">
+                      <option value="今天" selected="selected">今天</option>
+                      <option value="昨天">昨天</option>
+                      <option value="最近7天">最近7天</option>
+                  </select>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+ <!--表格内容 开始-->
+      	<div class="table_list">
+            <div class="s_button">
+            <div class="rrr">
+              <ul class="s_ul s_ul_pad">
+                <li class="s_li"> <a class="btn" href="javascript:$UE.confirm('您确定要删除选中的创意吗？','删除成功！');"><span>删除</span></a> </li>
+             </ul>
+    
+            </div>
+          </div>
+        	<table width="100%" >
+              <tr class="table_title">
+                <td class="table_we text_center_bg"><input name="" type="checkbox" value="" /></td>
+                <th class="table_ws">
+                    <a href="#"><span>关键词</span></a>
+                </th>
+                <th class="table_ws">
+                    <a href="#"><span>推广计划</span></a>
+                </th>
+                <th class="table_ws">
+                    <a href="#"><span>推广组</span></a>
+                </th>
+<!--                <th class="table_wt">
+                    <a href="#"><span>匹配模式</span></a>
+                </th>
+-->                <th class="table_wt">
+                    <a href="#"><span>CPC出价</span></a>
+                </th>
+                <th class="table_wt">
+                    <a href="#"><span>CPM出价</span></a>
+                </th>
+                <th class="table_we">操作</th>
+              </tr>
+              <tr style="display:none;">
+                <td colspan="7"><div class="warn">当前创意列表为空，推广组无法正常投放，请<a onclick="$UE.open('step_three');$UE.setValue('step3_name','新建创意');$UE.display('step_addtitle3','block')">添加创意</a></div></td>
+              </tr>
+              <tr style="display:none;">
+                <td colspan="7"><div class="no_data">没有符合条件的数据</div></td>
+              </tr>
+              <tr id="key_chkp1" onmousemove="idBg(1,'key_chkp');"onmouseout="idNoBg(1,'key_chkp');">
+                <td class="table_we text_center"><input name="" type="checkbox" value="" /></td>
+                <td class="table_ws"><span class="figure text_left text_left">男科1</span></td>
+                <td class="table_ws text_left"><a href="#" class="link">推广计划推广计划推广推广计</a></td>
+                <td class="table_ws text_left"><a href="#" class="link">推广组推广组推广组推广组</a></td>
+<!--                <td class="table_wt text_center">精准匹配</td>
+-->                <td class="table_wt"><span class="figure">￥10.00</span></td>
+                <td class="table_wt"><span class="figure">￥26</span></td>
+                <td class="table_we caozuo k_c"><a onclick="javascript:$UE.confirm('您确定要删除选中的关键词吗？','删除成功！');"></a></td>
+              </tr>
+              <tr id="key_chkp2" onmousemove="idBg(2,'key_chkp');"onmouseout="idNoBg(2,'key_chkp');">
+                <td class="table_we text_center"><input name="" type="checkbox" value="" /></td>
+                <td class="table_ws"><span class="figure text_left">男科2</span></td>
+                <td class="table_ws text_left"><a href="#" class="link">推广计划推广计划推广推广计</a></td>
+                <td class="table_ws text_left"><a href="#" class="link">推广组推广组推广组推广组</a></td>
+<!--                <td class="table_wt text_center">短语匹配</td>
+-->                <td class="table_wt"><span class="figure">￥10.00</span></td>
+                <td class="table_wt"><span class="figure">￥26</span></td>
+                <td class="table_we caozuo k_c"><a onclick="javascript:$UE.confirm('您确定要删除选中的关键词吗？','删除成功！');"></a></td>
+              </tr>
+              <tr id="key_chkp3" onmousemove="idBg(3,'key_chkp');"onmouseout="idNoBg(3,'key_chkp');">
+                <td class="table_we text_center"><input name="" type="checkbox" value="" /></td>
+                <td class="table_ws"><span class="figure text_left">男科3</span></td>
+                <td class="table_ws text_left"><a href="#" class="link">推广计划推广计划推广推广计</a></td>
+                <td class="table_ws text_left"><a href="#" class="link">推广组推广组推广组推广组</a></td>
+<!--                <td class="table_wt text_center">精准匹配</td>
+-->                <td class="table_wt"><span class="figure">￥10.00</span></td>
+                <td class="table_wt"><span class="figure">￥26</span></td>
+                <td class="table_we caozuo k_c"><a onclick="javascript:$UE.confirm('您确定要删除选中的关键词吗？','删除成功！');"></a></td>
+              </tr>
+              <tr id="key_chkp4" onmousemove="idBg(4,'key_chkp');"onmouseout="idNoBg(4,'key_chkp');">
+                <td class="table_we text_center"><input name="" type="checkbox" value="" /></td>
+                <td class="table_ws"><span class="figure text_left">妇科1</span></td>
+                <td class="table_ws text_left"><a href="#" class="link">推广计划推广计划推广推广计</a></td>
+                <td class="table_ws text_left"><a href="#" class="link">推广组推广组推广组推广组</a></td>
+<!--                <td class="table_wt text_center">短语匹配</td>
+-->                <td class="table_wt"><span class="figure">￥10.00</span></td>
+                <td class="table_wt"><span class="figure">￥26</span></td>
+                <td class="table_we caozuo k_c"><a onclick="javascript:$UE.confirm('您确定要删除选中的关键词吗？','删除成功！');"></a></td>
+              </tr>
+              <tr id="key_chkp5" onmousemove="idBg(5,'key_chkp');"onmouseout="idNoBg(5,'key_chkp');">
+                <td class="table_we text_center"><input name="" type="checkbox" value="" /></td>
+                <td class="table_ws"><span class="figure text_left">妇科2</span></td>
+                <td class="table_ws text_left"><a href="#" class="link">推广计划推广计划推广推广计</a></td>
+                <td class="table_ws text_left"><a href="#" class="link">推广组推广组推广组推广组</a></td>
+<!--                <td class="table_wt text_center">精准匹配</td>
+-->                <td class="table_wt"><span class="figure">￥10.00</span></td>
+                <td class="table_wt"><span class="figure">￥26</span></td>
+                <td class="table_we caozuo k_c"><a onclick="javascript:$UE.confirm('您确定要删除选中的关键词吗？','删除成功！');"></a></td>
+              </tr>
+              <tr id="key_chkp6" onmousemove="idBg(6,'key_chkp');"onmouseout="idNoBg(6,'key_chkp');">
+                <td class="table_we text_center"><input name="" type="checkbox" value="" /></td>
+                <td class="table_ws"><span class="figure text_left">妇科3</span></td>
+                <td class="table_ws text_left"><a href="#" class="link">推广计划推广计划推广推广计</a></td>
+                <td class="table_ws text_left"><a href="#" class="link">推广组推广组推广组推广组</a></td>
+<!--                <td class="table_wt text_center">短语匹配</td>
+-->                <td class="table_wt"><span class="figure">￥10.00</span></td>
+                <td class="table_wt"><span class="figure">￥26</span></td>
+                <td class="table_we caozuo k_c"><a onclick="javascript:$UE.confirm('您确定要删除选中的关键词吗？','删除成功！');"></a></td>
+              </tr>
+              <tr class="tongji">
+                <td class="table_we">&nbsp;</td>
+                <td class="table_wb text_left" colspan="6">合计-6个关键词(6个有效)</td>
+              </tr>
+          </table>
+        	 <!--表格内容 开始-->
+ 
+        </div>
+      </div>
+   <!--分页开始-->
+	<!--#include virtual="/static/ads_c_2.0/web/inc/tg_page.shtml"-->
+    <!--分页结束-->
+</div>

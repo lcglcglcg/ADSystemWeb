@@ -1,0 +1,10 @@
+<div name="meitidingxiang_type_ds" style="display:none;" >
+  <ol class="title">
+    <li>
+      <label>
+        <input giveup name="allMedia" type="checkbox" value="" class="input_valign"/>
+        所有媒体</label>
+    </li>
+  </ol>
+  <span name="mediaList"></span> </div>
+<script language="javascript" src="/static/web/js/page/media.js"></script>

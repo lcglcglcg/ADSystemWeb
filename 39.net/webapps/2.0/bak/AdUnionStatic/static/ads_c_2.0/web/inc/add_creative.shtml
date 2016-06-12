@@ -1,0 +1,196 @@
+<div style="position:relative;display:none;" id="contb5">
+     <div class="program_div">
+ 	    <div class="table_up_select">
+        <div class="rrr">
+          <div class="s_left">
+            <ul class="s_ul">
+              <li class="s_li">
+                <select name="tf3">
+                  <option value="全部状态">全部状态</option>
+                  <option value="有效">有效</option>
+                  <option value="不宜推广">不宜推广</option>
+                  <option value="暂停">暂停</option>
+                  <option value="审核中">审核中</option>
+                  <option value="审核拒绝">审核拒绝</option>
+                </select>
+              </li>
+              <li class="s_li">
+                <input name="textfield" type="text" value="请输入子链名称"size="16" class="input_border col"/>
+              </li>
+              <li class="s_li guheight"> <span>
+                <input type="checkbox" name="checkbox3" value="checkbox">
+                </span><span>精确查询</span></li>
+              <li class="s_li"> <a href="#" class="btn"><span>查询</span></a> </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+ <!--表格内容 开始-->
+      	<div class="table_list">
+            <div class="s_button">
+                <div class="rrr">
+                  <ul class="s_ul s_ul_pad">
+                        <li class="s_li">
+							<div class="addpromotion add_no_bottom">
+                            	<a onclick="$UE.open('new_add_creative');$UE.setValue('newadd_tt','新建附加创意');"><b>+</b> 添加附加创意</a>
+                            </div>
+                        </li>
+                        <li class="s_li"> <a class="btn" href="javascript:$UE.confirm('您确定要删除选中的附加创意吗？','删除成功！');"><span>删除</span></a> </li>
+                        <li class="s_li"> <a class="btn" href="javascript:$UE.confirm('您确定要暂停选中的附加创意吗？','暂停成功！');"><span>暂停</span></a> </li>
+                        <li class="s_li"> <a class="btn" id="download_btn" href="javascript:$UE.confirm('您确定要启用选中的附加创意吗？','启用成功！');"><span>启用</span></a> </li>
+                 </ul>
+                </div>
+          </div>
+            <table width="100%" >
+                  <tr class="table_title">
+                    <td class="table_wa text_center_bg"><input name="" type="checkbox" value="" /></td>
+                    <th class="table_wb">
+                        <a href="#"><span>附加创意</span></a>
+                    </th>
+                    <th class="table_wd">
+                        <a href="#"><span>状态</span></a>
+                    </th>
+<!--                    <th class="table_we">操作</th>
+-->                  </tr>
+                  <tr style="display:none;">
+                  	<td colspan="4"><div class="warn">当前推广组列表为空，推广计划无法正常投放，请<a onclick="$UE.open('new_add_creative');$UE.setValue('step3_name','新建附加创意');$UE.display('step_addtitle3','block');" >添加附加创意</a></div></td>
+                  </tr>
+                  <tr style="display:none;">
+                    <td colspan="4"><div class="no_data">没有符合条件的数据</div></td>
+                  </tr>
+                  <tr id="key_chd1" onmousemove="idBg(1,'key_chd');"onmouseout="idNoBg(1,'key_chd');">
+                    <td class="table_wa text_center"><input name="" type="checkbox" value="" /></td>
+                    <td class="table_wb text_left add_color"><div class="key_div"><s>子链一名称</s> | <s>子链二名称</s> | <s>子链三名称</s> | <s>子链一名称</s> | <s>子链一名称</s><a onclick="$UE.open('new_add_creative');$UE.setValue('newadd_tt','修改附加创意');" class="key_btn1"></a></div></td>
+                    <td class="table_wd text_left">
+                        <div class="div_a">
+                        <div class="zhuangt">
+                        <span class="green">有效</span>
+                        <span class="start_img" onclick="javascript:$UE.confirm('您确定暂停附加创意【附加创意名称】吗？','暂停成功！');"></span>
+                        </div>
+                        </div>
+                    </td>
+<!--                    <td class="table_we caozuo"><a onclick="$UE.open('new_add_creative');$UE.setValue('newadd_tt','修改附加创意');"></a></td>
+-->                  </tr>
+                  <tr id="key_chd2" onmousemove="idBg(2,'key_chd');"onmouseout="idNoBg(2,'key_chd');">
+                    <td class="table_wa text_center"><input name="" type="checkbox" value="" /></td>
+                    <td class="table_wb text_left add_color"><div class="key_div"><s>子链一名称</s> | <s>子链二名称</s> | <s>子链三名称</s> | <s>子链一名称</s> | <s>子链一名称</s><a href="#" class="key_btn1"></a></div></td>
+                    <td class="table_wd text_left">
+                        <div class="div_a">
+                        <div class="zhuangt light">
+                        <span class="red">不宜推广<img  src="/static/ads_c_2.0/web/images/bulb_dim.png" width="16" height="16" msgWidth="300" msgTitle="不宜推广：" title="提交" /></span>
+                        <span class="start_img" onclick="javascript:$UE.confirm('您确定暂停选中的推广计划吗？','暂停成功！');"></span>
+                        </div>
+                        </div>
+                    </td>
+<!--                    <td class="table_we caozuo"><a href="#"></a></td>
+-->                  </tr>
+                  <tr id="key_chd3" onmousemove="idBg(3,'key_chd');"onmouseout="idNoBg(3,'key_chd');">
+                    <td class="table_wa text_center"><input name="" type="checkbox" value="" /></td>
+                    <td class="table_wb text_left add_color"><div class="key_div"><s>子链一名称</s> | <s>子链二名称</s> | <s>子链三名称</s> | <s>子链一名称</s> | <s>子链一名称</s><a href="#" class="key_btn1"></a></div></td>
+                    <td class="table_wd text_left">
+                        <div class="div_a">
+                        <div class="zhuangt">
+                        <span class="orange">暂停</span>
+                        <span> </span>
+                        </div>
+                        </div>
+                    </td>
+<!--                    <td class="table_we caozuo"><a href="#"></a></td>
+-->                  </tr>
+                  <tr id="key_chd4" onmousemove="idBg(4,'key_chd');"onmouseout="idNoBg(4,'key_chd');">
+                    <td class="table_wa text_center"><input name="" type="checkbox" value="" /></td>
+                    <td class="table_wb text_left add_color"><div class="key_div"><s>子链一名称</s> | <s>子链二名称</s> | <s>子链三名称</s> | <s>子链一名称</s> | <s>子链一名称</s><a href="#" class="key_btn1"></a></div></td>
+                    <td class="table_wd text_left">
+                        <div class="div_a">
+                        <div class="zhuangt">
+                        <span class="orange">审核中</span>
+                        <span class="start_img" onclick="javascript:$UE.confirm('您确定暂停附加创意【附加创意名称】吗？','暂停成功！');"></span>
+                        </div>
+                        </div>
+                    </td>
+<!--                    <td class="table_we caozuo"><a href="#"></a></td>
+-->                  </tr>
+                  <tr id="key_chd5" onmousemove="idBg(5,'key_chd');"onmouseout="idNoBg(5,'key_chd');">
+                    <td class="table_wa text_center"><input name="" type="checkbox" value="" /></td>
+                    <td class="table_wb text_left add_color"><div class="key_div"><s>子链一名称</s> | <s>子链二名称</s> | <s>子链三名称</s> | <s>子链一名称</s> | <s>子链一名称</s><a href="#" class="key_btn1"></a></div></td>
+                    <td class="table_wd text_left">
+                        <div class="div_a">
+                        <div class="zhuangt light">
+                        <span class="red">审核拒绝<a onmouseover="arrow_hover();" onmouseout="arrow_no_hover();" ><img src="/static/ads_c_2.0/web/images/bulb_dim.png" width="16" height="16" /></a></span>
+                        <span class="start_img" onclick="javascript:$UE.confirm('您确定暂停附加创意【附加创意名称】吗？','暂停成功！');"></span>
+                        </div>
+                        </div>
+                    </td>
+<!--                    <td class="table_we caozuo"><a href="#"></a></td>
+-->                  </tr>
+                  <tr id="key_chd6" onmousemove="idBg(6,'key_chd');"onmouseout="idNoBg(6,'key_chd');">
+                    <td class="table_wa text_center"><input name="" type="checkbox" value="" /></td>
+                    <td class="table_wb text_left add_color"><div class="key_div"><s>子链一名称</s> | <s>子链二名称</s> | <s>子链三名称</s> | <s>子链一名称</s> | <s>子链一名称</s><a href="#" class="key_btn1"></a></div></td>
+                    <td class="table_wd text_left">
+                        <div class="div_a">
+                        <div class="zhuangt">
+                        <span class="red">不宜推广</span>
+                        <span class="stop_img" onclick="javascript:$UE.confirm('您确定启用附加创意【附加创意名称】吗？','启用成功！');"></span>
+                        </div>
+                        </div>
+                    </td>
+<!--                    <td class="table_we caozuo"><a href="#"></a></td>
+-->                  </tr>
+                  <tr id="key_chd7" onmousemove="idBg(7,'key_chd');"onmouseout="idNoBg(7,'key_chd');">
+                    <td class="table_wa text_center"><input name="" type="checkbox" value="" /></td>
+                    <td class="table_wb text_left add_color"><div class="key_div"><s>子链一名称</s> | <s>子链二名称</s> | <s>子链三名称</s> | <s>子链一名称</s> | <s>子链一名称</s><a href="#" class="key_btn1"></a></div></td>
+                    <td class="table_wd text_left">
+                        <div class="div_a">
+                        <div class="zhuangt">
+                        <span class="red">不宜推广</span>
+                        <span class="start_img" onclick="javascript:$UE.confirm('您确定暂停附加创意【附加创意名称】吗？','暂停成功！');"></span>
+                        </div>
+                        </div>
+                    </td>
+<!--                    <td class="table_we caozuo"><a href="#"></a></td>
+-->                  </tr>
+                  <tr>
+                    <td class="table_wa text_center"><input name="" type="checkbox" value="" /></td>
+                    <td class="table_wb text_left add_color"><div class="key_div"><s>子链一名称</s> | <s>子链二名称</s> | <s>子链三名称</s> | <s>子链一名称</s> | <s>子链一名称</s><a href="#" class="key_btn1"></a></div></td>
+                    <td class="table_wd text_left">
+                        <div class="div_a">
+                        <div class="zhuangt">
+                        <span class="green">有效</span>
+                        <span class="start_img" onclick="javascript:$UE.confirm('您确定暂停附加创意【附加创意名称】吗？','暂停成功！');"></span>
+                        </div>
+                        </div>
+                    </td>
+<!--                    <td class="table_we caozuo"><a href="#"></a></td>
+-->                  </tr>
+                  <tr>
+                    <td class="table_wa text_center"><input name="" type="checkbox" value="" /></td>
+                    <td class="table_wb text_left add_color"><div class="key_div"><s>子链一名称</s> | <s>子链二名称</s> | <s>子链三名称</s> | <s>子链一名称</s> | <s>子链一名称</s><a href="#" class="key_btn1"></a></div></td>
+                    <td class="table_wd text_left">
+                        <div class="div_a">
+                        <div class="zhuangt">
+                        <span class="green">有效</span>
+                        <span class="start_img" onclick="javascript:$UE.confirm('您确定暂停附加创意【附加创意名称】吗？','暂停成功！');"></span>
+                        </div>
+                        </div>
+                    </td>
+<!--                    <td class="table_we caozuo"><a href="#"></a></td>
+-->                  </tr>
+                  <tr>
+                    <td class="table_wa text_center"><input name="" type="checkbox" value="" /></td>
+                    <td class="table_wb text_left add_color"><div class="key_div"><s>子链一名称</s> | <s>子链二名称</s> | <s>子链三名称</s> | <s>子链一名称</s> | <s>子链一名称</s><a href="#" class="key_btn1"></a></div></td>
+                    <td class="table_wd text_left">
+                        <div class="div_a">
+                        <div class="zhuangt">
+                        <span class="green">有效</span>
+                        <span class="start_img" onclick="javascript:$UE.confirm('您确定暂停附加创意【附加创意名称】吗？','暂停成功！');"></span>
+                        </div>
+                        </div>
+                    </td>
+<!--                    <td class="table_we caozuo"><a href="#"></a></td>
+-->                  </tr>
+              </table>
+ <!-- 表格内容 开始-->
+        </div>
+      </div>
+	  	<div class="c_foot_left add_border" title="">绑定的附加创意在左侧推广时，只有在状态有效的时候才会展示。</div>
+</div>

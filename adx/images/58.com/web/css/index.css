@@ -1,0 +1,55 @@
+@charset "utf-8";
+*{margin:0px;padding:0px;}/*设置页面所有的属性规0*/
+body{font:"宋体";color:#000000;background-color:#FFF;}/*设置页面字体的样式*/
+img,a img{ border:none; text-decoration:none;}
+
+.content{ min-width:990px; _position:relative; _width:expression(document.body.clientWidth<=1000?"1000px":"auto" );width:100%;margin-right:auto;height:100%; margin-top:-10px;*margin-top:0px; overflow:hidden;}
+.c_right{margin-left:237px;height:auto; overflow:hidden;}
+.c_right_new{border:1px solid #000;height:auto; overflow:hidden;}
+.c_content{width:100%;height:auto; margin-top:0px;_width:90%;}
+/*我的账户展开图*/
+.le_nav_border{float:left;overflow-x:hidden; overflow-y:auto;display:inline; height:100%; width:237px; position:relative;}
+.STYLE1 {width:15px; height:43px;position:absolute; right:0; top:15px;}
+.l_nav_new_hidden{ width:15px; height:43px;cursor:pointer;position:absolute; left:0px; top:5px; z-index:999999;}
+.l_nav_new{width:237px;float:left;overflow:hidden;display:inline;}
+.l_nav{width:198px;height:500px;float:left;overflow:hidden; overflow-y:scroll;}
+
+/*new css*/
+.STYLE1 img{ cursor:pointer;}
+.header{ width:232px; height:85px; background:url(../images/media-03.gif) repeat; padding:15px 0 0 7px;}
+.hos_main{ width:237px;}
+.hos_logo{ width:237px; text-align:center; height:auto; overflow:hidden; padding-top:30px;}
+.hos_name{margin:10px;text-align:center; height:24px; width:217px; overflow:hidden; line-height:24px;}
+.hos_name a,.hos_name a:link{ display:block; text-decoration:underline;color:#0c68b3;height:24px; overflow:hidden; font-size:17px; font-family:微软雅黑;}
+
+.hos_ico{ width:164px; height:24px; padding-left:73px;}
+.hos_ico span.ico1{ display:block; width:42px; float:left; height:24px; background:url(../images/media-05.jpg) no-repeat center center;}
+.hos_ico span.ico2{ display:block; width:42px; float:left; height:24px; background:url(../images/media-06.jpg) no-repeat left center; padding-left:13px; line-height:24px;}
+.hos_ico span.ico2 a,.hos_ico span.ico2 a:link{ color:#666666; font-size:12px; text-decoration:underline;}
+
+.hos_zixun{ text-align:center; margin-top:35px;}
+.hos_zixun a img{ margin-bottom:10px;}
+.hos_zixun a u{ color:#3b9c00; font-size:14px;font-family:微软雅黑;}
+.hos_content{ padding:40px 15px 0; font-size:14px;font-family:微软雅黑; }
+.hos_content .hos_title{color:#0965b0; background:url(../images/media-08.jpg) no-repeat left center; padding-left:20px;}
+.hos_content .hos_word{ color:#5b5b5b; line-height:22px;}
+
+/*手机展示*/
+/*m_header start*/
+.m_header{height:79px; background:url(/static/58_media/web/images/index_01.jpg) repeat center center;width:480px; margin:0 auto; }
+.top{height:79px;}
+.top .logo{ float:left; padding:4px 0 0 4px;}
+.top .top_menu{ float:right; font-size:1em; font-family:宋体;color:#fff; padding-top:58px;}
+.top .top_menu a,.top .top_menu a:link{ color:#fff; text-decoration:none;}
+.top .top_menu a:hover{ color:#fff; text-decoration:underline;}
+
+.header_right{ float:right;height:75px; margin-left:100px; overflow:hidden;}
+.header_right .m_top{ height:37px; padding-right:10px;}
+.header_right h1{ font-style:normal; font-family:微软雅黑; font-size:1em; text-align:right; margin-right:10px; height:37px; line-height:40px; overflow:hidden; color:#fff;}
+.header_right span{ height:25px; padding-top:12px; float:right;}
+.m_menu{ float:right;width:100px; height:75px;}
+.m_menu a,.m_menu a:link{ height:75px; line-height:75px; display:block; float:left; cursor:pointer; }
+.m_menu a.m_guahao,.m_menu a.m_guahao:link{ background:url(/static/58_media/web/images/mobile_04.jpg) no-repeat left center;width:40px; font-family:宋体; font-size:0.875em;color:#fff; margin-right:3px; text-decoration:underline; padding-left:15px;}
+.m_menu a img{ margin-top:28px;}
+
+.m_box{ border:1px solid #0965b0; height:auto; width:478px; margin:0 auto; }

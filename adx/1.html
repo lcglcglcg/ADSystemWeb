@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>39整形美容_中国专业医学整形美容门户</title>
+<meta name="keywords" content="整形,整容,整形美容,整形手术,整形技术,整形案例,整形分类">
+<meta name="description" content="39健康网整形美容频道,汇集最新最齐全的整形美容项目,让您轻松找到最专业的整形美容医院、准确的整形手术价格、最全面的术前术后注意事项等整形美容相关信息.">
+<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+
+</head>
+<body>
+<textarea id="jsonList"></textarea><span onClick="fn();">执行</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span onClick="fnks();">科室执行</span>
+<script language="javascript" src="http://static.adx.haomeit.com/js/Glacier.js"></script>
+<script>
+var fn=function(){
+if ( window.JSON && window.JSON.parse ) {
+				var json=window.JSON.parse( $G('#jsonList')[0].value);
+				$G.Each(function(){
+					window.document.write(this.name+'<br>');
+				},json.disease);
+				window.document.write('================================<br>');
+				$G.Each(function(){
+					window.document.write(this.pinyin+'<br>');
+				},json.disease);
+
+			}
+};
+
+var fnks=function(){
+if ( window.JSON && window.JSON.parse ) {
+				var json=window.JSON.parse( $G('#jsonList')[0].value);
+				$G.Each(function(){
+					var obj=this;
+					window.document.write(obj.LAB_TYPE_NAME+'<br>');
+				},json);
+				window.document.write('================================<br>');
+				$G.Each(function(){
+					var obj=this;
+					window.document.write(obj.SEO_SPELLING+'<br>');
+				},json);
+
+			}
+};
+</script>
+</body>
+</html>
+
+

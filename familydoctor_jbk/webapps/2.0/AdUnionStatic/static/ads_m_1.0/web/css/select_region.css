@@ -1,0 +1,84 @@
+/* CSS Document */
+/* 新增的匹配模式提示 */
+.step1_cont ul li span.step1_lf a.ask{ color:#00F;}
+
+/*第一级别*/
+.scommon_main .level1{ width:95%; height:24px; position:relative; padding-left:30px; margin-top:5px;}
+.scommon_main .level1 a{ display:block; width:120px; padding-left:15px; background:url(/static/ads_m_1.0/web/images/jia.gif) no-repeat left center; color:#2558bc;}
+.scommon_main .level1 .jian{background:url(/static/ads_m_1.0/web/images/jian.gif) no-repeat left center; text-decoration:none;}
+.scommon_main .level1 a:hover{ text-decoration:none;}
+/*第二级别*/
+.level2{ padding-left:60px; position:relative;}
+.level2 .tf_web{ float:left; width:70px; text-align:right;}
+/*level3----选择地域*/
+.city{}
+.scommon_box .level3_city{width:600px;}
+.scommon_box .level3_city_pad_left{border:1px solid #EEE; background:#fff;}
+
+.scommon_box .level3_web_baobiao{border:1px solid #EEE; }
+.scommon_box .level3_city_baobiao{border:1px solid #EEE;}
+.scommon_box .level3_city ol.region_title{ background:#c9e2ff; height:24px; line-height:24px; clear:both;}
+.scommon_box .level3_city ol.region_title{ background:#c9e2ff; height:24px; line-height:24px; width:100%;}
+.input_valign{ margin-right:3px; vertical-align:middle;}/*input垂直居中*/
+a.p_re_a_style1{ float:right;width: 13px; height:24px;background: url('/static/ads_m_1.0/web/images/step_close.gif') no-repeat 0 center; margin-right:10px;}
+/*地区和网络的ol和li的宽度*/
+.scommon_box .level3_city ol.row1,.scommon_box .level3_city ol.row2{ clear:both; border:1px solid #EEE; border-top:none; padding-left:20px;}
+.scommon_box .level3_city ol.row1{ height:24px;line-height:24px;}
+.scommon_box .level3_city ol.row1 .zongshu{background: none repeat scroll 0 0 #0000FF;color: #FFFFFF;}
+.scommon_box .level3_city ol.row2{ height:48px; overflow:hidden;}
+.scommon_box .level3_city .hover_ceng_title{ display:block;height:22px; overflow:hidden; z-index:1;}
+/*地区li的宽度*/
+.scommon_box .level3_city ol.row1 li.li_w95,.scommon_box .level3_city ol.row2 li.li_w95{ float:left; width:95px; text-align:left;}
+.scommon_box .level3_city ol.row1 li.li_w95 .li_div,.scommon_box .level3_city ol.row2 li.li_w95 .li_div{ float:left; width:95px; text-align:left; position:relative}
+.scommon_box .level3_city ol.row1 li.li_w95_huise,.scommon_box .level3_city ol.row2 li.li_w95_huise{ float:left; width:95px; text-align:left;}
+/*网络li的宽度*/
+.scommon_box .level3_city ol.row1 li.li_w144,.level3_city ol.row2 li.li_w144{ float:left; width:144px; text-align:left; position:relative;}
+
+.li_pad1{padding-left:95px;}
+
+/*投放地域和网络的样式-----------hover时显示子层*/
+/*投放地域样式-----------hover时显示子层*/
+
+.level3_city ol.row1 .zongshu{ background:#00F; color:#FFF;}
+.level3_city ol.row1 .li_city_border1_0{ border:1px solid #fff;}
+.level3_city ol.row1 .li_city_border1{ border:1px solid #97a5b2; border-right:none; height:22px; position:relative; left:-1px; z-index:99999; background:#FFF;width:93px; line-height:22px; cursor:pointer;}
+
+.level3_city ol.row1 .block1{ border:1px solid #97a5b2; background:#FFF; width:150px;min-height:22px; overflow:hidden; position:absolute; top:0px; left:92px; z-index:99996;cursor:pointer;}
+.block1 .hover_ceng{ width:100%;}
+.block1 .hover_ceng ul li{ float:left; width:47%; margin-left:1%;height:22px; line-height:22px; overflow:hidden;}
+.level3_city ol.row1 .block1 input{ margin:2px 5px 0 5px;}
+/*投放网络样式-----------hover时显示子层*/
+.level3_city ol.row1 .li_web_border1{ border:1px solid #97a5b2; border-right:none; height:22px; position:relative; left:-1px; z-index:999999999; background:#FFF; width:145px; line-height:22px; cursor:pointer;}
+.level3_city ol.row1 .block2{ border:1px solid #97a5b2; background:#FFF; width:180px;min-height:22px; overflow:hidden; position:absolute; top:0px; left:144px; z-index:999999996; cursor:pointer;}
+.block2 .hover_ceng{ width:100%;}
+.block2 .hover_ceng ul li{ float:left; width:47%; margin-left:1%;height:22px; line-height:22px; overflow:hidden;}
+.level3_city ol.row1 .block2 input{ margin:2px 5px 0 5px;}
+
+/*选择科室*/
+.select_keshi_box{ background:#DDE9EA; padding:10px; width:160px;}
+.select_keshi_box .select_keshi_cont{ background:#fff; padding:5px; height:auto; overflow:hidden; margin:5px 0;}
+.select_keshi_box .select_keshi_cont ul li{ display:block; height:22px; line-height:22px;}
+.select_keshi_box .select_keshi_cont input{ float:left; margin-right:5px; margin-top:4px;}
+/* 选择科室按钮*/
+.select_keshi_btn{ clear:both; height:22px ; margin-top:10px;}
+.select_keshi_btn ul{ height:22px; padding-left:10px;}
+.select_keshi_btn ul li{ width:60px; height:22px; float:left;}
+.select_keshi_btn ul li a{ display:block; width:50px; height:22px; line-height:22px; float:left; text-align:center; font-weight:bold; background:url(/static/ads_m_1.0/web/images/icon.gif) no-repeat 0 -300px; margin: 0 10px;}
+.select_keshi_btn ul li a:link,.select_keshi_btn ul li a:visited{ color:#000; font-weight:bold;text-decoration:none;}
+.select_keshi_btn ul li a:hover{ background:url(/static/ads_m_1.0/web/images/icon.gif) no-repeat 0 -250px; font-weight:bold;color:#FFF; text-decoration:none;}
+
+.scommon_box_new {height: auto; width: 600px; background:#fff; padding:10px;}
+.scommon_box_new_box1 {height: auto;width: 625px; background:#fff;}
+.scommon_box_new_box1 .detailed_title{height:31px; line-height:31px; background:url(/static/ads_m_1.0/web/images/pub_bg.gif) repeat-x 0 -200px; padding-left:15px;}
+.scommon_box_new_box1 .detailed_title b{ float:left;}
+.scommon_box_new_box1 .detailed_title span{ float:right; padding:7px 10px 0 0;}
+/*公共按钮，点击进入下一步*/
+.step_commom_btn{ clear:both; width:100%; padding-top:10px; height:30px;}
+.btn_h{ padding-top:20px;}
+.step_commom_btn a{ margin-right:5px;}
+.step_commom_btn .s_c_width{ width:200px; height:30px;}
+.step_commom_btn .s_c_width1{ width:100px; height:30px;}
+.step_commom_btn .s_c_width2{ width:160px; height:30px;}
+.step_commom_btn .s_c_width4{ width:45px; height:30px;}
+.c_btn ol.select_re_ol{width: 500px;}
+.c_btn ol.select_re_ol li{width: 60px;}

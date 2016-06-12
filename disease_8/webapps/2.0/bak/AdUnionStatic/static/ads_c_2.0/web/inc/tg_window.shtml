@@ -1,0 +1,105 @@
+     <!--修改abstract开始-->
+     <div class="change_box boxWidth1" id="upadte_box" style="display:none; left:275px; top:315px;">
+            <div class="clearfix">
+               <div class="conditions_limit lf" style="margin-right:30px;">
+                 <div class="selectStyle select_50">
+                    <select name="upadte_box_01">
+                      <option value="1">有效</option>
+                      <option value="2">暂停</option>
+                      <option value="3">删除</option>
+                    </select>
+                 </div>
+                </div>
+            <a onclick="$UE.close('upadte_box');" class="btn"><span>保存</span></a> <a class="btn" onclick="$UE.close('upadte_box');"><span>取消</span></a>
+            </div>
+          </div>
+     <!--修改abstract结束-->
+     <!--修改账号近期行为出价开始-->
+     <div class="change_box boxWidth1" id="price_ratio_box" style="display:none; left:275px; top:315px;">
+            <div class="clearfix"><span class="cpc">近期行为出价比例(百分比)</span><input type="text" value="75" class="change_boxInput">
+            <a onclick="$UE.close('price_ratio_box');" class="btn"><span>保存</span></a> <a class="btn" onclick="$UE.close('price_ratio_box');"><span>取消</span></a>
+            </div>
+            <p class="red">设置近期行为出价与当前行为出价比例值，范围0到100之间的整数，0表示近期行为不出价。</p>
+         </div>
+     <!--修改账号近期行为出价结束-->
+     <!--修改计划名称开始-->
+     <div class="change_box boxWidth1" id="change_box" style="display:none; left:275px; top:315px;">
+        <div class="clearfix">
+        <input type="text" value="推广计划推广计划" class="change_boxInput">
+        <a onclick="$UE.close('change_box');" class="btn"><span>保存</span></a> <a class="btn" onclick="$UE.close('change_box');"><span>取消</span></a>
+        </div>
+        <p class="red">该名称已存在，请重新输入！</p>
+     </div>
+     <!--修改计划名称结束-->
+     <!--修改组名称开始-->
+     <div class="change_box boxWidth1" id="step_second_change_box" style="display:none; left:275px; top:315px;">
+        <div class="clearfix"><input type="text" value="推广组推广组" class="change_boxInput">
+        <a onclick="$UE.close('step_second_change_box');" class="btn"><span>保存</span></a> <a class="btn" onclick="$UE.close('step_second_change_box');"><span>取消</span></a>
+        </div>
+        <p class="red">该名称已存在，请重新输入！</p>
+     </div>
+     <!--修改组名称结束-->
+     <!--第三步添加创意开始-->
+     <div class="change_box boxWidth1" id="step_three_creative" style="display:none; left:275px; top:315px;">
+            <div class="clearfix"><input type="text" value="20134161417561" class="change_boxInput">
+            <a onclick="$UE.close('step_three_creative');" class="btn"><span>保存</span></a> <a class="btn" onclick="$UE.close('step_three_creative');"><span>取消</span></a>
+            </div>
+     </div>
+     <!--第三步添加创意开始-->
+    
+     <!--修改每日预算开始-->
+     <div class="change_box boxWidth1" id="yusuan_box" style="display:none; left:275px; top:315px;">
+            <div class="clearfix"><span class="cpc">￥</span><input type="text" value="10.00" class="change_boxInput">
+            <a onclick="$UE.close('yusuan_box');" class="btn"><span>保存</span></a> <a class="btn" onclick="$UE.close('yusuan_box');"><span>取消</span></a>
+            </div>
+            <p class="red">每日预算应该是￥10到￥100000之间的整数</p>
+          </div>
+     <!--修改每日预算结束-->
+     <!--定向搜索行为右边开始-->
+     <div class="change_box boxWidth1" id="dingsou_box" style="display:none; left:275px; top:315px;">
+            <div class="clearfix"><input type="text" value="800" class="change_boxInput_01">
+            <a onclick="$UE.close('dingsou_box');" class="btn"><span>保存</span></a> <a class="btn" onclick="$UE.close('dingsou_box');"><span>取消</span></a>
+            </div>
+     </div>
+     <!--定向搜索行为右边结束-->
+     <!--修改组出价开始-->
+     <div class="change_box boxWidth1" id="zuchujai_box" style="display:none; left:275px; top:315px;">
+        <div class="clearfix"><span class="cpc">￥</span><input type="text" value="10.00" class="change_boxInput">
+        <a onclick="$UE.close('zuchujai_box');" class="btn"><span>保存</span></a> <a class="btn" onclick="$UE.close('zuchujai_box');"><span>取消</span></a>
+        </div>
+        <p class="red">出价应该是￥0.05到￥999.99之间的数字</p>
+     </div>
+     <!--修改组出价结束-->
+    <!--不宜推广小灯泡弹框开始-->
+    <div id="idDiv_buyi" style="z-index: 1003; position: fixed; top: 132px; left: 1000px; cursor: move; display:none;">
+        <div class="prompt_info_top">
+            <p class="margin_5">不宜推广：</p>
+            <p class="prompt_close" onClick="$UE.close('idDiv_buyi');"></p>
+        </div>
+        <div class="prompt_info_center">目前创意处于离线中，因为您提交的URL地址无法访问，请检查创意的URL地址，在确认能打开后重新提交</div>
+        <div class="prompt_info_bottom"></div>
+    </div>
+    <!--不宜推广弹框结束-->
+    
+    <!--定向搜索行为小灯泡弹框开始-->
+    <div id="idDiv_buy1" style="z-index: 9003; position: fixed; top: 132px; left: 1000px; cursor: move; display:none;">
+        <div class="prompt_info_top">
+            <p class="margin_5">匹配模式：</p>
+            <p class="prompt_close" onClick="$UE.close('idDiv_buyi');"></p>
+        </div>
+        <div class="prompt_info_center">精准定向：当网民的搜索词与您提交的关键词完全一致时，您的推广结果才有展现机会。</div>
+        <div class="prompt_info_center">短语定向：当网民的搜索词完全包含您的关键词时，系统则会自动展现您的推广结果。</div>
+        <div class="prompt_info_bottom"></div>
+    </div>
+    <!--定向搜索行为小灯泡弹框结束-->
+    
+    <!--审核拒绝弹框开始-->
+    <div id="idDiv_jujue" style="z-index: 1003; position: fixed; top: 82px; left: 1284px; cursor: move; display:none;">
+        <div class="prompt_info_top">
+            <p class="margin_5">审核拒绝：</p>
+            <p class="prompt_close" onClick="$UE.close('idDiv_jujue');"></p>
+        </div>
+        <div class="prompt_info_center">目前创意处于离线中，因为您提交的URL地址无法访问，请检查创意的URL地址，在确认能打开后重新提交</div>
+        <div class="prompt_info_bottom"></div>
+    </div>
+    <!--审核拒绝弹框结束-->

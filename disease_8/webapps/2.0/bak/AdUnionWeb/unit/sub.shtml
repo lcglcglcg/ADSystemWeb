@@ -1,0 +1,60 @@
+<div class="scommon_box" id="step_second" style="display:none;">
+  <input name="CAMPAIGN_ID" type="hidden" />
+  <input name="GROUP_ID" type="hidden" />
+  <div class="scommon_title">
+    <p name="altUnitTitle">新建推广组</p>
+    <a name="close_bnt"></a></div>
+  <div class="scommon_main">
+    <div class="all_title" name="altUnitDaoHang"><span name="newMap" class="step_rg_bg" style="color:#000; ">新建推广计划</span><span class="step_curr">新建推广组</span><span>新建创意</span></div>
+    <div class="step1_cont" id="ckUnitName">
+      <ul>
+        <li><span class="step1_lf">推广组名称：</span><span class="step1_rg">
+          <input ckname="units" name="GROUP_NAME" grequired gmsgfun maxlength="30" minlength="1" type="UNITNAME" class="input_01" />
+          <span class="gray" name="unitNameCk" style="display:none;">该名称已存在，请重新输入！</span></span></li>
+      </ul>
+    </div>
+    <!--精准定向 开始--> 
+    <!--精准定向 单选按钮-->
+    <div class="step1_cont">
+      <ul>
+        <li class="nopad"><span class="step1_lf">精准定向：</span> <span class="step1_rg">
+          <p>
+            <label name="directGroupList" >
+              <input type="radio" name="GROUP_TARGETING_TYPE" value="1" />
+              定向浏览行为</label>
+            <label name="directGroupList" >
+              <input type="radio" name="GROUP_TARGETING_TYPE" value="2" />
+              定向搜索行为</label>
+            <br />
+          </p>
+          </span> </li>
+      </ul>
+    </div>
+    <!--精准定向 媒体定向--> 
+    <!--精准定向 定向浏览行为-->
+    <div name="GROUP_TARGETING_TYPE_List" class="depart" id="GROUP_TARGETING_TYPE1" style="display:none;"> 
+      <!--#include virtual="/disease/disease.html"--></div>
+    <!--精准定向 定向搜索行为-->
+    <div name="GROUP_TARGETING_TYPE_List" class="glance" id="GROUP_TARGETING_TYPE2" style="display:none;"> 
+      <!--#include virtual="/keywords/keywords.html"--></div>
+    <!--div组出价-->
+    <div class="step1_cont"><ul>
+        <li class="nopad" id="unitCpCPriceValue"><span class="step1_lf" name="cpcPriceMsg">CPC出价：</span> <span class="step1_rg">
+          <p>
+            <input type="UNITPRICE|NUMBER" name="GROUP_CPC_PRICE" gmsgfun maxlength="999.99" minlength="0.05" class="input_01" />
+            <span class="gray" name="cpmPriceMsg">CPC指单次点击出价</span> </p>
+          </span> </li>
+        <li class="nopad" id="unitCpMPriceValue" style="display:none;"><span class="step1_lf">CPM出价：</span> <span class="step1_rg">
+          <p>
+            <input type="UNITPRICE|NUMBER" name="GROUP_CPM_PRICE" gmsgfun maxlength="99999.99" minlength="0.05" class="input_01" />
+            <span class="gray">CPM指千次展现出价</span> </p>
+          </span> </li>
+      </ul>
+    </div>
+    <!--公共按钮 新建推广组-->
+    <div class="step_commom_btn" align="center" name="subUnitSaveMsg">
+      <div class="s_c_width"><a class="btn" name="subUnitSave" ><span>保存并继续</span></a><a class="btn" name="close_bnt" ><span>取消</span></a></div>
+    </div>
+  </div>
+</div>
+<script language="javascript" src="/static/web/js/page/unit.js"></script>
